@@ -258,7 +258,7 @@ extension EnkaDBModelsHSR {
 
     typealias SkillTree = [String: [SkillInTree]]
 
-    enum SkillInTree: Codable, Hashable {
+    enum SkillInTree: Codable, Hashable, Equatable {
         case baseSkill(String)
         case extendedSkills([String])
 

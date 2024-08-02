@@ -60,6 +60,10 @@ extension DimModels4GI {
             self.costumeDB = try decoder.decode(
                 [AvatarCostumeExcelConfigData].self,
                 from: dataStack[.costume]!
+            ).filter(\.isValid)
+            self.profilePictureDB = try decoder.decode(
+                [ProfilePictureExcelConfigData].self,
+                from: dataStack[.profilePicture]!
             )
             if withLang {
                 try await updateLanguageMap()
@@ -80,14 +84,18 @@ extension DimModels4GI {
         let fightPropDB: [ManualTextMapConfigData]
         let skillDepotDB: [AvatarSkillDepotExcelConfigData]
         let costumeDB: [AvatarCostumeExcelConfigData]
+        let profilePictureDB: [ProfilePictureExcelConfigData]
         var langTable: [String: [String: String]] = [:]
     }
 }
 
-// MARK: - Localization Handlers.
+// MARK: - DimModels4GI.DimDB4GI + DimDBProtocol
 
-extension DimModels4GI.DimDB4GI {
-    private var allNameTextMapHashes: Set<String> {
+extension DimModels4GI.DimDB4GI: DimDBProtocol {
+    static let targetGame: EnkaDBGenerator.SupportedGame = .genshinImpact
+    var avatarDBIdentifiable: [any IntegerIdentifiableWithLocHash] { avatarDB }
+
+    var allNameTextMapHashes: Set<String> {
         let collected: [[Int]] = [
             avatarDB.map(\.nameTextMapHash),
             skillDB.map(\.nameTextMapHash),
@@ -100,46 +108,5 @@ extension DimModels4GI.DimDB4GI {
             costumeDB.map(\.nameTextMapHash),
         ]
         return Set<String>(collected.reduce([], +).map(\.description))
-    }
-
-    mutating func updateLanguageMap() async throws {
-        langTable = try await EnkaDBGenerator.SupportedGame
-            .genshinImpact.fetchRawLangData(neededHashIDs: allNameTextMapHashes)
-        let protagonistTable = getProtagonistTranslations()
-        protagonistTable.forEach { protagonist in
-            for langTag in langTable.keys {
-                let hashTxt = protagonist.nameHash.description
-                langTable[langTag, default: [:]][hashTxt] = protagonist.dict[langTag]
-            }
-        }
-    }
-
-    private func getProtagonistTranslations() -> [EnkaDBGenerator.Protagonist.DataPair] {
-        let results: [EnkaDBGenerator.Protagonist.DataPair] = avatarDB.compactMap { currentCharacter in
-            let protagonist = EnkaDBGenerator.Protagonist(rawValue: currentCharacter.id)
-            guard let protagonist else { return EnkaDBGenerator.Protagonist.DataPair?.none }
-            return .init(
-                avatarID: currentCharacter.id,
-                nameHash: currentCharacter.nameTextMapHash,
-                dict: protagonist.nameTranslationDict
-            )
-        }
-        return results
-    }
-
-    func assembleEnkaLangMap() -> [String: [String: String]] {
-        var enkaLangMap = [String: [String: String]]()
-        langTable.forEach { dimLangTag, currentTable in
-            let currentTable = currentTable
-            guard let lang = EnkaDBGenerator.GameLanguage
-                .allCases.first(where: { $0.langTag == dimLangTag }) else { return }
-            enkaLangMap[lang.enkaLangID] = currentTable
-        }
-        EnkaDBGenerator.SupportedGame.genshinImpact.extraLocMap.forEach { langKey, valTable in
-            valTable.forEach { hash, valText in
-                enkaLangMap[langKey, default: [:]][hash] = valText
-            }
-        }
-        return enkaLangMap
     }
 }

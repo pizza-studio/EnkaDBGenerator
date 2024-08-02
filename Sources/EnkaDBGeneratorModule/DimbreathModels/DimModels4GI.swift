@@ -19,6 +19,7 @@ enum DimModels4GI: String, CaseIterable {
     case fightProp = "ManualTextMapConfigData"
     case skillDepot = "AvatarSkillDepotExcelConfigData"
     case costume = "AvatarCostumeExcelConfigData"
+    case profilePicture = "ProfilePictureExcelConfigData"
 }
 
 // MARK: DimModelsEnumProtocol
@@ -40,6 +41,7 @@ extension DimModels4GI {
         let qualityType: String
         let skillDepotId: Int
         let candSkillDepotIds: [Int]
+        let weaponType: String
 
         var isValid: Bool {
             guard skillDepotId != 101 else { return false }
@@ -116,7 +118,7 @@ extension DimModels4GI {
     }
 }
 
-// MARK: - DimModels4GI.ReliquaryMainPropExcelConfigData & ReliquaryAffixExcelConfigData
+// MARK: DimModels4GI.ReliquaryMainPropExcelConfigData & ReliquaryAffixExcelConfigData
 
 extension DimModels4GI {
     typealias ReliquaryAffixExcelConfigData = ReliquaryMainPropExcelConfigData
@@ -180,7 +182,6 @@ extension DimModels4GI {
             self.icon = try container.decode(String.self, forKey: .icon)
             self.materialType = try container.decodeIfPresent(String.self, forKey: .materialType)
             self.nameTextMapHash = try container.decode(Int.self, forKey: .nameTextMapHash)
-            self.picPath = try container.decode([String].self, forKey: .picPath)
             self.rankLevel = (try container.decodeIfPresent(Int.self, forKey: .rankLevel)) ?? 4
         }
 
@@ -190,7 +191,6 @@ extension DimModels4GI {
         let icon: String
         let materialType: String?
         let nameTextMapHash: Int
-        let picPath: [String]
         let rankLevel: Int // All NameCards are ranked at level 4.
 
         var isValid: Bool {
@@ -256,5 +256,15 @@ extension DimModels4GI {
 
         var id: Int { skinId }
         var art: String { frontIconName.replacingOccurrences(of: "AvatarIcon", with: "Costume") }
+        var isValid: Bool { !frontIconName.isEmpty }
+    }
+}
+
+// MARK: DimModels4GI.ProfilePictureExcelConfigData
+
+extension DimModels4GI {
+    struct ProfilePictureExcelConfigData: Hashable, Codable, Identifiable {
+        let id: Int
+        let iconPath: String
     }
 }

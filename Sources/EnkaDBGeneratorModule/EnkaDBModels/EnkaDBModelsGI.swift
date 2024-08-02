@@ -9,6 +9,8 @@ enum EnkaDBModelsGI {}
 // MARK: EnkaDBModelsGI.Character
 
 extension EnkaDBModelsGI {
+    typealias CharacterDict = [String: Character]
+
     struct Character: Codable, Hashable {
         enum CodingKeys: String, CodingKey {
             case element = "Element"
@@ -24,7 +26,7 @@ extension EnkaDBModelsGI {
         }
 
         var consts: [String]
-        var costumes: Costume?
+        var costumes: [String: Costume]?
         var element: String
         var nameTextMapHash: Int
         var proudMap: [String: Int]
@@ -69,12 +71,12 @@ extension EnkaDBModelsGI {
     }
 }
 
-// MARK: - NameCards
+// MARK: - ProfilePictures
 
 extension EnkaDBModelsGI {
-    typealias ProfilePhotoDict = [String: ProfilePhoto]
+    typealias ProfilePictureDict = [String: ProfilePicture]
 
-    struct ProfilePhoto: Codable, Hashable {
+    struct ProfilePicture: Codable, Hashable {
         var iconPath: String
     }
 }
