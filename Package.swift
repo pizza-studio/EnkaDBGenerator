@@ -27,7 +27,20 @@ let package = Package(
             ]
         ),
         .target(
-            name: "EnkaDBGeneratorModule"
+            name: "EnkaDBGeneratorModule",
+            resources: [
+                .process("Resources/extra-loc-genshin.json"),
+                .process("Resources/extra-loc-starrail.json"),
+            ],
+            swiftSettings: [
+                .unsafeFlags([
+                    "-Xfrontend",
+                    "-warn-long-function-bodies=100",
+                    "-Xfrontend",
+                    "-warn-long-expression-type-checking=100",
+                ]),
+                // .enableExperimentalFeature("AccessLevelOnImport")
+            ]
         ),
         .target(
             name: "EnkaDB",
@@ -35,6 +48,15 @@ let package = Package(
             resources: [
                 // .process("Resources/OUTPUT-GI.json"),
                 // .process("Resources/OUTPUT-HSR.json"),
+            ],
+            swiftSettings: [
+                .unsafeFlags([
+                    "-Xfrontend",
+                    "-warn-long-function-bodies=100",
+                    "-Xfrontend",
+                    "-warn-long-expression-type-checking=100",
+                ]),
+                // .enableExperimentalFeature("AccessLevelOnImport")
             ]
         ),
         .testTarget(

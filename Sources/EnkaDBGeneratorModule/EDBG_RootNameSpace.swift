@@ -5,7 +5,3 @@
 // MARK: - EnkaDBGenerator
 
 public enum EnkaDBGenerator {}
-
-// MARK: - EnkaDBModels
-
-public enum EnkaDBModels {}
