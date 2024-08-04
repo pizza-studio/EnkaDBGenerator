@@ -27,7 +27,18 @@ extension EnkaDBGenerator {
     }
 }
 
-// MARK: - Internal Variables.
+// MARK: - DimDB Initializer.
+
+extension EnkaDBGenerator.SupportedGame {
+    func initDimDB(withLang: Bool = true) async throws -> DimDBProtocol {
+        switch self {
+        case .genshinImpact: return try await DimModels4GI.DimDB4GI(withLang: withLang)
+        case .starRail: return try await DimModels4HSR.DimDB4HSR(withLang: withLang)
+        }
+    }
+}
+
+// MARK: - Extra Loc Map.
 
 extension EnkaDBGenerator.SupportedGame {
     private var extraLocDictFileName: String {

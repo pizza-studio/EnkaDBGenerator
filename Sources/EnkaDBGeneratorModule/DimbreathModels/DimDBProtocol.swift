@@ -11,6 +11,7 @@ protocol DimDBProtocol {
     static var targetGame: EnkaDBGenerator.SupportedGame { get }
     var langTable: [String: [String: String]] { get set }
     var avatarDBIdentifiable: [any IntegerIdentifiableWithLocHash] { get }
+    func packObjects() throws -> [String: any Encodable]
 }
 
 extension DimDBProtocol {
