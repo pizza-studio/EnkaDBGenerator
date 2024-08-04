@@ -84,8 +84,16 @@ extension EnkaDBGenerator.SupportedGame {
             returning: [String: [String: String]].self
         ) { taskGroup in
             #if DEBUG
+            print("// ------------------------")
+            print("// This program is compiled as a debug build, therefore ..")
+            print("// .. the localization data are gonna fetched for the following languages only:")
+            print("// [ja-JP] [zh-Hans] [en-US].")
+            print("// ------------------------")
             let langs = lang ?? [.langJP, .langEN, .langCHS]
             #else
+            print("// ------------------------")
+            print("// Fetching the localization data for all supported languages.")
+            print("// ------------------------")
             let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
             #endif
             langs.forEach { locale in
