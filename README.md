@@ -18,7 +18,7 @@ This repository is designed to be an alternative method to compile the same JSON
       - The second parameter is the output folder where the generated JSON files are gonna write to.
     - Examples:
       - Genshin Impact: `./EnkaDBGenerator -GI ./OUTPUT-FOLDER`.
-      - Star Rail: `./EnkaDBGenerator -HSR ./OUTPUT-OUTPUT FOLDER`
+      - Star Rail: `./EnkaDBGenerator -HSR ./OUTPUT-FOLDER`
 
 ### Supported Games:
 
