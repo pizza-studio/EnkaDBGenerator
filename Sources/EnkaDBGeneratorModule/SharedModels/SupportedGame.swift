@@ -20,7 +20,7 @@ extension EnkaDBGenerator {
         public init?(arg: String) {
             switch arg.lowercased() {
             case "-gi", "genshin", "genshinimpact", "gi": self = .genshinImpact
-            case "-hsr", "-sr", "sr", "hsr", "starrail": self = .starRail
+            case "-hsr", "-sr", "hsr", "sr", "starrail": self = .starRail
             default: return nil
             }
         }
@@ -91,9 +91,7 @@ extension EnkaDBGenerator.SupportedGame {
             langs.forEach { locale in
                 taskGroup.addTask {
                     let url = getLangDataURL(for: locale)
-                    #if DEBUG
                     print("// Fetching: \(url.absoluteString)")
-                    #endif
                     let (data, _) = try await URLSession.shared.asyncData(from: url)
                     var dict = try JSONDecoder().decode([String: String].self, from: data)
                     let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)

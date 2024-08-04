@@ -25,9 +25,7 @@ extension DimModelsEnumProtocol {
     }
 
     func rawDataToParse() async throws -> Data {
-        #if DEBUG
         print("// Fetching: \(jsonURL.absoluteString)")
-        #endif
         let (data, _) = try await URLSession.shared.asyncData(from: jsonURL)
         return data
     }
