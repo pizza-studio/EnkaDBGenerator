@@ -13,6 +13,7 @@ extension DimModels4HSR.DimDB4HSR {
         result["honker_skills.json"] = try assembleEnkaSkills()
         result["honker_skilltree.json"] = try assembleEnkaSkillTree()
         result["honker_weps.json"] = try assembleEnkaWeapons()
+        result["hsr.json"] = assembleEnkaLangMap()
         return result
     }
 }
