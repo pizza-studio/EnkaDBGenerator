@@ -59,21 +59,25 @@ extension DimModels4GI.DimDB4GI {
                     return
                 }
                 // SkillOrder.
-                let finalSkillOrder: [Int] = skillDepotTable.skills.filter { $0 != 0 }
+                var finalSkillOrder: [Int] = skillDepotTable.skills.filter { $0 != 0 }
                     + [skillDepotTable.energySkill].compactMap { $0 }
                 // ProudMap and Skills.
                 var finalProudMap: [String: Int] = [:]
                 var finalSkills: [String: String] = [:]
-                try finalSkillOrder.forEach { currentSkillID in
+                var skillIDsToPurge = [Int]()
+                finalSkillOrder.forEach { currentSkillID in
                     guard let matchedSkill = self.skillDB.first(where: { $0.id == currentSkillID })
                     else {
-                        throw EnkaDBGenerator.EDBGError.assemblerError(
-                            msg: "Skill \(currentSkillID) mismatch for GI character \(charUUID), aborting."
+                        print(
+                            "[Assembler Notice] Skill \(currentSkillID) mismatch for GI character \(charUUID), skipping."
                         )
+                        skillIDsToPurge.append(currentSkillID)
+                        return
                     }
                     finalSkills[currentSkillID.description] = matchedSkill.skillIcon
                     finalProudMap[currentSkillID.description] = matchedSkill.proudSkillGroupId
                 }
+                finalSkillOrder.removeAll { skillIDsToPurge.contains($0) }
                 let finalNameTextMapHash = avatar.nameTextMapHash
                 let finalQualityType = avatar.qualityType
                 let finalSideIconName = avatar.sideIconName

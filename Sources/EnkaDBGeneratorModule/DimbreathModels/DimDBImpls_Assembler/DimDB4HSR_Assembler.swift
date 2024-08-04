@@ -206,12 +206,20 @@ extension DimModels4HSR.DimDB4HSR {
                 get { resultMap[charID, default: [:]]["1", default: []] }
                 set { resultMap[charID, default: [:]]["1", default: []] = newValue }
             }
+            var toKeep = [EnkaDBModelsHSR.SkillInTree]()
             var extracted = [String]()
-            while case let .extendedSkills(lastCluster) = container.last, lastCluster.count == 1 {
-                extracted.insert(contentsOf: lastCluster, at: 0)
+            while case let .extendedSkills(lastCluster) = container.last {
+                checkCount: switch lastCluster.count {
+                case 2...: toKeep.insert(.extendedSkills(lastCluster), at: 0)
+                case 1: extracted.insert(contentsOf: lastCluster, at: 0)
+                default: break checkCount
+                }
                 container = container.dropLast()
             }
-            container.append(.extendedSkills(extracted))
+            if !extracted.isEmpty {
+                toKeep.append(.extendedSkills(extracted))
+            }
+            container = toKeep
         }
         return resultMap
     }
@@ -284,15 +292,14 @@ extension DimModels4HSR.DimDB4HSR {
         metaRelicSetSkillDB.forEach { currentEntry in
             let setID = currentEntry.setID.description
             let requireNum = currentEntry.requireNum.description
-            if let property = currentEntry.propertyList.first {
-                let assembled: [String: [String: Double]] = [
-                    "props": [
-                        property.titleRawValue: property.valueStorage.value,
-                    ],
-                ]
-                result[setID, default: [:]][requireNum] = assembled
-            } else {
+            guard !currentEntry.propertyList.isEmpty else {
                 result[setID, default: [:]][requireNum] = ["props": [:]]
+                return
+            }
+            currentEntry.propertyList.forEach { currentProperty in
+                let name = currentProperty.titleRawValue
+                let value = currentProperty.valueStorage.value
+                result[setID, default: [:]][requireNum, default: [:]]["props", default: [:]][name] = value
             }
         }
         return result
@@ -301,14 +308,13 @@ extension DimModels4HSR.DimDB4HSR {
     func makeRawEquipSkillMetaDict() -> EnkaDBModelsHSR.Meta.RawEquipSkillMetaDict {
         var result = EnkaDBModelsHSR.Meta.RawEquipSkillMetaDict()
         metaEqupSkillDB.forEach { currentEntry in
-            guard let property = currentEntry.abilityProperty.first else { return }
             let skillID = currentEntry.skillID.description
-            let name = property.propertyType
-            let value = property.value.value
             let skillLevel = currentEntry.level.description
-            result[skillID, default: [:]][skillLevel, default: [:]]["props", default: [:]] = [
-                name: value,
-            ]
+            currentEntry.abilityProperty.forEach { currentProperty in
+                let name = currentProperty.propertyType
+                let value = currentProperty.value.value
+                result[skillID, default: [:]][skillLevel, default: [:]]["props", default: [:]][name] = value
+            }
         }
         return result
     }

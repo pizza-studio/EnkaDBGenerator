@@ -299,15 +299,17 @@ extension EnkaDBGeneratorTestsHSR {
     func testAssemblingEnkaDB4HSR_Meta_EquipSkill() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRawEquipSkillMetaDict()
-        guard let matched = assembled["20003"] else {
-            assertionFailure("Equipment Skill 20003 is missing.")
+        guard let matched = assembled["23005"] else {
+            assertionFailure("Equipment Skill 23005 is missing.")
             exit(1)
         }
         let expectedJSON = """
         {
-        "1":{"props":{"DefenceAddedRatio":0.16}},"2":{"props":{"DefenceAddedRatio":0.2}},
-        "3":{"props":{"DefenceAddedRatio":0.24}},"4":{"props":{"DefenceAddedRatio":0.28}},
-        "5":{"props":{"DefenceAddedRatio":0.32}}
+        "1":{"props":{"DefenceAddedRatio":0.24,"StatusProbabilityBase":0.24}},
+        "2":{"props":{"DefenceAddedRatio":0.28,"StatusProbabilityBase":0.28}},
+        "3":{"props":{"DefenceAddedRatio":0.32,"StatusProbabilityBase":0.32}},
+        "4":{"props":{"DefenceAddedRatio":0.36,"StatusProbabilityBase":0.36}},
+        "5":{"props":{"DefenceAddedRatio":0.4,"StatusProbabilityBase":0.4}}
         }
         """
         let expected = try JSONDecoder().decode(
