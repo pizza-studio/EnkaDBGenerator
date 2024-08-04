@@ -5,7 +5,7 @@
 import Foundation
 
 extension EnkaDBGenerator {
-    public func compileEnkaDB(for game: SupportedGame, targeting outputURL: URL) async throws {
+    public static func compileEnkaDB(for game: SupportedGame, targeting outputURL: URL) async throws {
         print("// =========================")
         print("// Start writing EnkaDB json files for \(game.englishBrandName).")
         print("// -------------------------")
@@ -43,5 +43,22 @@ extension EnkaDBGenerator {
         print("// -------------------------")
         print("// All tasks completed for writing EnkaDB json files for \(game.englishBrandName).")
         print("// =========================")
+    }
+
+    public static func getEnkaDBEncodedJSONData(for game: SupportedGame) async throws -> [String: Data] {
+        print("// Start fetching files from Dimbreath's repository...")
+        let theDB: DimDBProtocol = try await game.initDimDB(withLang: true)
+        print("// Succeeded in fetching files from Dimbreath's repository.")
+        print("// -------------------------")
+        print("// Start assembling EnkaDB JSON files.")
+        let filesToRender = try theDB.packObjects()
+        print("// Succeeded in assembling EnkaDB JSON files. Exporting...")
+        let encoder = JSONEncoder()
+        var container = [String: Data]()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
+        try filesToRender.forEach { fileName, obj in
+            try container[fileName] = encoder.encode(obj)
+        }
+        return container
     }
 }

@@ -17,10 +17,10 @@ extension EnkaDBGenerator {
         // MARK: Lifecycle
 
         /// Initialize this enum using given commandline argument.
-        init?(arg: String) {
+        public init?(arg: String) {
             switch arg.lowercased() {
             case "-gi", "genshin", "genshinimpact", "gi": self = .genshinImpact
-            case "-hsr", "hsr", "starrail": self = .starRail
+            case "-hsr", "-sr", "sr", "hsr", "starrail": self = .starRail
             default: return nil
             }
         }
