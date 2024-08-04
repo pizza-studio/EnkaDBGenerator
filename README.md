@@ -1,7 +1,5 @@
 # EnkaDBGenerator
 
-> This project is still UNDER CONSTRUCTION.
-
 This repository is designed to be an alternative method to compile the same JSON files offered in Enka-API-docs repo, utilizing ExcelConfigData from Dimbreath's repos.
 
 ### Usage: 
