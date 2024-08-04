@@ -2,7 +2,20 @@
 // ====================
 // This code is released under the AGPL v3.0 License (SPDX-License-Identifier: AGPL-3.0)
 
-import Foundation
+extension DimModels4HSR.DimDB4HSR {
+    func packObjects() throws -> [String: any Encodable] {
+        var result = [String: any Encodable]()
+        result["honker_avatars.json"] = assembleEnkaProfileAatars()
+        result["honker_characters.json"] = try assembleEnkaCharacters()
+        result["honker_meta.json"] = try assembleEnkaMeta()
+        result["honker_ranks.json"] = try assembleEnkaRanks()
+        result["honker_relics.json"] = try assembleEnkaArtifactRelics()
+        result["honker_skills.json"] = try assembleEnkaSkills()
+        result["honker_skilltree.json"] = try assembleEnkaSkillTree()
+        result["honker_weps.json"] = try assembleEnkaWeapons()
+        return result
+    }
+}
 
 extension DimModels4HSR.DimDB4HSR {
     /// Assembling `honker_avatars.json`.

@@ -3,6 +3,19 @@
 // This code is released under the AGPL v3.0 License (SPDX-License-Identifier: AGPL-3.0)
 
 extension DimModels4GI.DimDB4GI {
+    func packObjects() throws -> [String: any Encodable] {
+        var result = [String: any Encodable]()
+        /// Omitting `affixes.json` which is suspected to be the artifact rating model for Enka.Network website.
+        /// The calculation method of its `efficiency` field is still unknown.
+        result["locs.json"] = assembleEnkaLangMap()
+        result["characters.json"] = try assembleEnkaCharacters()
+        result["namecards.json"] = assembleEnkaNameCards()
+        result["pfps.json"] = assembleEnkaProfilePictures()
+        return result
+    }
+}
+
+extension DimModels4GI.DimDB4GI {
     func assembleEnkaCharacters() throws -> EnkaDBModelsGI.CharacterDict {
         var result = EnkaDBModelsGI.CharacterDict()
         try avatarDB.forEach { avatar in
