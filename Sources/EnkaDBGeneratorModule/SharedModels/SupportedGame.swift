@@ -24,6 +24,15 @@ extension EnkaDBGenerator {
             default: return nil
             }
         }
+
+        // MARK: Public
+
+        public var englishBrandName: String {
+            switch self {
+            case .genshinImpact: return "Genshin Impact"
+            case .starRail: return "Star Rail"
+            }
+        }
     }
 }
 

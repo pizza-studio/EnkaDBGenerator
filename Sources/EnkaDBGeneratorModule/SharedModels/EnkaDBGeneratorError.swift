@@ -9,6 +9,7 @@ import Foundation
 extension EnkaDBGenerator {
     public enum EDBGError: Error {
         case assemblerError(msg: String)
+        case fileWritingAccessError(msg: String)
     }
 }
 
@@ -18,6 +19,7 @@ extension EnkaDBGenerator.EDBGError: LocalizedError {
     public var localizedDescription: String {
         switch self {
         case let .assemblerError(msg): return "[Assembler Error] " + msg
+        case let .fileWritingAccessError(msg): return "[I/O Error] " + msg
         }
     }
 

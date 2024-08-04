@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "EnkaDBGenerator",
-    platforms: [.macOS(.v10_15), .iOS(.v13), .watchOS(.v7)],
+    platforms: [.macOS(.v13), .iOS(.v16), .watchOS(.v9)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
