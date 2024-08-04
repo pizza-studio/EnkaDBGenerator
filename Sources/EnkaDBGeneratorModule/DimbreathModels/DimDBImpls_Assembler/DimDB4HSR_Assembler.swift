@@ -108,7 +108,7 @@ extension DimModels4HSR.DimDB4HSR {
 
             guard let matchedSetData = relicDataInfoMap[artifactUUID] else {
                 print(
-                    "[Assembelr Notice] Artifact Set data mismatch for HSR artifact \(artifactUUID), skipping."
+                    "[Assembler Notice] Artifact Set data mismatch for HSR artifact \(artifactUUID), skipping."
                 )
                 return
             }
