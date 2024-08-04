@@ -95,7 +95,6 @@ extension DimModels4HSR.DimDB4HSR {
 extension DimModels4HSR.DimDB4HSR {
     /// Assembling `honker_relics.json`.
     func assembleEnkaArtifactRelics() throws -> EnkaDBModelsHSR.ArtifactsDict {
-        let relicDataInfoMap = relicDataInfoDB.reduce(into: [String: DimModels4HSR.RelicDataInfo]()) { $0[$1.id] = $1 }
         var result = EnkaDBModelsHSR.ArtifactsDict()
         try relicDB.forEach { currentArtifact in
             let artifactUUID = currentArtifact.id.description
@@ -107,7 +106,10 @@ extension DimModels4HSR.DimDB4HSR {
                 )
             }
 
-            guard let matchedSetData = relicDataInfoMap[artifactUUID] else {
+            let matchedSetData = relicDataInfoDB.first {
+                $0.setID == currentArtifact.setID && $0.type == currentArtifact.type
+            }
+            guard let matchedSetData else {
                 print(
                     "[Assembler Notice] Artifact Set data mismatch for HSR artifact \(artifactUUID), skipping."
                 )
