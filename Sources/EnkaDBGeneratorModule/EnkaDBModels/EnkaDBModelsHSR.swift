@@ -4,14 +4,26 @@
 
 // MARK: - EnkaDBModelsHSR
 
-enum EnkaDBModelsHSR {}
+public enum EnkaDBModelsHSR {}
 
 // MARK: - Artifacts (Relics)
 
 extension EnkaDBModelsHSR {
-    typealias ArtifactsDict = [String: Artifact]
+    public typealias ArtifactsDict = [String: Artifact]
 
-    struct Artifact: Codable, Hashable {
+    public struct Artifact: Codable, Hashable {
+        // MARK: Public
+
+        /// WARNING: It looks insane but HSR internal database messed up the raw values of "object' and "neck".
+        public var type: String
+        public var rarity: Int
+        public var mainAffixGroup: Int
+        public var subAffixGroup: Int
+        public var icon: String
+        public var setID: Int
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case rarity = "Rarity"
             case type = "Type"
@@ -20,38 +32,53 @@ extension EnkaDBModelsHSR {
             case icon = "Icon"
             case setID = "SetID"
         }
-
-        /// WARNING: It looks insane but HSR internal database messed up the raw values of "object' and "neck".
-        var type: String
-        var rarity: Int
-        var mainAffixGroup: Int
-        var subAffixGroup: Int
-        var icon: String
-        var setID: Int
     }
 }
 
 // MARK: - Characters
 
 extension EnkaDBModelsHSR {
-    typealias CharacterDict = [String: Character]
+    public typealias CharacterDict = [String: Character]
 
-    struct Character: Codable, Hashable {
-        struct AvatarFullName: Codable, Hashable {
+    public struct Character: Codable, Hashable {
+        // MARK: Public
+
+        public struct AvatarFullName: Codable, Hashable {
+            // MARK: Public
+
+            public var hash: Int
+
+            // MARK: Internal
+
             enum CodingKeys: String, CodingKey {
                 case hash = "Hash"
             }
-
-            var hash: Int
         }
 
-        struct AvatarName: Codable, Hashable {
+        public struct AvatarName: Codable, Hashable {
+            // MARK: Public
+
+            public var hash: Int
+
+            // MARK: Internal
+
             enum CodingKeys: String, CodingKey {
                 case hash = "Hash"
             }
-
-            var hash: Int
         }
+
+        public var avatarName: AvatarName
+        public var avatarFullName: AvatarFullName
+        public var rarity: Int
+        public var element: String
+        public var avatarBaseType: String
+        public var avatarSideIconPath: String
+        public var actionAvatarHeadIconPath: String
+        public var avatarCutinFrontImgPath: String
+        public var rankIDList: [Int]
+        public var skillList: [Int]
+
+        // MARK: Internal
 
         enum CodingKeys: String, CodingKey {
             case avatarName = "AvatarName"
@@ -65,44 +92,48 @@ extension EnkaDBModelsHSR {
             case rankIDList = "RankIDList"
             case skillList = "SkillList"
         }
-
-        var avatarName: AvatarName
-        var avatarFullName: AvatarFullName
-        var rarity: Int
-        var element: String
-        var avatarBaseType: String
-        var avatarSideIconPath: String
-        var actionAvatarHeadIconPath: String
-        var avatarCutinFrontImgPath: String
-        var rankIDList: [Int]
-        var skillList: [Int]
     }
 }
 
 // MARK: EnkaDBModelsHSR.Meta
 
 extension EnkaDBModelsHSR {
-    struct Meta: Codable, Hashable {
-        var avatar: RawAvatarMetaDict
-        var equipment: RawEquipmentMetaDict
-        var equipmentSkill: RawEquipSkillMetaDict
-        var relic: RawRelicDB
-        var tree: RawTreeMetaDict
+    public struct Meta: Codable, Hashable {
+        public var avatar: RawAvatarMetaDict
+        public var equipment: RawEquipmentMetaDict
+        public var equipmentSkill: RawEquipSkillMetaDict
+        public var relic: RawRelicDB
+        public var tree: RawTreeMetaDict
     }
 }
 
 // MARK: - EnkaDBModelsHSR.Meta.NestedPropValueMap
 
 extension EnkaDBModelsHSR.Meta {
-    typealias NestedPropValueMap = [String: [String: [String: [String: Double]]]]
+    public typealias NestedPropValueMap = [String: [String: [String: [String: Double]]]]
 }
 
 // MARK: - Meta.AvatarMeta
 
 extension EnkaDBModelsHSR.Meta {
-    typealias RawAvatarMetaDict = [String: [String: AvatarMeta]]
+    public typealias RawAvatarMetaDict = [String: [String: AvatarMeta]]
 
-    struct AvatarMeta: Codable, Hashable {
+    public struct AvatarMeta: Codable, Hashable {
+        // MARK: Public
+
+        public var hpBase: Double
+        public var hpAdd: Double
+        public var attackBase: Double
+        public var attackAdd: Double
+        public var defenceBase: Double
+        public var defenceAdd: Double
+        public var speedBase: Double
+        public var criticalChance: Double
+        public var criticalDamage: Double
+        public var baseAggro: Double
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case hpBase = "HPBase"
             case hpAdd = "HPAdd"
@@ -115,26 +146,26 @@ extension EnkaDBModelsHSR.Meta {
             case criticalDamage = "CriticalDamage"
             case baseAggro = "BaseAggro"
         }
-
-        var hpBase: Double
-        var hpAdd: Double
-        var attackBase: Double
-        var attackAdd: Double
-        var defenceBase: Double
-        var defenceAdd: Double
-        var speedBase: Double
-        var criticalChance: Double
-        var criticalDamage: Double
-        var baseAggro: Double
     }
 }
 
 // MARK: - Meta.EquipmentMeta
 
 extension EnkaDBModelsHSR.Meta {
-    typealias RawEquipmentMetaDict = [String: [String: EquipmentMeta]]
+    public typealias RawEquipmentMetaDict = [String: [String: EquipmentMeta]]
 
-    struct EquipmentMeta: Codable, Hashable {
+    public struct EquipmentMeta: Codable, Hashable {
+        // MARK: Public
+
+        public var baseHP: Double
+        public var hpAdd: Double
+        public var baseAttack: Double
+        public var attackAdd: Double
+        public var baseDefence: Double
+        public var defenceAdd: Double
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case baseHP = "BaseHP"
             case hpAdd = "HPAdd"
@@ -143,20 +174,13 @@ extension EnkaDBModelsHSR.Meta {
             case baseDefence = "BaseDefence"
             case defenceAdd = "DefenceAdd"
         }
-
-        var baseHP: Double
-        var hpAdd: Double
-        var baseAttack: Double
-        var attackAdd: Double
-        var baseDefence: Double
-        var defenceAdd: Double
     }
 }
 
 // MARK: - EnkaDBModelsHSR.Meta.RawEquipSkillMetaDict
 
 extension EnkaDBModelsHSR.Meta {
-    typealias RawEquipSkillMetaDict = NestedPropValueMap
+    public typealias RawEquipSkillMetaDict = NestedPropValueMap
 }
 
 // MARK: - EnkaDBModelsHSR.Meta.RawRelicDB
@@ -164,107 +188,127 @@ extension EnkaDBModelsHSR.Meta {
 // Relic = Artifact
 
 extension EnkaDBModelsHSR.Meta {
-    struct RawRelicDB: Codable, Hashable {
-        struct MainAffix: Codable, Hashable {
+    public struct RawRelicDB: Codable, Hashable {
+        public struct MainAffix: Codable, Hashable {
+            // MARK: Public
+
+            public var property: String
+            public var baseValue: Double
+            public var levelAdd: Double
+
+            // MARK: Internal
+
             enum CodingKeys: String, CodingKey {
                 case property = "Property"
                 case baseValue = "BaseValue"
                 case levelAdd = "LevelAdd"
             }
-
-            var property: String
-            var baseValue: Double
-            var levelAdd: Double
         }
 
-        struct SubAffix: Codable, Hashable {
+        public struct SubAffix: Codable, Hashable {
+            // MARK: Public
+
+            public var property: String
+            public var baseValue: Double
+            public var stepValue: Double
+
+            // MARK: Internal
+
             enum CodingKeys: String, CodingKey {
                 case property = "Property"
                 case baseValue = "BaseValue"
                 case stepValue = "StepValue"
             }
-
-            var property: String
-            var baseValue: Double
-            var stepValue: Double
         }
 
-        typealias MainAffixTable = [String: [String: MainAffix]]
-        typealias SubAffixTable = [String: [String: SubAffix]]
-        typealias RawSetSkillMetaDict = EnkaDBModelsHSR.Meta.NestedPropValueMap
+        public typealias MainAffixTable = [String: [String: MainAffix]]
+        public typealias SubAffixTable = [String: [String: SubAffix]]
+        public typealias RawSetSkillMetaDict = EnkaDBModelsHSR.Meta.NestedPropValueMap
 
-        var mainAffix: MainAffixTable
-        var subAffix: SubAffixTable
-        var setSkill: RawSetSkillMetaDict
+        public var mainAffix: MainAffixTable
+        public var subAffix: SubAffixTable
+        public var setSkill: RawSetSkillMetaDict
     }
 }
 
 // MARK: - EnkaDBModelsHSR.Meta.RawTreeMetaDict
 
 extension EnkaDBModelsHSR.Meta {
-    typealias RawTreeMetaDict = NestedPropValueMap
+    public typealias RawTreeMetaDict = NestedPropValueMap
 }
 
 // MARK: - Profile Avatar
 
 extension EnkaDBModelsHSR {
-    typealias ProfileAvatarDict = [String: ProfileAvatar]
+    public typealias ProfileAvatarDict = [String: ProfileAvatar]
 
-    struct ProfileAvatar: Codable, Hashable {
+    public struct ProfileAvatar: Codable, Hashable {
+        // MARK: Public
+
+        public var icon: String
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case icon = "Icon"
         }
-
-        var icon: String
     }
 }
 
 // MARK: - Skill Ranks
 
 extension EnkaDBModelsHSR {
-    typealias SkillRanksDict = [String: SkillRank]
+    public typealias SkillRanksDict = [String: SkillRank]
 
-    struct SkillRank: Codable, Hashable {
+    public struct SkillRank: Codable, Hashable {
+        // MARK: Public
+
+        public var iconPath: String
+        public var skillAddLevelList: [String: Int]
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case iconPath = "IconPath"
             case skillAddLevelList = "SkillAddLevelList"
         }
-
-        var iconPath: String
-        var skillAddLevelList: [String: Int]
     }
 }
 
 // MARK: - Skills
 
 extension EnkaDBModelsHSR {
-    typealias SkillsDict = [String: Skill]
+    public typealias SkillsDict = [String: Skill]
 
-    struct Skill: Codable, Hashable {
+    public struct Skill: Codable, Hashable {
+        // MARK: Public
+
+        public var iconPath: String
+        public var pointType: Int
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case iconPath = "IconPath"
             case pointType = "PointType"
         }
-
-        var iconPath: String
-        var pointType: Int
     }
 }
 
 // MARK: - SkillTree
 
 extension EnkaDBModelsHSR {
-    typealias SkillTreesDict = [String: SkillTree]
+    public typealias SkillTreesDict = [String: SkillTree]
 
-    typealias SkillTree = [String: [SkillInTree]]
+    public typealias SkillTree = [String: [SkillInTree]]
 
-    enum SkillInTree: Codable, Hashable, Equatable {
+    public enum SkillInTree: Codable, Hashable, Equatable {
         case baseSkill(String)
         case extendedSkills([String])
 
         // MARK: Lifecycle
 
-        init(from decoder: Decoder) throws {
+        public init(from decoder: Decoder) throws {
             let container = try decoder.singleValueContainer()
             if let x = try? container.decode([String].self) {
                 self = .extendedSkills(x)
@@ -280,16 +324,16 @@ extension EnkaDBModelsHSR {
             )
         }
 
-        // MARK: Internal
+        // MARK: Public
 
-        var firstSkillNodeID: String? {
+        public var firstSkillNodeID: String? {
             switch self {
             case let .baseSkill(string): return string
             case let .extendedSkills(array): return array.first
             }
         }
 
-        func encode(to encoder: Encoder) throws {
+        public func encode(to encoder: Encoder) throws {
             var container = encoder.singleValueContainer()
             switch self {
             case let .baseSkill(x):
@@ -298,6 +342,8 @@ extension EnkaDBModelsHSR {
                 try container.encode(x)
             }
         }
+
+        // MARK: Internal
 
         mutating func appendExtendedSkill(_ newSkillNodeID: String) {
             guard case var .extendedSkills(array) = self else { return }
@@ -310,16 +356,29 @@ extension EnkaDBModelsHSR {
 // MARK: - Weapons
 
 extension EnkaDBModelsHSR {
-    typealias WeaponsDict = [String: Weapon]
+    public typealias WeaponsDict = [String: Weapon]
 
-    struct Weapon: Codable, Hashable {
-        struct EquipmentName: Codable, Hashable {
+    public struct Weapon: Codable, Hashable {
+        // MARK: Public
+
+        public struct EquipmentName: Codable, Hashable {
+            // MARK: Public
+
+            public var hash: Int
+
+            // MARK: Internal
+
             enum CodingKeys: String, CodingKey {
                 case hash = "Hash"
             }
-
-            var hash: Int
         }
+
+        public var rarity: Int
+        public var avatarBaseType: String
+        public var equipmentName: EquipmentName
+        public var imagePath: String
+
+        // MARK: Internal
 
         enum CodingKeys: String, CodingKey {
             case rarity = "Rarity"
@@ -327,10 +386,5 @@ extension EnkaDBModelsHSR {
             case equipmentName = "EquipmentName"
             case imagePath = "ImagePath"
         }
-
-        var rarity: Int
-        var avatarBaseType: String
-        var equipmentName: EquipmentName
-        var imagePath: String
     }
 }

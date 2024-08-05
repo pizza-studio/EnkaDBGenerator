@@ -4,14 +4,29 @@
 
 // MARK: - EnkaDBModelsGI
 
-enum EnkaDBModelsGI {}
+public enum EnkaDBModelsGI {}
 
 // MARK: EnkaDBModelsGI.Character
 
 extension EnkaDBModelsGI {
-    typealias CharacterDict = [String: Character]
+    public typealias CharacterDict = [String: Character]
 
-    struct Character: Codable, Hashable {
+    public struct Character: Codable, Hashable {
+        // MARK: Public
+
+        public var consts: [String]
+        public var costumes: [String: Costume]?
+        public var element: String
+        public var nameTextMapHash: Int
+        public var proudMap: [String: Int]
+        public var qualityType: String
+        public var sideIconName: String
+        public var skillOrder: [Int]
+        public var skills: [String: String]
+        public var weaponType: String
+
+        // MARK: Internal
+
         enum CodingKeys: String, CodingKey {
             case element = "Element"
             case consts = "Consts"
@@ -24,59 +39,48 @@ extension EnkaDBModelsGI {
             case weaponType = "WeaponType"
             case costumes = "Costumes"
         }
-
-        var consts: [String]
-        var costumes: [String: Costume]?
-        var element: String
-        var nameTextMapHash: Int
-        var proudMap: [String: Int]
-        var qualityType: String
-        var sideIconName: String
-        var skillOrder: [Int]
-        var skills: [String: String]
-        var weaponType: String
     }
 }
 
 // MARK: EnkaDBModelsGI.Costume
 
 extension EnkaDBModelsGI {
-    struct Costume: Codable, Hashable {
-        var art: String
-        var avatarId: Int
-        var icon: String
-        var sideIconName: String
+    public struct Costume: Codable, Hashable {
+        public var art: String
+        public var avatarId: Int
+        public var icon: String
+        public var sideIconName: String
     }
 }
 
 // MARK: - Affixes
 
 extension EnkaDBModelsGI {
-    typealias AffixDict = [String: Affix]
+    public typealias AffixDict = [String: Affix]
 
-    struct Affix: Codable, Hashable {
-        var efficiency: Double
-        var position: Int
-        var propType: String
+    public struct Affix: Codable, Hashable {
+        public var efficiency: Double
+        public var position: Int
+        public var propType: String
     }
 }
 
 // MARK: - NameCards
 
 extension EnkaDBModelsGI {
-    typealias NameCardDict = [String: NameCard]
+    public typealias NameCardDict = [String: NameCard]
 
-    struct NameCard: Codable, Hashable {
-        var icon: String
+    public struct NameCard: Codable, Hashable {
+        public var icon: String
     }
 }
 
 // MARK: - ProfilePictures
 
 extension EnkaDBModelsGI {
-    typealias ProfilePictureDict = [String: ProfilePicture]
+    public typealias ProfilePictureDict = [String: ProfilePicture]
 
-    struct ProfilePicture: Codable, Hashable {
-        var iconPath: String
+    public struct ProfilePicture: Codable, Hashable {
+        public var iconPath: String
     }
 }
