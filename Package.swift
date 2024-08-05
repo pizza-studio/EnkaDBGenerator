@@ -13,8 +13,8 @@ let package = Package(
             targets: ["EnkaDBGeneratorModule"]
         ),
         .library(
-            name: "EnkaDB",
-            targets: ["EnkaDB"]
+            name: "EnkaDBFiles",
+            targets: ["EnkaDBFiles"]
         ),
     ],
     targets: [
@@ -43,7 +43,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "EnkaDB",
+            name: "EnkaDBFiles",
             dependencies: ["EnkaDBGeneratorModule"],
             resources: [
                 .process("Resources/Specimen/GI/namecards.json"),
@@ -75,8 +75,8 @@ let package = Package(
             dependencies: ["EnkaDBGeneratorModule"]
         ),
         .testTarget(
-            name: "EnkaDBTests",
-            dependencies: ["EnkaDB"]
+            name: "EnkaDBFilesTests",
+            dependencies: ["EnkaDBFiles"]
         ),
     ]
 )
