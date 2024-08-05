@@ -2,6 +2,10 @@
 
 This repository is designed to be an alternative method to compile the same JSON files offered in Enka-API-docs repo, utilizing ExcelConfigData from Dimbreath's repos.
 
+### Notice to Windows users:
+
+- This app cannot be compiled as an effective copy on Windows due to how Swift Foundation URL APIs behave buggy on Windows. Right now, the only approach to use this tool on Windows is to use it through WSL (Windows Sub-System for Linux). You enter into the WSL shell and install a Linux version of Swift, then you follow the following instructions to use this tool.
+
 ### Usage: 
 
 - Method 1: Use it as a Swift Package in Xcode.
