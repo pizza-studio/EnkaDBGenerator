@@ -80,7 +80,7 @@ extension EnkaDBGenerator {
 
 // MARK: - Optional + CaseIterable
 
-extension Optional: CaseIterable where Wrapped == EnkaDBGenerator.GameLanguage {
+extension Optional where Wrapped == EnkaDBGenerator.GameLanguage {
     public static var allCases: [EnkaDBGenerator.GameLanguage?] {
         EnkaDBGenerator.GameLanguage.allCases + [Self.none]
     }
