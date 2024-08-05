@@ -44,7 +44,7 @@ let package = Package(
         ),
         .target(
             name: "EnkaDBFiles",
-            dependencies: ["EnkaDBGeneratorModule"],
+            dependencies: [],
             resources: [
                 .process("Resources/Specimen/GI/namecards.json"),
                 .process("Resources/Specimen/GI/locs.json"),
@@ -67,7 +67,7 @@ let package = Package(
                     "-Xfrontend",
                     "-warn-long-expression-type-checking=100",
                 ]),
-                // .enableExperimentalFeature("AccessLevelOnImport")
+                .enableExperimentalFeature("AccessLevelOnImport"),
             ]
         ),
         .testTarget(
@@ -76,7 +76,7 @@ let package = Package(
         ),
         .testTarget(
             name: "EnkaDBFilesTests",
-            dependencies: ["EnkaDBFiles"]
+            dependencies: ["EnkaDBFiles", "EnkaDBGeneratorModule"]
         ),
     ]
 )
