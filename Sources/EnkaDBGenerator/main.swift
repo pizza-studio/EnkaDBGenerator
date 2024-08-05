@@ -13,20 +13,29 @@ let useOneByOne = false
 let cmdParameters = CommandLine.arguments.dropFirst(1)
 
 switch cmdParameters.count {
-case 2:
-    guard let firstArgument = cmdParameters.first,
-          let secondArgument = cmdParameters.dropFirst().first,
-          let game = EnkaDBGenerator.SupportedGame(arg: firstArgument)
+case 2, 3:
+    guard let arg1st = cmdParameters.first,
+          let argLast = cmdParameters.last,
+          let game = EnkaDBGenerator.SupportedGame(arg: arg1st)
     else {
-        let errText = "!! Please give only one argument among `-GI`, `-HSR`."
-        print("{\"errMsg\": \"\(errText)\"}\n")
-        assertionFailure(errText)
+        print(argumentTextTutorial)
+        assertionFailure(argumentTextTutorial)
         exit(1)
     }
-    let url = URL(fileURLWithPath: secondArgument)
+    let url = URL(fileURLWithPath: argLast)
     if useOneByOne {
         print("// =========================")
         print("// Windows platform detected, will handle tasks one-by-one in lieu of Swift taskGroups.")
+        print("// -------------------------")
+        print(argumentTextTutorial)
+    }
+
+    if cmdParameters.count == 3,
+       let arg3rd = cmdParameters.dropFirst().first,
+       arg3rd.lowercased() == "-tiny" {
+        EnkaDBGenerator.Config.generateCondensedJSONFiles = true
+        print("// =========================")
+        print("// `-tiny` argument retrieced, will generate minified JSON files instead.")
         print("// -------------------------")
     }
 
@@ -37,8 +46,16 @@ case 2:
         throw (error)
     }
 default:
-    let errText = "!! Wrong number of arguments. Please give only one argument among `-GI`, `-HSR`."
-    print(errText)
-    assertionFailure(errText)
+    print(argumentTextTutorial)
+    assertionFailure(argumentTextTutorial)
     exit(1)
 }
+
+private let argumentTextTutorial = """
+// ========================="
+|| Wrong arguments. Please provide the arguments as follows:
+|| 1. The 1st argument allowed: `-GI` for Genshin Impact; `-HSR` or `-SR` for Star Rail.
+|| 2. The 2nd argument is optional: `-tiny`, this is to minify the generated JSON files.
+|| 3. The final argument is the target directory path.
+// ========================="
+"""

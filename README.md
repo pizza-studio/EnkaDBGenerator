@@ -15,12 +15,15 @@ This repository is designed to be an alternative method to compile the same JSON
     - `swift build -c release`
     - Built executable file path is `.build/release/EnkaDBGenerator`.
   - Step 3: Run the compiled executable and pipeline the output contents into a new JSON file.
-    - You only need two parameters.
+    - You only need at leasttwo parameters.
       - The first parameter is to specify whether it writes for Genshin or HSR.
-      - The second parameter is the output folder where the generated JSON files are gonna write to.
+      - The second argument is optional: `-tiny`, this is to minify the generated JSON files.
+      - The final parameter is the output folder where the generated JSON files are gonna write to.
     - Examples:
-      - Genshin Impact: `./EnkaDBGenerator -GI ./OUTPUT-FOLDER`.
-      - Star Rail: `./EnkaDBGenerator -HSR ./OUTPUT-FOLDER`
+      - Genshin Impact (pretty-printed): `./EnkaDBGenerator -GI ./OUTPUT-FOLDER`.
+      - Genshin Impact (minified): `./EnkaDBGenerator -GI -tiny ./OUTPUT-FOLDER`.
+      - Star Rail (pretty-printed): `./EnkaDBGenerator -HSR ./OUTPUT-FOLDER`
+      - Star Rail (minified): `./EnkaDBGenerator -HSR -tiny ./OUTPUT-FOLDER`
 
 ### Supported Games:
 
