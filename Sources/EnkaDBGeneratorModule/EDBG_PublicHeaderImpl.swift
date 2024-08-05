@@ -17,7 +17,7 @@ extension EnkaDBGenerator {
         let fileMgr = FileManager.default
         var isDirectory: ObjCBool = .init(booleanLiteral: false)
         let exists = fileMgr.fileExists(
-            atPath: outputURL.path(percentEncoded: false), isDirectory: &isDirectory
+            atPath: outputURL.path, isDirectory: &isDirectory
         )
         if exists, !isDirectory.boolValue {
             throw EDBGError.fileWritingAccessError(msg: "Destination is not a directory.")
@@ -39,7 +39,7 @@ extension EnkaDBGenerator {
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         try filesToRender.forEach { fileName, obj in
-            let newURL = outputURL.appending(path: fileName, directoryHint: .notDirectory).standardizedFileURL
+            let newURL = outputURL.appendingPathComponent(fileName).standardizedFileURL
             print("// Writing to: \(newURL.absoluteString)")
             try encoder.encode(obj).write(to: newURL)
         }

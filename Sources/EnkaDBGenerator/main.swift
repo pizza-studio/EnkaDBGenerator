@@ -18,7 +18,7 @@ case 2:
         assertionFailure(errText)
         exit(1)
     }
-    let url = URL(filePath: secondArgument, directoryHint: .checkFileSystem)
+    let url = URL(fileURLWithPath: secondArgument)
     do {
         try await EnkaDBGenerator.compileEnkaDB(for: game, targeting: url)
     } catch {
