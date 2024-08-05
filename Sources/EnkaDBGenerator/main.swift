@@ -35,7 +35,7 @@ case 2, 3:
        arg3rd.lowercased() == "-tiny" {
         EnkaDBGenerator.Config.generateCondensedJSONFiles = true
         print("// =========================")
-        print("// `-tiny` argument retrieced, will generate minified JSON files instead.")
+        print("// `-tiny` argument retrieved, will generate minified JSON files instead.")
         print("// -------------------------")
     }
 

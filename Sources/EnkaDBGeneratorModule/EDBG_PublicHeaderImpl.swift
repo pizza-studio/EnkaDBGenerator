@@ -16,7 +16,7 @@ extension EnkaDBGenerator {
         print("// =========================")
         print("// Start writing EnkaDB json files for \(game.englishBrandName).")
         print("// -------------------------")
-        print("// Proposed writing destination: \(outputURL.absoluteString).")
+        print("// Proposed writing destination: \(outputURL.absoluteString)")
         print("// -------------------------")
         let fileMgr = FileManager.default
         var isDirectory: ObjCBool = .init(booleanLiteral: false)
