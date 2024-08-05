@@ -135,8 +135,7 @@ extension EnkaDBGenerator.SupportedGame {
 
     /// Only used for dealing with Dimbreath's repos.
     ///
-    /// This API is dedicated for platforms which Swift task group can behave buggy.
-    /// It does the tasks one-by-one.
+    /// This API does the tasks one-by-one.
     func fetchRawLangData1By1(
         lang: [EnkaDBGenerator.GameLanguage]? = nil,
         neededHashIDs: Set<String>
