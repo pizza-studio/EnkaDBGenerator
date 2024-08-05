@@ -46,8 +46,19 @@ let package = Package(
             name: "EnkaDB",
             dependencies: ["EnkaDBGeneratorModule"],
             resources: [
-                // .process("Resources/OUTPUT-GI.json"),
-                // .process("Resources/OUTPUT-HSR.json"),
+                .process("Resources/Specimen/GI/namecards.json"),
+                .process("Resources/Specimen/GI/locs.json"),
+                .process("Resources/Specimen/HSR/honker_ranks.json"),
+                .process("Resources/Specimen/HSR/honker_skilltree.json"),
+                .process("Resources/Specimen/GI/characters.json"),
+                .process("Resources/Specimen/HSR/honker_meta.json"),
+                .process("Resources/Specimen/HSR/hsr.json"),
+                .process("Resources/Specimen/HSR/honker_skills.json"),
+                .process("Resources/Specimen/HSR/honker_relics.json"),
+                .process("Resources/Specimen/HSR/honker_avatars.json"),
+                .process("Resources/Specimen/HSR/honker_characters.json"),
+                .process("Resources/Specimen/HSR/honker_weps.json"),
+                .process("Resources/Specimen/GI/pfps.json"),
             ],
             swiftSettings: [
                 .unsafeFlags([
