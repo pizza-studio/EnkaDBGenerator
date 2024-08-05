@@ -7,6 +7,12 @@ import Foundation
 import FoundationNetworking
 #endif
 
+#if canImport(WinSDK) || (!canImport(AppKit) && !canImport(UIKit) && !canImport(Glibc))
+let isWindows = true
+#else
+let isWindows = false
+#endif
+
 /// An extension that provides async support for fetching a URL
 ///
 /// Needed because the Linux version of Swift does not support async URLSession yet.
@@ -24,7 +30,10 @@ extension URLSession {
     ///
     ///     let (data, response) = try await URLSession.shared.asyncData(from: url)
     func asyncData(from url: URL) async throws -> (Data, URLResponse) {
-        try await withCheckedThrowingContinuation { continuation in
+        guard !isWindows else {
+            return try await data(from: url)
+        }
+        return try await withCheckedThrowingContinuation { continuation in
             let task = self.dataTask(with: url) { data, response, error in
                 if let error = error {
                     continuation.resume(throwing: error)

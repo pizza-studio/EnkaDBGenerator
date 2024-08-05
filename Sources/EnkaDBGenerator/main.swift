@@ -4,6 +4,11 @@
 
 import EnkaDBGeneratorModule
 import Foundation
+#if canImport(WinSDK) || (!canImport(AppKit) && !canImport(UIKit) && !canImport(Glibc))
+let useOneByOne = true
+#else
+let useOneByOne = false
+#endif
 
 let cmdParameters = CommandLine.arguments.dropFirst(1)
 
@@ -19,8 +24,14 @@ case 2:
         exit(1)
     }
     let url = URL(fileURLWithPath: secondArgument)
+    if useOneByOne {
+        print("// =========================")
+        print("// Windows platform detected, will handle tasks one-by-one in lieu of Swift taskGroups.")
+        print("// -------------------------")
+    }
+
     do {
-        try await EnkaDBGenerator.compileEnkaDB(for: game, targeting: url)
+        try await EnkaDBGenerator.compileEnkaDB(for: game, targeting: url, oneByOne: useOneByOne)
     } catch {
         print(error.localizedDescription)
         throw (error)
