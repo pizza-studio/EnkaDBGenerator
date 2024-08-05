@@ -30,8 +30,7 @@ extension DimModelsEnumProtocol {
         return data
     }
 
-    /// This API is dedicated for platforms which Swift task group can behave buggy.
-    /// It does the tasks one-by-one.
+    /// This API does the tasks one-by-one.
     static func getDataStack1By1<T: DimModelsEnumProtocol>() async throws -> [T: Data] {
         var resultBuffer = [T: Data]()
         for currentCase in T.allCases {
