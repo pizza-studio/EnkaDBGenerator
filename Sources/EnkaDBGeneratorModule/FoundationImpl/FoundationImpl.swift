@@ -32,9 +32,6 @@ extension URLSession {
     ///
     ///     let (data, response) = try await URLSession.shared.asyncData(from: url)
     func asyncData(from url: URL) async throws -> (Data, URLResponse) {
-        guard !isWindows else {
-            return try await data(from: url)
-        }
         return try await withCheckedThrowingContinuation { continuation in
             let task = self.dataTask(with: url) { data, response, error in
                 if let error = error {
