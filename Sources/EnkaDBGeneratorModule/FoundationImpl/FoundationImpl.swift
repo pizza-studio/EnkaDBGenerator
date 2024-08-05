@@ -23,6 +23,8 @@ extension URLSession {
 
     /// A reimplementation of `URLSession.shared.asyncData(from: url)` required for Linux
     ///
+    /// ref: https://gist.github.com/aronbudinszky/66cdb71d734ae48a2609c7f2c094a02d
+    ///
     /// - Parameter url: The URL for which to load data.
     /// - Returns: Data and response.
     ///
