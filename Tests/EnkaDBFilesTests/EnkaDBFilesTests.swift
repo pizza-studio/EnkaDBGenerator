@@ -3,7 +3,7 @@
 // This code is released under the AGPL v3.0 License (SPDX-License-Identifier: AGPL-3.0)
 
 @testable import EnkaDBFiles
-@testable import EnkaDBGeneratorModule
+import EnkaDBModels
 import Foundation
 import XCTest
 

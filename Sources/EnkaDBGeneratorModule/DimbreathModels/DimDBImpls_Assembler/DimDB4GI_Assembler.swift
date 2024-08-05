@@ -2,6 +2,8 @@
 // ====================
 // This code is released under the AGPL v3.0 License (SPDX-License-Identifier: AGPL-3.0)
 
+import EnkaDBModels
+
 extension DimModels4GI.DimDB4GI {
     func packObjects() throws -> [String: any Encodable] {
         var result = [String: any Encodable]()
@@ -120,7 +122,7 @@ extension DimModels4GI.DimDB4GI {
     func assembleEnkaNameCards() -> EnkaDBModelsGI.NameCardDict {
         var result = EnkaDBModelsGI.NameCardDict()
         namecardDB.forEach { currentNameCard in
-            result[currentNameCard.id.description] = .init(icon: currentNameCard.icon)
+            result[currentNameCard.id.description] = EnkaDBModelsGI.NameCard(icon: currentNameCard.icon)
         }
         return result
     }

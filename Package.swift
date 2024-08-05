@@ -16,6 +16,10 @@ let package = Package(
             name: "EnkaDBFiles",
             targets: ["EnkaDBFiles"]
         ),
+        .library(
+            name: "EnkaDBModels",
+            targets: ["EnkaDBModels"]
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -28,10 +32,23 @@ let package = Package(
         ),
         .target(
             name: "EnkaDBGeneratorModule",
+            dependencies: ["EnkaDBModels"],
             resources: [
                 .process("Resources/extra-loc-genshin.json"),
                 .process("Resources/extra-loc-starrail.json"),
             ],
+            swiftSettings: [
+                .unsafeFlags([
+                    "-Xfrontend",
+                    "-warn-long-function-bodies=200",
+                    "-Xfrontend",
+                    "-warn-long-expression-type-checking=200",
+                ]),
+                // .enableExperimentalFeature("AccessLevelOnImport")
+            ]
+        ),
+        .target(
+            name: "EnkaDBModels",
             swiftSettings: [
                 .unsafeFlags([
                     "-Xfrontend",
@@ -72,11 +89,11 @@ let package = Package(
         ),
         .testTarget(
             name: "EnkaDBGeneratorTests",
-            dependencies: ["EnkaDBGeneratorModule"]
+            dependencies: ["EnkaDBGeneratorModule", "EnkaDBModels"]
         ),
         .testTarget(
             name: "EnkaDBFilesTests",
-            dependencies: ["EnkaDBFiles", "EnkaDBGeneratorModule"]
+            dependencies: ["EnkaDBFiles", "EnkaDBModels"]
         ),
     ]
 )

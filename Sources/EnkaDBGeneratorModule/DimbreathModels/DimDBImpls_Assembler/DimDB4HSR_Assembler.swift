@@ -2,6 +2,8 @@
 // ====================
 // This code is released under the AGPL v3.0 License (SPDX-License-Identifier: AGPL-3.0)
 
+import EnkaDBModels
+
 extension DimModels4HSR.DimDB4HSR {
     func packObjects() throws -> [String: any Encodable] {
         var result = [String: any Encodable]()
