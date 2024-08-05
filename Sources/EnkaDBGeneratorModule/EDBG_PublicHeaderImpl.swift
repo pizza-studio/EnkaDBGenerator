@@ -42,7 +42,7 @@ extension EnkaDBGenerator {
         print("// Succeeded in assembling EnkaDB JSON files. Exporting...")
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
-        if Config.generateCondensedJSONFiles {
+        if !Config.generateCondensedJSONFiles {
             encoder.outputFormatting.insert(.prettyPrinted)
             print("// Assembling EnkaDB JSON files in minified format.")
         }
