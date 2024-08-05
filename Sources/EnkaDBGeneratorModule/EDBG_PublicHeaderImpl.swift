@@ -41,7 +41,11 @@ extension EnkaDBGenerator {
         let filesToRender = try theDB.packObjects()
         print("// Succeeded in assembling EnkaDB JSON files. Exporting...")
         let encoder = JSONEncoder()
-        encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
+        encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
+        if Config.generateCondensedJSONFiles {
+            encoder.outputFormatting.insert(.prettyPrinted)
+            print("// Assembling EnkaDB JSON files in minified format.")
+        }
         try filesToRender.forEach { fileName, obj in
             let newURL = outputURL.appendingPathComponent(fileName).standardizedFileURL
             print("// Writing to: \(newURL.absoluteString)")
