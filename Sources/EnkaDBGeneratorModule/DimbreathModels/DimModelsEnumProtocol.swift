@@ -30,8 +30,19 @@ extension DimModelsEnumProtocol {
         return data
     }
 
-    static func getDataStack<T: DimModelsEnumProtocol>() async throws -> [T: Data] {
-        try await withThrowingTaskGroup(
+    /// This API is dedicated for platforms which Swift task group can behave buggy.
+    /// It does the tasks one-by-one.
+    static func getDataStack1By1<T: DimModelsEnumProtocol>() async throws -> [T: Data] {
+        var resultBuffer = [T: Data]()
+        for currentCase in T.allCases {
+            resultBuffer[currentCase] = try await currentCase.rawDataToParse()
+        }
+        return resultBuffer
+    }
+
+    static func getDataStack<T: DimModelsEnumProtocol>(oneByOne: Bool = false) async throws -> [T: Data] {
+        guard !oneByOne else { return try await getDataStack1By1() }
+        return try await withThrowingTaskGroup(
             of: (tag: T, data: Data).self,
             returning: [T: Data].self
         ) { taskGroup in

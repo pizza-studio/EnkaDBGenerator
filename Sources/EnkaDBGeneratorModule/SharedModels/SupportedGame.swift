@@ -39,10 +39,12 @@ extension EnkaDBGenerator {
 // MARK: - DimDB Initializer.
 
 extension EnkaDBGenerator.SupportedGame {
-    func initDimDB(withLang: Bool = true) async throws -> DimDBProtocol {
+    func initDimDB(withLang: Bool = true, oneByOne: Bool) async throws -> DimDBProtocol {
         switch self {
-        case .genshinImpact: return try await DimModels4GI.DimDB4GI(withLang: withLang)
-        case .starRail: return try await DimModels4HSR.DimDB4HSR(withLang: withLang)
+        case .genshinImpact:
+            return try await DimModels4GI.DimDB4GI(withLang: withLang, oneByOne: oneByOne)
+        case .starRail:
+            return try await DimModels4HSR.DimDB4HSR(withLang: withLang, oneByOne: oneByOne)
         }
     }
 }
@@ -76,10 +78,14 @@ extension EnkaDBGenerator.SupportedGame {
     /// Only used for dealing with Dimbreath's repos.
     func fetchRawLangData(
         lang: [EnkaDBGenerator.GameLanguage]? = nil,
-        neededHashIDs: Set<String>
+        neededHashIDs: Set<String>,
+        oneByOne: Bool = false
     ) async throws
         -> [String: [String: String]] {
-        try await withThrowingTaskGroup(
+        guard !oneByOne else {
+            return try await fetchRawLangData1By1(lang: lang, neededHashIDs: neededHashIDs)
+        }
+        return try await withThrowingTaskGroup(
             of: (subDict: [String: String], lang: EnkaDBGenerator.GameLanguage).self,
             returning: [String: [String: String]].self
         ) { taskGroup in
@@ -125,6 +131,54 @@ extension EnkaDBGenerator.SupportedGame {
             }
             return results
         }
+    }
+
+    /// Only used for dealing with Dimbreath's repos.
+    ///
+    /// This API is dedicated for platforms which Swift task group can behave buggy.
+    /// It does the tasks one-by-one.
+    func fetchRawLangData1By1(
+        lang: [EnkaDBGenerator.GameLanguage]? = nil,
+        neededHashIDs: Set<String>
+    ) async throws
+        -> [String: [String: String]] {
+        var resultBuffer = [String: [String: String]]()
+        #if DEBUG
+        print("// ------------------------")
+        print("// This program is compiled as a debug build, therefore ..")
+        print("// .. the localization data are gonna fetched for the following languages only:")
+        print("// [ja-JP] [zh-Hans] [en-US].")
+        print("// ------------------------")
+        let langs = lang ?? [.langJP, .langEN, .langCHS]
+        #else
+        print("// ------------------------")
+        print("// Fetching the localization data for all supported languages.")
+        print("// ------------------------")
+        let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
+        #endif
+        for locale in langs {
+            let url = getLangDataURL(for: locale)
+            print("// Fetching: \(url.absoluteString)")
+            let (data, _) = try await URLSession.shared.asyncData(from: url)
+            var dict = try JSONDecoder().decode([String: String].self, from: data)
+            let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
+            keysToRemove.forEach { dict.removeValue(forKey: $0) }
+            if locale == .langJP {
+                dict.keys.forEach { theKey in
+                    guard dict[theKey]?.contains("{RUBY") ?? false else { return }
+                    if let rawStrToHandle = dict[theKey], rawStrToHandle.contains("{") {
+                        dict[theKey] = rawStrToHandle.replacingOccurrences(
+                            of: #"\{RUBY.*?\}"#,
+                            with: "",
+                            options: .regularExpression
+                        )
+                    }
+                }
+            }
+            let result = (subDict: dict, lang: locale)
+            resultBuffer[result.lang.langTag] = result.subDict
+        }
+        return resultBuffer
     }
 
     /// Only used for dealing with Dimbreath's repos.
