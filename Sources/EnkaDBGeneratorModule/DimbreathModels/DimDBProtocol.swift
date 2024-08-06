@@ -10,9 +10,10 @@ protocol DimDBProtocol {
     var allNameTextMapHashes: Set<String> { get }
     static var targetGame: EnkaDBGenerator.SupportedGame { get }
     var langTable: [String: [String: String]] { get set }
-    var avatarDBIdentifiable: [any IntegerIdentifiableWithLocHash] { get }
+    var avatarDBIdentifiable: [any NameHashable & IntegerIdentifiable] { get }
     init(withLang: Bool, oneByOne: Bool) async throws
     func packObjects() throws -> [String: any Encodable]
+    mutating func bleach()
 }
 
 extension DimDBProtocol {
@@ -59,9 +60,45 @@ extension DimDBProtocol {
     }
 }
 
-// MARK: - IntegerIdentifiableWithLocHash
+// MARK: - IntegerIdentifiable
 
-protocol IntegerIdentifiableWithLocHash: Identifiable {
+protocol IntegerIdentifiable: Identifiable {
     var id: Int { get }
+}
+
+// MARK: - NameHashable
+
+protocol NameHashable {
     var nameTextMapHash: Int { get }
+}
+
+extension Array where Element: NameHashable {
+    /// This API is designed for bleaching dev-test contents left in the stable game versions.
+    func bleached(
+        against forbiddenNameTextMapHashes: Set<String>
+    )
+        -> [Element] {
+        filter {
+            !forbiddenNameTextMapHashes.contains($0.nameTextMapHash.description)
+        }
+    }
+}
+
+extension [String: [String: String]] {
+    func findForbiddenNameTextMapHashes() -> Set<String> {
+        let x: [[String]] = self.compactMap { langTag, langDict in
+            guard ["en-us", "zh-cn"].contains(langTag) else { return nil }
+            let y: [String] = langDict.compactMap { key, value in
+                var matched = value.contains("(test)")
+                matched = matched || value.contains("Test Skill")
+                if langTag == "zh-cn" {
+                    matched = matched || value.contains("测试")
+                }
+                guard matched else { return nil }
+                return key
+            }
+            return y
+        }
+        return x.reduce(Set<String>()) { $0.union($1) }
+    }
 }

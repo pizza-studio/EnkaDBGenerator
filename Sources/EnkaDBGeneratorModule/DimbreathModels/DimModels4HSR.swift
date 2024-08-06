@@ -34,7 +34,7 @@ extension DimModels4HSR: DimModelsEnumProtocol {
 // MARK: DimModels4HSR.AvatarConfig
 
 extension DimModels4HSR {
-    struct AvatarConfig: Hashable, Decodable, IntegerIdentifiableWithLocHash {
+    struct AvatarConfig: Hashable, Decodable, IntegerIdentifiable, NameHashable {
         struct Avatar: Hashable, Decodable {
             let hash: Int
         }
@@ -145,7 +145,7 @@ extension DimModels4HSR {
 
 extension DimModels4HSR {
     /// Meta - metaEqupSkill
-    struct EquipmentSkillConfig: Hashable, Decodable, Identifiable {
+    struct EquipmentSkillConfig: Hashable, Decodable, Identifiable, NameHashable {
         struct ValueWrapper: Hashable, Decodable {
             struct Param: Hashable, Decodable {
                 let value: Double
@@ -312,7 +312,7 @@ extension DimModels4HSR {
 extension DimModels4HSR {
     /// This struct uses in multiple scenarios.
     /// Class is used in this case.
-    class AvatarSkillTreeConfig: Decodable, Identifiable {
+    class AvatarSkillTreeConfig: Decodable, Identifiable, NameHashable {
         struct Material: Hashable, Decodable {
             let itemID: Int
             let itemNum: Int
@@ -408,7 +408,7 @@ extension [DimModels4HSR.AvatarSkillTreeConfig] {
 // MARK: - DimModels4HSR.EquipmentConfig
 
 extension DimModels4HSR {
-    struct EquipmentConfig: Hashable, Decodable, Identifiable {
+    struct EquipmentConfig: Hashable, Decodable, Identifiable, NameHashable {
         // MARK: - Equipment
 
         struct Equipment: Hashable, Decodable {
