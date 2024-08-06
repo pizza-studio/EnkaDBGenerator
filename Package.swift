@@ -37,27 +37,11 @@ let package = Package(
                 .process("Resources/extra-loc-genshin.json"),
                 .process("Resources/extra-loc-starrail.json"),
             ],
-            swiftSettings: [
-                .unsafeFlags([
-                    "-Xfrontend",
-                    "-warn-long-function-bodies=200",
-                    "-Xfrontend",
-                    "-warn-long-expression-type-checking=200",
-                ]),
-                // .enableExperimentalFeature("AccessLevelOnImport")
-            ]
+            swiftSettings: []
         ),
         .target(
             name: "EnkaDBModels",
-            swiftSettings: [
-                .unsafeFlags([
-                    "-Xfrontend",
-                    "-warn-long-function-bodies=100",
-                    "-Xfrontend",
-                    "-warn-long-expression-type-checking=100",
-                ]),
-                // .enableExperimentalFeature("AccessLevelOnImport")
-            ]
+            swiftSettings: []
         ),
         .target(
             name: "EnkaDBFiles",
@@ -77,15 +61,7 @@ let package = Package(
                 .process("Resources/Specimen/HSR/honker_weps.json"),
                 .process("Resources/Specimen/GI/pfps.json"),
             ],
-            swiftSettings: [
-                .unsafeFlags([
-                    "-Xfrontend",
-                    "-warn-long-function-bodies=100",
-                    "-Xfrontend",
-                    "-warn-long-expression-type-checking=100",
-                ]),
-                .enableExperimentalFeature("AccessLevelOnImport"),
-            ]
+            swiftSettings: []
         ),
         .testTarget(
             name: "EnkaDBGeneratorTests",
