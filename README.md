@@ -2,11 +2,13 @@
 
 This repository is designed to be an alternative method to compile the same JSON files offered in Enka-API-docs repo, utilizing ExcelConfigData from Dimbreath's repos.
 
-### Notice to Windows users:
+### Notices
 
-- This app cannot be compiled as an effective copy on Windows due to how Swift Foundation URL APIs behave buggy on Windows. Right now, the only approach to use this tool on Windows is to use it through WSL (Windows Sub-System for Linux). You enter into the WSL shell and install a Linux version of Swift, then you follow the following instructions to use this tool.
+> 1. This app cannot be compiled as an effective copy on Windows **virtural macine** due to how Swift Foundation URL APIs behave buggy on Windows. Right now, the only approach to use this tool on Windows is to use it through WSL (Windows Sub-System for Linux). You enter into the WSL shell and install a Linux version of Swift, then you follow the following instructions to use this tool.
 
-### Usage: 
+> 2. This repo has been torn down into individual sub-packages for other purposes serving apps developed by Pizza-Studio. For example: The `EnkaDBFiles` sub-package provides direct API for accessing its bundled specimen files, and the user can use `EnkaDBModels` to decode them. Still, this SPM is designed to focus on its main job, hence limited extra features.
+
+### Usage
 
 - Method 1: Use it as a Swift Package in Xcode.
 - Method 2: Cross-platform usage.
@@ -25,7 +27,7 @@ This repository is designed to be an alternative method to compile the same JSON
       - Star Rail (pretty-printed): `./EnkaDBGenerator -HSR ./OUTPUT-FOLDER`
       - Star Rail (minified): `./EnkaDBGenerator -HSR -tiny ./OUTPUT-FOLDER`
 
-### Supported Games:
+### Supported Games
 
 - Genshin Impact.
 - Star Rail.
