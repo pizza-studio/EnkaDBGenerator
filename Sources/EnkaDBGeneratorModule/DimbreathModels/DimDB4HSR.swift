@@ -76,24 +76,25 @@ extension DimModels4HSR {
             // Language Table.
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne)
+                bleach()
             }
         }
 
         // MARK: Internal
 
-        let avatarDB: [AvatarConfig]
-        let metaAvatarPromotionDB: [AvatarPromotionConfig]
-        let metaEquipPromotionDB: [EquipmentPromotionConfig]
-        let metaEqupSkillDB: [EquipmentSkillConfig]
-        let metaRelicMainAffixDB: [RelicMainAffixConfig]
-        let metaRelicSubAffixDB: [RelicSubAffixConfig]
-        let metaRelicSetSkillDB: [RelicSetSkillConfig]
-        let avatarRankDB: [AvatarRankConfig]
-        let relicDB: [RelicConfig]
-        let relicDataInfoDB: [RelicDataInfo]
-        let skillTreeDB: [AvatarSkillTreeConfig]
-        let equipmentDB: [EquipmentConfig]
-        let profilePictureDB: [PlayerIcon]
+        var avatarDB: [AvatarConfig]
+        var metaAvatarPromotionDB: [AvatarPromotionConfig]
+        var metaEquipPromotionDB: [EquipmentPromotionConfig]
+        var metaEqupSkillDB: [EquipmentSkillConfig]
+        var metaRelicMainAffixDB: [RelicMainAffixConfig]
+        var metaRelicSubAffixDB: [RelicSubAffixConfig]
+        var metaRelicSetSkillDB: [RelicSetSkillConfig]
+        var avatarRankDB: [AvatarRankConfig]
+        var relicDB: [RelicConfig]
+        var relicDataInfoDB: [RelicDataInfo]
+        var skillTreeDB: [AvatarSkillTreeConfig]
+        var equipmentDB: [EquipmentConfig]
+        var profilePictureDB: [PlayerIcon]
         var langTable: [String: [String: String]] = [:]
     }
 }
@@ -102,7 +103,7 @@ extension DimModels4HSR {
 
 extension DimModels4HSR.DimDB4HSR: DimDBProtocol {
     static let targetGame: EnkaDBGenerator.SupportedGame = .starRail
-    var avatarDBIdentifiable: [any IntegerIdentifiableWithLocHash] { avatarDB }
+    var avatarDBIdentifiable: [any IntegerIdentifiable & NameHashable] { avatarDB }
 
     var allNameTextMapHashes: Set<String> {
         let collected: [[Int]] = [
@@ -112,5 +113,15 @@ extension DimModels4HSR.DimDB4HSR: DimDBProtocol {
             metaEqupSkillDB.map(\.nameTextMapHash),
         ]
         return Set<String>(collected.reduce([], +).map(\.description))
+    }
+
+    /// This API is designed for bleaching dev-test contents left in the stable game versions.
+    mutating func bleach() {
+        guard !langTable.isEmpty else { return }
+        let forbiddenHashes = langTable.findForbiddenNameTextMapHashes()
+        avatarDB = avatarDB.bleached(against: forbiddenHashes)
+        skillTreeDB = skillTreeDB.bleached(against: forbiddenHashes)
+        equipmentDB = equipmentDB.bleached(against: forbiddenHashes)
+        metaEqupSkillDB = metaEqupSkillDB.bleached(against: forbiddenHashes)
     }
 }

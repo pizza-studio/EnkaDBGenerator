@@ -33,7 +33,7 @@ extension DimModels4GI: DimModelsEnumProtocol {
 // MARK: DimModels4GI.AvatarExcelConfigData
 
 extension DimModels4GI {
-    struct AvatarExcelConfigData: Hashable, Codable, IntegerIdentifiableWithLocHash {
+    struct AvatarExcelConfigData: Hashable, Codable, IntegerIdentifiable, NameHashable {
         let id: Int
         let nameTextMapHash: Int
         let iconName: String
@@ -55,7 +55,7 @@ extension DimModels4GI {
 // MARK: DimModels4GI.AvatarSkillExcelConfigData
 
 extension DimModels4GI {
-    struct AvatarSkillExcelConfigData: Hashable, Codable, Identifiable {
+    struct AvatarSkillExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let id: Int
         let nameTextMapHash: Int
         let skillIcon: String
@@ -76,7 +76,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     /// Constellations
-    struct AvatarTalentExcelConfigData: Hashable, Codable, Identifiable {
+    struct AvatarTalentExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let icon: String
         let nameTextMapHash: Int
         let talentId: Int
@@ -89,7 +89,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     /// Artifacts
-    struct ReliquaryExcelConfigData: Hashable, Codable, Identifiable {
+    struct ReliquaryExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let id: Int
         let appendPropDepotId: Int
         let equipType: String
@@ -105,7 +105,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     /// Artifact Set Data
-    struct EquipAffixExcelConfigData: Hashable, Codable, Identifiable {
+    struct EquipAffixExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let affixId: Int
         let nameTextMapHash: Int
         let openConfig: String
@@ -165,7 +165,7 @@ extension DimModels4GI {
 // MARK: DimModels4GI.WeaponExcelConfigData
 
 extension DimModels4GI {
-    struct WeaponExcelConfigData: Hashable, Codable, Identifiable {
+    struct WeaponExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let id: Int
         let awakenIcon: String
         let icon: String
@@ -178,7 +178,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     /// This struct is only for extrcting NameCards.
-    struct MaterialExcelConfigData: Hashable, Codable, Identifiable {
+    struct MaterialExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         // MARK: Lifecycle
 
         init(from decoder: any Decoder) throws {
@@ -208,7 +208,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     /// This struct is only for extrcting FightProps.
-    struct ManualTextMapConfigData: Hashable, Codable, Identifiable {
+    struct ManualTextMapConfigData: Hashable, Codable, Identifiable, NameHashable {
         let textMapId: String
         let textMapContentTextMapHash: Int
 
@@ -252,7 +252,7 @@ extension DimModels4GI {
 // MARK: DimModels4GI.AvatarCostumeExcelConfigData
 
 extension DimModels4GI {
-    struct AvatarCostumeExcelConfigData: Hashable, Codable, Identifiable {
+    struct AvatarCostumeExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let skinId: Int
         let characterId: Int
         let frontIconName: String

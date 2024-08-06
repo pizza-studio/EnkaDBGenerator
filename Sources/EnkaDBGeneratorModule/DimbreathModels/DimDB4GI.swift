@@ -67,24 +67,25 @@ extension DimModels4GI {
             )
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne)
+                bleach()
             }
         }
 
         // MARK: Internal
 
-        let avatarDB: [AvatarExcelConfigData]
-        let skillDB: [AvatarSkillExcelConfigData]
-        let constellationDB: [AvatarTalentExcelConfigData]
-        let artifactDB: [ReliquaryExcelConfigData]
-        let artifactSetDB: [EquipAffixExcelConfigData]
-        let artifactMainPropDB: [ReliquaryMainPropExcelConfigData]
-        let artifactSubPropDB: [ReliquaryAffixExcelConfigData]
-        let weaponDB: [WeaponExcelConfigData]
-        let namecardDB: [MaterialExcelConfigData]
-        let fightPropDB: [ManualTextMapConfigData]
-        let skillDepotDB: [AvatarSkillDepotExcelConfigData]
-        let costumeDB: [AvatarCostumeExcelConfigData]
-        let profilePictureDB: [ProfilePictureExcelConfigData]
+        var avatarDB: [AvatarExcelConfigData]
+        var skillDB: [AvatarSkillExcelConfigData]
+        var constellationDB: [AvatarTalentExcelConfigData]
+        var artifactDB: [ReliquaryExcelConfigData]
+        var artifactSetDB: [EquipAffixExcelConfigData]
+        var artifactMainPropDB: [ReliquaryMainPropExcelConfigData]
+        var artifactSubPropDB: [ReliquaryAffixExcelConfigData]
+        var weaponDB: [WeaponExcelConfigData]
+        var namecardDB: [MaterialExcelConfigData]
+        var fightPropDB: [ManualTextMapConfigData]
+        var skillDepotDB: [AvatarSkillDepotExcelConfigData]
+        var costumeDB: [AvatarCostumeExcelConfigData]
+        var profilePictureDB: [ProfilePictureExcelConfigData]
         var langTable: [String: [String: String]] = [:]
     }
 }
@@ -93,7 +94,7 @@ extension DimModels4GI {
 
 extension DimModels4GI.DimDB4GI: DimDBProtocol {
     static let targetGame: EnkaDBGenerator.SupportedGame = .genshinImpact
-    var avatarDBIdentifiable: [any IntegerIdentifiableWithLocHash] { avatarDB }
+    var avatarDBIdentifiable: [any IntegerIdentifiable & NameHashable] { avatarDB }
 
     var allNameTextMapHashes: Set<String> {
         let collected: [[Int]] = [
@@ -108,5 +109,20 @@ extension DimModels4GI.DimDB4GI: DimDBProtocol {
             costumeDB.map(\.nameTextMapHash),
         ]
         return Set<String>(collected.reduce([], +).map(\.description))
+    }
+
+    /// This API is designed for bleaching dev-test contents left in the stable game versions.
+    mutating func bleach() {
+        guard !langTable.isEmpty else { return }
+        let forbiddenHashes = langTable.findForbiddenNameTextMapHashes()
+        avatarDB = avatarDB.bleached(against: forbiddenHashes)
+        skillDB = skillDB.bleached(against: forbiddenHashes)
+        constellationDB = constellationDB.bleached(against: forbiddenHashes)
+        artifactDB = artifactDB.bleached(against: forbiddenHashes)
+        artifactSetDB = artifactSetDB.bleached(against: forbiddenHashes)
+        weaponDB = weaponDB.bleached(against: forbiddenHashes)
+        namecardDB = namecardDB.bleached(against: forbiddenHashes)
+        fightPropDB = fightPropDB.bleached(against: forbiddenHashes)
+        costumeDB = costumeDB.bleached(against: forbiddenHashes)
     }
 }
