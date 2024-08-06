@@ -99,14 +99,14 @@ extension DimModels4GI.DimDB4GI: DimDBProtocol {
     var allNameTextMapHashes: Set<String> {
         let collected: [[Int]] = [
             avatarDB.map(\.nameTextMapHash),
-            skillDB.map(\.nameTextMapHash),
-            constellationDB.map(\.nameTextMapHash),
-            artifactDB.map(\.nameTextMapHash),
+            // skillDB.map(\.nameTextMapHash),
+            // constellationDB.map(\.nameTextMapHash),
+            // artifactDB.map(\.nameTextMapHash),
             artifactSetDB.map(\.nameTextMapHash),
             weaponDB.map(\.nameTextMapHash),
             namecardDB.map(\.nameTextMapHash),
-            fightPropDB.map(\.nameTextMapHash),
-            costumeDB.map(\.nameTextMapHash),
+            // fightPropDB.map(\.nameTextMapHash),
+            // costumeDB.map(\.nameTextMapHash),
         ]
         return Set<String>(collected.reduce([], +).map(\.description))
     }

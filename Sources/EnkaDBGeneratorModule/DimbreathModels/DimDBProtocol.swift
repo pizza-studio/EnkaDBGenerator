@@ -2,6 +2,7 @@
 // ====================
 // This code is released under the SPDX-License-Identifier: `AGPL-3.0-or-later`.
 
+import EnkaDBModels
 import Foundation
 
 // MARK: - DimDBProtocol
@@ -30,10 +31,10 @@ extension DimDBProtocol {
         }
     }
 
-    private func getProtagonistTranslations() -> [EnkaDBGenerator.Protagonist.DataPair] {
-        let results: [EnkaDBGenerator.Protagonist.DataPair] = avatarDBIdentifiable.compactMap { currentCharacter in
-            let protagonist = EnkaDBGenerator.Protagonist(rawValue: currentCharacter.id)
-            guard let protagonist else { return EnkaDBGenerator.Protagonist.DataPair?.none }
+    private func getProtagonistTranslations() -> [Protagonist.DataPair] {
+        let results: [Protagonist.DataPair] = avatarDBIdentifiable.compactMap { currentCharacter in
+            let protagonist = Protagonist(rawValue: currentCharacter.id)
+            guard let protagonist else { return Protagonist.DataPair?.none }
             return .init(
                 avatarID: currentCharacter.id,
                 nameHash: currentCharacter.nameTextMapHash,
