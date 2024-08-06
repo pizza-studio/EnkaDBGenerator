@@ -12,7 +12,8 @@ This repository is designed to be an alternative method to compile the same JSON
 
 - Method 1: Use it as a Swift Package in Xcode.
 - Method 2: Cross-platform usage.
-  - Step 1: Install Swift.
+  - Step 1: [Install Swift](https://www.swift.org/install/).
+    - At least Swift 5.9, recommending the latest Swift stable build on non-Apple systems.
   - Step 2: Compile the package.
     - `swift build -c release`
     - Built executable file path is `.build/release/EnkaDBGenerator`.
