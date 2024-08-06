@@ -13,10 +13,6 @@ let package = Package(
             targets: ["EnkaDBGeneratorModule"]
         ),
         .library(
-            name: "EnkaDBFiles",
-            targets: ["EnkaDBFiles"]
-        ),
-        .library(
             name: "EnkaDBModels",
             targets: ["EnkaDBModels"]
         ),
@@ -59,41 +55,9 @@ let package = Package(
                 // .enableExperimentalFeature("AccessLevelOnImport")
             ]
         ),
-        .target(
-            name: "EnkaDBFiles",
-            dependencies: [],
-            resources: [
-                .process("Resources/Specimen/GI/namecards.json"),
-                .process("Resources/Specimen/GI/locs.json"),
-                .process("Resources/Specimen/HSR/honker_ranks.json"),
-                .process("Resources/Specimen/HSR/honker_skilltree.json"),
-                .process("Resources/Specimen/GI/characters.json"),
-                .process("Resources/Specimen/HSR/honker_meta.json"),
-                .process("Resources/Specimen/HSR/hsr.json"),
-                .process("Resources/Specimen/HSR/honker_skills.json"),
-                .process("Resources/Specimen/HSR/honker_relics.json"),
-                .process("Resources/Specimen/HSR/honker_avatars.json"),
-                .process("Resources/Specimen/HSR/honker_characters.json"),
-                .process("Resources/Specimen/HSR/honker_weps.json"),
-                .process("Resources/Specimen/GI/pfps.json"),
-            ],
-            swiftSettings: [
-                .unsafeFlags([
-                    "-Xfrontend",
-                    "-warn-long-function-bodies=100",
-                    "-Xfrontend",
-                    "-warn-long-expression-type-checking=100",
-                ]),
-                .enableExperimentalFeature("AccessLevelOnImport"),
-            ]
-        ),
         .testTarget(
             name: "EnkaDBGeneratorTests",
             dependencies: ["EnkaDBGeneratorModule", "EnkaDBModels"]
-        ),
-        .testTarget(
-            name: "EnkaDBFilesTests",
-            dependencies: ["EnkaDBFiles", "EnkaDBModels"]
         ),
     ]
 )
