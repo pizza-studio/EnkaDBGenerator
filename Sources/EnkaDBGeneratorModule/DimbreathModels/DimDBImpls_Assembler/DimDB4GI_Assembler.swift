@@ -9,7 +9,7 @@ extension DimModels4GI.DimDB4GI {
         var result = [String: any Encodable]()
         /// Omitting `affixes.json` which is suspected to be the artifact rating model for Enka.Network website.
         /// The calculation method of its `efficiency` field is still unknown.
-        result["locs.json"] = assembleEnkaLangMap()
+        result["loc.json"] = assembleEnkaLangMap()
         result["characters.json"] = try assembleEnkaCharacters()
         result["namecards.json"] = assembleEnkaNameCards()
         result["pfps.json"] = assembleEnkaProfilePictures()
