@@ -17,6 +17,7 @@ enum DimModels4HSR: String, CaseIterable {
     case avatarRank = "AvatarRankConfig"
     case relic = "RelicConfig"
     case relicDataInfo = "RelicDataInfo"
+    case relicSet = "RelicSetConfig"
     case skillTree = "AvatarSkillTreeConfig" // Used in multiple scenarios.
     case equipment = "EquipmentConfig"
     case profilePicture1 = "AvatarPlayerIcon"
@@ -215,6 +216,34 @@ extension DimModels4HSR {
 
         var id: String {
             "\(groupID)_\(affixID)"
+        }
+    }
+}
+
+// MARK: DimModels4HSR.RelicSetConfig
+
+extension DimModels4HSR {
+    /// Meta - metaRelicSubAffix
+    struct RelicSetConfig: Hashable, Decodable, Identifiable, NameHashable {
+        struct SetName: Hashable, Decodable {
+            let hash: Int
+        }
+
+        let setID: Int
+        let setSkillList: [Int]
+        let setIconPath: String
+        let setIconFigurePath: String
+        let setName: SetName
+        let displayItemID: Int
+        let release: Bool
+        let isPlanarSuit: Bool?
+
+        var nameTextMapHash: Int {
+            setName.hash
+        }
+
+        var id: String {
+            "setID"
         }
     }
 }

@@ -54,6 +54,10 @@ extension DimModels4HSR {
                 [RelicDataInfo].self,
                 from: dataStack[.relicDataInfo]!
             )
+            self.relicSetDB = try decoder.decode(
+                [RelicSetConfig].self,
+                from: dataStack[.relicSet]!
+            )
             self.skillTreeDB = try decoder.decode(
                 [AvatarSkillTreeConfig].self,
                 from: dataStack[.skillTree]!
@@ -92,6 +96,7 @@ extension DimModels4HSR {
         var avatarRankDB: [AvatarRankConfig]
         var relicDB: [RelicConfig]
         var relicDataInfoDB: [RelicDataInfo]
+        var relicSetDB: [RelicSetConfig]
         var skillTreeDB: [AvatarSkillTreeConfig]
         var equipmentDB: [EquipmentConfig]
         var profilePictureDB: [PlayerIcon]
@@ -110,6 +115,7 @@ extension DimModels4HSR.DimDB4HSR: DimDBProtocol {
             avatarDB.map(\.nameTextMapHash),
             // skillTreeDB.map(\.nameTextMapHash),
             equipmentDB.map(\.nameTextMapHash),
+            relicSetDB.map(\.nameTextMapHash),
             // metaEqupSkillDB.map(\.nameTextMapHash),
         ]
         return Set<String>(collected.reduce([], +).map(\.description))

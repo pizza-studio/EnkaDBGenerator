@@ -102,7 +102,7 @@ extension DimModels4GI.DimDB4GI: DimDBProtocol {
             // skillDB.map(\.nameTextMapHash),
             // constellationDB.map(\.nameTextMapHash),
             // artifactDB.map(\.nameTextMapHash),
-            // artifactSetDB.map(\.nameTextMapHash),
+            artifactSetDB.map(\.nameTextMapHash),
             weaponDB.map(\.nameTextMapHash),
             namecardDB.map(\.nameTextMapHash),
             // fightPropDB.map(\.nameTextMapHash),
