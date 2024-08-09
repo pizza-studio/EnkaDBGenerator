@@ -61,7 +61,7 @@ extension Array where Element: Identifiable {
     }
 }
 
-// MARK: - Decoding Strategy for Decoding UpperCamenCases
+// MARK: - Decoding Strategy for Decoding UpperCamelCases
 
 extension JSONDecoder.KeyDecodingStrategy {
     static var convertFromPascalCase: Self {
