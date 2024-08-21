@@ -185,6 +185,7 @@ extension DimModels4GI {
             let container: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
             self.id = try container.decode(Int.self, forKey: .id)
             self.icon = try container.decode(String.self, forKey: .icon)
+            self.picPath = try container.decode([String].self, forKey: .picPath)
             self.materialType = try container.decodeIfPresent(String.self, forKey: .materialType)
             self.nameTextMapHash = try container.decode(Int.self, forKey: .nameTextMapHash)
             self.rankLevel = (try container.decodeIfPresent(Int.self, forKey: .rankLevel)) ?? 4
@@ -194,6 +195,7 @@ extension DimModels4GI {
 
         let id: Int
         let icon: String
+        let picPath: [String]
         let materialType: String?
         let nameTextMapHash: Int
         let rankLevel: Int // All NameCards are ranked at level 4.

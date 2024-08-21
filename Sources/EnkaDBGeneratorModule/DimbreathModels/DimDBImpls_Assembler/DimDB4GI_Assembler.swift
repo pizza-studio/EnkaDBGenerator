@@ -122,7 +122,10 @@ extension DimModels4GI.DimDB4GI {
     func assembleEnkaNameCards() -> EnkaDBModelsGI.NameCardDict {
         var result = EnkaDBModelsGI.NameCardDict()
         namecardDB.forEach { currentNameCard in
-            result[currentNameCard.id.description] = EnkaDBModelsGI.NameCard(icon: currentNameCard.icon)
+            let iconName = currentNameCard.picPath.first { $0.hasSuffix("_P") }
+            result[currentNameCard.id.description] = EnkaDBModelsGI.NameCard(
+                icon: iconName ?? "\(currentNameCard.icon)_P"
+            )
         }
         return result
     }
