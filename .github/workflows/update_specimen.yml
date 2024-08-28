@@ -21,8 +21,8 @@ jobs:
               run: |
                 swift build -c release
                 rm -rf ./Sources/EnkaDBFiles/Resources/Specimen/ || true
-                .build/release/EnkaDBGenerator -HSR -tiny ./Sources/EnkaDBFiles/Resources/Specimen/HSR/
-                .build/release/EnkaDBGenerator -GI -tiny ./Sources/EnkaDBFiles/Resources/Specimen/GI/
+                .build/release/EnkaDBGenerator -HSR ./Sources/EnkaDBFiles/Resources/Specimen/HSR/
+                .build/release/EnkaDBGenerator -GI ./Sources/EnkaDBFiles/Resources/Specimen/GI/
 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v3
