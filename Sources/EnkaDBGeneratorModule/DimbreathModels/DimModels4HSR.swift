@@ -54,6 +54,23 @@ extension DimModels4HSR {
 
         var id: Int { avatarID }
 
+        var isValid: Bool {
+            switch id {
+            case 6000 ..< 8000, 8900...: return false
+            default: break
+            }
+            let wrongRankIDs = rankIDList.filter {
+                (700000 ..< 800000).contains($0)
+            }
+            guard wrongRankIDs.isEmpty else { return false }
+
+            let wrongSkills = skillList.filter {
+                (7000000 ..< 8000000).contains($0)
+            }
+            guard wrongSkills.isEmpty else { return false }
+            return true
+        }
+
         var nameTextMapHash: Int {
             avatarName.hash
         }
@@ -101,6 +118,13 @@ extension DimModels4HSR {
 
         var id: String {
             "\(avatarID)_\(promotionGuarded)"
+        }
+
+        var isValid: Bool {
+            switch avatarID {
+            case 6000 ..< 8000, 8900...: false
+            default: true
+            }
         }
     }
 }
@@ -169,6 +193,13 @@ extension DimModels4HSR {
         let abilityProperty: [ValueWrapper]
 
         var id: Int { skillID }
+
+        var isValid: Bool {
+            switch id {
+            case 7000000 ..< 8000000: false
+            default: true
+            }
+        }
 
         var nameTextMapHash: Int {
             skillName.hash
@@ -243,7 +274,15 @@ extension DimModels4HSR {
         }
 
         var id: String {
-            "setID"
+            setID.description
+        }
+
+        var isValid: Bool {
+            let wrongSkills = setSkillList.filter {
+                (7000000 ..< 8000000).contains($0)
+            }
+            guard wrongSkills.isEmpty else { return false }
+            return true
         }
     }
 }
@@ -386,6 +425,13 @@ extension DimModels4HSR {
 
         var id: Int { pointID }
 
+        var isValid: Bool {
+            switch avatarID {
+            case 6000 ..< 8000, 8900...: false
+            default: true
+            }
+        }
+
         var nameTextMapHash: Int {
             pointTriggerKey.hash
         }
@@ -466,6 +512,13 @@ extension DimModels4HSR {
 
         var id: Int { equipmentID }
 
+        var isValid: Bool {
+            switch skillID {
+            case 7000000 ..< 8000000: false
+            default: true
+            }
+        }
+
         var nameTextMapHash: Int {
             equipmentName.hash
         }
@@ -522,5 +575,12 @@ extension DimModels4HSR {
         let skillAddLevelList: [String: Int]
 
         var id: Int { rankID }
+
+        var isValid: Bool {
+            switch id {
+            case 700000 ..< 800000: false
+            default: true
+            }
+        }
     }
 }

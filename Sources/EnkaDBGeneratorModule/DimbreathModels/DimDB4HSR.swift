@@ -17,19 +17,24 @@ extension DimModels4HSR {
             self.avatarDB = try decoder.decode(
                 [AvatarConfig].self,
                 from: dataStack[.avatar]!
-            )
+            ).filter(\.isValid)
             self.metaAvatarPromotionDB = try decoder.decode(
                 [AvatarPromotionConfig].self,
                 from: dataStack[.metaAvatarPromotion]!
-            )
+            ).filter(\.isValid)
+            self.equipmentDB = try decoder.decode(
+                [EquipmentConfig].self,
+                from: dataStack[.equipment]!
+            ).filter(\.isValid)
+            let allEquipIDs = equipmentDB.map(\.equipmentID)
             self.metaEquipPromotionDB = try decoder.decode(
                 [EquipmentPromotionConfig].self,
                 from: dataStack[.metaEquipPromotion]!
-            )
+            ).filter { allEquipIDs.contains($0.equipmentID) }
             self.metaEqupSkillDB = try decoder.decode(
                 [EquipmentSkillConfig].self,
                 from: dataStack[.metaEqupSkill]!
-            )
+            ).filter(\.isValid)
             self.metaRelicMainAffixDB = try decoder.decode(
                 [RelicMainAffixConfig].self,
                 from: dataStack[.metaRelicMainAffix]!
@@ -45,7 +50,7 @@ extension DimModels4HSR {
             self.avatarRankDB = try decoder.decode(
                 [AvatarRankConfig].self,
                 from: dataStack[.avatarRank]!
-            )
+            ).filter(\.isValid)
             self.relicDB = try decoder.decode(
                 [RelicConfig].self,
                 from: dataStack[.relic]!
@@ -57,16 +62,12 @@ extension DimModels4HSR {
             self.relicSetDB = try decoder.decode(
                 [RelicSetConfig].self,
                 from: dataStack[.relicSet]!
-            )
+            ).filter(\.isValid)
             self.skillTreeDB = try decoder.decode(
                 [AvatarSkillTreeConfig].self,
                 from: dataStack[.skillTree]!
-            )
+            ).filter(\.isValid)
             skillTreeDB.hookVertices() // Important!!!!
-            self.equipmentDB = try decoder.decode(
-                [EquipmentConfig].self,
-                from: dataStack[.equipment]!
-            )
             // Profile Pictures.
             let pfpDB1 = try decoder.decode(
                 [PlayerIcon].self,
