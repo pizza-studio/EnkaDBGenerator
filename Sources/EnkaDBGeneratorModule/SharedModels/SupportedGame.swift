@@ -182,7 +182,11 @@ extension EnkaDBGenerator.SupportedGame {
 
     /// Only used for dealing with Dimbreath's repos.
     func getLangDataURL(for lang: EnkaDBGenerator.GameLanguage) -> URL {
-        URL(string: repoHeader + repoName + "TextMap/\(lang.filename)")!
+        var urlStr = repoHeader + repoName + "TextMap/\(lang.filename)"
+        if self == .starRail {
+            urlStr = urlStr.replacingOccurrences(of: "CHS", with: "CN")
+        }
+        return URL(string: urlStr)!
     }
 
     // MARK: Private
