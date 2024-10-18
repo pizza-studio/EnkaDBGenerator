@@ -199,7 +199,7 @@ extension EnkaDBGenerator.SupportedGame {
     private var repoName: String {
         switch self {
         case .genshinImpact: return "Dimbreath/AnimeGameData/-/raw/master/"
-        case .starRail: return "Dimbreath/StarRailData/master/"
+        case .starRail: return "EggLinks/DanhengServer-Resources/master/"
         }
     }
 }
