@@ -4031,6 +4031,366 @@
     "IconPath" : "SpriteOutput/UI/IconBreakUp.png",
     "PointType" : 1
   },
+  "7005001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1005_Normal.png",
+    "PointType" : 2
+  },
+  "7005002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1005_BP.png",
+    "PointType" : 2
+  },
+  "7005003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1005_Ultra.png",
+    "PointType" : 2
+  },
+  "7005004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1005_Passive.png",
+    "PointType" : 2
+  },
+  "7005007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1005_Maze.png",
+    "PointType" : 2
+  },
+  "7005101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Star.png",
+    "PointType" : 3
+  },
+  "7005102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Moon.png",
+    "PointType" : 3
+  },
+  "7005103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Sun.png",
+    "PointType" : 3
+  },
+  "7005201" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7005202" : {
+    "IconPath" : "SpriteOutput/UI/IconBreakUp.png",
+    "PointType" : 1
+  },
+  "7005203" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7005204" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7005205" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7005206" : {
+    "IconPath" : "SpriteOutput/UI/IconBreakUp.png",
+    "PointType" : 1
+  },
+  "7005207" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7005208" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7005209" : {
+    "IconPath" : "SpriteOutput/UI/IconBreakUp.png",
+    "PointType" : 1
+  },
+  "7005210" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7006001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1006_Normal.png",
+    "PointType" : 2
+  },
+  "7006002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1006_BP.png",
+    "PointType" : 2
+  },
+  "7006003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1006_Ultra.png",
+    "PointType" : 2
+  },
+  "7006004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1006_Passive.png",
+    "PointType" : 2
+  },
+  "7006007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1006_Maze.png",
+    "PointType" : 2
+  },
+  "7006101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Star.png",
+    "PointType" : 3
+  },
+  "7006102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Moon.png",
+    "PointType" : 3
+  },
+  "7006103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Sun.png",
+    "PointType" : 3
+  },
+  "7006201" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7006202" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusProbability.png",
+    "PointType" : 1
+  },
+  "7006203" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7006204" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "7006205" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7006206" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusProbability.png",
+    "PointType" : 1
+  },
+  "7006207" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7006208" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "7006209" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusProbability.png",
+    "PointType" : 1
+  },
+  "7006210" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7205001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1205_Normal.png",
+    "PointType" : 2
+  },
+  "7205002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1205_BP.png",
+    "PointType" : 2
+  },
+  "7205003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1205_Ultra.png",
+    "PointType" : 2
+  },
+  "7205004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1205_Passive.png",
+    "PointType" : 2
+  },
+  "7205007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1205_Maze.png",
+    "PointType" : 2
+  },
+  "7205101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Star.png",
+    "PointType" : 3
+  },
+  "7205102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Moon.png",
+    "PointType" : 3
+  },
+  "7205103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Sun.png",
+    "PointType" : 3
+  },
+  "7205201" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7205202" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "7205203" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7205204" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "7205205" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7205206" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "7205207" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7205208" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "7205209" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "7205210" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7212001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1212_Normal.png",
+    "PointType" : 2
+  },
+  "7212002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1212_BP.png",
+    "PointType" : 2
+  },
+  "7212003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1212_Ultra.png",
+    "PointType" : 2
+  },
+  "7212004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1212_Passive.png",
+    "PointType" : 2
+  },
+  "7212007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1212_Maze.png",
+    "PointType" : 2
+  },
+  "7212101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Star.png",
+    "PointType" : 3
+  },
+  "7212102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Moon.png",
+    "PointType" : 3
+  },
+  "7212103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Sun.png",
+    "PointType" : 3
+  },
+  "7212201" : {
+    "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
+    "PointType" : 1
+  },
+  "7212202" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7212203" : {
+    "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
+    "PointType" : 1
+  },
+  "7212204" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7212205" : {
+    "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
+    "PointType" : 1
+  },
+  "7212206" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7212207" : {
+    "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
+    "PointType" : 1
+  },
+  "7212208" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7212209" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7212210" : {
+    "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
+    "PointType" : 1
+  },
+  "7213001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1213_Normal.png",
+    "PointType" : 2
+  },
+  "7213002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1213_BP.png",
+    "PointType" : 2
+  },
+  "7213003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1213_Ultra.png",
+    "PointType" : 2
+  },
+  "7213004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1213_Passive.png",
+    "PointType" : 2
+  },
+  "7213007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1213_Maze.png",
+    "PointType" : 2
+  },
+  "7213101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Star.png",
+    "PointType" : 3
+  },
+  "7213102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Moon.png",
+    "PointType" : 3
+  },
+  "7213103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_Com_Sun.png",
+    "PointType" : 3
+  },
+  "7213201" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7213202" : {
+    "IconPath" : "SpriteOutput/UI/IconImaginaryAddedRatio.png",
+    "PointType" : 1
+  },
+  "7213203" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7213204" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7213205" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7213206" : {
+    "IconPath" : "SpriteOutput/UI/IconImaginaryAddedRatio.png",
+    "PointType" : 1
+  },
+  "7213207" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "7213208" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "7213209" : {
+    "IconPath" : "SpriteOutput/UI/IconImaginaryAddedRatio.png",
+    "PointType" : 1
+  },
+  "7213210" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
   "8001001" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_8001_Normal.png",
     "PointType" : 2
