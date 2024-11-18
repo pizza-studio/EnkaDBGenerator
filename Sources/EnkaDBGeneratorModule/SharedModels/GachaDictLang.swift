@@ -68,6 +68,17 @@ extension EnkaDBGenerator {
             }
         }
 
+        func filenamesForChunks(for game: EnkaDBGenerator.SupportedGame) -> [String] {
+            guard game == .genshinImpact else { return [filename] }
+            return switch self {
+            case .langTH: [
+                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_1.json"),
+                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_2.json"),
+                ]
+            default: [filename]
+            }
+        }
+
         // MARK: Private
 
         private static let casesForGenshin: [Self] = Self.allCases
