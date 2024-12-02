@@ -1302,6 +1302,37 @@
       122408
     ]
   },
+  "1225" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1225B.png",
+    "AvatarBaseType" : "Warlock",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1225.png",
+    "AvatarFullName" : {
+      "Hash" : 271014362
+    },
+    "AvatarName" : {
+      "Hash" : 1511480173
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1225.png",
+    "Element" : "Fire",
+    "RankIDList" : [
+      122501,
+      122502,
+      122503,
+      122504,
+      122505,
+      122506
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      122501,
+      122502,
+      122503,
+      122504,
+      122506,
+      122507,
+      122508
+    ]
+  },
   "1301" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1301B.png",
     "AvatarBaseType" : "Priest",
@@ -1638,6 +1669,36 @@
       131204,
       131206,
       131207
+    ]
+  },
+  "1313" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1313B.png",
+    "AvatarBaseType" : "Shaman",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1313.png",
+    "AvatarFullName" : {
+      "Hash" : 1073167130
+    },
+    "AvatarName" : {
+      "Hash" : 772168265
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1313.png",
+    "Element" : "Imaginary",
+    "RankIDList" : [
+      131301,
+      131302,
+      131303,
+      131304,
+      131305,
+      131306
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      131301,
+      131302,
+      131303,
+      131304,
+      131306,
+      131307
     ]
   },
   "1314" : {
