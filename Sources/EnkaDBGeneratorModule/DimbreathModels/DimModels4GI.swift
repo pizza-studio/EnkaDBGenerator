@@ -47,6 +47,7 @@ extension DimModels4GI {
             guard skillDepotId != 101 else { return false }
             guard !iconName.hasSuffix("_Kate") else { return false }
             guard id.description.prefix(2) != "11" else { return false }
+            guard id < 10000900 else { return false }
             return true
         }
     }
