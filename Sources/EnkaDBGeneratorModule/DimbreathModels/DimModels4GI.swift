@@ -64,7 +64,7 @@ extension DimModels4GI {
         let costElemType: String?
         let proudSkillGroupId: Int?
 
-        var isValid: Bool { !skillIcon.isEmpty && !isPurgeable }
+        var isValid: Bool { !skillIcon.isEmpty && !isPurgeable && proudSkillGroupId != nil }
 
         var isPurgeable: Bool {
             guard skillIcon.hasPrefix("Skill_S_") else { return false }
