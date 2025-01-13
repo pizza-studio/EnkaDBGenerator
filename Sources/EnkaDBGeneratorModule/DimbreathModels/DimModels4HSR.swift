@@ -221,7 +221,6 @@ extension DimModels4HSR {
         let property: String
         let baseValue: Param
         let levelAdd: Param
-        let isAvailable: Bool
 
         var id: String {
             "\(groupID)_\(affixID)"
