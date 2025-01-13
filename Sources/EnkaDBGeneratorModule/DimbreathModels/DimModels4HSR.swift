@@ -389,8 +389,27 @@ extension DimModels4HSR {
             let value: Double
         }
 
-        struct PointTriggerKey: Hashable, Decodable {
-            let hash: Int
+        enum PointTriggerKey: String, Hashable, Decodable {
+            case normal = "PointNormal"
+            case bpSkill = "PointBPSkill"
+            case ultra = "PointUltra"
+            case passive = "PointPassive"
+            case maze = "PointMaze"
+            case s1 = "PointS1"
+            case s2 = "PointS2"
+            case s3 = "PointS3"
+            case s4 = "PointS4"
+            case s5 = "PointS5"
+            case s6 = "PointS6"
+            case s7 = "PointS7"
+            case s8 = "PointS8"
+            case s9 = "PointS9"
+            case s10 = "PointS10"
+            case b1 = "PointB1"
+            case b2 = "PointB2"
+            case b3 = "PointB3"
+            case servant1 = "PointServant1"
+            case servant2 = "PointServant2"
         }
 
         struct StatusAdd: Hashable, Decodable {
@@ -432,7 +451,7 @@ extension DimModels4HSR {
         }
 
         var nameTextMapHash: Int {
-            pointTriggerKey.hash
+            pointName.hash
         }
 
         var hasMultipleNestedNextVertices: Bool {
