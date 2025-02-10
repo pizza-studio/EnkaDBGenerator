@@ -72,8 +72,8 @@ extension EnkaDBGenerator {
             guard game == .genshinImpact else { return [filename] }
             return switch self {
             case .langTH: [
+                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_0.json"),
                     rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_1.json"),
-                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_2.json"),
                 ]
             default: [filename]
             }
