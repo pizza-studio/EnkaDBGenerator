@@ -7,7 +7,7 @@ import EnkaDBModels
 extension Protagonist {
     struct DataPair {
         let avatarID: Int
-        let nameHash: Int
+        let nameHash: UInt
         let dict: [String: String]
     }
 }

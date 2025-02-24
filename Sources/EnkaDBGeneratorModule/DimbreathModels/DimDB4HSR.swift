@@ -112,7 +112,7 @@ extension DimModels4HSR.DimDB4HSR: DimDBProtocol {
     var avatarDBIdentifiable: [any IntegerIdentifiable & NameHashable] { avatarDB }
 
     var allNameTextMapHashes: Set<String> {
-        let collected: [[Int]] = [
+        let collected: [[UInt]] = [
             avatarDB.map(\.nameTextMapHash),
             // skillTreeDB.map(\.nameTextMapHash),
             equipmentDB.map(\.nameTextMapHash),

@@ -97,7 +97,7 @@ extension DimModels4GI.DimDB4GI: DimDBProtocol {
     var avatarDBIdentifiable: [any IntegerIdentifiable & NameHashable] { avatarDB }
 
     var allNameTextMapHashes: Set<String> {
-        let collected: [[Int]] = [
+        let collected: [[UInt]] = [
             avatarDB.map(\.nameTextMapHash),
             // skillDB.map(\.nameTextMapHash),
             // constellationDB.map(\.nameTextMapHash),

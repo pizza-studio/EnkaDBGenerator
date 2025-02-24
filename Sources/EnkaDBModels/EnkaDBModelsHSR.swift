@@ -88,7 +88,7 @@ extension EnkaDBModelsHSR {
         public struct AvatarFullName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: Int) {
+            public init(hash: UInt) {
                 self.hash = hash
             }
 
@@ -98,13 +98,13 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: Int
+            public var hash: UInt
         }
 
         public struct AvatarName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: Int) {
+            public init(hash: UInt) {
                 self.hash = hash
             }
 
@@ -114,7 +114,7 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: Int
+            public var hash: UInt
         }
 
         public enum CodingKeys: String, CodingKey {
@@ -530,7 +530,7 @@ extension EnkaDBModelsHSR {
         public struct EquipmentName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: Int) {
+            public init(hash: UInt) {
                 self.hash = hash
             }
 
@@ -540,7 +540,7 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: Int
+            public var hash: UInt
         }
 
         public enum CodingKeys: String, CodingKey {

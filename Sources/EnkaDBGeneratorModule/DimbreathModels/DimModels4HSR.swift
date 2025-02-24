@@ -37,7 +37,7 @@ extension DimModels4HSR: DimModelsEnumProtocol {
 extension DimModels4HSR {
     struct AvatarConfig: Hashable, Decodable, IntegerIdentifiable, NameHashable {
         struct Avatar: Hashable, Decodable {
-            let hash: Int
+            let hash: UInt
         }
 
         let avatarID: Int
@@ -71,7 +71,7 @@ extension DimModels4HSR {
             return true
         }
 
-        var nameTextMapHash: Int {
+        var nameTextMapHash: UInt {
             avatarName.hash
         }
 
@@ -181,7 +181,7 @@ extension DimModels4HSR {
         }
 
         struct Skill: Hashable, Decodable {
-            let hash: Int
+            let hash: UInt
         }
 
         let skillID: Int
@@ -201,7 +201,7 @@ extension DimModels4HSR {
             }
         }
 
-        var nameTextMapHash: Int {
+        var nameTextMapHash: UInt {
             skillName.hash
         }
     }
@@ -256,7 +256,7 @@ extension DimModels4HSR {
     /// Meta - metaRelicSubAffix
     struct RelicSetConfig: Hashable, Decodable, Identifiable, NameHashable {
         struct SetName: Hashable, Decodable {
-            let hash: Int
+            let hash: UInt
         }
 
         let setID: Int
@@ -268,7 +268,7 @@ extension DimModels4HSR {
         let release: Bool
         let isPlanarSuit: Bool?
 
-        var nameTextMapHash: Int {
+        var nameTextMapHash: UInt {
             setName.hash
         }
 
@@ -450,8 +450,8 @@ extension DimModels4HSR {
             }
         }
 
-        var nameTextMapHash: Int {
-            pointName.hash
+        var nameTextMapHash: UInt {
+            .init(Swift.abs(pointName.hash))
         }
 
         var hasMultipleNestedNextVertices: Bool {
@@ -505,13 +505,12 @@ extension DimModels4HSR {
         // MARK: - Equipment
 
         struct Equipment: Hashable, Decodable {
-            let hash: Int
+            let hash: UInt
         }
 
         let equipmentID: Int
         let release: Bool
         let equipmentName: Equipment
-        let equipmentDesc: Equipment
         let rarity: String
         let avatarBaseType: String
         let maxPromotion: Int
@@ -537,7 +536,7 @@ extension DimModels4HSR {
             }
         }
 
-        var nameTextMapHash: Int {
+        var nameTextMapHash: UInt {
             equipmentName.hash
         }
     }

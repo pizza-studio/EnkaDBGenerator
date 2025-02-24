@@ -34,8 +34,8 @@ extension EnkaDBGeneratorTestsHSR {
         }
         let expectedJSON = """
         {
-          "AvatarName": { "Hash": -531793651 },
-          "AvatarFullName": { "Hash": -1063124016 },
+          "AvatarName": { "Hash": 6186714091647966180 },
+          "AvatarFullName": { "Hash": 9058972803650014395 },
           "Rarity": 4, "Element": "Ice", "AvatarBaseType": "Knight",
           "AvatarSideIconPath": "SpriteOutput/AvatarRoundIcon/1001.png",
           "ActionAvatarHeadIconPath": "SpriteOutput/AvatarIconTeam/1001B.png",
@@ -73,7 +73,7 @@ extension EnkaDBGeneratorTestsHSR {
             "Rarity": 3,
             "AvatarBaseType": "Rogue",
             "EquipmentName": {
-              "Hash": -234052537
+              "Hash": 1315631816518421847
             },
             "ImagePath": "SpriteOutput/LightConeFigures/20000.png"
           }

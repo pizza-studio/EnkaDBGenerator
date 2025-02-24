@@ -70,7 +70,7 @@ protocol IntegerIdentifiable: Identifiable {
 // MARK: - NameHashable
 
 protocol NameHashable {
-    var nameTextMapHash: Int { get }
+    var nameTextMapHash: UInt { get }
 }
 
 extension Array where Element: NameHashable {

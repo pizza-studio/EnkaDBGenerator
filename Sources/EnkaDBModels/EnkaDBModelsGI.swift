@@ -18,7 +18,7 @@ extension EnkaDBModelsGI {
             consts: [String],
             costumes: [String: EnkaDBModelsGI.Costume]? = nil,
             element: String,
-            nameTextMapHash: Int,
+            nameTextMapHash: UInt,
             proudMap: [String: Int],
             qualityType: String,
             sideIconName: String,
@@ -56,7 +56,7 @@ extension EnkaDBModelsGI {
         public var consts: [String]
         public var costumes: [String: Costume]?
         public var element: String
-        public var nameTextMapHash: Int
+        public var nameTextMapHash: UInt
         public var proudMap: [String: Int]
         public var qualityType: String
         public var sideIconName: String

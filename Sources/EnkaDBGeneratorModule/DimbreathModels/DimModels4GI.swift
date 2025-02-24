@@ -35,7 +35,7 @@ extension DimModels4GI: DimModelsEnumProtocol {
 extension DimModels4GI {
     struct AvatarExcelConfigData: Hashable, Codable, IntegerIdentifiable, NameHashable {
         let id: Int
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let iconName: String
         let sideIconName: String
         let qualityType: String
@@ -58,7 +58,7 @@ extension DimModels4GI {
 extension DimModels4GI {
     struct AvatarSkillExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let id: Int
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let skillIcon: String
         let forceCanDoSkill: Bool?
         let costElemType: String?
@@ -79,7 +79,7 @@ extension DimModels4GI {
     /// Constellations
     struct AvatarTalentExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let icon: String
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let talentId: Int
 
         var id: Int { talentId } // Identifiable
@@ -97,7 +97,7 @@ extension DimModels4GI {
         let icon: String
         let itemType: String
         let mainPropDepotId: Int
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let rankLevel: Int
     }
 }
@@ -108,7 +108,7 @@ extension DimModels4GI {
     /// Artifact Set Data
     struct EquipAffixExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
         let affixId: Int
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let openConfig: String
 
         var isValid: Bool {
@@ -170,7 +170,7 @@ extension DimModels4GI {
         let id: Int
         let awakenIcon: String
         let icon: String
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let rankLevel: Int
     }
 }
@@ -188,7 +188,7 @@ extension DimModels4GI {
             self.icon = try container.decode(String.self, forKey: .icon)
             self.picPath = try container.decode([String].self, forKey: .picPath)
             self.materialType = try container.decodeIfPresent(String.self, forKey: .materialType)
-            self.nameTextMapHash = try container.decode(Int.self, forKey: .nameTextMapHash)
+            self.nameTextMapHash = try container.decode(UInt.self, forKey: .nameTextMapHash)
             self.rankLevel = (try container.decodeIfPresent(Int.self, forKey: .rankLevel)) ?? 4
         }
 
@@ -198,7 +198,7 @@ extension DimModels4GI {
         let icon: String
         let picPath: [String]
         let materialType: String?
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let rankLevel: Int // All NameCards are ranked at level 4.
 
         var isValid: Bool {
@@ -213,13 +213,13 @@ extension DimModels4GI {
     /// This struct is only for extrcting FightProps.
     struct ManualTextMapConfigData: Hashable, Codable, Identifiable, NameHashable {
         let textMapId: String
-        let textMapContentTextMapHash: Int
+        let textMapContentTextMapHash: UInt
 
         var isValid: Bool {
             textMapId.hasPrefix("FIGHT_PROP")
         }
 
-        var nameTextMapHash: Int {
+        var nameTextMapHash: UInt {
             textMapContentTextMapHash
         }
 
@@ -259,7 +259,7 @@ extension DimModels4GI {
         let skinId: Int
         let characterId: Int
         let frontIconName: String
-        let nameTextMapHash: Int
+        let nameTextMapHash: UInt
         let sideIconName: String
 
         var id: Int { skinId }
