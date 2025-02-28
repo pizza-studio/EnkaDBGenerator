@@ -379,7 +379,7 @@ extension DimModels4HSR {
 extension DimModels4HSR {
     /// This struct uses in multiple scenarios.
     /// Class is used in this case.
-    class AvatarSkillTreeConfig: Decodable, Identifiable, NameHashable {
+    class AvatarSkillTreeConfig: Decodable, Identifiable, NameHashable, Hashable {
         struct Material: Hashable, Decodable {
             let itemID: Int
             let itemNum: Int
@@ -481,6 +481,34 @@ extension DimModels4HSR {
                 [$0.pointID] + ($0.allNextVertexIDs ?? [])
             }
             return returnedComplex.reduce([], +)
+        }
+
+        static func == (
+            lhs: AvatarSkillTreeConfig,
+            rhs: AvatarSkillTreeConfig
+        )
+            -> Bool {
+            lhs.hashValue == rhs.hashValue
+        }
+
+        func hash(into hasher: inout Hasher) {
+            // 核心識別屬性
+            hasher.combine(pointID)
+            hasher.combine(level)
+            hasher.combine(avatarID)
+
+            // 其他關鍵屬性
+            hasher.combine(pointType)
+            hasher.combine(anchor)
+            hasher.combine(maxLevel)
+            hasher.combine(defaultUnlock)
+            hasher.combine(prePoint)
+            hasher.combine(iconPath)
+            hasher.combine(pointName)
+            hasher.combine(pointTriggerKey)
+
+            // 注意：沒有包含 previousVertex 和 nextVertices
+            // 因為這些是引用類型且可能導致循環引用
         }
     }
 }
