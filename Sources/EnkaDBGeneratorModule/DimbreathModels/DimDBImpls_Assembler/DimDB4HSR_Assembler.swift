@@ -184,6 +184,9 @@ extension DimModels4HSR.DimDB4HSR {
                     .append(.baseSkill(skillNodeObj.pointID.description))
                 return
             }
+            // Prepare empty arrays. This is what Enka Official JSON does for coompatibility purposes.
+            resultMap[avatarUUID, default: [:]]["1"] = resultMap[avatarUUID, default: [:]]["1"] ?? []
+            resultMap[avatarUUID, default: [:]]["2"] = resultMap[avatarUUID, default: [:]]["2"] ?? []
             // Start handling.
             guard skillNodeObj.previousVertex == nil else { return }
             var currentClusterContainer4ExtSkills: [EnkaDBModelsHSR.SkillInTree] {
