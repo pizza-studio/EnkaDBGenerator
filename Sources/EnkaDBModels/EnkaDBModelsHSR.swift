@@ -88,8 +88,18 @@ extension EnkaDBModelsHSR {
         public struct AvatarFullName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: UInt) {
+            public init(hash: String) {
                 self.hash = hash
+            }
+
+            public init(from decoder: any Decoder) throws {
+                let container = try decoder.container(keyedBy: CodingKeys.self)
+                let decodedStr = try? container.decode(String.self, forKey: .hash)
+                if let decodedStr {
+                    self.hash = decodedStr
+                    return
+                }
+                self.hash = try container.decode(UInt64.self, forKey: .hash).description
             }
 
             // MARK: Public
@@ -98,14 +108,29 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: UInt
+            public var hash: String
+
+            public func encode(to encoder: any Encoder) throws {
+                var container = encoder.container(keyedBy: CodingKeys.self)
+                try container.encode(hash, forKey: .hash)
+            }
         }
 
         public struct AvatarName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: UInt) {
+            public init(hash: String) {
                 self.hash = hash
+            }
+
+            public init(from decoder: any Decoder) throws {
+                let container = try decoder.container(keyedBy: CodingKeys.self)
+                let decodedStr = try? container.decode(String.self, forKey: .hash)
+                if let decodedStr {
+                    self.hash = decodedStr
+                    return
+                }
+                self.hash = try container.decode(UInt64.self, forKey: .hash).description
             }
 
             // MARK: Public
@@ -114,7 +139,12 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: UInt
+            public var hash: String
+
+            public func encode(to encoder: any Encoder) throws {
+                var container = encoder.container(keyedBy: CodingKeys.self)
+                try container.encode(hash, forKey: .hash)
+            }
         }
 
         public enum CodingKeys: String, CodingKey {
@@ -530,8 +560,18 @@ extension EnkaDBModelsHSR {
         public struct EquipmentName: Codable, Hashable {
             // MARK: Lifecycle
 
-            public init(hash: UInt) {
+            public init(hash: String) {
                 self.hash = hash
+            }
+
+            public init(from decoder: any Decoder) throws {
+                let container = try decoder.container(keyedBy: CodingKeys.self)
+                let decodedStr = try? container.decode(String.self, forKey: .hash)
+                if let decodedStr {
+                    self.hash = decodedStr
+                    return
+                }
+                self.hash = try container.decode(UInt64.self, forKey: .hash).description
             }
 
             // MARK: Public
@@ -540,7 +580,12 @@ extension EnkaDBModelsHSR {
                 case hash = "Hash"
             }
 
-            public var hash: UInt
+            public var hash: String
+
+            public func encode(to encoder: any Encoder) throws {
+                var container = encoder.container(keyedBy: CodingKeys.self)
+                try container.encode(hash, forKey: .hash)
+            }
         }
 
         public enum CodingKeys: String, CodingKey {
