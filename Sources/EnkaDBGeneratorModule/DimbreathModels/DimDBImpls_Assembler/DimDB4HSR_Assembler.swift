@@ -216,7 +216,27 @@ extension DimModels4HSR.DimDB4HSR {
                 }
                 currentClusterContainer4ExtSkills.append(.extendedSkills([pointUUID]))
             }
-            currentClusterContainer4ExtSkills = currentClusterContainer4ExtSkills.selfSorted
+        }
+        /// Cleaning up the aftermath (extended skills only).
+        for charID in resultMap.keys {
+            var container: [EnkaDBModelsHSR.SkillInTree] {
+                get { resultMap[charID, default: [:]]["1", default: []] }
+                set { resultMap[charID, default: [:]]["1", default: []] = newValue }
+            }
+            var toKeep = [EnkaDBModelsHSR.SkillInTree]()
+            var extracted = [String]()
+            while case let .extendedSkills(lastCluster) = container.last {
+                checkCount: switch lastCluster.count {
+                case 2...: toKeep.insert(.extendedSkills(lastCluster), at: 0)
+                case 1: extracted.insert(contentsOf: lastCluster, at: 0)
+                default: break checkCount
+                }
+                container = container.dropLast()
+            }
+            if !extracted.isEmpty {
+                toKeep.append(.extendedSkills(extracted))
+            }
+            container = toKeep.selfSorted
         }
         return resultMap
     }
