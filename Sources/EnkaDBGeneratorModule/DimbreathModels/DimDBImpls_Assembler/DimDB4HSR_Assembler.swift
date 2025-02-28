@@ -46,8 +46,8 @@ extension DimModels4HSR.DimDB4HSR {
             }
             // Assembling the results.
             let assembled = EnkaDBModelsHSR.Character(
-                avatarName: .init(hash: currentAvatar.avatarName.hash),
-                avatarFullName: .init(hash: currentAvatar.avatarFullName.hash),
+                avatarName: .init(hash: currentAvatar.avatarName.hash.description),
+                avatarFullName: .init(hash: currentAvatar.avatarFullName.hash.description),
                 rarity: rarityLevel,
                 element: currentAvatar.damageType,
                 avatarBaseType: currentAvatar.avatarBaseType, // Lifepath.
@@ -82,7 +82,7 @@ extension DimModels4HSR.DimDB4HSR {
             let assembled = EnkaDBModelsHSR.Weapon(
                 rarity: rarityLevel,
                 avatarBaseType: currentWeapon.avatarBaseType,
-                equipmentName: .init(hash: currentWeapon.equipmentName.hash),
+                equipmentName: .init(hash: currentWeapon.equipmentName.hash.description),
                 imagePath: currentWeapon.imagePath.replacingOccurrences(
                     of: "LightConeMaxFigures",
                     with: "LightConeFigures"
