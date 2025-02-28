@@ -192,18 +192,24 @@ extension EnkaDBGeneratorTestsHSR {
     func testAssemblingEnkaDB4HSR_SkillTree() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaSkillTree()
-        guard let matched = assembled["1001"] else {
-            assertionFailure("Mitsuki Nanoka (Cryo) is missing.")
+        guard let matched = assembled["8008"] else {
+            assertionFailure("Stelle (Cryo, Rememberance) is missing.")
             exit(1)
         }
         let expectedJSON = """
         {
-          "0" : ["1001001", "1001002", "1001003", "1001004", "1001007"],
-          "1" : [
-            ["1001101", "1001202", "1001203"],
-            ["1001102", "1001205", "1001206"],
-            ["1001103", "1001208", "1001209", "1001210"],
-            ["1001201", "1001204", "1001207"]
+          "0": [
+            "8008001", "8008002", "8008003", "8008004", "8008007"
+          ],
+          "1": [
+            ["8008103", "8008208", "8008209", "8008210"],
+            ["8008102", "8008206", "8008207"],
+            ["8008101", "8008204", "8008205"],
+            ["8008201", "8008202", "8008203"]
+          ],
+          "2": [
+            ["8008301"],
+            ["8008302"]
           ]
         }
         """

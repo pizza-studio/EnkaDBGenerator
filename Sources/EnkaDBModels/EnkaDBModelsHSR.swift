@@ -484,17 +484,20 @@ extension EnkaDBModelsHSR {
     public enum SkillInTree: Codable, Hashable, Equatable {
         case baseSkill(String)
         case extendedSkills([String])
+        case memoSpriteSkills([String])
 
         // MARK: Lifecycle
 
         public init(from decoder: Decoder) throws {
             let container = try decoder.singleValueContainer()
-            if let x = try? container.decode([String].self) {
-                self = .extendedSkills(x)
-                return
-            }
             if let x = try? container.decode(String.self) {
                 self = .baseSkill(x)
+                return
+            }
+            checkExtSkill: if let x = try? container.decode([String].self) {
+                let xDigits = (x.first?.compactMap { Int($0.description) })
+                guard let xDigits, xDigits.count == 7 else { break checkExtSkill }
+                self = (xDigits[4] == 3) ? .memoSpriteSkills(x) : .extendedSkills(x)
                 return
             }
             throw DecodingError.typeMismatch(
@@ -508,11 +511,15 @@ extension EnkaDBModelsHSR {
 
         // MARK: Public
 
-        public var firstSkillNodeID: String? {
-            switch self {
-            case let .baseSkill(string): return string
-            case let .extendedSkills(array): return array.first
+        public var firstSkillNodeID: String {
+            let baseString = switch self {
+            case let .baseSkill(string): string
+            case let .extendedSkills(array): array.first ?? "0000000"
+            case let .memoSpriteSkills(array): array.first ?? "0000000"
             }
+            guard baseString.count == 7 else { return "0000000" }
+            guard (Int(baseString) ?? 0) > 999999 else { return "0000000" }
+            return baseString
         }
 
         public func encode(to encoder: Encoder) throws {
@@ -522,15 +529,47 @@ extension EnkaDBModelsHSR {
                 try container.encode(x)
             case let .extendedSkills(x):
                 try container.encode(x)
+            case let .memoSpriteSkills(x):
+                try container.encode(x)
             }
         }
 
         // MARK: Internal
 
+        var length: Int {
+            switch self {
+            case .baseSkill: 1
+            case let .extendedSkills(array): array.count
+            case let .memoSpriteSkills(array): array.count
+            }
+        }
+
         mutating func appendExtendedSkill(_ newSkillNodeID: String) {
-            guard case var .extendedSkills(array) = self else { return }
-            array.append(newSkillNodeID)
-            self = .extendedSkills(array)
+            if case var .memoSpriteSkills(array) = self {
+                array.append(newSkillNodeID)
+                self = .memoSpriteSkills(array)
+            }
+            if case var .extendedSkills(array) = self {
+                array.append(newSkillNodeID)
+                self = .extendedSkills(array)
+            }
+        }
+    }
+}
+
+extension [EnkaDBModelsHSR.SkillInTree] {
+    public var selfSorted: Self {
+        sorted { lhs, rhs in
+            let idLHSStr = lhs.firstSkillNodeID
+            let idRHSStr = rhs.firstSkillNodeID
+            guard idLHSStr.count == 7, idLHSStr.count == 7 else { return true }
+            let int5LHS = Int(idLHSStr.map(\.description)[4])
+            let int7LHS = Int(idLHSStr.map(\.description)[6])
+            let int5RHS = Int(idRHSStr.map(\.description)[4])
+            let int7RHS = Int(idRHSStr.map(\.description)[6])
+            guard let int5LHS, let int5RHS else { return true }
+            guard let int7LHS, let int7RHS else { return true }
+            return (rhs.length, int7RHS, int5LHS) < (lhs.length, int7LHS, int5RHS)
         }
     }
 }

@@ -174,6 +174,9 @@ extension DimModels4HSR.DimDB4HSR {
         let filteredRawDB = skillTreeDB.filter { $0.level == 1 }
         filteredRawDB.forEach { skillNodeObj in
             let pointUUID = skillNodeObj.pointID.description
+            let digits = pointUUID.compactMap { Int($0.description) }
+            guard digits.count == 7 else { return }
+            let fifthDigit = digits[4]
             let avatarUUID = skillNodeObj.avatarID.description
             let isBaseSkill = skillNodeObj.pointName.isEmpty // If not, it's an extended skill.
             guard !isBaseSkill else {
@@ -183,45 +186,34 @@ extension DimModels4HSR.DimDB4HSR {
             }
             // Start handling.
             guard skillNodeObj.previousVertex == nil else { return }
-            var currentClusterContainer: [EnkaDBModelsHSR.SkillInTree] {
+            var currentClusterContainer4ExtSkills: [EnkaDBModelsHSR.SkillInTree] {
                 get { resultMap[avatarUUID, default: [:]]["1", default: []] }
                 set { resultMap[avatarUUID, default: [:]]["1", default: []] = newValue }
+            }
+            var currentClusterContainer4MemoSprites: [EnkaDBModelsHSR.SkillInTree] {
+                get { resultMap[avatarUUID, default: [:]]["2", default: []] }
+                set { resultMap[avatarUUID, default: [:]]["2", default: []] = newValue }
             }
             if !skillNodeObj.hasMultipleNestedNextVertices {
                 var newCluster: [String] = skillNodeObj.allNextVertexIDs?.map(\.description) ?? []
                 newCluster.insert(pointUUID, at: 0)
-                currentClusterContainer.append(.extendedSkills(newCluster))
+                if fifthDigit == 3 {
+                    currentClusterContainer4MemoSprites.append(.memoSpriteSkills(newCluster))
+                } else {
+                    currentClusterContainer4ExtSkills.append(.extendedSkills(newCluster))
+                }
             } else if let nestedMap = skillNodeObj.allNextVertexIDClusters {
                 nestedMap.sorted {
                     $0.key < $1.key
                 }.forEach { rawKey, rawIntCluster in
                     var strCluster = rawIntCluster.map(\.description)
                     strCluster.insert(rawKey.description, at: 0)
-                    currentClusterContainer.append(.extendedSkills(strCluster))
+
+                    currentClusterContainer4ExtSkills.append(.extendedSkills(strCluster))
                 }
-                currentClusterContainer.append(.extendedSkills([pointUUID]))
+                currentClusterContainer4ExtSkills.append(.extendedSkills([pointUUID]))
             }
-        }
-        /// Cleaning up the aftermath.
-        for charID in resultMap.keys {
-            var container: [EnkaDBModelsHSR.SkillInTree] {
-                get { resultMap[charID, default: [:]]["1", default: []] }
-                set { resultMap[charID, default: [:]]["1", default: []] = newValue }
-            }
-            var toKeep = [EnkaDBModelsHSR.SkillInTree]()
-            var extracted = [String]()
-            while case let .extendedSkills(lastCluster) = container.last {
-                checkCount: switch lastCluster.count {
-                case 2...: toKeep.insert(.extendedSkills(lastCluster), at: 0)
-                case 1: extracted.insert(contentsOf: lastCluster, at: 0)
-                default: break checkCount
-                }
-                container = container.dropLast()
-            }
-            if !extracted.isEmpty {
-                toKeep.append(.extendedSkills(extracted))
-            }
-            container = toKeep
+            currentClusterContainer4ExtSkills = currentClusterContainer4ExtSkills.selfSorted
         }
         return resultMap
     }
