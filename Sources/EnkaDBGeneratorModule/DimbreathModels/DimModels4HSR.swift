@@ -465,11 +465,12 @@ extension DimModels4HSR {
             return false
         }
 
-        var allNextVertexIDClusters: [Int: [Int]]? {
+        var allNextVertexIDClusters: [(Int, [Int])]? {
             guard let nextVertices = nextVertices else { return nil }
-            var container = [Int: [Int]]()
+            var container = [(Int, [Int])]()
             nextVertices.forEach { vertex in
-                container[vertex.pointID] = vertex.allNextVertexIDs
+                guard let allNextVertexIDs = vertex.allNextVertexIDs else { return }
+                container.append((vertex.pointID, allNextVertexIDs))
             }
             return container
         }

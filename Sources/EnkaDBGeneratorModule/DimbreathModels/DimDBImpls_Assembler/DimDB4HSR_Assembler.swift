@@ -206,9 +206,7 @@ extension DimModels4HSR.DimDB4HSR {
                     currentClusterContainer4ExtSkills.append(.extendedSkills(newCluster))
                 }
             } else if let nestedMap = skillNodeObj.allNextVertexIDClusters {
-                nestedMap.sorted {
-                    $0.key < $1.key
-                }.forEach { rawKey, rawIntCluster in
+                nestedMap.forEach { rawKey, rawIntCluster in
                     var strCluster = rawIntCluster.map(\.description)
                     strCluster.insert(rawKey.description, at: 0)
 
