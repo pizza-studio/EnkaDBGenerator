@@ -8,14 +8,6 @@
       "UI_Talent_U_Ayaka_01",
       "UI_Talent_S_Ayaka_04"
     ],
-    "Costumes" : {
-      "200201" : {
-        "art" : "UI_Costume_AyakaCostumeFruhling",
-        "avatarId" : 10000002,
-        "icon" : "UI_AvatarIcon_AyakaCostumeFruhling",
-        "sideIconName" : "UI_AvatarIcon_Side_AyakaCostumeFruhling"
-      }
-    },
     "Element" : "Ice",
     "NameTextMapHash" : 1006042610,
     "ProudMap" : {
@@ -46,20 +38,6 @@
       "UI_Talent_U_Qin_01",
       "UI_Talent_S_Qin_04"
     ],
-    "Costumes" : {
-      "200301" : {
-        "art" : "UI_Costume_QinCostumeSea",
-        "avatarId" : 10000003,
-        "icon" : "UI_AvatarIcon_QinCostumeSea",
-        "sideIconName" : "UI_AvatarIcon_Side_QinCostumeSea"
-      },
-      "200302" : {
-        "art" : "UI_Costume_QinCostumeWic",
-        "avatarId" : 10000003,
-        "icon" : "UI_AvatarIcon_QinCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_QinCostumeWic"
-      }
-    },
     "Element" : "Wind",
     "NameTextMapHash" : 3221566250,
     "ProudMap" : {
@@ -300,14 +278,6 @@
       "UI_Talent_U_Lisa_01",
       "UI_Talent_S_Lisa_04"
     ],
-    "Costumes" : {
-      "200601" : {
-        "art" : "UI_Costume_LisaCostumeStudentin",
-        "avatarId" : 10000006,
-        "icon" : "UI_AvatarIcon_LisaCostumeStudentin",
-        "sideIconName" : "UI_AvatarIcon_Side_LisaCostumeStudentin"
-      }
-    },
     "Element" : "Electric",
     "NameTextMapHash" : 3344622722,
     "ProudMap" : {
@@ -548,14 +518,6 @@
       "UI_Talent_U_Barbara_01",
       "UI_Talent_S_Barbara_04"
     ],
-    "Costumes" : {
-      "201401" : {
-        "art" : "UI_Costume_BarbaraCostumeSummertime",
-        "avatarId" : 10000014,
-        "icon" : "UI_AvatarIcon_BarbaraCostumeSummertime",
-        "sideIconName" : "UI_AvatarIcon_Side_BarbaraCostumeSummertime"
-      }
-    },
     "Element" : "Water",
     "NameTextMapHash" : 3775299170,
     "ProudMap" : {
@@ -586,14 +548,6 @@
       "UI_Talent_U_Kaeya_02",
       "UI_Talent_S_Kaeya_04"
     ],
-    "Costumes" : {
-      "201501" : {
-        "art" : "UI_Costume_KaeyaCostumeDancer",
-        "avatarId" : 10000015,
-        "icon" : "UI_AvatarIcon_KaeyaCostumeDancer",
-        "sideIconName" : "UI_AvatarIcon_Side_KaeyaCostumeDancer"
-      }
-    },
     "Element" : "Ice",
     "NameTextMapHash" : 4119663210,
     "ProudMap" : {
@@ -624,14 +578,6 @@
       "UI_Talent_U_Diluc_02",
       "UI_Talent_S_Diluc_04"
     ],
-    "Costumes" : {
-      "201601" : {
-        "art" : "UI_Costume_DilucCostumeFlamme",
-        "avatarId" : 10000016,
-        "icon" : "UI_AvatarIcon_DilucCostumeFlamme",
-        "sideIconName" : "UI_AvatarIcon_Side_DilucCostumeFlamme"
-      }
-    },
     "Element" : "Fire",
     "NameTextMapHash" : 3608180322,
     "ProudMap" : {
@@ -692,14 +638,6 @@
       "UI_Talent_U_Ambor_01",
       "UI_Talent_S_Ambor_04"
     ],
-    "Costumes" : {
-      "202101" : {
-        "art" : "UI_Costume_AmborCostumeWic",
-        "avatarId" : 10000021,
-        "icon" : "UI_AvatarIcon_AmborCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_AmborCostumeWic"
-      }
-    },
     "Element" : "Fire",
     "NameTextMapHash" : 1966438658,
     "ProudMap" : {
@@ -760,14 +698,6 @@
       "UI_Talent_U_Xiangling_01",
       "UI_Talent_S_Xiangling_04"
     ],
-    "Costumes" : {
-      "202301" : {
-        "art" : "UI_Costume_XianglingCostumeWinter",
-        "avatarId" : 10000023,
-        "icon" : "UI_AvatarIcon_XianglingCostumeWinter",
-        "sideIconName" : "UI_AvatarIcon_Side_XianglingCostumeWinter"
-      }
-    },
     "Element" : "Fire",
     "NameTextMapHash" : 1130996346,
     "ProudMap" : {
@@ -828,14 +758,6 @@
       "UI_Talent_U_Xingqiu_02",
       "UI_Talent_S_Xingqiu_04"
     ],
-    "Costumes" : {
-      "202501" : {
-        "art" : "UI_Costume_XingqiuCostumeBamboo",
-        "avatarId" : 10000025,
-        "icon" : "UI_AvatarIcon_XingqiuCostumeBamboo",
-        "sideIconName" : "UI_AvatarIcon_Side_XingqiuCostumeBamboo"
-      }
-    },
     "Element" : "Water",
     "NameTextMapHash" : 4197635682,
     "ProudMap" : {
@@ -896,14 +818,6 @@
       "UI_Talent_U_Ningguang_01",
       "UI_Talent_S_Ningguang_04"
     ],
-    "Costumes" : {
-      "202701" : {
-        "art" : "UI_Costume_NingguangCostumeFloral",
-        "avatarId" : 10000027,
-        "icon" : "UI_AvatarIcon_NingguangCostumeFloral",
-        "sideIconName" : "UI_AvatarIcon_Side_NingguangCostumeFloral"
-      }
-    },
     "Element" : "Rock",
     "NameTextMapHash" : 4127888970,
     "ProudMap" : {
@@ -934,14 +848,6 @@
       "UI_Talent_U_Klee_02",
       "UI_Talent_S_Klee_04"
     ],
-    "Costumes" : {
-      "202901" : {
-        "art" : "UI_Costume_KleeCostumeWitch",
-        "avatarId" : 10000029,
-        "icon" : "UI_AvatarIcon_KleeCostumeWitch",
-        "sideIconName" : "UI_AvatarIcon_Side_KleeCostumeWitch"
-      }
-    },
     "Element" : "Fire",
     "NameTextMapHash" : 3339083250,
     "ProudMap" : {
@@ -1002,14 +908,6 @@
       "UI_Talent_U_Fischl_02",
       "UI_Talent_S_Fischl_04"
     ],
-    "Costumes" : {
-      "203101" : {
-        "art" : "UI_Costume_FischlCostumeHighness",
-        "avatarId" : 10000031,
-        "icon" : "UI_AvatarIcon_FischlCostumeHighness",
-        "sideIconName" : "UI_AvatarIcon_Side_FischlCostumeHighness"
-      }
-    },
     "Element" : "Electric",
     "NameTextMapHash" : 3277782506,
     "ProudMap" : {
@@ -1190,14 +1088,6 @@
       "UI_Talent_U_Ganyu_02",
       "UI_Talent_S_Ganyu_04"
     ],
-    "Costumes" : {
-      "203701" : {
-        "art" : "UI_Costume_GanyuCostumeYu",
-        "avatarId" : 10000037,
-        "icon" : "UI_AvatarIcon_GanyuCostumeYu",
-        "sideIconName" : "UI_AvatarIcon_Side_GanyuCostumeYu"
-      }
-    },
     "Element" : "Ice",
     "NameTextMapHash" : 2679781122,
     "ProudMap" : {
@@ -1288,14 +1178,6 @@
       "UI_Talent_U_Mona_02",
       "UI_Talent_S_Mona_04"
     ],
-    "Costumes" : {
-      "204101" : {
-        "art" : "UI_Costume_MonaCostumeWic",
-        "avatarId" : 10000041,
-        "icon" : "UI_AvatarIcon_MonaCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_MonaCostumeWic"
-      }
-    },
     "Element" : "Water",
     "NameTextMapHash" : 1113306282,
     "ProudMap" : {
@@ -1326,14 +1208,6 @@
       "UI_Talent_U_Keqing_02",
       "UI_Talent_S_Keqing_04"
     ],
-    "Costumes" : {
-      "204201" : {
-        "art" : "UI_Costume_KeqingCostumeFeather",
-        "avatarId" : 10000042,
-        "icon" : "UI_AvatarIcon_KeqingCostumeFeather",
-        "sideIconName" : "UI_AvatarIcon_Side_KeqingCostumeFeather"
-      }
-    },
     "Element" : "Electric",
     "NameTextMapHash" : 1864015138,
     "ProudMap" : {
@@ -1424,14 +1298,6 @@
       "UI_Talent_U_Rosaria_02",
       "UI_Talent_S_Rosaria_04"
     ],
-    "Costumes" : {
-      "204501" : {
-        "art" : "UI_Costume_RosariaCostumeWic",
-        "avatarId" : 10000045,
-        "icon" : "UI_AvatarIcon_RosariaCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_RosariaCostumeWic"
-      }
-    },
     "Element" : "Ice",
     "NameTextMapHash" : 4260733330,
     "ProudMap" : {
@@ -1462,14 +1328,6 @@
       "UI_Talent_U_Hutao_02",
       "UI_Talent_S_Hutao_04"
     ],
-    "Costumes" : {
-      "204601" : {
-        "art" : "UI_Costume_HutaoCostumeWinter",
-        "avatarId" : 10000046,
-        "icon" : "UI_AvatarIcon_HutaoCostumeWinter",
-        "sideIconName" : "UI_AvatarIcon_Side_HutaoCostumeWinter"
-      }
-    },
     "Element" : "Fire",
     "NameTextMapHash" : 1940919994,
     "ProudMap" : {
@@ -1920,14 +1778,6 @@
       "UI_Talent_U_Momoka_02",
       "UI_Talent_S_Momoka_03"
     ],
-    "Costumes" : {
-      "206101" : {
-        "art" : "UI_Costume_MomokaCostumeErrantry",
-        "avatarId" : 10000061,
-        "icon" : "UI_AvatarIcon_MomokaCostumeErrantry",
-        "sideIconName" : "UI_AvatarIcon_Side_MomokaCostumeErrantry"
-      }
-    },
     "Element" : "Grass",
     "NameTextMapHash" : 1456643042,
     "ProudMap" : {
@@ -1988,14 +1838,6 @@
       "UI_Talent_U_Shenhe_02",
       "UI_Talent_S_Shenhe_04"
     ],
-    "Costumes" : {
-      "206301" : {
-        "art" : "UI_Costume_ShenheCostumeDai",
-        "avatarId" : 10000063,
-        "icon" : "UI_AvatarIcon_ShenheCostumeDai",
-        "sideIconName" : "UI_AvatarIcon_Side_ShenheCostumeDai"
-      }
-    },
     "Element" : "Ice",
     "NameTextMapHash" : 334242634,
     "ProudMap" : {
@@ -2206,14 +2048,6 @@
       "UI_Talent_U_Nilou_02",
       "UI_Talent_S_Nilou_04"
     ],
-    "Costumes" : {
-      "207001" : {
-        "art" : "UI_Costume_NilouCostumeFairy",
-        "avatarId" : 10000070,
-        "icon" : "UI_AvatarIcon_NilouCostumeFairy",
-        "sideIconName" : "UI_AvatarIcon_Side_NilouCostumeFairy"
-      }
-    },
     "Element" : "Water",
     "NameTextMapHash" : 3850149970,
     "ProudMap" : {
@@ -3402,6 +3236,66 @@
       "11091" : "Skill_A_Catalyst_MD",
       "11092" : "Skill_S_Mizuki_01",
       "11095" : "Skill_E_Mizuki_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000110" : {
+    "Consts" : [
+      "UI_Talent_S_Iansan_01",
+      "UI_Talent_S_Iansan_02",
+      "UI_Talent_U_Iansan_01",
+      "UI_Talent_S_Iansan_03",
+      "UI_Talent_U_Iansan_02",
+      "UI_Talent_S_Iansan_04"
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 3120492514,
+    "ProudMap" : {
+      "11101" : 11031,
+      "11102" : 11032,
+      "11105" : 11039
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Iansan",
+    "SkillOrder" : [
+      11101,
+      11102,
+      11105
+    ],
+    "Skills" : {
+      "11101" : "Skill_A_03",
+      "11102" : "Skill_S_Iansan_01",
+      "11105" : "Skill_E_Iansan_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
+  },
+  "10000111" : {
+    "Consts" : [
+      "UI_Talent_S_Varesa_01",
+      "UI_Talent_S_Varesa_02",
+      "UI_Talent_U_Varesa_01",
+      "UI_Talent_S_Varesa_03",
+      "UI_Talent_U_Varesa_02",
+      "UI_Talent_S_Varesa_04"
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 283438874,
+    "ProudMap" : {
+      "11111" : 11131,
+      "11112" : 11132,
+      "11115" : 11139
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Varesa",
+    "SkillOrder" : [
+      11111,
+      11112,
+      11115
+    ],
+    "Skills" : {
+      "11111" : "Skill_A_Catalyst_MD",
+      "11112" : "Skill_S_Varesa_01",
+      "11115" : "Skill_E_Varesa_01"
     },
     "WeaponType" : "WEAPON_CATALYST"
   }
