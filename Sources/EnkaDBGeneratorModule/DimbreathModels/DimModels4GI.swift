@@ -396,7 +396,7 @@ extension DimModels4GI {
             frontIconName?.replacingOccurrences(of: "AvatarIcon", with: "Costume")
         }
 
-        var isValid: Bool { frontIconName == nil }
+        var isValid: Bool { frontIconName != nil }
 
         // MARK: Private
 
