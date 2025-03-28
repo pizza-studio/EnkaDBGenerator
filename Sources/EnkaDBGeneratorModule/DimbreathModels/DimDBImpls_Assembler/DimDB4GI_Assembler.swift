@@ -33,7 +33,7 @@ extension DimModels4GI.DimDB4GI {
                     )
                 }
                 // Constellations. Vary among different Elements of the protagonist.
-                let finalConsts: [String] = (skillDepotTable.talents ?? []).compactMap { talentID in
+                let finalConsts: [String] = skillDepotTable.talents.compactMap { talentID in
                     self.constellationDB.first(where: { $0.talentId == talentID })?.icon
                 }
                 // Costumes.
@@ -42,17 +42,12 @@ extension DimModels4GI.DimDB4GI {
                 if !rawCostumes.isEmpty {
                     finalCostumes = [String: EnkaDBModelsGI.Costume]()
                     rawCostumes.forEach { skin in
-                        guard let art = skin.art, let frontIconName = skin.frontIconName else { return }
-                        guard let sideIconName = skin.sideIconName else { return }
                         finalCostumes?[skin.skinId.description] = EnkaDBModelsGI.Costume(
-                            art: art,
+                            art: skin.art,
                             avatarId: skin.characterId,
-                            icon: frontIconName,
-                            sideIconName: sideIconName
+                            icon: skin.frontIconName,
+                            sideIconName: skin.sideIconName
                         )
-                    }
-                    if finalCostumes?.isEmpty ?? false {
-                        finalCostumes = nil
                     }
                 }
                 // Element. We bet that every character in showcase has a valid Teyvat Element type.
@@ -66,7 +61,7 @@ extension DimModels4GI.DimDB4GI {
                     return
                 }
                 // SkillOrder.
-                var finalSkillOrder: [Int] = (skillDepotTable.skills ?? []).filter { $0 != 0 }
+                var finalSkillOrder: [Int] = skillDepotTable.skills.filter { $0 != 0 }
                     + [skillDepotTable.energySkill].compactMap { $0 }
                 // ProudMap and Skills.
                 var finalProudMap: [String: Int] = [:]
@@ -127,13 +122,9 @@ extension DimModels4GI.DimDB4GI {
     func assembleEnkaNameCards() -> EnkaDBModelsGI.NameCardDict {
         var result = EnkaDBModelsGI.NameCardDict()
         namecardDB.forEach { currentNameCard in
-            var iconName = currentNameCard.picPath?.first { $0.hasSuffix("_P") }
-            if iconName == nil, let iconStr = currentNameCard.icon {
-                iconName = "\(iconStr)_P"
-            }
-            guard let iconName else { return }
+            let iconName = currentNameCard.picPath.first { $0.hasSuffix("_P") }
             result[currentNameCard.id.description] = EnkaDBModelsGI.NameCard(
-                icon: iconName
+                icon: iconName ?? "\(currentNameCard.icon)_P"
             )
         }
         return result
