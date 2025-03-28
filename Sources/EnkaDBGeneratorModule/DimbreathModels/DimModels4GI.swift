@@ -34,8 +34,6 @@ extension DimModels4GI: DimModelsEnumProtocol {
 
 extension DimModels4GI {
     struct AvatarExcelConfigData: Hashable, Codable, IntegerIdentifiable, NameHashable {
-        // MARK: Internal
-
         let id: Int
         let nameTextMapHash: UInt
         let iconName: String
@@ -60,18 +58,6 @@ extension DimModels4GI {
                 output.append(baseValue + i)
             }
             return output
-        }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case nameTextMapHash = "DNINKKHEILA"
-            case iconName = "OCNPJGGMLLO"
-            case sideIconName = "IPNPPIGGOPB"
-            case qualityType = "ADLDGBEKECJ"
-            case skillDepotId = "HCBILEOPKHD"
-            case weaponType = "JIEFGEDPAMG"
         }
     }
 }
@@ -107,17 +93,6 @@ extension DimModels4GI {
             guard skillIcon.hasPrefix("Skill_S_") else { return false }
             return skillIcon.hasSuffix("_02") && id != 10033 // Jean is a special case.
         }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case nameTextMapHash = "DNINKKHEILA"
-            case skillIcon = "BGIHPNEDFOL"
-            case forceCanDoSkill = "CFAICKLGPDP"
-            case costElemType = "PNIDLNBBJIC"
-            case proudSkillGroupId = "DGIJCGLPDPI"
-        }
     }
 }
 
@@ -126,21 +101,11 @@ extension DimModels4GI {
 extension DimModels4GI {
     /// Constellations
     struct AvatarTalentExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let icon: String
         let nameTextMapHash: UInt
         let talentId: Int
 
         var id: Int { talentId } // Identifiable
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case icon = "CNPCNIGHGJJ"
-            case nameTextMapHash = "DNINKKHEILA"
-            case talentId = "JFALAEEKFMI"
-        }
     }
 }
 
@@ -149,8 +114,6 @@ extension DimModels4GI {
 extension DimModels4GI {
     /// Artifacts
     struct ReliquaryExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let id: Int
         let appendPropDepotId: Int
         let equipType: String
@@ -159,19 +122,6 @@ extension DimModels4GI {
         let mainPropDepotId: Int
         let nameTextMapHash: UInt
         let rankLevel: Int
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case appendPropDepotId = "GIFPAPLPMGO"
-            case equipType = "HNCDIADOINL"
-            case icon = "CNPCNIGHGJJ"
-            case itemType = "CEBMMGCMIJM"
-            case mainPropDepotId = "AIPPMEGLAKJ"
-            case nameTextMapHash = "DNINKKHEILA"
-            case rankLevel = "IMNCLIODOBL"
-        }
     }
 }
 
@@ -180,8 +130,6 @@ extension DimModels4GI {
 extension DimModels4GI {
     /// Artifact Set Data
     struct EquipAffixExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let affixId: Int
         let nameTextMapHash: UInt
         let openConfig: String?
@@ -195,14 +143,6 @@ extension DimModels4GI {
 
         var setId: Int {
             Int((Double(affixId) / 10).truncatingRemainder(dividingBy: 1))
-        }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case affixId = "NEMBIFHOIKM"
-            case nameTextMapHash = "DNINKKHEILA"
-            case openConfig = "JIPJEMFCKAI"
         }
     }
 }
@@ -237,13 +177,6 @@ extension DimModels4GI {
                 propType.split(separator: "_").last
             )
         }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case propType = "JJNPGPFNJHP"
-        }
     }
 }
 
@@ -251,23 +184,11 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     struct WeaponExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let id: Int
         let awakenIcon: String
         let icon: String
         let nameTextMapHash: UInt
         let rankLevel: Int
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "DGMGGMHAGOA"
-            case awakenIcon = "KMOCENBGOEM"
-            case icon = "CNPCNIGHGJJ"
-            case nameTextMapHash = "DNINKKHEILA"
-            case rankLevel = "IMNCLIODOBL"
-        }
     }
 }
 
@@ -300,17 +221,6 @@ extension DimModels4GI {
         var isValid: Bool {
             materialType == "MATERIAL_NAMECARD"
         }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case icon = "CNPCNIGHGJJ"
-            case picPath = "PPCKMKGIIMP"
-            case materialType = "HBBILKOGMIP"
-            case nameTextMapHash = "DNINKKHEILA"
-            case rankLevel = "IMNCLIODOBL"
-        }
     }
 }
 
@@ -319,8 +229,6 @@ extension DimModels4GI {
 extension DimModels4GI {
     /// This struct is only for extrcting FightProps.
     struct ManualTextMapConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let textMapId: String
         let textMapContentTextMapHash: UInt
 
@@ -335,13 +243,6 @@ extension DimModels4GI {
         var id: String {
             textMapId
         }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case textMapId = "EHLGDOCBKBO"
-            case textMapContentTextMapHash = "ECIGIIKPLGD"
-        }
     }
 }
 
@@ -349,33 +250,14 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     struct AvatarSkillDepotExcelConfigData: Hashable, Codable, Identifiable {
-        // MARK: Internal
-
         struct InherentProudSkillOpen: Hashable, Codable {
-            // MARK: Internal
-
             let proudSkillGroupId: Int?
-
-            // MARK: Private
-
-            private enum CodingKeys: String, CodingKey {
-                case proudSkillGroupId = "DGIJCGLPDPI"
-            }
         }
 
         let id: Int
         let energySkill: Int?
         let skills: [Int]?
         let talents: [Int]?
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case energySkill = "GIEFGHHKGDD"
-            case skills = "CBJGLADMBHG"
-            case talents = "IAGMADCJGIA"
-        }
     }
 }
 
@@ -383,8 +265,6 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     struct AvatarCostumeExcelConfigData: Hashable, Codable, Identifiable, NameHashable {
-        // MARK: Internal
-
         let skinId: Int
         let characterId: Int
         let frontIconName: String?
@@ -397,16 +277,6 @@ extension DimModels4GI {
         }
 
         var isValid: Bool { frontIconName != nil }
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case skinId = "MJGLEHPFADA"
-            case characterId = "FLPKGEALBBD"
-            case frontIconName = "KBOAHCIJBGA"
-            case nameTextMapHash = "DNINKKHEILA"
-            case sideIconName = "IPNPPIGGOPB"
-        }
     }
 }
 
@@ -414,16 +284,7 @@ extension DimModels4GI {
 
 extension DimModels4GI {
     struct ProfilePictureExcelConfigData: Hashable, Codable, Identifiable {
-        // MARK: Internal
-
         let id: Int
         let iconPath: String
-
-        // MARK: Private
-
-        private enum CodingKeys: String, CodingKey {
-            case id = "ELKKIAIGOBK"
-            case iconPath = "FPPENJGNALC"
-        }
     }
 }
