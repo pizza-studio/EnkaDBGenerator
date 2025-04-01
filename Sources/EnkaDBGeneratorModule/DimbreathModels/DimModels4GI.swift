@@ -276,7 +276,9 @@ extension DimModels4GI {
             frontIconName?.replacingOccurrences(of: "AvatarIcon", with: "Costume")
         }
 
-        var isValid: Bool { frontIconName != nil }
+        var isValid: Bool {
+            (frontIconName?.count ?? 0) * (sideIconName?.count ?? 0) > 0
+        }
     }
 }
 
