@@ -81,6 +81,7 @@ extension DimModels4GI.DimDB4GI {
                         skillIDsToPurge.append(currentSkillID)
                         return
                     }
+                    guard matchedSkill.proudSkillGroupId != 0 else { return }
                     finalSkills[currentSkillID.description] = matchedSkill.skillIcon
                     finalProudMap[currentSkillID.description] = matchedSkill.proudSkillGroupId
                 }
