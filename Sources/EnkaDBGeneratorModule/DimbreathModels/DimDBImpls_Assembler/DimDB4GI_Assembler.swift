@@ -73,14 +73,18 @@ extension DimModels4GI.DimDB4GI {
                 // ProudMap and Skills.
                 var finalProudMap: [String: Int] = [:]
                 var finalSkills: [String: String] = [:]
-                var skillIDsToPurge = [Int]()
+                var skillIDsToPurge = Set<Int>()
                 finalSkillOrder.forEach { currentSkillID in
                     guard let matchedSkill = self.skillDB.first(where: { $0.id == currentSkillID })
                     else {
                         print(
                             "[Assembler Notice] Skill \(currentSkillID) mismatch for GI character \(charUUID), skipping."
                         )
-                        skillIDsToPurge.append(currentSkillID)
+                        skillIDsToPurge.insert(currentSkillID)
+                        return
+                    }
+                    guard matchedSkill.proudSkillGroupId != 0 else {
+                        skillIDsToPurge.insert(currentSkillID)
                         return
                     }
                     finalSkills[currentSkillID.description] = matchedSkill.skillIcon
