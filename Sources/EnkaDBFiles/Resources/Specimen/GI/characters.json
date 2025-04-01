@@ -3269,19 +3269,22 @@
     "ProudMap" : {
       "30501" : 10531,
       "30502" : 10532,
-      "30505" : 10539
+      "30505" : 10539,
+      "30506" : 0
     },
     "QualityType" : "QUALITY_PURPLE",
     "SideIconName" : "UI_AvatarIcon_Side_Olorun",
     "SkillOrder" : [
       30501,
       30502,
+      30506,
       30505
     ],
     "Skills" : {
       "30501" : "Skill_A_02",
       "30502" : "Skill_S_Olorun_01",
-      "30505" : "Skill_E_Olorun_01"
+      "30505" : "Skill_E_Olorun_01",
+      "30506" : "Skill_E_Olorun_03"
     },
     "WeaponType" : "WEAPON_BOW"
   },
@@ -3329,19 +3332,22 @@
     "ProudMap" : {
       "11071" : 10731,
       "11072" : 10732,
-      "11075" : 10739
+      "11075" : 10739,
+      "11076" : 0
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_Citlali",
     "SkillOrder" : [
       11071,
       11072,
+      11076,
       11075
     ],
     "Skills" : {
       "11071" : "Skill_A_Catalyst_MD",
       "11072" : "Skill_S_Citlali_01",
-      "11075" : "Skill_E_Citlali_01"
+      "11075" : "Skill_E_Citlali_01",
+      "11076" : "Skill_S_Citlali_03"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
