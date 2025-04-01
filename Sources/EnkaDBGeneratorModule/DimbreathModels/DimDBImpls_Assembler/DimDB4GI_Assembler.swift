@@ -38,7 +38,9 @@ extension DimModels4GI.DimDB4GI {
                 }
                 // Costumes.
                 var finalCostumes: [String: EnkaDBModelsGI.Costume]?
-                let rawCostumes = self.costumeDB.filter { $0.characterId == avatar.id }
+                let rawCostumes = self.costumeDB.filter {
+                  $0.characterId == avatar.id && $0.isValid
+                }
                 if !rawCostumes.isEmpty {
                     finalCostumes = [String: EnkaDBModelsGI.Costume]()
                     rawCostumes.forEach { skin in
