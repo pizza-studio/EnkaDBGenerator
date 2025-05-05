@@ -3464,5 +3464,65 @@
       "11115" : "Skill_E_Varesa_01"
     },
     "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000112" : {
+    "Consts" : [
+      "UI_Talent_S_Escoffier_01",
+      "UI_Talent_S_Escoffier_02",
+      "UI_Talent_U_Escoffier_01",
+      "UI_Talent_S_Escoffier_03",
+      "UI_Talent_U_Escoffier_02",
+      "UI_Talent_S_Escoffier_04"
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 4035850498,
+    "ProudMap" : {
+      "11121" : 11231,
+      "11122" : 11232,
+      "11125" : 11239
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Escoffier",
+    "SkillOrder" : [
+      11121,
+      11122,
+      11125
+    ],
+    "Skills" : {
+      "11121" : "Skill_A_03",
+      "11122" : "Skill_S_Escoffier_01",
+      "11125" : "Skill_E_Escoffier_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
+  },
+  "10000113" : {
+    "Consts" : [
+      "UI_Talent_S_Ifa_01",
+      "UI_Talent_S_Ifa_02",
+      "UI_Talent_U_Ifa_01",
+      "UI_Talent_S_Ifa_03",
+      "UI_Talent_U_Ifa_02",
+      "UI_Talent_S_Ifa_04"
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 3398665018,
+    "ProudMap" : {
+      "11131" : 11331,
+      "11132" : 11332,
+      "11135" : 11339
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Ifa",
+    "SkillOrder" : [
+      11131,
+      11132,
+      11135
+    ],
+    "Skills" : {
+      "11131" : "Skill_A_Catalyst_MD",
+      "11132" : "Skill_S_Ifa_01",
+      "11135" : "Skill_E_Ifa_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
   }
 }
