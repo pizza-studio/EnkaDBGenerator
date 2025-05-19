@@ -2466,6 +2466,44 @@
 
     }
   },
+  "140601" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Rank1.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140602" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Rank2.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140603" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Ultra.png",
+    "SkillAddLevelList" : {
+      "140601" : 1,
+      "140603" : 2
+    }
+  },
+  "140604" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Rank4.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140605" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_BP.png",
+    "SkillAddLevelList" : {
+      "140602" : 2,
+      "140604" : 2
+    }
+  },
+  "140606" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Rank6.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
   "140701" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1407_Rank1.png",
     "SkillAddLevelList" : {
@@ -2507,6 +2545,48 @@
   },
   "140706" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1407_Rank6.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140901" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Rank1.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140902" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Rank2.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140903" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Ultra.png",
+    "SkillAddLevelList" : {
+      "140901" : 1,
+      "140903" : 2,
+      "1140901" : 1
+    }
+  },
+  "140904" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Rank4.png",
+    "SkillAddLevelList" : {
+
+    }
+  },
+  "140905" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_BP.png",
+    "SkillAddLevelList" : {
+      "140902" : 2,
+      "140904" : 2,
+      "1140903" : 1,
+      "1140905" : 1,
+      "1140906" : 1
+    }
+  },
+  "140906" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Rank6.png",
     "SkillAddLevelList" : {
 
     }
