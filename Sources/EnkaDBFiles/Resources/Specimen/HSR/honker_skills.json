@@ -4615,6 +4615,78 @@
     "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
     "PointType" : 1
   },
+  "1406001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Normal.png",
+    "PointType" : 2
+  },
+  "1406002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_BP.png",
+    "PointType" : 2
+  },
+  "1406003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Ultra.png",
+    "PointType" : 2
+  },
+  "1406004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Passive.png",
+    "PointType" : 2
+  },
+  "1406007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_Maze.png",
+    "PointType" : 2
+  },
+  "1406101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1406102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1406103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1406_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1406201" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1406202" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1406203" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1406204" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusProbability.png",
+    "PointType" : 1
+  },
+  "1406205" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1406206" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1406207" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1406208" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusProbability.png",
+    "PointType" : 1
+  },
+  "1406209" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1406210" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
   "1407001" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1407_Normal.png",
     "PointType" : 2
@@ -4693,6 +4765,86 @@
   },
   "1407302" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_11407_ServantPassive.png",
+    "PointType" : 4
+  },
+  "1409001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Normal.png",
+    "PointType" : 2
+  },
+  "1409002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_BP.png",
+    "PointType" : 2
+  },
+  "1409003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Ultra.png",
+    "PointType" : 2
+  },
+  "1409004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Passive.png",
+    "PointType" : 2
+  },
+  "1409007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_Maze.png",
+    "PointType" : 2
+  },
+  "1409101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1409102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1409103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1409_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1409201" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1409202" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "1409203" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1409204" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "1409205" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1409206" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "1409207" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1409208" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "1409209" : {
+    "IconPath" : "SpriteOutput/UI/IconStatusResistance.png",
+    "PointType" : 1
+  },
+  "1409210" : {
+    "IconPath" : "SpriteOutput/UI/IconSpeed.png",
+    "PointType" : 1
+  },
+  "1409301" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_11409_Servant.png",
+    "PointType" : 4
+  },
+  "1409302" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_11409_ServantPassive.png",
     "PointType" : 4
   },
   "8001001" : {
