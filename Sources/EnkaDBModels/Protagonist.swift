@@ -4,7 +4,7 @@
 
 import Foundation
 
-public enum Protagonist: Sendable {
+public enum Protagonist: Codable, Hashable, Sendable {
     // Male Protagonist in HSR
     case ofCaelus
     // Female Protagonist in HSR

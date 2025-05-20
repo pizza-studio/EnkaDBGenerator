@@ -11,7 +11,7 @@ public enum EnkaDBModelsGI {}
 extension EnkaDBModelsGI {
     public typealias CharacterDict = [String: Character]
 
-    public struct Character: Codable, Hashable {
+    public struct Character: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -69,7 +69,7 @@ extension EnkaDBModelsGI {
 // MARK: EnkaDBModelsGI.Costume
 
 extension EnkaDBModelsGI {
-    public struct Costume: Codable, Hashable {
+    public struct Costume: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(art: String, avatarId: Int, icon: String, sideIconName: String) {
@@ -93,7 +93,7 @@ extension EnkaDBModelsGI {
 extension EnkaDBModelsGI {
     public typealias AffixDict = [String: Affix]
 
-    public struct Affix: Codable, Hashable {
+    public struct Affix: Codable, Hashable, Sendable {
         public var efficiency: Double
         public var position: Int
         public var propType: String
@@ -105,7 +105,7 @@ extension EnkaDBModelsGI {
 extension EnkaDBModelsGI {
     public typealias NameCardDict = [String: NameCard]
 
-    public struct NameCard: Codable, Hashable {
+    public struct NameCard: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(icon: String) {
@@ -123,7 +123,7 @@ extension EnkaDBModelsGI {
 extension EnkaDBModelsGI {
     public typealias ProfilePictureDict = [String: ProfilePicture]
 
-    public struct ProfilePicture: Codable, Hashable {
+    public struct ProfilePicture: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(iconPath: String) {
