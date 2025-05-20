@@ -11,7 +11,7 @@ public enum EnkaDBModelsHSR {}
 extension EnkaDBModelsHSR {
     public typealias ArtifactsDict = [String: Artifact]
 
-    public struct Artifact: Codable, Hashable {
+    public struct Artifact: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -56,7 +56,7 @@ extension EnkaDBModelsHSR {
 extension EnkaDBModelsHSR {
     public typealias CharacterDict = [String: Character]
 
-    public struct Character: Codable, Hashable {
+    public struct Character: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -85,7 +85,7 @@ extension EnkaDBModelsHSR {
 
         // MARK: Public
 
-        public struct AvatarFullName: Codable, Hashable {
+        public struct AvatarFullName: Codable, Hashable, Sendable {
             // MARK: Lifecycle
 
             public init(hash: String) {
@@ -116,7 +116,7 @@ extension EnkaDBModelsHSR {
             }
         }
 
-        public struct AvatarName: Codable, Hashable {
+        public struct AvatarName: Codable, Hashable, Sendable {
             // MARK: Lifecycle
 
             public init(hash: String) {
@@ -176,7 +176,7 @@ extension EnkaDBModelsHSR {
 // MARK: EnkaDBModelsHSR.Meta
 
 extension EnkaDBModelsHSR {
-    public struct Meta: Codable, Hashable {
+    public struct Meta: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -214,7 +214,7 @@ extension EnkaDBModelsHSR.Meta {
 extension EnkaDBModelsHSR.Meta {
     public typealias RawAvatarMetaDict = [String: [String: AvatarMeta]]
 
-    public struct AvatarMeta: Codable, Hashable {
+    public struct AvatarMeta: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -274,7 +274,7 @@ extension EnkaDBModelsHSR.Meta {
 extension EnkaDBModelsHSR.Meta {
     public typealias RawEquipmentMetaDict = [String: [String: EquipmentMeta]]
 
-    public struct EquipmentMeta: Codable, Hashable {
+    public struct EquipmentMeta: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -324,7 +324,7 @@ extension EnkaDBModelsHSR.Meta {
 // Relic = Artifact
 
 extension EnkaDBModelsHSR.Meta {
-    public struct RawRelicDB: Codable, Hashable {
+    public struct RawRelicDB: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -339,7 +339,7 @@ extension EnkaDBModelsHSR.Meta {
 
         // MARK: Public
 
-        public struct MainAffix: Codable, Hashable {
+        public struct MainAffix: Codable, Hashable, Sendable {
             // MARK: Lifecycle
 
             public init(property: String, baseValue: Double, levelAdd: Double) {
@@ -361,7 +361,7 @@ extension EnkaDBModelsHSR.Meta {
             public var levelAdd: Double
         }
 
-        public struct SubAffix: Codable, Hashable {
+        public struct SubAffix: Codable, Hashable, Sendable {
             // MARK: Lifecycle
 
             public init(property: String, baseValue: Double, stepValue: Double) {
@@ -404,7 +404,7 @@ extension EnkaDBModelsHSR.Meta {
 extension EnkaDBModelsHSR {
     public typealias ProfileAvatarDict = [String: ProfileAvatar]
 
-    public struct ProfileAvatar: Codable, Hashable {
+    public struct ProfileAvatar: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(icon: String) {
@@ -426,7 +426,7 @@ extension EnkaDBModelsHSR {
 extension EnkaDBModelsHSR {
     public typealias SkillRanksDict = [String: SkillRank]
 
-    public struct SkillRank: Codable, Hashable {
+    public struct SkillRank: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -454,7 +454,7 @@ extension EnkaDBModelsHSR {
 extension EnkaDBModelsHSR {
     public typealias SkillsDict = [String: Skill]
 
-    public struct Skill: Codable, Hashable {
+    public struct Skill: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(iconPath: String, pointType: Int) {
@@ -481,7 +481,7 @@ extension EnkaDBModelsHSR {
 
     public typealias SkillTree = [String: [SkillInTree]]
 
-    public enum SkillInTree: Codable, Hashable, Equatable {
+    public enum SkillInTree: Codable, Hashable, Sendable, Equatable {
         case baseSkill(String)
         case extendedSkills([String])
         case memoSpriteSkills([String])
@@ -579,7 +579,7 @@ extension [EnkaDBModelsHSR.SkillInTree] {
 extension EnkaDBModelsHSR {
     public typealias WeaponsDict = [String: Weapon]
 
-    public struct Weapon: Codable, Hashable {
+    public struct Weapon: Codable, Hashable, Sendable {
         // MARK: Lifecycle
 
         public init(
@@ -596,7 +596,7 @@ extension EnkaDBModelsHSR {
 
         // MARK: Public
 
-        public struct EquipmentName: Codable, Hashable {
+        public struct EquipmentName: Codable, Hashable, Sendable {
             // MARK: Lifecycle
 
             public init(hash: String) {
