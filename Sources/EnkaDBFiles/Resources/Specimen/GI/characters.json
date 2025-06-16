@@ -3524,5 +3524,65 @@
       "11135" : "Skill_E_Ifa_01"
     },
     "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000114" : {
+    "Consts" : [
+      "UI_Talent_S_SkirkNew_01",
+      "UI_Talent_S_SkirkNew_02",
+      "UI_Talent_U_SkirkNew_01",
+      "UI_Talent_S_SkirkNew_03",
+      "UI_Talent_U_SkirkNew_02",
+      "UI_Talent_S_SkirkNew_04"
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 123650890,
+    "ProudMap" : {
+      "11141" : 11431,
+      "11142" : 11432,
+      "11145" : 11439
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_SkirkNew",
+    "SkillOrder" : [
+      11141,
+      11142,
+      11145
+    ],
+    "Skills" : {
+      "11141" : "Skill_A_01",
+      "11142" : "Skill_S_SkirkNew_01",
+      "11145" : "Skill_E_SkirkNew_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000115" : {
+    "Consts" : [
+      "UI_Talent_S_Dahlia_01",
+      "UI_Talent_S_Dahlia_02",
+      "UI_Talent_U_Dahlia_01",
+      "UI_Talent_S_Dahlia_03",
+      "UI_Talent_U_Dahlia_02",
+      "UI_Talent_S_Dahlia_04"
+    ],
+    "Element" : "Water",
+    "NameTextMapHash" : 2332664426,
+    "ProudMap" : {
+      "11151" : 11531,
+      "11152" : 11532,
+      "11155" : 11539
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Dahlia",
+    "SkillOrder" : [
+      11151,
+      11152,
+      11155
+    ],
+    "Skills" : {
+      "11151" : "Skill_A_01",
+      "11152" : "Skill_S_Dahlia_01",
+      "11155" : "Skill_E_Dahlia_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   }
 }
