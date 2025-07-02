@@ -6,7 +6,7 @@ import Foundation
 
 // MARK: - DimModels4HSR
 
-enum DimModels4HSR: String, CaseIterable {
+enum DimModels4HSR: String, CaseIterable, Sendable {
     case avatar = "AvatarConfig"
     case metaAvatarPromotion = "AvatarPromotionConfig"
     case metaEquipPromotion = "EquipmentPromotionConfig"

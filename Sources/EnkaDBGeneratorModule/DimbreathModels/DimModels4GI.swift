@@ -6,7 +6,7 @@ import Foundation
 
 // MARK: - DimModels4GI
 
-enum DimModels4GI: String, CaseIterable {
+enum DimModels4GI: String, CaseIterable, Sendable {
     case avatar = "AvatarExcelConfigData"
     case skill = "AvatarSkillExcelConfigData"
     case constellation = "AvatarTalentExcelConfigData"

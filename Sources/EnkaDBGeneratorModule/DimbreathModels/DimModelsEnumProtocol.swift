@@ -9,7 +9,7 @@ import FoundationNetworking
 
 // MARK: - DimModelsEnumProtocol
 
-protocol DimModelsEnumProtocol: Hashable, CaseIterable {
+protocol DimModelsEnumProtocol: Hashable, CaseIterable, Sendable {
     static var baseURLHeader: String { get }
     static var folderName: String { get }
     var fileNameStem: String { get }
