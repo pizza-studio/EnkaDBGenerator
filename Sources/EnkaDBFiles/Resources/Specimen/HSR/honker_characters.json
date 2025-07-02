@@ -2012,6 +2012,40 @@
       140709
     ]
   },
+  "1408" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1408B.png",
+    "AvatarBaseType" : "Warrior",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1408.png",
+    "AvatarFullName" : {
+      "Hash" : "18130795695677949186"
+    },
+    "AvatarName" : {
+      "Hash" : "2073865627579588830"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1408.png",
+    "Element" : "Physical",
+    "RankIDList" : [
+      140801,
+      140802,
+      140803,
+      140804,
+      140805,
+      140806
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      140801,
+      140802,
+      140803,
+      140804,
+      140805,
+      140806,
+      140807,
+      140808,
+      140809,
+      140811
+    ]
+  },
   "1409" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1409B.png",
     "AvatarBaseType" : "Memory",

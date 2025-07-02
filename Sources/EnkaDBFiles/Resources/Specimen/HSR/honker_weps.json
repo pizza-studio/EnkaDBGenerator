@@ -599,6 +599,78 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/21052.png",
     "Rarity" : 4
   },
+  "21053" : {
+    "AvatarBaseType" : "Knight",
+    "EquipmentName" : {
+      "Hash" : "8374190943812153532"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21053.png",
+    "Rarity" : 4
+  },
+  "21054" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "925285841184946344"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21054.png",
+    "Rarity" : 4
+  },
+  "21055" : {
+    "AvatarBaseType" : "Priest",
+    "EquipmentName" : {
+      "Hash" : "8234482625723588709"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21055.png",
+    "Rarity" : 4
+  },
+  "21056" : {
+    "AvatarBaseType" : "Shaman",
+    "EquipmentName" : {
+      "Hash" : "13758363745381237568"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21056.png",
+    "Rarity" : 4
+  },
+  "21057" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "9049859548954827221"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21057.png",
+    "Rarity" : 4
+  },
+  "21058" : {
+    "AvatarBaseType" : "Warrior",
+    "EquipmentName" : {
+      "Hash" : "7494166407242075795"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21058.png",
+    "Rarity" : 4
+  },
+  "21060" : {
+    "AvatarBaseType" : "Mage",
+    "EquipmentName" : {
+      "Hash" : "2081896813700414495"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21060.png",
+    "Rarity" : 4
+  },
+  "21061" : {
+    "AvatarBaseType" : "Warlock",
+    "EquipmentName" : {
+      "Hash" : "6535201401877376706"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21061.png",
+    "Rarity" : 4
+  },
+  "21062" : {
+    "AvatarBaseType" : "Rogue",
+    "EquipmentName" : {
+      "Hash" : "5119764409776904864"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21062.png",
+    "Rarity" : 4
+  },
   "22000" : {
     "AvatarBaseType" : "Warlock",
     "EquipmentName" : {
@@ -989,6 +1061,30 @@
       "Hash" : "17437100551828055817"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/23043.png",
+    "Rarity" : 5
+  },
+  "23044" : {
+    "AvatarBaseType" : "Warrior",
+    "EquipmentName" : {
+      "Hash" : "1669624186204340722"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23044.png",
+    "Rarity" : 5
+  },
+  "23045" : {
+    "AvatarBaseType" : "Warrior",
+    "EquipmentName" : {
+      "Hash" : "2655752028575549155"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23045.png",
+    "Rarity" : 5
+  },
+  "23046" : {
+    "AvatarBaseType" : "Rogue",
+    "EquipmentName" : {
+      "Hash" : "17063264696383380947"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23046.png",
     "Rarity" : 5
   },
   "24000" : {
