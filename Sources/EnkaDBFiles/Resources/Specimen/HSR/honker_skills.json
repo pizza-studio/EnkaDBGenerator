@@ -647,6 +647,150 @@
     "IconPath" : "SpriteOutput/UI/IconIceAddedRatio.png",
     "PointType" : 1
   },
+  "1014001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_Normal.png",
+    "PointType" : 2
+  },
+  "1014002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_BP.png",
+    "PointType" : 2
+  },
+  "1014003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_Ultra.png",
+    "PointType" : 2
+  },
+  "1014004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_Passive.png",
+    "PointType" : 2
+  },
+  "1014007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_Maze.png",
+    "PointType" : 2
+  },
+  "1014101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1014102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1014103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1014_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1014201" : {
+    "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
+    "PointType" : 1
+  },
+  "1014202" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1014203" : {
+    "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
+    "PointType" : 1
+  },
+  "1014204" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "1014205" : {
+    "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
+    "PointType" : 1
+  },
+  "1014206" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1014207" : {
+    "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
+    "PointType" : 1
+  },
+  "1014208" : {
+    "IconPath" : "SpriteOutput/UI/IconMaxHP.png",
+    "PointType" : 1
+  },
+  "1014209" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1014210" : {
+    "IconPath" : "SpriteOutput/UI/IconWindAddedRatio.png",
+    "PointType" : 1
+  },
+  "1015001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_Normal.png",
+    "PointType" : 2
+  },
+  "1015002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_BP.png",
+    "PointType" : 2
+  },
+  "1015003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_Ultra.png",
+    "PointType" : 2
+  },
+  "1015004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_Passive.png",
+    "PointType" : 2
+  },
+  "1015007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_Maze.png",
+    "PointType" : 2
+  },
+  "1015101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1015102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1015103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1015_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1015201" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1015202" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1015203" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1015204" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1015205" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1015206" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1015207" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1015208" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1015209" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1015210" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
   "1101001" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1101_Normal.png",
     "PointType" : 2
