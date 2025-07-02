@@ -421,7 +421,7 @@ extension DimModels4HSR {
         let level: Int
         let avatarID: Int
         let pointType: Int
-        let anchor: String
+        let anchorType: String
         let maxLevel: Int
         let defaultUnlock: Bool?
         let prePoint: [Int]
@@ -499,7 +499,7 @@ extension DimModels4HSR {
 
             // 其他關鍵屬性
             hasher.combine(pointType)
-            hasher.combine(anchor)
+            hasher.combine(anchorType)
             hasher.combine(maxLevel)
             hasher.combine(defaultUnlock)
             hasher.combine(prePoint)
