@@ -11,17 +11,30 @@ extension DimModels4HSR {
         // MARK: Lifecycle
 
         init(withLang: Bool = true, oneByOne: Bool = false) async throws {
-            let dataStack: [DimModels4HSR: Data] = try await getDataStack(oneByOne: oneByOne)
+            let dataStack: [DimModels4HSR: Data] = try await getDataStack(
+                oneByOne: oneByOne, isCollab: false
+            )
+            let dataStack4Collab: [DimModels4HSR: Data] = try await getDataStack(
+                oneByOne: oneByOne, isCollab: true
+            )
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromPascalCase // Vital Important。
             self.avatarDB = try decoder.decode(
                 [AvatarConfig].self,
                 from: dataStack[.avatar]!
+            ).filter(\.isValid) + decoder.decode(
+                [AvatarConfig].self,
+                from: dataStack4Collab[.avatar]!
             ).filter(\.isValid)
+            avatarDB.sort { $0.avatarID < $1.avatarID }
             self.metaAvatarPromotionDB = try decoder.decode(
                 [AvatarPromotionConfig].self,
                 from: dataStack[.metaAvatarPromotion]!
+            ).filter(\.isValid) + decoder.decode(
+                [AvatarPromotionConfig].self,
+                from: dataStack4Collab[.metaAvatarPromotion]!
             ).filter(\.isValid)
+            metaAvatarPromotionDB.sort { $0.avatarID < $1.avatarID }
             self.equipmentDB = try decoder.decode(
                 [EquipmentConfig].self,
                 from: dataStack[.equipment]!
@@ -50,7 +63,11 @@ extension DimModels4HSR {
             self.avatarRankDB = try decoder.decode(
                 [AvatarRankConfig].self,
                 from: dataStack[.avatarRank]!
+            ).filter(\.isValid) + decoder.decode(
+                [AvatarRankConfig].self,
+                from: dataStack4Collab[.avatarRank]!
             ).filter(\.isValid)
+            avatarRankDB.sort { $0.rankID < $1.rankID }
             self.relicDB = try decoder.decode(
                 [RelicConfig].self,
                 from: dataStack[.relic]!
@@ -66,7 +83,11 @@ extension DimModels4HSR {
             self.skillTreeDB = try decoder.decode(
                 [AvatarSkillTreeConfig].self,
                 from: dataStack[.skillTree]!
+            ).filter(\.isValid) + decoder.decode(
+                [AvatarSkillTreeConfig].self,
+                from: dataStack4Collab[.skillTree]!
             ).filter(\.isValid)
+            skillTreeDB.sort { $0.pointID < $1.pointID }
             skillTreeDB.hookVertices() // Important!!!!
             // Profile Pictures.
             let pfpDB1 = try decoder.decode(

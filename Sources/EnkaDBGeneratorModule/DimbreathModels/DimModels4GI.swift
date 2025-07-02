@@ -28,6 +28,7 @@ extension DimModels4GI: DimModelsEnumProtocol {
     static let baseURLHeader = "https://gitlab.com/Dimbreath/AnimeGameData/-/raw/master/"
     static var folderName: String { "ExcelBinOutput/" }
     var fileNameStem: String { rawValue }
+    var hasCollabFilesToCollect: Bool { false }
 }
 
 // MARK: DimModels4GI.AvatarExcelConfigData

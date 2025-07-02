@@ -30,6 +30,16 @@ extension DimModels4HSR: DimModelsEnumProtocol {
     static let baseURLHeader = "https://gitlab.com/Dimbreath/TurnBasedGameData/-/raw/main/"
     static var folderName: String { "ExcelOutput/" }
     var fileNameStem: String { rawValue }
+
+    var hasCollabFilesToCollect: Bool {
+        switch self {
+        case .avatar: true
+        case .metaAvatarPromotion: true
+        case .avatarRank: true
+        case .skillTree: true
+        default: false
+        }
+    }
 }
 
 // MARK: DimModels4HSR.AvatarConfig
