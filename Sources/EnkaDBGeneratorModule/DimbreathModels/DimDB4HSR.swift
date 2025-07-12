@@ -98,7 +98,11 @@ extension DimModels4HSR {
                 [PlayerIcon].self,
                 from: dataStack[.profilePicture2]!
             )
-            self.profilePictureDB = pfpDB1 + pfpDB2
+            let pfpDBCollab = try decoder.decode(
+                [PlayerIcon].self,
+                from: dataStack4Collab[.profilePicture1]!
+            )
+            self.profilePictureDB = pfpDB1 + pfpDB2 + pfpDBCollab
             // Language Table.
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne)

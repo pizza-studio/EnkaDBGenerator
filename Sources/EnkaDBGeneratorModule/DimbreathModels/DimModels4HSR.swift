@@ -34,6 +34,7 @@ extension DimModels4HSR: DimModelsEnumProtocol {
     var hasCollabFilesToCollect: Bool {
         switch self {
         case .avatar: true
+        case .profilePicture1: true
         case .metaAvatarPromotion: true
         case .avatarRank: true
         case .skillTree: true
