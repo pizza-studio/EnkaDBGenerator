@@ -1040,6 +1040,14 @@
       "UI_Talent_U_Bennett_02",
       "UI_Talent_S_Bennett_04"
     ],
+    "Costumes" : {
+      "203201" : {
+        "art" : "UI_Costume_BennettCostumeSummer",
+        "avatarId" : 10000032,
+        "icon" : "UI_AvatarIcon_BennettCostumeSummer",
+        "sideIconName" : "UI_AvatarIcon_Side_BennettCostumeSummer"
+      }
+    },
     "Element" : "Fire",
     "NameTextMapHash" : 968893378,
     "ProudMap" : {
@@ -1890,6 +1898,14 @@
       "UI_Talent_U_Yelan_02",
       "UI_Talent_S_Yelan_04"
     ],
+    "Costumes" : {
+      "206001" : {
+        "art" : "UI_Costume_YelanCostumeSummer",
+        "avatarId" : 10000060,
+        "icon" : "UI_AvatarIcon_YelanCostumeSummer",
+        "sideIconName" : "UI_AvatarIcon_Side_YelanCostumeSummer"
+      }
+    },
     "Element" : "Water",
     "NameTextMapHash" : 2848374378,
     "ProudMap" : {
@@ -3584,5 +3600,35 @@
       "11155" : "Skill_E_Dahlia_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000116" : {
+    "Consts" : [
+      "UI_Talent_S_Ineffa_01",
+      "UI_Talent_S_Ineffa_02",
+      "UI_Talent_U_Ineffa_01",
+      "UI_Talent_S_Ineffa_03",
+      "UI_Talent_U_Ineffa_02",
+      "UI_Talent_S_Ineffa_04"
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 2759230658,
+    "ProudMap" : {
+      "11161" : 11631,
+      "11162" : 11632,
+      "11165" : 11639
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Ineffa",
+    "SkillOrder" : [
+      11161,
+      11162,
+      11165
+    ],
+    "Skills" : {
+      "11161" : "Skill_A_03",
+      "11162" : "Skill_S_Ineffa_01",
+      "11165" : "Skill_E_Ineffa_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
   }
 }
