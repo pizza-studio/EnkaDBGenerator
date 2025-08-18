@@ -93,9 +93,9 @@
     "Element" : "Wind",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100543" : 730,
       "10067" : 732,
-      "10068" : 739,
-      "100543" : 730
+      "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -105,9 +105,9 @@
       10068
     ],
     "Skills" : {
+      "100543" : "Skill_A_01",
       "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01",
-      "100543" : "Skill_A_01"
+      "10068" : "Skill_E_PlayerWind_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -123,9 +123,9 @@
     "Element" : "Fire",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100541" : 530,
       "10097" : 532,
-      "10098" : 539,
-      "100541" : 530
+      "10098" : 539
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -135,9 +135,9 @@
       10098
     ],
     "Skills" : {
+      "100541" : "Skill_A_01",
       "10097" : "Skill_S_PlayerFire_01",
-      "10098" : "Skill_E_PlayerFire_01",
-      "100541" : "Skill_A_01"
+      "10098" : "Skill_E_PlayerFire_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -153,9 +153,9 @@
     "Element" : "Water",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100542" : 630,
       "10087" : 632,
-      "10088" : 639,
-      "100542" : 630
+      "10088" : 639
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -165,9 +165,9 @@
       10088
     ],
     "Skills" : {
+      "100542" : "Skill_A_01",
       "10087" : "Skill_S_PlayerWater_01",
-      "10088" : "Skill_E_PlayerWater_01",
-      "100542" : "Skill_A_01"
+      "10088" : "Skill_E_PlayerWater_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -183,9 +183,9 @@
     "Element" : "Wind",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100543" : 730,
       "10067" : 732,
-      "10068" : 739,
-      "100543" : 730
+      "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -195,9 +195,9 @@
       10068
     ],
     "Skills" : {
+      "100543" : "Skill_A_01",
       "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01",
-      "100543" : "Skill_A_01"
+      "10068" : "Skill_E_PlayerWind_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -213,9 +213,9 @@
     "Element" : "Rock",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100545" : 730,
       "10077" : 932,
-      "10078" : 939,
-      "100545" : 730
+      "10078" : 939
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -225,9 +225,9 @@
       10078
     ],
     "Skills" : {
+      "100545" : "Skill_A_01",
       "10077" : "Skill_S_PlayerRock_01",
-      "10078" : "Skill_E_PlayerRock_01",
-      "100545" : "Skill_A_01"
+      "10078" : "Skill_E_PlayerRock_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -243,9 +243,9 @@
     "Element" : "Electric",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100546" : 1030,
       "10602" : 1032,
-      "10605" : 1039,
-      "100546" : 1030
+      "10605" : 1039
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -255,9 +255,9 @@
       10605
     ],
     "Skills" : {
+      "100546" : "Skill_A_01",
       "10602" : "Skill_S_PlayerElectric_01",
-      "10605" : "Skill_E_PlayerElectric_01",
-      "100546" : "Skill_A_01"
+      "10605" : "Skill_E_PlayerElectric_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -273,9 +273,9 @@
     "Element" : "Grass",
     "NameTextMapHash" : 1533656818,
     "ProudMap" : {
+      "100547" : 1130,
       "10117" : 1132,
-      "10118" : 1139,
-      "100547" : 1130
+      "10118" : 1139
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
@@ -285,9 +285,9 @@
       10118
     ],
     "Skills" : {
+      "100547" : "Skill_A_01",
       "10117" : "Skill_E_PlayerGrass_01",
-      "10118" : "Skill_S_PlayerGrass_01",
-      "100547" : "Skill_A_01"
+      "10118" : "Skill_S_PlayerGrass_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -341,9 +341,9 @@
     "Element" : "Wind",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100553" : 731,
       "10067" : 732,
-      "10068" : 739,
-      "100553" : 731
+      "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -353,9 +353,9 @@
       10068
     ],
     "Skills" : {
+      "100553" : "Skill_A_01",
       "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01",
-      "100553" : "Skill_A_01"
+      "10068" : "Skill_E_PlayerWind_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -371,9 +371,9 @@
     "Element" : "Fire",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100551" : 531,
       "10097" : 532,
-      "10098" : 539,
-      "100551" : 531
+      "10098" : 539
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -383,9 +383,9 @@
       10098
     ],
     "Skills" : {
+      "100551" : "Skill_A_01",
       "10097" : "Skill_S_PlayerFire_01",
-      "10098" : "Skill_E_PlayerFire_01",
-      "100551" : "Skill_A_01"
+      "10098" : "Skill_E_PlayerFire_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -401,9 +401,9 @@
     "Element" : "Water",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100552" : 631,
       "10087" : 632,
-      "10088" : 639,
-      "100552" : 631
+      "10088" : 639
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -413,9 +413,9 @@
       10088
     ],
     "Skills" : {
+      "100552" : "Skill_A_01",
       "10087" : "Skill_S_PlayerWater_01",
-      "10088" : "Skill_E_PlayerWater_01",
-      "100552" : "Skill_A_01"
+      "10088" : "Skill_E_PlayerWater_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -431,9 +431,9 @@
     "Element" : "Wind",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100553" : 731,
       "10067" : 732,
-      "10068" : 739,
-      "100553" : 731
+      "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -443,9 +443,9 @@
       10068
     ],
     "Skills" : {
+      "100553" : "Skill_A_01",
       "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01",
-      "100553" : "Skill_A_01"
+      "10068" : "Skill_E_PlayerWind_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -461,9 +461,9 @@
     "Element" : "Rock",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100555" : 731,
       "10077" : 932,
-      "10078" : 939,
-      "100555" : 731
+      "10078" : 939
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -473,9 +473,9 @@
       10078
     ],
     "Skills" : {
+      "100555" : "Skill_A_01",
       "10077" : "Skill_S_PlayerRock_01",
-      "10078" : "Skill_E_PlayerRock_01",
-      "100555" : "Skill_A_01"
+      "10078" : "Skill_E_PlayerRock_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -491,9 +491,9 @@
     "Element" : "Electric",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100556" : 1031,
       "10602" : 1032,
-      "10605" : 1039,
-      "100556" : 1031
+      "10605" : 1039
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -503,9 +503,9 @@
       10605
     ],
     "Skills" : {
+      "100556" : "Skill_A_01",
       "10602" : "Skill_S_PlayerElectric_01",
-      "10605" : "Skill_E_PlayerElectric_01",
-      "100556" : "Skill_A_01"
+      "10605" : "Skill_E_PlayerElectric_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -521,9 +521,9 @@
     "Element" : "Grass",
     "NameTextMapHash" : 3816664530,
     "ProudMap" : {
+      "100557" : 1131,
       "10117" : 1132,
-      "10118" : 1139,
-      "100557" : 1131
+      "10118" : 1139
     },
     "QualityType" : "QUALITY_ORANGE",
     "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
@@ -533,9 +533,9 @@
       10118
     ],
     "Skills" : {
+      "100557" : "Skill_A_01",
       "10117" : "Skill_E_PlayerGrass_01",
-      "10118" : "Skill_S_PlayerGrass_01",
-      "100557" : "Skill_A_01"
+      "10118" : "Skill_S_PlayerGrass_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },

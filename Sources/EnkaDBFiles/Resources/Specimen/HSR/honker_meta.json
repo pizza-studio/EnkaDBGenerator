@@ -16851,32 +16851,32 @@
     "23013" : {
       "1" : {
         "props" : {
-          "HealRatioBase" : 0.12,
-          "HPAddedRatio" : 0.18
+          "HPAddedRatio" : 0.18,
+          "HealRatioBase" : 0.12
         }
       },
       "2" : {
         "props" : {
-          "HealRatioBase" : 0.14,
-          "HPAddedRatio" : 0.21
+          "HPAddedRatio" : 0.21,
+          "HealRatioBase" : 0.14
         }
       },
       "3" : {
         "props" : {
-          "HealRatioBase" : 0.16,
-          "HPAddedRatio" : 0.24
+          "HPAddedRatio" : 0.24,
+          "HealRatioBase" : 0.16
         }
       },
       "4" : {
         "props" : {
-          "HealRatioBase" : 0.18,
-          "HPAddedRatio" : 0.27
+          "HPAddedRatio" : 0.27,
+          "HealRatioBase" : 0.18
         }
       },
       "5" : {
         "props" : {
-          "HealRatioBase" : 0.2,
-          "HPAddedRatio" : 0.3
+          "HPAddedRatio" : 0.3,
+          "HealRatioBase" : 0.2
         }
       }
     },
@@ -17504,32 +17504,32 @@
     "23039" : {
       "1" : {
         "props" : {
-          "HealTakenRatio" : 0.2,
-          "HPAddedRatio" : 0.18
+          "HPAddedRatio" : 0.18,
+          "HealTakenRatio" : 0.2
         }
       },
       "2" : {
         "props" : {
-          "HealTakenRatio" : 0.25,
-          "HPAddedRatio" : 0.21
+          "HPAddedRatio" : 0.21,
+          "HealTakenRatio" : 0.25
         }
       },
       "3" : {
         "props" : {
-          "HealTakenRatio" : 0.3,
-          "HPAddedRatio" : 0.24
+          "HPAddedRatio" : 0.24,
+          "HealTakenRatio" : 0.3
         }
       },
       "4" : {
         "props" : {
-          "HealTakenRatio" : 0.35,
-          "HPAddedRatio" : 0.27
+          "HPAddedRatio" : 0.27,
+          "HealTakenRatio" : 0.35
         }
       },
       "5" : {
         "props" : {
-          "HealTakenRatio" : 0.4,
-          "HPAddedRatio" : 0.3
+          "HPAddedRatio" : 0.3,
+          "HealTakenRatio" : 0.4
         }
       }
     },
@@ -17966,6 +17966,11 @@
           "LevelAdd" : 0.009677,
           "Property" : "HPAddedRatio"
         },
+        "10" : {
+          "BaseValue" : 0.024883,
+          "LevelAdd" : 0.008709,
+          "Property" : "ImaginaryAddedRatio"
+        },
         "2" : {
           "BaseValue" : 0.027648,
           "LevelAdd" : 0.009677,
@@ -18005,11 +18010,6 @@
           "BaseValue" : 0.024883,
           "LevelAdd" : 0.008709,
           "Property" : "QuantumAddedRatio"
-        },
-        "10" : {
-          "BaseValue" : 0.024883,
-          "LevelAdd" : 0.008709,
-          "Property" : "ImaginaryAddedRatio"
         }
       },
       "26" : {
@@ -18118,6 +18118,11 @@
           "LevelAdd" : 0.014515,
           "Property" : "HPAddedRatio"
         },
+        "10" : {
+          "BaseValue" : 0.037325,
+          "LevelAdd" : 0.013064001,
+          "Property" : "ImaginaryAddedRatio"
+        },
         "2" : {
           "BaseValue" : 0.041472,
           "LevelAdd" : 0.014515,
@@ -18157,11 +18162,6 @@
           "BaseValue" : 0.037325,
           "LevelAdd" : 0.013064001,
           "Property" : "QuantumAddedRatio"
-        },
-        "10" : {
-          "BaseValue" : 0.037325,
-          "LevelAdd" : 0.013064001,
-          "Property" : "ImaginaryAddedRatio"
         }
       },
       "36" : {
@@ -18242,6 +18242,27 @@
           "Property" : "StatusProbabilityBase"
         }
       },
+      "433" : {
+        "1" : {
+          "BaseValue" : 0.06912,
+          "LevelAdd" : 0.024192,
+          "Property" : "DefenceAddedRatio"
+        }
+      },
+      "434" : {
+        "1" : {
+          "BaseValue" : 0.041472,
+          "LevelAdd" : 0.014515,
+          "Property" : "CriticalChanceBase"
+        }
+      },
+      "436" : {
+        "1" : {
+          "BaseValue" : 0.044237,
+          "LevelAdd" : 0.015483,
+          "Property" : "HealRatioBase"
+        }
+      },
       "44" : {
         "1" : {
           "BaseValue" : 0.055296,
@@ -18264,11 +18285,30 @@
           "Property" : "SpeedDelta"
         }
       },
+      "441" : {
+        "1" : {
+          "BaseValue" : 0.055296,
+          "LevelAdd" : 0.019354,
+          "Property" : "HPAddedRatio"
+        }
+      },
+      "443" : {
+        "1" : {
+          "BaseValue" : 0.06912,
+          "LevelAdd" : 0.024192,
+          "Property" : "DefenceAddedRatio"
+        }
+      },
       "45" : {
         "1" : {
           "BaseValue" : 0.055296,
           "LevelAdd" : 0.019354,
           "Property" : "HPAddedRatio"
+        },
+        "10" : {
+          "BaseValue" : 0.049766,
+          "LevelAdd" : 0.017418,
+          "Property" : "ImaginaryAddedRatio"
         },
         "2" : {
           "BaseValue" : 0.055296,
@@ -18309,11 +18349,6 @@
           "BaseValue" : 0.049766,
           "LevelAdd" : 0.017418,
           "Property" : "QuantumAddedRatio"
-        },
-        "10" : {
-          "BaseValue" : 0.049766,
-          "LevelAdd" : 0.017418,
-          "Property" : "ImaginaryAddedRatio"
         }
       },
       "46" : {
@@ -18422,6 +18457,11 @@
           "LevelAdd" : 0.024192,
           "Property" : "HPAddedRatio"
         },
+        "10" : {
+          "BaseValue" : 0.062208,
+          "LevelAdd" : 0.021773001,
+          "Property" : "ImaginaryAddedRatio"
+        },
         "2" : {
           "BaseValue" : 0.06912,
           "LevelAdd" : 0.024192,
@@ -18461,11 +18501,6 @@
           "BaseValue" : 0.062208,
           "LevelAdd" : 0.021773001,
           "Property" : "QuantumAddedRatio"
-        },
-        "10" : {
-          "BaseValue" : 0.062208,
-          "LevelAdd" : 0.021773001,
-          "Property" : "ImaginaryAddedRatio"
         }
       },
       "56" : {
@@ -18492,41 +18527,6 @@
         "5" : {
           "BaseValue" : 0.0864,
           "LevelAdd" : 0.030240001,
-          "Property" : "DefenceAddedRatio"
-        }
-      },
-      "433" : {
-        "1" : {
-          "BaseValue" : 0.06912,
-          "LevelAdd" : 0.024192,
-          "Property" : "DefenceAddedRatio"
-        }
-      },
-      "434" : {
-        "1" : {
-          "BaseValue" : 0.041472,
-          "LevelAdd" : 0.014515,
-          "Property" : "CriticalChanceBase"
-        }
-      },
-      "436" : {
-        "1" : {
-          "BaseValue" : 0.044237,
-          "LevelAdd" : 0.015483,
-          "Property" : "HealRatioBase"
-        }
-      },
-      "441" : {
-        "1" : {
-          "BaseValue" : 0.055296,
-          "LevelAdd" : 0.019354,
-          "Property" : "HPAddedRatio"
-        }
-      },
-      "443" : {
-        "1" : {
-          "BaseValue" : 0.06912,
-          "LevelAdd" : 0.024192,
           "Property" : "DefenceAddedRatio"
         }
       }
@@ -19006,6 +19006,21 @@
           "Property" : "HPDelta",
           "StepValue" : 1.693502
         },
+        "10" : {
+          "BaseValue" : 0.013824001,
+          "Property" : "StatusProbabilityBase",
+          "StepValue" : 0.0017280006
+        },
+        "11" : {
+          "BaseValue" : 0.013824001,
+          "Property" : "StatusResistanceBase",
+          "StepValue" : 0.0017280006
+        },
+        "12" : {
+          "BaseValue" : 0.020736001,
+          "Property" : "BreakDamageAddedRatioBase",
+          "StepValue" : 0.0025920009
+        },
         "2" : {
           "BaseValue" : 6.774008,
           "Property" : "AttackDelta",
@@ -19045,21 +19060,6 @@
           "BaseValue" : 0.020736001,
           "Property" : "CriticalDamageBase",
           "StepValue" : 0.0025920009
-        },
-        "10" : {
-          "BaseValue" : 0.013824001,
-          "Property" : "StatusProbabilityBase",
-          "StepValue" : 0.0017280006
-        },
-        "11" : {
-          "BaseValue" : 0.013824001,
-          "Property" : "StatusResistanceBase",
-          "StepValue" : 0.0017280006
-        },
-        "12" : {
-          "BaseValue" : 0.020736001,
-          "Property" : "BreakDamageAddedRatioBase",
-          "StepValue" : 0.0025920009
         }
       },
       "3" : {
@@ -19067,6 +19067,21 @@
           "BaseValue" : 20.322023,
           "Property" : "HPDelta",
           "StepValue" : 2.540253
+        },
+        "10" : {
+          "BaseValue" : 0.020736001,
+          "Property" : "StatusProbabilityBase",
+          "StepValue" : 0.0025920009
+        },
+        "11" : {
+          "BaseValue" : 0.020736001,
+          "Property" : "StatusResistanceBase",
+          "StepValue" : 0.0025920009
+        },
+        "12" : {
+          "BaseValue" : 0.031104,
+          "Property" : "BreakDamageAddedRatioBase",
+          "StepValue" : 0.003888001
         },
         "2" : {
           "BaseValue" : 10.161012,
@@ -19107,21 +19122,6 @@
           "BaseValue" : 0.031104,
           "Property" : "CriticalDamageBase",
           "StepValue" : 0.003888001
-        },
-        "10" : {
-          "BaseValue" : 0.020736001,
-          "Property" : "StatusProbabilityBase",
-          "StepValue" : 0.0025920009
-        },
-        "11" : {
-          "BaseValue" : 0.020736001,
-          "Property" : "StatusResistanceBase",
-          "StepValue" : 0.0025920009
-        },
-        "12" : {
-          "BaseValue" : 0.031104,
-          "Property" : "BreakDamageAddedRatioBase",
-          "StepValue" : 0.003888001
         }
       },
       "4" : {
@@ -19129,6 +19129,21 @@
           "BaseValue" : 27.096031,
           "Property" : "HPDelta",
           "StepValue" : 3.387004
+        },
+        "10" : {
+          "BaseValue" : 0.027648,
+          "Property" : "StatusProbabilityBase",
+          "StepValue" : 0.0034560005
+        },
+        "11" : {
+          "BaseValue" : 0.027648,
+          "Property" : "StatusResistanceBase",
+          "StepValue" : 0.0034560005
+        },
+        "12" : {
+          "BaseValue" : 0.041472,
+          "Property" : "BreakDamageAddedRatioBase",
+          "StepValue" : 0.0051840004
         },
         "2" : {
           "BaseValue" : 13.548016,
@@ -19169,21 +19184,6 @@
           "BaseValue" : 0.041472,
           "Property" : "CriticalDamageBase",
           "StepValue" : 0.0051840004
-        },
-        "10" : {
-          "BaseValue" : 0.027648,
-          "Property" : "StatusProbabilityBase",
-          "StepValue" : 0.0034560005
-        },
-        "11" : {
-          "BaseValue" : 0.027648,
-          "Property" : "StatusResistanceBase",
-          "StepValue" : 0.0034560005
-        },
-        "12" : {
-          "BaseValue" : 0.041472,
-          "Property" : "BreakDamageAddedRatioBase",
-          "StepValue" : 0.0051840004
         }
       },
       "5" : {
@@ -19191,6 +19191,21 @@
           "BaseValue" : 33.87004,
           "Property" : "HPDelta",
           "StepValue" : 4.233755
+        },
+        "10" : {
+          "BaseValue" : 0.034560002,
+          "Property" : "StatusProbabilityBase",
+          "StepValue" : 0.0043200003
+        },
+        "11" : {
+          "BaseValue" : 0.034560002,
+          "Property" : "StatusResistanceBase",
+          "StepValue" : 0.0043200003
+        },
+        "12" : {
+          "BaseValue" : 0.05184,
+          "Property" : "BreakDamageAddedRatioBase",
+          "StepValue" : 0.0064800004
         },
         "2" : {
           "BaseValue" : 16.935019,
@@ -19230,21 +19245,6 @@
         "9" : {
           "BaseValue" : 0.05184,
           "Property" : "CriticalDamageBase",
-          "StepValue" : 0.0064800004
-        },
-        "10" : {
-          "BaseValue" : 0.034560002,
-          "Property" : "StatusProbabilityBase",
-          "StepValue" : 0.0043200003
-        },
-        "11" : {
-          "BaseValue" : 0.034560002,
-          "Property" : "StatusResistanceBase",
-          "StepValue" : 0.0043200003
-        },
-        "12" : {
-          "BaseValue" : 0.05184,
-          "Property" : "BreakDamageAddedRatioBase",
           "StepValue" : 0.0064800004
         }
       }
@@ -20018,6 +20018,146 @@
       "1" : {
         "props" : {
           "QuantumAddedRatio" : 0.064
+        }
+      }
+    },
+    "11005201" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.04
+        }
+      }
+    },
+    "11005202" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.04
+        }
+      }
+    },
+    "11005203" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.04
+        }
+      }
+    },
+    "11005204" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.04
+        }
+      }
+    },
+    "11005205" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.06
+        }
+      }
+    },
+    "11005206" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.06
+        }
+      }
+    },
+    "11005207" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.06
+        }
+      }
+    },
+    "11005208" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.06
+        }
+      }
+    },
+    "11005209" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.08
+        }
+      }
+    },
+    "11005210" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.08
+        }
+      }
+    },
+    "11006201" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.04
+        }
+      }
+    },
+    "11006202" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.04
+        }
+      }
+    },
+    "11006203" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.04
+        }
+      }
+    },
+    "11006204" : {
+      "1" : {
+        "props" : {
+          "QuantumAddedRatio" : 0.032
+        }
+      }
+    },
+    "11006205" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.06
+        }
+      }
+    },
+    "11006206" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.06
+        }
+      }
+    },
+    "11006207" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.06
+        }
+      }
+    },
+    "11006208" : {
+      "1" : {
+        "props" : {
+          "QuantumAddedRatio" : 0.048
+        }
+      }
+    },
+    "11006209" : {
+      "1" : {
+        "props" : {
+          "StatusProbabilityBase" : 0.08
+        }
+      }
+    },
+    "11006210" : {
+      "1" : {
+        "props" : {
+          "AttackAddedRatio" : 0.08
         }
       }
     },
@@ -20858,6 +20998,146 @@
       "1" : {
         "props" : {
           "FireAddedRatio" : 0.064
+        }
+      }
+    },
+    "11205201" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.04
+        }
+      }
+    },
+    "11205202" : {
+      "1" : {
+        "props" : {
+          "CriticalChanceBase" : 0.026999999
+        }
+      }
+    },
+    "11205203" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.04
+        }
+      }
+    },
+    "11205204" : {
+      "1" : {
+        "props" : {
+          "StatusResistanceBase" : 0.04
+        }
+      }
+    },
+    "11205205" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.06
+        }
+      }
+    },
+    "11205206" : {
+      "1" : {
+        "props" : {
+          "CriticalChanceBase" : 0.04
+        }
+      }
+    },
+    "11205207" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.06
+        }
+      }
+    },
+    "11205208" : {
+      "1" : {
+        "props" : {
+          "StatusResistanceBase" : 0.06
+        }
+      }
+    },
+    "11205209" : {
+      "1" : {
+        "props" : {
+          "CriticalChanceBase" : 0.053
+        }
+      }
+    },
+    "11205210" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.08
+        }
+      }
+    },
+    "11212201" : {
+      "1" : {
+        "props" : {
+          "CriticalDamageBase" : 0.053
+        }
+      }
+    },
+    "11212202" : {
+      "1" : {
+        "props" : {
+          "SpeedDelta" : 2
+        }
+      }
+    },
+    "11212203" : {
+      "1" : {
+        "props" : {
+          "CriticalDamageBase" : 0.053
+        }
+      }
+    },
+    "11212204" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.04
+        }
+      }
+    },
+    "11212205" : {
+      "1" : {
+        "props" : {
+          "CriticalDamageBase" : 0.08
+        }
+      }
+    },
+    "11212206" : {
+      "1" : {
+        "props" : {
+          "SpeedDelta" : 3
+        }
+      }
+    },
+    "11212207" : {
+      "1" : {
+        "props" : {
+          "CriticalDamageBase" : 0.08
+        }
+      }
+    },
+    "11212208" : {
+      "1" : {
+        "props" : {
+          "HPAddedRatio" : 0.06
+        }
+      }
+    },
+    "11212209" : {
+      "1" : {
+        "props" : {
+          "SpeedDelta" : 4
+        }
+      }
+    },
+    "11212210" : {
+      "1" : {
+        "props" : {
+          "CriticalDamageBase" : 0.107
         }
       }
     },
@@ -24845,286 +25125,6 @@
       }
     },
     "8008210" : {
-      "1" : {
-        "props" : {
-          "CriticalDamageBase" : 0.107
-        }
-      }
-    },
-    "11005201" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.04
-        }
-      }
-    },
-    "11005202" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.04
-        }
-      }
-    },
-    "11005203" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.04
-        }
-      }
-    },
-    "11005204" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.04
-        }
-      }
-    },
-    "11005205" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.06
-        }
-      }
-    },
-    "11005206" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.06
-        }
-      }
-    },
-    "11005207" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.06
-        }
-      }
-    },
-    "11005208" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.06
-        }
-      }
-    },
-    "11005209" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.08
-        }
-      }
-    },
-    "11005210" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.08
-        }
-      }
-    },
-    "11006201" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.04
-        }
-      }
-    },
-    "11006202" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.04
-        }
-      }
-    },
-    "11006203" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.04
-        }
-      }
-    },
-    "11006204" : {
-      "1" : {
-        "props" : {
-          "QuantumAddedRatio" : 0.032
-        }
-      }
-    },
-    "11006205" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.06
-        }
-      }
-    },
-    "11006206" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.06
-        }
-      }
-    },
-    "11006207" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.06
-        }
-      }
-    },
-    "11006208" : {
-      "1" : {
-        "props" : {
-          "QuantumAddedRatio" : 0.048
-        }
-      }
-    },
-    "11006209" : {
-      "1" : {
-        "props" : {
-          "StatusProbabilityBase" : 0.08
-        }
-      }
-    },
-    "11006210" : {
-      "1" : {
-        "props" : {
-          "AttackAddedRatio" : 0.08
-        }
-      }
-    },
-    "11205201" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.04
-        }
-      }
-    },
-    "11205202" : {
-      "1" : {
-        "props" : {
-          "CriticalChanceBase" : 0.026999999
-        }
-      }
-    },
-    "11205203" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.04
-        }
-      }
-    },
-    "11205204" : {
-      "1" : {
-        "props" : {
-          "StatusResistanceBase" : 0.04
-        }
-      }
-    },
-    "11205205" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.06
-        }
-      }
-    },
-    "11205206" : {
-      "1" : {
-        "props" : {
-          "CriticalChanceBase" : 0.04
-        }
-      }
-    },
-    "11205207" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.06
-        }
-      }
-    },
-    "11205208" : {
-      "1" : {
-        "props" : {
-          "StatusResistanceBase" : 0.06
-        }
-      }
-    },
-    "11205209" : {
-      "1" : {
-        "props" : {
-          "CriticalChanceBase" : 0.053
-        }
-      }
-    },
-    "11205210" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.08
-        }
-      }
-    },
-    "11212201" : {
-      "1" : {
-        "props" : {
-          "CriticalDamageBase" : 0.053
-        }
-      }
-    },
-    "11212202" : {
-      "1" : {
-        "props" : {
-          "SpeedDelta" : 2
-        }
-      }
-    },
-    "11212203" : {
-      "1" : {
-        "props" : {
-          "CriticalDamageBase" : 0.053
-        }
-      }
-    },
-    "11212204" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.04
-        }
-      }
-    },
-    "11212205" : {
-      "1" : {
-        "props" : {
-          "CriticalDamageBase" : 0.08
-        }
-      }
-    },
-    "11212206" : {
-      "1" : {
-        "props" : {
-          "SpeedDelta" : 3
-        }
-      }
-    },
-    "11212207" : {
-      "1" : {
-        "props" : {
-          "CriticalDamageBase" : 0.08
-        }
-      }
-    },
-    "11212208" : {
-      "1" : {
-        "props" : {
-          "HPAddedRatio" : 0.06
-        }
-      }
-    },
-    "11212209" : {
-      "1" : {
-        "props" : {
-          "SpeedDelta" : 4
-        }
-      }
-    },
-    "11212210" : {
       "1" : {
         "props" : {
           "CriticalDamageBase" : 0.107
