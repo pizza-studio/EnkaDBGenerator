@@ -3630,5 +3630,95 @@
       "11165" : "Skill_E_Ineffa_01"
     },
     "WeaponType" : "WEAPON_POLE"
+  },
+  "10000119" : {
+    "Consts" : [
+      "UI_Talent_S_Lauma_01",
+      "UI_Talent_S_Lauma_02",
+      "UI_Talent_U_Lauma_01",
+      "UI_Talent_S_Lauma_03",
+      "UI_Talent_U_Lauma_02",
+      "UI_Talent_S_Lauma_04"
+    ],
+    "Element" : "Grass",
+    "NameTextMapHash" : 1776874018,
+    "ProudMap" : {
+      "11191" : 11931,
+      "11192" : 11932,
+      "11195" : 11939
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Lauma",
+    "SkillOrder" : [
+      11191,
+      11192,
+      11195
+    ],
+    "Skills" : {
+      "11191" : "Skill_A_Catalyst_MD",
+      "11192" : "Skill_S_Lauma_01",
+      "11195" : "Skill_E_Lauma_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000120" : {
+    "Consts" : [
+      "UI_Talent_S_Flins_01",
+      "UI_Talent_S_Flins_02",
+      "UI_Talent_U_Flins_02",
+      "UI_Talent_S_Flins_03",
+      "UI_Talent_U_Flins_01",
+      "UI_Talent_S_Flins_04"
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 1804674810,
+    "ProudMap" : {
+      "11201" : 12031,
+      "11202" : 12032,
+      "11205" : 12039
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Flins",
+    "SkillOrder" : [
+      11201,
+      11202,
+      11205
+    ],
+    "Skills" : {
+      "11201" : "Skill_A_03",
+      "11202" : "Skill_S_Flins_01",
+      "11205" : "Skill_E_Flins_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
+  },
+  "10000121" : {
+    "Consts" : [
+      "UI_Talent_S_Aino_03",
+      "UI_Talent_S_Aino_02",
+      "UI_Talent_U_Aino_01",
+      "UI_Talent_S_Aino_01",
+      "UI_Talent_U_Aino_02",
+      "UI_Talent_S_Aino_04"
+    ],
+    "Element" : "Water",
+    "NameTextMapHash" : 3887688410,
+    "ProudMap" : {
+      "11211" : 12131,
+      "11212" : 12132,
+      "11215" : 12139
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Aino",
+    "SkillOrder" : [
+      11211,
+      11212,
+      11215
+    ],
+    "Skills" : {
+      "11211" : "Skill_A_04",
+      "11212" : "Skill_S_Aino_01",
+      "11215" : "Skill_E_Aino_01"
+    },
+    "WeaponType" : "WEAPON_CLAYMORE"
   }
 }
