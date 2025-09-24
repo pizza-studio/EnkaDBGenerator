@@ -2198,6 +2198,67 @@
       141207
     ]
   },
+  "1413" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1413B.png",
+    "AvatarBaseType" : "Memory",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1413.png",
+    "AvatarFullName" : {
+      "Hash" : "2207275047965958799"
+    },
+    "AvatarName" : {
+      "Hash" : "14327888430982372557"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1413.png",
+    "Element" : "Ice",
+    "RankIDList" : [
+      141301,
+      141302,
+      141303,
+      141304,
+      141305,
+      141306
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      141301,
+      141302,
+      141303,
+      141304,
+      141306,
+      141307,
+      141309
+    ]
+  },
+  "1414" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1414B.png",
+    "AvatarBaseType" : "Knight",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1414.png",
+    "AvatarFullName" : {
+      "Hash" : "7878471156237078889"
+    },
+    "AvatarName" : {
+      "Hash" : "12485086905499638965"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1414.png",
+    "Element" : "Physical",
+    "RankIDList" : [
+      141401,
+      141402,
+      141403,
+      141404,
+      141405,
+      141406
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      141401,
+      141402,
+      141403,
+      141404,
+      141406,
+      141407
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
