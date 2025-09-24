@@ -1111,6 +1111,22 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/23048.png",
     "Rarity" : 5
   },
+  "23049" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "4836366408334833891"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23049.png",
+    "Rarity" : 5
+  },
+  "23051" : {
+    "AvatarBaseType" : "Knight",
+    "EquipmentName" : {
+      "Hash" : "12008774210001466871"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23051.png",
+    "Rarity" : 5
+  },
   "24000" : {
     "AvatarBaseType" : "Warrior",
     "EquipmentName" : {
