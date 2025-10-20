@@ -101,6 +101,9 @@
   "10400" : {
     "iconPath" : "UI_AvatarIcon_Flins_Circle"
   },
+  "10500" : {
+    "iconPath" : "UI_AvatarIcon_Nefer_Circle"
+  },
   "1100" : {
     "iconPath" : "UI_AvatarIcon_Bennett_Circle"
   },
@@ -430,6 +433,18 @@
   },
   "9000" : {
     "iconPath" : "UI_AvatarIcon_Chasca_Circle"
+  },
+  "900001" : {
+    "iconPath" : "UI_AvatarIcon_MannequinBoy_Circle"
+  },
+  "900002" : {
+    "iconPath" : "UI_AvatarIcon_MannequinGirl_Circle"
+  },
+  "900003" : {
+    "iconPath" : "UI_AvatarIcon_Mannequin_Custom_Circle"
+  },
+  "900004" : {
+    "iconPath" : ""
   },
   "901" : {
     "iconPath" : "UI_AvatarIcon_NingguangCostumeFloral_Circle"
