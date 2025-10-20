@@ -3720,5 +3720,35 @@
       "11215" : "Skill_E_Aino_01"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
+  },
+  "10000122" : {
+    "Consts" : [
+      "UI_Talent_S_Nefer_01",
+      "UI_Talent_S_Nefer_02",
+      "UI_Talent_U_Nefer_01",
+      "UI_Talent_S_Nefer_03",
+      "UI_Talent_U_Nefer_02",
+      "UI_Talent_S_Nefer_04"
+    ],
+    "Element" : "Grass",
+    "NameTextMapHash" : 2745786202,
+    "ProudMap" : {
+      "11221" : 12231,
+      "11222" : 12232,
+      "11225" : 12239
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Nefer",
+    "SkillOrder" : [
+      11221,
+      11222,
+      11225
+    ],
+    "Skills" : {
+      "11221" : "Skill_A_Catalyst_MD",
+      "11222" : "Skill_S_Nefer_01",
+      "11225" : "Skill_E_Nefer_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
   }
 }
