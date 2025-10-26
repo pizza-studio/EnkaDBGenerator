@@ -31,15 +31,17 @@ The target structure includes additional files with more comprehensive data:
 
 | Filename | Description | Status |
 |----------|-------------|--------|
-| `avatars.json` | Enhanced character data with base props, curves, and promotion data | 🔄 Planned |
-| `locs.json` | Localization strings (renamed from `loc.json`) | 🔄 Planned |
-| `namecards.json` | Name card data | ✅ Current |
-| `pfps.json` | Profile picture data | ✅ Current |
-| `affixes.json` | Artifact affix efficiency data | 📋 Future |
-| `curves.json` | Character and weapon growth curves | 📋 Future |
-| `relic_levels.json` | Artifact level scaling data | 📋 Future |
-| `relics.json` | Artifact/Relic data | 📋 Future |
-| `weapons.json` | Weapon data with stats and refinements | 📋 Future |
+| `avatars.json` | Character data with formatted icon paths | ✅ Implemented |
+| `locs.json` | Localization strings | ✅ Implemented |
+| `namecards.json` | Name card data with formatted icon paths | ✅ Implemented |
+| `pfps.json` | Profile picture data with formatted icon paths | ✅ Implemented |
+| `affixes.json` | Artifact affix efficiency data | 📋 Future Work |
+| `curves.json` | Character and weapon growth curves | 📋 Future Work |
+| `relic_levels.json` | Artifact level scaling data | 📋 Future Work |
+| `relics.json` | Artifact/Relic data | 📋 Future Work |
+| `weapons.json` | Weapon data with stats and refinements | 📋 Future Work |
+
+**Note**: Files marked as "Future Work" require extensive model development, additional data sources from Dimbreath repos (WeaponPromoteExcelConfigData, ReliquaryExcelConfigData, etc.), and complex assembler logic. These are best implemented as focused follow-up PRs.
 
 ### Key Changes
 
@@ -181,20 +183,36 @@ These repositories contain game data files extracted from the official game clie
 ## Implementation Status
 
 ### Completed ✅
-- ✅ Mannequin character support (10000117, 10000118)
-- ✅ Seven element variants for mannequins
-- ✅ Legacy honker_* file generation for HSR
+- ✅ Mannequin character support (10000117, 10000118) with 7 element variants
+- ✅ File naming alignment: `characters.json` → `avatars.json`, `loc.json` → `locs.json`
+- ✅ Icon path formatting: All GI icon paths now include `/ui/` prefix and `.png` extension
+- ✅ GI specimen files match EnkaNetwork/API-docs format for existing data
+- ✅ Comprehensive documentation of architecture and changes
 
-### In Progress 🔄
-- 🔄 File naming alignment (characters.json → avatars.json, loc.json → locs.json)
-- 🔄 Icon path prefix updates
-- 🔄 New HSR file generation (avatars.json, weapons.json, etc.)
+### Future Work 📋 
+The following items require extensive development as separate focused PRs:
 
-### Planned 📋
-- 📋 GI: Additional avatar fields (BaseProps, PropGrowCurves, PromoteProps)
-- 📋 GI: New files (affixes.json, curves.json, relic_levels.json, relics.json, weapons.json)
-- 📋 HSR: Enhanced data in new format files
-- 📋 Full parity with EnkaNetwork/API-docs structure
+#### GI Files - Additional Data Files
+- 📋 `weapons.json`: Weapon stats, promotion data, refinement properties
+  - Requires: WeaponExcelConfigData, WeaponPromoteExcelConfigData, WeaponCurveExcelConfigData
+- 📋 `relics.json`: Artifact/relic data with set bonuses
+  - Requires: ReliquaryExcelConfigData, EquipAffixExcelConfigData  
+- 📋 `curves.json`: Character and weapon growth curves
+  - Requires: AvatarCurveExcelConfigData, WeaponCurveExcelConfigData
+- 📋 `affixes.json`: Artifact affix efficiency calculations
+  - Requires: Research into efficiency calculation algorithm
+- 📋 `relic_levels.json`: Artifact level scaling data
+  - Requires: ReliquaryLevelExcelConfigData
+
+#### GI Files - Enhanced Avatar Data
+- 📋 Add `BaseProps`, `PropGrowCurves`, `PromoteProps` fields to avatars
+  - Requires: AvatarPromoteExcelConfigData, AvatarCurveExcelConfigData integration
+
+#### HSR Files - New Format Files
+- 📋 Generate new format files without `honker_` prefix:
+  - `avatars.json`, `weapons.json`, `ranks.json`, `skills.json`, `tree.json`, `relics.json`, `affixes.json`, `pfps.json`
+- 📋 Add comprehensive data: Skins, SkillTree, Promotion stats
+- 📋 Maintain `honker_*` files for backward compatibility
 
 ## Development Notes
 
