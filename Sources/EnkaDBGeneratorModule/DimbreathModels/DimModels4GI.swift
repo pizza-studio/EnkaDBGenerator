@@ -52,7 +52,7 @@ extension DimModels4GI {
         }
 
         var candSkillDepotIds: [Int] {
-            guard [10000007, 10000005].contains(id) else { return [] }
+            guard [10000007, 10000005, 10000117, 10000118].contains(id) else { return [] }
             let baseValue = (id - 10000000) * 100
             var output = [Int]()
             for i in 1 ... 8 {

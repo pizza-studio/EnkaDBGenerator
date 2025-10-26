@@ -3631,6 +3631,356 @@
     },
     "WeaponType" : "WEAPON_POLE"
   },
+  "10000117-11702" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Fire",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111751" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111751
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111751" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11703" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Water",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111752" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111752
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111752" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11704" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111753" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111753
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111753" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11705" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111754" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111754
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111754" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11706" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111755" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111755
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111755" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11707" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Rock",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111756" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111756
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111756" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000117-11708" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Grass",
+    "NameTextMapHash" : 1496871274,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111757" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111757
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111757" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11802" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Fire",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111751" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111751
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111751" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11803" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Water",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111752" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111752
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111752" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11804" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111753" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111753
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111753" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11805" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111754" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111754
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111754" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11806" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111755" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111755
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111755" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11807" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Rock",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111756" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111756
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111756" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000118-11808" : {
+    "Consts" : [
+
+    ],
+    "Element" : "Grass",
+    "NameTextMapHash" : 4125864442,
+    "ProudMap" : {
+      "11171" : 11731,
+      "11172" : 11732,
+      "111757" : 11739
+    },
+    "QualityType" : "QUALITY_ORANGE_SP",
+    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SkillOrder" : [
+      11171,
+      11172,
+      111757
+    ],
+    "Skills" : {
+      "11171" : "Skill_A_01",
+      "11172" : "Skill_S_LittleIdol_01",
+      "111757" : "Skill_E_LittleIdol_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
   "10000119" : {
     "Consts" : [
       "UI_Talent_S_Lauma_01",
