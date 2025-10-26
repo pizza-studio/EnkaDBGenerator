@@ -48,9 +48,16 @@ The target structure includes additional files with more comprehensive data:
 **Issue**: The mannequin characters (`10000117` and `10000118`) were not being generated.
 
 **Solution**: 
-- Added support for mannequin character IDs in the `candSkillDepotIds` generator
-- Implemented special element derivation logic based on skill depot ID
+- Added support for mannequin character IDs in the `candSkillDepotIds` generator to treat them like protagonist characters with element variants
+- Skips first skill depot (11701, 11801) which lacks valid elemental burst
+- Starting from game version 6.1, mannequins have proper Elemental Burst skills that define their elements
 - Mannequins now generate 7 element variants each (Fire, Water, Electric, Ice, Wind, Rock, Grass)
+
+**Technical Details**:
+- Depot 11701/11801 has `energySkill: 0` (no elemental burst)
+- Depots 11702-11708 have energy skills 111751-111757 (Fire through Grass elements)
+- Depots 11802-11808 have energy skills 111851-111857 (Fire through Grass elements)
+- Element is correctly derived from the `costElemType` field of each energy skill
 
 **Character IDs Generated**:
 - `10000117-11702` through `10000117-11708` (Male mannequin, 7 elements)

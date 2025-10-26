@@ -66,39 +66,14 @@ extension DimModels4GI.DimDB4GI {
                     }
                 }
                 // Element. We bet that every character in showcase has a valid Teyvat Element type.
-                // Special handling for mannequin characters (10000117, 10000118)
-                let finalCharacterElement: String
-                
-                if isMannequin {
-                    // Mannequin characters don't have elemental bursts, so we derive element from skillDepotID
-                    // Pattern: 117XX or 118XX where XX determines element
-                    // 02=Fire, 03=Water, 04=Electric, 05=Ice, 06=Wind, 07=Rock, 08=Grass
-                    let lastTwo = skillDepotID % 100
-                    switch lastTwo {
-                    case 2: finalCharacterElement = "Fire"
-                    case 3: finalCharacterElement = "Water"
-                    case 4: finalCharacterElement = "Electric"
-                    case 5: finalCharacterElement = "Ice"
-                    case 6: finalCharacterElement = "Wind"
-                    case 7: finalCharacterElement = "Rock"
-                    case 8: finalCharacterElement = "Grass"
-                    default:
-                        print(
-                            "[Assembler Notice] Unknown mannequin element for GI character \(charUUID), skipping."
-                        )
-                        return
-                    }
-                } else {
-                    guard let energySkillID = skillDepotTable.energySkill,
-                          let energySkill = self.skillDB.first(where: { $0.id == energySkillID }),
-                          let element = energySkill.costElemType
-                    else {
-                        print(
-                            "[Assembler Notice] Elemental Burst missing for GI character \(charUUID), skipping."
-                        )
-                        return
-                    }
-                    finalCharacterElement = element
+                guard let energySkillID = skillDepotTable.energySkill,
+                      let energySkill = self.skillDB.first(where: { $0.id == energySkillID }),
+                      let finalCharacterElement = energySkill.costElemType
+                else {
+                    print(
+                        "[Assembler Notice] Elemental Burst missing for GI character \(charUUID), skipping."
+                    )
+                    return
                 }
                 // SkillOrder.
                 var finalSkillOrder: [Int] = (skillDepotTable.skills ?? []).filter { $0 != 0 }
