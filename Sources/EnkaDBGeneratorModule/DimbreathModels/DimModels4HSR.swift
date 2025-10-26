@@ -27,7 +27,7 @@ enum DimModels4HSR: String, CaseIterable, Sendable {
 // MARK: DimModelsEnumProtocol
 
 extension DimModels4HSR: DimModelsEnumProtocol {
-    static let baseURLHeader = "https://gitlab.com/Dimbreath/TurnBasedGameData/-/raw/main/"
+    static let baseURLHeader = "https://raw.githubusercontent.com/DimbreathBot/TurnBasedGameData/refs/heads/main/"
     static var folderName: String { "ExcelOutput/" }
     var fileNameStem: String { rawValue }
 

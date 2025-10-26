@@ -25,7 +25,7 @@ enum DimModels4GI: String, CaseIterable, Sendable {
 // MARK: DimModelsEnumProtocol
 
 extension DimModels4GI: DimModelsEnumProtocol {
-    static let baseURLHeader = "https://gitlab.com/Dimbreath/AnimeGameData/-/raw/master/"
+    static let baseURLHeader = "https://raw.githubusercontent.com/DimbreathBot/AnimeGameData/refs/heads/master/"
     static var folderName: String { "ExcelBinOutput/" }
     var fileNameStem: String { rawValue }
     var hasCollabFilesToCollect: Bool { false }
