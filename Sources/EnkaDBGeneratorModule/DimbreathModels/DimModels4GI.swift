@@ -51,8 +51,17 @@ extension DimModels4GI {
             return true
         }
 
+        var hasAllElementalVariants: Bool {
+            !candSkillDepotIds.isEmpty
+        }
+
+        // Mannequins are officially English-named as "Manekin" for male and "Manekina" for female.
+        var isManekinOrManekina: Bool {
+            [10000117, 10000118].contains(id)
+        }
+
         var candSkillDepotIds: [Int] {
-            guard [10000007, 10000005].contains(id) else { return [] }
+            guard [10000007, 10000005, 10000117, 10000118].contains(id) else { return [] }
             let baseValue = (id - 10000000) * 100
             var output = [Int]()
             for i in 1 ... 8 {

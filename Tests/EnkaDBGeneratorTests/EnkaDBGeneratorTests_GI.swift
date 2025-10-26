@@ -26,7 +26,7 @@ final class EnkaDBGeneratorTestsGI: XCTestCase {
     func testAssemblingEnkaDB4GI() async throws {
         let jsonGI = try await DimModels4GI.DimDB4GI(withLang: false)
         let nonProtagonistCharacterCountRAW: Int = jsonGI.avatarDB.filter {
-            Protagonist(rawValue: $0.id) == nil
+            Protagonist(rawValue: $0.id) == nil && !$0.isManekinOrManekina
         }.count
         let summarizedCharacterMap = try jsonGI.assembleEnkaCharacters()
         guard let hydroLumine = summarizedCharacterMap["10000007-703"] else {

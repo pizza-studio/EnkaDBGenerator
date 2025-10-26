@@ -22,11 +22,17 @@ extension DimModels4GI.DimDB4GI {
         var result = EnkaDBModelsGI.CharacterDict()
         try avatarDB.forEach { avatar in
             var skillDepotIDs = [avatar.skillDepotId]
-            let isProtagoinst = !avatar.candSkillDepotIds.isEmpty
-            if isProtagoinst { skillDepotIDs = avatar.candSkillDepotIds }
+            let hasElementalVariants = avatar.hasAllElementalVariants
+            if hasElementalVariants {
+                skillDepotIDs = avatar.candSkillDepotIds
+                // For mannequins, skip the first depot ID (X1701, X1801) as they don't have valid elements
+                if avatar.isManekinOrManekina {
+                    skillDepotIDs = Array(skillDepotIDs.dropFirst())
+                }
+            }
             try skillDepotIDs.forEach { skillDepotID in
                 /// Final Index ID for each character, distinguishing protagonists in different Elements.
-                let charUUID = isProtagoinst ? "\(avatar.id)-\(skillDepotID)" : avatar.id.description
+                let charUUID = hasElementalVariants ? "\(avatar.id)-\(skillDepotID)" : avatar.id.description
                 guard let skillDepotTable = self.skillDepotDB.first(where: { $0.id == skillDepotID }) else {
                     throw EnkaDBGenerator.EDBGError.assemblerError(
                         msg: "Depot table missing for GI character \(charUUID), aborting."
