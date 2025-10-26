@@ -7,12 +7,15 @@ import EnkaDBModels
 extension DimModels4GI.DimDB4GI {
     func packObjects() throws -> [String: any Encodable] {
         var result = [String: any Encodable]()
-        /// Omitting `affixes.json` which is suspected to be the artifact rating model for Enka.Network website.
-        /// The calculation method of its `efficiency` field is still unknown.
         result["locs.json"] = assembleEnkaLangMap()
         result["avatars.json"] = try assembleEnkaCharacters()
         result["namecards.json"] = assembleEnkaNameCards()
         result["pfps.json"] = assembleEnkaProfilePictures()
+        result["weapons.json"] = assembleEnkaWeapons()
+        result["relics.json"] = assembleEnkaRelics()
+        result["curves.json"] = assembleEnkaCurves()
+        result["affixes.json"] = assembleEnkaAffixes()
+        result["relic_levels.json"] = assembleEnkaRelicLevels()
         return result
     }
 }
@@ -228,6 +231,39 @@ extension DimModels4GI.DimDB4GI {
                 icon: formatIconPath(iconName)
             )
         }
+        return result
+    }
+}
+
+// MARK: - New File Assemblers
+
+extension DimModels4GI.DimDB4GI {
+    func assembleEnkaWeapons() -> EnkaDBModelsGI.WeaponDict {
+        var result = EnkaDBModelsGI.WeaponDict()
+        // TODO: Implement based on weaponDB
+        return result
+    }
+    
+    func assembleEnkaRelics() -> EnkaDBModelsGI.RelicsData {
+        // TODO: Implement based on artifactDB and artifactSetDB
+        return EnkaDBModelsGI.RelicsData(Items: [:], Sets: [:])
+    }
+    
+    func assembleEnkaCurves() -> EnkaDBModelsGI.CurveDict {
+        var result = EnkaDBModelsGI.CurveDict()
+        // TODO: Implement based on avatarCurveDB
+        return result
+    }
+    
+    func assembleEnkaAffixes() -> EnkaDBModelsGI.AffixDict {
+        var result = EnkaDBModelsGI.AffixDict()
+        // TODO: Implement based on artifactSubPropDB
+        return result
+    }
+    
+    func assembleEnkaRelicLevels() -> EnkaDBModelsGI.RelicLevelsDict {
+        var result = EnkaDBModelsGI.RelicLevelsDict()
+        // TODO: Implement
         return result
     }
 }
