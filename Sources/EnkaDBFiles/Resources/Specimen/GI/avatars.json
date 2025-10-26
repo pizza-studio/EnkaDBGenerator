@@ -1,19 +1,19 @@
 {
   "10000002" : {
     "Consts" : [
-      "UI_Talent_S_Ayaka_01",
-      "UI_Talent_S_Ayaka_02",
-      "UI_Talent_U_Ayaka_02",
-      "UI_Talent_S_Ayaka_03",
-      "UI_Talent_U_Ayaka_01",
-      "UI_Talent_S_Ayaka_04"
+      "/ui/UI_Talent_S_Ayaka_01.png",
+      "/ui/UI_Talent_S_Ayaka_02.png",
+      "/ui/UI_Talent_U_Ayaka_02.png",
+      "/ui/UI_Talent_S_Ayaka_03.png",
+      "/ui/UI_Talent_U_Ayaka_01.png",
+      "/ui/UI_Talent_S_Ayaka_04.png"
     ],
     "Costumes" : {
       "200201" : {
-        "art" : "UI_Costume_AyakaCostumeFruhling",
+        "art" : "/ui/UI_Costume_AyakaCostumeFruhling.png",
         "avatarId" : 10000002,
-        "icon" : "UI_AvatarIcon_AyakaCostumeFruhling",
-        "sideIconName" : "UI_AvatarIcon_Side_AyakaCostumeFruhling"
+        "icon" : "/ui/UI_AvatarIcon_AyakaCostumeFruhling.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_AyakaCostumeFruhling.png"
       }
     },
     "Element" : "Ice",
@@ -24,40 +24,40 @@
       "10024" : 231
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ayaka",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ayaka.png",
     "SkillOrder" : [
       10024,
       10018,
       10019
     ],
     "Skills" : {
-      "10018" : "Skill_S_Ayaka_01",
-      "10019" : "Skill_E_Ayaka",
-      "10024" : "Skill_A_01"
+      "10018" : "/ui/Skill_S_Ayaka_01.png",
+      "10019" : "/ui/Skill_E_Ayaka.png",
+      "10024" : "/ui/Skill_A_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000003" : {
     "Consts" : [
-      "UI_Talent_S_Qin_01",
-      "UI_Talent_S_Qin_02",
-      "UI_Talent_U_Qin_02",
-      "UI_Talent_S_Qin_03",
-      "UI_Talent_U_Qin_01",
-      "UI_Talent_S_Qin_04"
+      "/ui/UI_Talent_S_Qin_01.png",
+      "/ui/UI_Talent_S_Qin_02.png",
+      "/ui/UI_Talent_U_Qin_02.png",
+      "/ui/UI_Talent_S_Qin_03.png",
+      "/ui/UI_Talent_U_Qin_01.png",
+      "/ui/UI_Talent_S_Qin_04.png"
     ],
     "Costumes" : {
       "200301" : {
-        "art" : "UI_Costume_QinCostumeSea",
+        "art" : "/ui/UI_Costume_QinCostumeSea.png",
         "avatarId" : 10000003,
-        "icon" : "UI_AvatarIcon_QinCostumeSea",
-        "sideIconName" : "UI_AvatarIcon_Side_QinCostumeSea"
+        "icon" : "/ui/UI_AvatarIcon_QinCostumeSea.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_QinCostumeSea.png"
       },
       "200302" : {
-        "art" : "UI_Costume_QinCostumeWic",
+        "art" : "/ui/UI_Costume_QinCostumeWic.png",
         "avatarId" : 10000003,
-        "icon" : "UI_AvatarIcon_QinCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_QinCostumeWic"
+        "icon" : "/ui/UI_AvatarIcon_QinCostumeWic.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_QinCostumeWic.png"
       }
     },
     "Element" : "Wind",
@@ -68,27 +68,27 @@
       "10034" : 339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Qin",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Qin.png",
     "SkillOrder" : [
       10031,
       10033,
       10034
     ],
     "Skills" : {
-      "10031" : "Skill_A_01",
-      "10033" : "Skill_S_Qin_02",
-      "10034" : "Skill_E_Qin_01"
+      "10031" : "/ui/Skill_A_01.png",
+      "10033" : "/ui/Skill_S_Qin_02.png",
+      "10034" : "/ui/Skill_E_Qin_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_02",
-      "UI_Talent_U_PlayerWind_02",
-      "UI_Talent_S_PlayerWind_03",
-      "UI_Talent_U_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_04"
+      "/ui/UI_Talent_S_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_02.png",
+      "/ui/UI_Talent_U_PlayerWind_02.png",
+      "/ui/UI_Talent_S_PlayerWind_03.png",
+      "/ui/UI_Talent_U_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1533656818,
@@ -98,27 +98,27 @@
       "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100543,
       10067,
       10068
     ],
     "Skills" : {
-      "100543" : "Skill_A_01",
-      "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01"
+      "100543" : "/ui/Skill_A_01.png",
+      "10067" : "/ui/Skill_S_PlayerWind_01.png",
+      "10068" : "/ui/Skill_E_PlayerWind_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-502" : {
     "Consts" : [
-      "UI_Talent_S_PlayerFire_01",
-      "UI_Talent_S_PlayerFire_02",
-      "UI_Talent_U_PlayerFire_01",
-      "UI_Talent_S_PlayerFire_03",
-      "UI_Talent_U_PlayerFire_02",
-      "UI_Talent_S_PlayerFire_04"
+      "/ui/UI_Talent_S_PlayerFire_01.png",
+      "/ui/UI_Talent_S_PlayerFire_02.png",
+      "/ui/UI_Talent_U_PlayerFire_01.png",
+      "/ui/UI_Talent_S_PlayerFire_03.png",
+      "/ui/UI_Talent_U_PlayerFire_02.png",
+      "/ui/UI_Talent_S_PlayerFire_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 1533656818,
@@ -128,27 +128,27 @@
       "10098" : 539
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100541,
       10097,
       10098
     ],
     "Skills" : {
-      "100541" : "Skill_A_01",
-      "10097" : "Skill_S_PlayerFire_01",
-      "10098" : "Skill_E_PlayerFire_01"
+      "100541" : "/ui/Skill_A_01.png",
+      "10097" : "/ui/Skill_S_PlayerFire_01.png",
+      "10098" : "/ui/Skill_E_PlayerFire_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-503" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWater_01",
-      "UI_Talent_S_PlayerWater_02",
-      "UI_Talent_U_PlayerWater_01",
-      "UI_Talent_S_PlayerWater_03",
-      "UI_Talent_U_PlayerWater_02",
-      "UI_Talent_S_PlayerWater_04"
+      "/ui/UI_Talent_S_PlayerWater_01.png",
+      "/ui/UI_Talent_S_PlayerWater_02.png",
+      "/ui/UI_Talent_U_PlayerWater_01.png",
+      "/ui/UI_Talent_S_PlayerWater_03.png",
+      "/ui/UI_Talent_U_PlayerWater_02.png",
+      "/ui/UI_Talent_S_PlayerWater_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 1533656818,
@@ -158,27 +158,27 @@
       "10088" : 639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100542,
       10087,
       10088
     ],
     "Skills" : {
-      "100542" : "Skill_A_01",
-      "10087" : "Skill_S_PlayerWater_01",
-      "10088" : "Skill_E_PlayerWater_01"
+      "100542" : "/ui/Skill_A_01.png",
+      "10087" : "/ui/Skill_S_PlayerWater_01.png",
+      "10088" : "/ui/Skill_E_PlayerWater_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-504" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_02",
-      "UI_Talent_U_PlayerWind_02",
-      "UI_Talent_S_PlayerWind_03",
-      "UI_Talent_U_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_04"
+      "/ui/UI_Talent_S_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_02.png",
+      "/ui/UI_Talent_U_PlayerWind_02.png",
+      "/ui/UI_Talent_S_PlayerWind_03.png",
+      "/ui/UI_Talent_U_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1533656818,
@@ -188,27 +188,27 @@
       "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100543,
       10067,
       10068
     ],
     "Skills" : {
-      "100543" : "Skill_A_01",
-      "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01"
+      "100543" : "/ui/Skill_A_01.png",
+      "10067" : "/ui/Skill_S_PlayerWind_01.png",
+      "10068" : "/ui/Skill_E_PlayerWind_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-506" : {
     "Consts" : [
-      "UI_Talent_S_PlayerRock_01",
-      "UI_Talent_S_PlayerRock_02",
-      "UI_Talent_U_PlayerRock_02",
-      "UI_Talent_S_PlayerRock_03",
-      "UI_Talent_U_PlayerRock_01",
-      "UI_Talent_S_PlayerRock_04"
+      "/ui/UI_Talent_S_PlayerRock_01.png",
+      "/ui/UI_Talent_S_PlayerRock_02.png",
+      "/ui/UI_Talent_U_PlayerRock_02.png",
+      "/ui/UI_Talent_S_PlayerRock_03.png",
+      "/ui/UI_Talent_U_PlayerRock_01.png",
+      "/ui/UI_Talent_S_PlayerRock_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 1533656818,
@@ -218,27 +218,27 @@
       "10078" : 939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100545,
       10077,
       10078
     ],
     "Skills" : {
-      "100545" : "Skill_A_01",
-      "10077" : "Skill_S_PlayerRock_01",
-      "10078" : "Skill_E_PlayerRock_01"
+      "100545" : "/ui/Skill_A_01.png",
+      "10077" : "/ui/Skill_S_PlayerRock_01.png",
+      "10078" : "/ui/Skill_E_PlayerRock_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-507" : {
     "Consts" : [
-      "UI_Talent_S_PlayerElectric_01",
-      "UI_Talent_S_PlayerElectric_02",
-      "UI_Talent_U_PlayerElectric_01",
-      "UI_Talent_S_PlayerElectric_03",
-      "UI_Talent_U_PlayerElectric_02",
-      "UI_Talent_S_PlayerElectric_04"
+      "/ui/UI_Talent_S_PlayerElectric_01.png",
+      "/ui/UI_Talent_S_PlayerElectric_02.png",
+      "/ui/UI_Talent_U_PlayerElectric_01.png",
+      "/ui/UI_Talent_S_PlayerElectric_03.png",
+      "/ui/UI_Talent_U_PlayerElectric_02.png",
+      "/ui/UI_Talent_S_PlayerElectric_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1533656818,
@@ -248,27 +248,27 @@
       "10605" : 1039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100546,
       10602,
       10605
     ],
     "Skills" : {
-      "100546" : "Skill_A_01",
-      "10602" : "Skill_S_PlayerElectric_01",
-      "10605" : "Skill_E_PlayerElectric_01"
+      "100546" : "/ui/Skill_A_01.png",
+      "10602" : "/ui/Skill_S_PlayerElectric_01.png",
+      "10605" : "/ui/Skill_E_PlayerElectric_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000005-508" : {
     "Consts" : [
-      "UI_Talent_S_PlayerGrass_01",
-      "UI_Talent_S_PlayerGrass_02",
-      "UI_Talent_S_PlayerGrass_03",
-      "UI_Talent_S_PlayerGrass_04",
-      "UI_Talent_S_PlayerGrass_05",
-      "UI_Talent_S_PlayerGrass_06"
+      "/ui/UI_Talent_S_PlayerGrass_01.png",
+      "/ui/UI_Talent_S_PlayerGrass_02.png",
+      "/ui/UI_Talent_S_PlayerGrass_03.png",
+      "/ui/UI_Talent_S_PlayerGrass_04.png",
+      "/ui/UI_Talent_S_PlayerGrass_05.png",
+      "/ui/UI_Talent_S_PlayerGrass_06.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 1533656818,
@@ -278,34 +278,34 @@
       "10118" : 1139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerBoy.png",
     "SkillOrder" : [
       100547,
       10117,
       10118
     ],
     "Skills" : {
-      "100547" : "Skill_A_01",
-      "10117" : "Skill_E_PlayerGrass_01",
-      "10118" : "Skill_S_PlayerGrass_01"
+      "100547" : "/ui/Skill_A_01.png",
+      "10117" : "/ui/Skill_E_PlayerGrass_01.png",
+      "10118" : "/ui/Skill_S_PlayerGrass_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000006" : {
     "Consts" : [
-      "UI_Talent_S_Lisa_01",
-      "UI_Talent_S_Lisa_02",
-      "UI_Talent_U_Lisa_02",
-      "UI_Talent_S_Lisa_03",
-      "UI_Talent_U_Lisa_01",
-      "UI_Talent_S_Lisa_04"
+      "/ui/UI_Talent_S_Lisa_01.png",
+      "/ui/UI_Talent_S_Lisa_02.png",
+      "/ui/UI_Talent_U_Lisa_02.png",
+      "/ui/UI_Talent_S_Lisa_03.png",
+      "/ui/UI_Talent_U_Lisa_01.png",
+      "/ui/UI_Talent_S_Lisa_04.png"
     ],
     "Costumes" : {
       "200601" : {
-        "art" : "UI_Costume_LisaCostumeStudentin",
+        "art" : "/ui/UI_Costume_LisaCostumeStudentin.png",
         "avatarId" : 10000006,
-        "icon" : "UI_AvatarIcon_LisaCostumeStudentin",
-        "sideIconName" : "UI_AvatarIcon_Side_LisaCostumeStudentin"
+        "icon" : "/ui/UI_AvatarIcon_LisaCostumeStudentin.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_LisaCostumeStudentin.png"
       }
     },
     "Element" : "Electric",
@@ -316,27 +316,27 @@
       "10062" : 439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Lisa",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Lisa.png",
     "SkillOrder" : [
       10060,
       10061,
       10062
     ],
     "Skills" : {
-      "10060" : "Skill_A_Catalyst_MD",
-      "10061" : "Skill_S_Lisa_01",
-      "10062" : "Skill_E_Lisa_01"
+      "10060" : "/ui/Skill_A_Catalyst_MD.png",
+      "10061" : "/ui/Skill_S_Lisa_01.png",
+      "10062" : "/ui/Skill_E_Lisa_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000007" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_02",
-      "UI_Talent_U_PlayerWind_02",
-      "UI_Talent_S_PlayerWind_03",
-      "UI_Talent_U_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_04"
+      "/ui/UI_Talent_S_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_02.png",
+      "/ui/UI_Talent_U_PlayerWind_02.png",
+      "/ui/UI_Talent_S_PlayerWind_03.png",
+      "/ui/UI_Talent_U_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3816664530,
@@ -346,27 +346,27 @@
       "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100553,
       10067,
       10068
     ],
     "Skills" : {
-      "100553" : "Skill_A_01",
-      "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01"
+      "100553" : "/ui/Skill_A_01.png",
+      "10067" : "/ui/Skill_S_PlayerWind_01.png",
+      "10068" : "/ui/Skill_E_PlayerWind_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-702" : {
     "Consts" : [
-      "UI_Talent_S_PlayerFire_01",
-      "UI_Talent_S_PlayerFire_02",
-      "UI_Talent_U_PlayerFire_01",
-      "UI_Talent_S_PlayerFire_03",
-      "UI_Talent_U_PlayerFire_02",
-      "UI_Talent_S_PlayerFire_04"
+      "/ui/UI_Talent_S_PlayerFire_01.png",
+      "/ui/UI_Talent_S_PlayerFire_02.png",
+      "/ui/UI_Talent_U_PlayerFire_01.png",
+      "/ui/UI_Talent_S_PlayerFire_03.png",
+      "/ui/UI_Talent_U_PlayerFire_02.png",
+      "/ui/UI_Talent_S_PlayerFire_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 3816664530,
@@ -376,27 +376,27 @@
       "10098" : 539
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100551,
       10097,
       10098
     ],
     "Skills" : {
-      "100551" : "Skill_A_01",
-      "10097" : "Skill_S_PlayerFire_01",
-      "10098" : "Skill_E_PlayerFire_01"
+      "100551" : "/ui/Skill_A_01.png",
+      "10097" : "/ui/Skill_S_PlayerFire_01.png",
+      "10098" : "/ui/Skill_E_PlayerFire_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-703" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWater_01",
-      "UI_Talent_S_PlayerWater_02",
-      "UI_Talent_U_PlayerWater_01",
-      "UI_Talent_S_PlayerWater_03",
-      "UI_Talent_U_PlayerWater_02",
-      "UI_Talent_S_PlayerWater_04"
+      "/ui/UI_Talent_S_PlayerWater_01.png",
+      "/ui/UI_Talent_S_PlayerWater_02.png",
+      "/ui/UI_Talent_U_PlayerWater_01.png",
+      "/ui/UI_Talent_S_PlayerWater_03.png",
+      "/ui/UI_Talent_U_PlayerWater_02.png",
+      "/ui/UI_Talent_S_PlayerWater_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3816664530,
@@ -406,27 +406,27 @@
       "10088" : 639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100552,
       10087,
       10088
     ],
     "Skills" : {
-      "100552" : "Skill_A_01",
-      "10087" : "Skill_S_PlayerWater_01",
-      "10088" : "Skill_E_PlayerWater_01"
+      "100552" : "/ui/Skill_A_01.png",
+      "10087" : "/ui/Skill_S_PlayerWater_01.png",
+      "10088" : "/ui/Skill_E_PlayerWater_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-704" : {
     "Consts" : [
-      "UI_Talent_S_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_02",
-      "UI_Talent_U_PlayerWind_02",
-      "UI_Talent_S_PlayerWind_03",
-      "UI_Talent_U_PlayerWind_01",
-      "UI_Talent_S_PlayerWind_04"
+      "/ui/UI_Talent_S_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_02.png",
+      "/ui/UI_Talent_U_PlayerWind_02.png",
+      "/ui/UI_Talent_S_PlayerWind_03.png",
+      "/ui/UI_Talent_U_PlayerWind_01.png",
+      "/ui/UI_Talent_S_PlayerWind_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3816664530,
@@ -436,27 +436,27 @@
       "10068" : 739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100553,
       10067,
       10068
     ],
     "Skills" : {
-      "100553" : "Skill_A_01",
-      "10067" : "Skill_S_PlayerWind_01",
-      "10068" : "Skill_E_PlayerWind_01"
+      "100553" : "/ui/Skill_A_01.png",
+      "10067" : "/ui/Skill_S_PlayerWind_01.png",
+      "10068" : "/ui/Skill_E_PlayerWind_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-706" : {
     "Consts" : [
-      "UI_Talent_S_PlayerRock_01",
-      "UI_Talent_S_PlayerRock_02",
-      "UI_Talent_U_PlayerRock_02",
-      "UI_Talent_S_PlayerRock_03",
-      "UI_Talent_U_PlayerRock_01",
-      "UI_Talent_S_PlayerRock_04"
+      "/ui/UI_Talent_S_PlayerRock_01.png",
+      "/ui/UI_Talent_S_PlayerRock_02.png",
+      "/ui/UI_Talent_U_PlayerRock_02.png",
+      "/ui/UI_Talent_S_PlayerRock_03.png",
+      "/ui/UI_Talent_U_PlayerRock_01.png",
+      "/ui/UI_Talent_S_PlayerRock_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 3816664530,
@@ -466,27 +466,27 @@
       "10078" : 939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100555,
       10077,
       10078
     ],
     "Skills" : {
-      "100555" : "Skill_A_01",
-      "10077" : "Skill_S_PlayerRock_01",
-      "10078" : "Skill_E_PlayerRock_01"
+      "100555" : "/ui/Skill_A_01.png",
+      "10077" : "/ui/Skill_S_PlayerRock_01.png",
+      "10078" : "/ui/Skill_E_PlayerRock_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-707" : {
     "Consts" : [
-      "UI_Talent_S_PlayerElectric_01",
-      "UI_Talent_S_PlayerElectric_02",
-      "UI_Talent_U_PlayerElectric_01",
-      "UI_Talent_S_PlayerElectric_03",
-      "UI_Talent_U_PlayerElectric_02",
-      "UI_Talent_S_PlayerElectric_04"
+      "/ui/UI_Talent_S_PlayerElectric_01.png",
+      "/ui/UI_Talent_S_PlayerElectric_02.png",
+      "/ui/UI_Talent_U_PlayerElectric_01.png",
+      "/ui/UI_Talent_S_PlayerElectric_03.png",
+      "/ui/UI_Talent_U_PlayerElectric_02.png",
+      "/ui/UI_Talent_S_PlayerElectric_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 3816664530,
@@ -496,27 +496,27 @@
       "10605" : 1039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100556,
       10602,
       10605
     ],
     "Skills" : {
-      "100556" : "Skill_A_01",
-      "10602" : "Skill_S_PlayerElectric_01",
-      "10605" : "Skill_E_PlayerElectric_01"
+      "100556" : "/ui/Skill_A_01.png",
+      "10602" : "/ui/Skill_S_PlayerElectric_01.png",
+      "10605" : "/ui/Skill_E_PlayerElectric_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000007-708" : {
     "Consts" : [
-      "UI_Talent_S_PlayerGrass_01",
-      "UI_Talent_S_PlayerGrass_02",
-      "UI_Talent_S_PlayerGrass_03",
-      "UI_Talent_S_PlayerGrass_04",
-      "UI_Talent_S_PlayerGrass_05",
-      "UI_Talent_S_PlayerGrass_06"
+      "/ui/UI_Talent_S_PlayerGrass_01.png",
+      "/ui/UI_Talent_S_PlayerGrass_02.png",
+      "/ui/UI_Talent_S_PlayerGrass_03.png",
+      "/ui/UI_Talent_S_PlayerGrass_04.png",
+      "/ui/UI_Talent_S_PlayerGrass_05.png",
+      "/ui/UI_Talent_S_PlayerGrass_06.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 3816664530,
@@ -526,34 +526,34 @@
       "10118" : 1139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
     "SkillOrder" : [
       100557,
       10117,
       10118
     ],
     "Skills" : {
-      "100557" : "Skill_A_01",
-      "10117" : "Skill_E_PlayerGrass_01",
-      "10118" : "Skill_S_PlayerGrass_01"
+      "100557" : "/ui/Skill_A_01.png",
+      "10117" : "/ui/Skill_E_PlayerGrass_01.png",
+      "10118" : "/ui/Skill_S_PlayerGrass_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000014" : {
     "Consts" : [
-      "UI_Talent_S_Barbara_01",
-      "UI_Talent_S_Barbara_02",
-      "UI_Talent_U_Barbara_02",
-      "UI_Talent_S_Barbara_03",
-      "UI_Talent_U_Barbara_01",
-      "UI_Talent_S_Barbara_04"
+      "/ui/UI_Talent_S_Barbara_01.png",
+      "/ui/UI_Talent_S_Barbara_02.png",
+      "/ui/UI_Talent_U_Barbara_02.png",
+      "/ui/UI_Talent_S_Barbara_03.png",
+      "/ui/UI_Talent_U_Barbara_01.png",
+      "/ui/UI_Talent_S_Barbara_04.png"
     ],
     "Costumes" : {
       "201401" : {
-        "art" : "UI_Costume_BarbaraCostumeSummertime",
+        "art" : "/ui/UI_Costume_BarbaraCostumeSummertime.png",
         "avatarId" : 10000014,
-        "icon" : "UI_AvatarIcon_BarbaraCostumeSummertime",
-        "sideIconName" : "UI_AvatarIcon_Side_BarbaraCostumeSummertime"
+        "icon" : "/ui/UI_AvatarIcon_BarbaraCostumeSummertime.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_BarbaraCostumeSummertime.png"
       }
     },
     "Element" : "Water",
@@ -564,34 +564,34 @@
       "10072" : 1439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Barbara",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Barbara.png",
     "SkillOrder" : [
       10070,
       10071,
       10072
     ],
     "Skills" : {
-      "10070" : "Skill_A_Catalyst_MD",
-      "10071" : "Skill_S_Barbara_01",
-      "10072" : "Skill_E_Barbara_01"
+      "10070" : "/ui/Skill_A_Catalyst_MD.png",
+      "10071" : "/ui/Skill_S_Barbara_01.png",
+      "10072" : "/ui/Skill_E_Barbara_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000015" : {
     "Consts" : [
-      "UI_Talent_S_Kaeya_01",
-      "UI_Talent_S_Kaeya_02",
-      "UI_Talent_U_Kaeya_01",
-      "UI_Talent_S_Kaeya_03",
-      "UI_Talent_U_Kaeya_02",
-      "UI_Talent_S_Kaeya_04"
+      "/ui/UI_Talent_S_Kaeya_01.png",
+      "/ui/UI_Talent_S_Kaeya_02.png",
+      "/ui/UI_Talent_U_Kaeya_01.png",
+      "/ui/UI_Talent_S_Kaeya_03.png",
+      "/ui/UI_Talent_U_Kaeya_02.png",
+      "/ui/UI_Talent_S_Kaeya_04.png"
     ],
     "Costumes" : {
       "201501" : {
-        "art" : "UI_Costume_KaeyaCostumeDancer",
+        "art" : "/ui/UI_Costume_KaeyaCostumeDancer.png",
         "avatarId" : 10000015,
-        "icon" : "UI_AvatarIcon_KaeyaCostumeDancer",
-        "sideIconName" : "UI_AvatarIcon_Side_KaeyaCostumeDancer"
+        "icon" : "/ui/UI_AvatarIcon_KaeyaCostumeDancer.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_KaeyaCostumeDancer.png"
       }
     },
     "Element" : "Ice",
@@ -602,34 +602,34 @@
       "10075" : 1539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kaeya",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kaeya.png",
     "SkillOrder" : [
       10073,
       10074,
       10075
     ],
     "Skills" : {
-      "10073" : "Skill_A_01",
-      "10074" : "Skill_S_Kaeya_01",
-      "10075" : "Skill_E_Kaeya_01"
+      "10073" : "/ui/Skill_A_01.png",
+      "10074" : "/ui/Skill_S_Kaeya_01.png",
+      "10075" : "/ui/Skill_E_Kaeya_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000016" : {
     "Consts" : [
-      "UI_Talent_S_Diluc_01",
-      "UI_Talent_S_Diluc_02",
-      "UI_Talent_U_Diluc_01",
-      "UI_Talent_S_Diluc_03",
-      "UI_Talent_U_Diluc_02",
-      "UI_Talent_S_Diluc_04"
+      "/ui/UI_Talent_S_Diluc_01.png",
+      "/ui/UI_Talent_S_Diluc_02.png",
+      "/ui/UI_Talent_U_Diluc_01.png",
+      "/ui/UI_Talent_S_Diluc_03.png",
+      "/ui/UI_Talent_U_Diluc_02.png",
+      "/ui/UI_Talent_S_Diluc_04.png"
     ],
     "Costumes" : {
       "201601" : {
-        "art" : "UI_Costume_DilucCostumeFlamme",
+        "art" : "/ui/UI_Costume_DilucCostumeFlamme.png",
         "avatarId" : 10000016,
-        "icon" : "UI_AvatarIcon_DilucCostumeFlamme",
-        "sideIconName" : "UI_AvatarIcon_Side_DilucCostumeFlamme"
+        "icon" : "/ui/UI_AvatarIcon_DilucCostumeFlamme.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_DilucCostumeFlamme.png"
       }
     },
     "Element" : "Fire",
@@ -640,27 +640,27 @@
       "10165" : 1639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Diluc",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Diluc.png",
     "SkillOrder" : [
       10160,
       10161,
       10165
     ],
     "Skills" : {
-      "10160" : "Skill_A_04",
-      "10161" : "Skill_S_Diluc_01_01",
-      "10165" : "Skill_E_Diluc_01"
+      "10160" : "/ui/Skill_A_04.png",
+      "10161" : "/ui/Skill_S_Diluc_01_01.png",
+      "10165" : "/ui/Skill_E_Diluc_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000020" : {
     "Consts" : [
-      "UI_Talent_S_Razor_01",
-      "UI_Talent_S_Razor_02",
-      "UI_Talent_U_Razor_02",
-      "UI_Talent_S_Razor_03",
-      "UI_Talent_U_Razor_01",
-      "UI_Talent_S_Razor_04"
+      "/ui/UI_Talent_S_Razor_01.png",
+      "/ui/UI_Talent_S_Razor_02.png",
+      "/ui/UI_Talent_U_Razor_02.png",
+      "/ui/UI_Talent_S_Razor_03.png",
+      "/ui/UI_Talent_U_Razor_01.png",
+      "/ui/UI_Talent_S_Razor_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 4160147242,
@@ -670,34 +670,34 @@
       "10203" : 2039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Razor",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Razor.png",
     "SkillOrder" : [
       10201,
       10202,
       10203
     ],
     "Skills" : {
-      "10201" : "Skill_A_04",
-      "10202" : "Skill_S_Razor_01",
-      "10203" : "Skill_E_Razor_01"
+      "10201" : "/ui/Skill_A_04.png",
+      "10202" : "/ui/Skill_S_Razor_01.png",
+      "10203" : "/ui/Skill_E_Razor_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000021" : {
     "Consts" : [
-      "UI_Talent_S_Ambor_01",
-      "UI_Talent_S_Ambor_02",
-      "UI_Talent_U_Ambor_02",
-      "UI_Talent_S_Ambor_03",
-      "UI_Talent_U_Ambor_01",
-      "UI_Talent_S_Ambor_04"
+      "/ui/UI_Talent_S_Ambor_01.png",
+      "/ui/UI_Talent_S_Ambor_02.png",
+      "/ui/UI_Talent_U_Ambor_02.png",
+      "/ui/UI_Talent_S_Ambor_03.png",
+      "/ui/UI_Talent_U_Ambor_01.png",
+      "/ui/UI_Talent_S_Ambor_04.png"
     ],
     "Costumes" : {
       "202101" : {
-        "art" : "UI_Costume_AmborCostumeWic",
+        "art" : "/ui/UI_Costume_AmborCostumeWic.png",
         "avatarId" : 10000021,
-        "icon" : "UI_AvatarIcon_AmborCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_AmborCostumeWic"
+        "icon" : "/ui/UI_AvatarIcon_AmborCostumeWic.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_AmborCostumeWic.png"
       }
     },
     "Element" : "Fire",
@@ -708,27 +708,27 @@
       "10041" : 2131
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ambor",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ambor.png",
     "SkillOrder" : [
       10041,
       10032,
       10017
     ],
     "Skills" : {
-      "10017" : "Skill_E_Ambor",
-      "10032" : "Skill_S_Ambor_01",
-      "10041" : "Skill_A_02"
+      "10017" : "/ui/Skill_E_Ambor.png",
+      "10032" : "/ui/Skill_S_Ambor_01.png",
+      "10041" : "/ui/Skill_A_02.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000022" : {
     "Consts" : [
-      "UI_Talent_S_Venti_01",
-      "UI_Talent_S_Venti_02",
-      "UI_Talent_U_Venti_02",
-      "UI_Talent_S_Venti_03",
-      "UI_Talent_U_Venti_01",
-      "UI_Talent_S_Venti_04"
+      "/ui/UI_Talent_S_Venti_01.png",
+      "/ui/UI_Talent_S_Venti_02.png",
+      "/ui/UI_Talent_U_Venti_02.png",
+      "/ui/UI_Talent_S_Venti_03.png",
+      "/ui/UI_Talent_U_Venti_01.png",
+      "/ui/UI_Talent_S_Venti_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 2466140362,
@@ -738,34 +738,34 @@
       "10225" : 2239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Venti",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Venti.png",
     "SkillOrder" : [
       10221,
       10224,
       10225
     ],
     "Skills" : {
-      "10221" : "Skill_A_02",
-      "10224" : "Skill_S_Venti_01",
-      "10225" : "Skill_E_Venti_01"
+      "10221" : "/ui/Skill_A_02.png",
+      "10224" : "/ui/Skill_S_Venti_01.png",
+      "10225" : "/ui/Skill_E_Venti_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000023" : {
     "Consts" : [
-      "UI_Talent_S_Xiangling_01",
-      "UI_Talent_S_Xiangling_02",
-      "UI_Talent_U_Xiangling_02",
-      "UI_Talent_S_Xiangling_03",
-      "UI_Talent_U_Xiangling_01",
-      "UI_Talent_S_Xiangling_04"
+      "/ui/UI_Talent_S_Xiangling_01.png",
+      "/ui/UI_Talent_S_Xiangling_02.png",
+      "/ui/UI_Talent_U_Xiangling_02.png",
+      "/ui/UI_Talent_S_Xiangling_03.png",
+      "/ui/UI_Talent_U_Xiangling_01.png",
+      "/ui/UI_Talent_S_Xiangling_04.png"
     ],
     "Costumes" : {
       "202301" : {
-        "art" : "UI_Costume_XianglingCostumeWinter",
+        "art" : "/ui/UI_Costume_XianglingCostumeWinter.png",
         "avatarId" : 10000023,
-        "icon" : "UI_AvatarIcon_XianglingCostumeWinter",
-        "sideIconName" : "UI_AvatarIcon_Side_XianglingCostumeWinter"
+        "icon" : "/ui/UI_AvatarIcon_XianglingCostumeWinter.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_XianglingCostumeWinter.png"
       }
     },
     "Element" : "Fire",
@@ -776,27 +776,27 @@
       "10235" : 2339
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Xiangling",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Xiangling.png",
     "SkillOrder" : [
       10231,
       10232,
       10235
     ],
     "Skills" : {
-      "10231" : "Skill_A_03",
-      "10232" : "Skill_S_Xiangling_01",
-      "10235" : "Skill_E_Xiangling_01"
+      "10231" : "/ui/Skill_A_03.png",
+      "10232" : "/ui/Skill_S_Xiangling_01.png",
+      "10235" : "/ui/Skill_E_Xiangling_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000024" : {
     "Consts" : [
-      "UI_Talent_S_Beidou_02",
-      "UI_Talent_S_Beidou_01",
-      "UI_Talent_U_Beidou_01",
-      "UI_Talent_S_Beidou_03",
-      "UI_Talent_U_Beidou_02",
-      "UI_Talent_S_Beidou_04"
+      "/ui/UI_Talent_S_Beidou_02.png",
+      "/ui/UI_Talent_S_Beidou_01.png",
+      "/ui/UI_Talent_U_Beidou_01.png",
+      "/ui/UI_Talent_S_Beidou_03.png",
+      "/ui/UI_Talent_U_Beidou_02.png",
+      "/ui/UI_Talent_S_Beidou_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 2646367730,
@@ -806,34 +806,34 @@
       "10245" : 2439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Beidou",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Beidou.png",
     "SkillOrder" : [
       10241,
       10242,
       10245
     ],
     "Skills" : {
-      "10241" : "Skill_A_04",
-      "10242" : "Skill_S_Beidou_01",
-      "10245" : "Skill_E_Beidou_01"
+      "10241" : "/ui/Skill_A_04.png",
+      "10242" : "/ui/Skill_S_Beidou_01.png",
+      "10245" : "/ui/Skill_E_Beidou_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000025" : {
     "Consts" : [
-      "UI_Talent_S_Xingqiu_01",
-      "UI_Talent_S_Xingqiu_02",
-      "UI_Talent_U_Xingqiu_01",
-      "UI_Talent_S_Xingqiu_03",
-      "UI_Talent_U_Xingqiu_02",
-      "UI_Talent_S_Xingqiu_04"
+      "/ui/UI_Talent_S_Xingqiu_01.png",
+      "/ui/UI_Talent_S_Xingqiu_02.png",
+      "/ui/UI_Talent_U_Xingqiu_01.png",
+      "/ui/UI_Talent_S_Xingqiu_03.png",
+      "/ui/UI_Talent_U_Xingqiu_02.png",
+      "/ui/UI_Talent_S_Xingqiu_04.png"
     ],
     "Costumes" : {
       "202501" : {
-        "art" : "UI_Costume_XingqiuCostumeBamboo",
+        "art" : "/ui/UI_Costume_XingqiuCostumeBamboo.png",
         "avatarId" : 10000025,
-        "icon" : "UI_AvatarIcon_XingqiuCostumeBamboo",
-        "sideIconName" : "UI_AvatarIcon_Side_XingqiuCostumeBamboo"
+        "icon" : "/ui/UI_AvatarIcon_XingqiuCostumeBamboo.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_XingqiuCostumeBamboo.png"
       }
     },
     "Element" : "Water",
@@ -844,27 +844,27 @@
       "10385" : 2539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Xingqiu",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Xingqiu.png",
     "SkillOrder" : [
       10381,
       10382,
       10385
     ],
     "Skills" : {
-      "10381" : "Skill_A_01",
-      "10382" : "Skill_S_Xingqiu_01",
-      "10385" : "Skill_E_Xingqiu_01"
+      "10381" : "/ui/Skill_A_01.png",
+      "10382" : "/ui/Skill_S_Xingqiu_01.png",
+      "10385" : "/ui/Skill_E_Xingqiu_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000026" : {
     "Consts" : [
-      "UI_Talent_S_Xiao_01",
-      "UI_Talent_S_Xiao_02",
-      "UI_Talent_U_Xiao_01",
-      "UI_Talent_S_Xiao_03",
-      "UI_Talent_U_Xiao_02",
-      "UI_Talent_S_Xiao_04"
+      "/ui/UI_Talent_S_Xiao_01.png",
+      "/ui/UI_Talent_S_Xiao_02.png",
+      "/ui/UI_Talent_U_Xiao_01.png",
+      "/ui/UI_Talent_S_Xiao_03.png",
+      "/ui/UI_Talent_U_Xiao_02.png",
+      "/ui/UI_Talent_S_Xiao_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1021947690,
@@ -874,34 +874,34 @@
       "10265" : 2639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Xiao",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Xiao.png",
     "SkillOrder" : [
       10261,
       10262,
       10265
     ],
     "Skills" : {
-      "10261" : "Skill_A_03",
-      "10262" : "Skill_S_Xiao_01",
-      "10265" : "Skill_E_Xiao_01"
+      "10261" : "/ui/Skill_A_03.png",
+      "10262" : "/ui/Skill_S_Xiao_01.png",
+      "10265" : "/ui/Skill_E_Xiao_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000027" : {
     "Consts" : [
-      "UI_Talent_S_Ningguang_01",
-      "UI_Talent_S_Ningguang_05",
-      "UI_Talent_U_Ningguang_02",
-      "UI_Talent_S_Ningguang_03",
-      "UI_Talent_U_Ningguang_01",
-      "UI_Talent_S_Ningguang_04"
+      "/ui/UI_Talent_S_Ningguang_01.png",
+      "/ui/UI_Talent_S_Ningguang_05.png",
+      "/ui/UI_Talent_U_Ningguang_02.png",
+      "/ui/UI_Talent_S_Ningguang_03.png",
+      "/ui/UI_Talent_U_Ningguang_01.png",
+      "/ui/UI_Talent_S_Ningguang_04.png"
     ],
     "Costumes" : {
       "202701" : {
-        "art" : "UI_Costume_NingguangCostumeFloral",
+        "art" : "/ui/UI_Costume_NingguangCostumeFloral.png",
         "avatarId" : 10000027,
-        "icon" : "UI_AvatarIcon_NingguangCostumeFloral",
-        "sideIconName" : "UI_AvatarIcon_Side_NingguangCostumeFloral"
+        "icon" : "/ui/UI_AvatarIcon_NingguangCostumeFloral.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_NingguangCostumeFloral.png"
       }
     },
     "Element" : "Rock",
@@ -912,34 +912,34 @@
       "10274" : 2739
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ningguang",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ningguang.png",
     "SkillOrder" : [
       10271,
       10272,
       10274
     ],
     "Skills" : {
-      "10271" : "Skill_A_Catalyst_MD",
-      "10272" : "Skill_S_Ningguang_01",
-      "10274" : "Skill_E_Ningguang_01"
+      "10271" : "/ui/Skill_A_Catalyst_MD.png",
+      "10272" : "/ui/Skill_S_Ningguang_01.png",
+      "10274" : "/ui/Skill_E_Ningguang_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000029" : {
     "Consts" : [
-      "UI_Talent_S_Klee_01",
-      "UI_Talent_S_Klee_02",
-      "UI_Talent_U_Klee_01",
-      "UI_Talent_S_Klee_03",
-      "UI_Talent_U_Klee_02",
-      "UI_Talent_S_Klee_04"
+      "/ui/UI_Talent_S_Klee_01.png",
+      "/ui/UI_Talent_S_Klee_02.png",
+      "/ui/UI_Talent_U_Klee_01.png",
+      "/ui/UI_Talent_S_Klee_03.png",
+      "/ui/UI_Talent_U_Klee_02.png",
+      "/ui/UI_Talent_S_Klee_04.png"
     ],
     "Costumes" : {
       "202901" : {
-        "art" : "UI_Costume_KleeCostumeWitch",
+        "art" : "/ui/UI_Costume_KleeCostumeWitch.png",
         "avatarId" : 10000029,
-        "icon" : "UI_AvatarIcon_KleeCostumeWitch",
-        "sideIconName" : "UI_AvatarIcon_Side_KleeCostumeWitch"
+        "icon" : "/ui/UI_AvatarIcon_KleeCostumeWitch.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_KleeCostumeWitch.png"
       }
     },
     "Element" : "Fire",
@@ -950,27 +950,27 @@
       "10295" : 2939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Klee",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Klee.png",
     "SkillOrder" : [
       10291,
       10292,
       10295
     ],
     "Skills" : {
-      "10291" : "Skill_A_Catalyst_MD",
-      "10292" : "Skill_S_Klee_01",
-      "10295" : "Skill_E_Klee_01"
+      "10291" : "/ui/Skill_A_Catalyst_MD.png",
+      "10292" : "/ui/Skill_S_Klee_01.png",
+      "10295" : "/ui/Skill_E_Klee_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000030" : {
     "Consts" : [
-      "UI_Talent_S_Zhongli_01",
-      "UI_Talent_S_Zhongli_02",
-      "UI_Talent_U_Zhongli_01",
-      "UI_Talent_S_Zhongli_03",
-      "UI_Talent_U_Zhongli_02",
-      "UI_Talent_S_Zhongli_04"
+      "/ui/UI_Talent_S_Zhongli_01.png",
+      "/ui/UI_Talent_S_Zhongli_02.png",
+      "/ui/UI_Talent_U_Zhongli_01.png",
+      "/ui/UI_Talent_S_Zhongli_03.png",
+      "/ui/UI_Talent_U_Zhongli_02.png",
+      "/ui/UI_Talent_S_Zhongli_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 3862787418,
@@ -980,34 +980,34 @@
       "10303" : 3039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Zhongli",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Zhongli.png",
     "SkillOrder" : [
       10301,
       10302,
       10303
     ],
     "Skills" : {
-      "10301" : "Skill_A_03",
-      "10302" : "Skill_S_Zhongli_01",
-      "10303" : "Skill_E_Zhongli_01"
+      "10301" : "/ui/Skill_A_03.png",
+      "10302" : "/ui/Skill_S_Zhongli_01.png",
+      "10303" : "/ui/Skill_E_Zhongli_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000031" : {
     "Consts" : [
-      "UI_Talent_S_Fischl_01",
-      "UI_Talent_S_Fischl_02",
-      "UI_Talent_U_Fischl_01",
-      "UI_Talent_S_Fischl_03",
-      "UI_Talent_U_Fischl_02",
-      "UI_Talent_S_Fischl_04"
+      "/ui/UI_Talent_S_Fischl_01.png",
+      "/ui/UI_Talent_S_Fischl_02.png",
+      "/ui/UI_Talent_U_Fischl_01.png",
+      "/ui/UI_Talent_S_Fischl_03.png",
+      "/ui/UI_Talent_U_Fischl_02.png",
+      "/ui/UI_Talent_S_Fischl_04.png"
     ],
     "Costumes" : {
       "203101" : {
-        "art" : "UI_Costume_FischlCostumeHighness",
+        "art" : "/ui/UI_Costume_FischlCostumeHighness.png",
         "avatarId" : 10000031,
-        "icon" : "UI_AvatarIcon_FischlCostumeHighness",
-        "sideIconName" : "UI_AvatarIcon_Side_FischlCostumeHighness"
+        "icon" : "/ui/UI_AvatarIcon_FischlCostumeHighness.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_FischlCostumeHighness.png"
       }
     },
     "Element" : "Electric",
@@ -1018,34 +1018,34 @@
       "10313" : 3139
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Fischl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Fischl.png",
     "SkillOrder" : [
       10311,
       10312,
       10313
     ],
     "Skills" : {
-      "10311" : "Skill_A_02",
-      "10312" : "Skill_S_Fischl_01",
-      "10313" : "Skill_E_Fischl_01"
+      "10311" : "/ui/Skill_A_02.png",
+      "10312" : "/ui/Skill_S_Fischl_01.png",
+      "10313" : "/ui/Skill_E_Fischl_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000032" : {
     "Consts" : [
-      "UI_Talent_S_Bennett_01",
-      "UI_Talent_S_Bennett_02",
-      "UI_Talent_U_Bennett_01",
-      "UI_Talent_S_Bennett_03",
-      "UI_Talent_U_Bennett_02",
-      "UI_Talent_S_Bennett_04"
+      "/ui/UI_Talent_S_Bennett_01.png",
+      "/ui/UI_Talent_S_Bennett_02.png",
+      "/ui/UI_Talent_U_Bennett_01.png",
+      "/ui/UI_Talent_S_Bennett_03.png",
+      "/ui/UI_Talent_U_Bennett_02.png",
+      "/ui/UI_Talent_S_Bennett_04.png"
     ],
     "Costumes" : {
       "203201" : {
-        "art" : "UI_Costume_BennettCostumeSummer",
+        "art" : "/ui/UI_Costume_BennettCostumeSummer.png",
         "avatarId" : 10000032,
-        "icon" : "UI_AvatarIcon_BennettCostumeSummer",
-        "sideIconName" : "UI_AvatarIcon_Side_BennettCostumeSummer"
+        "icon" : "/ui/UI_AvatarIcon_BennettCostumeSummer.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_BennettCostumeSummer.png"
       }
     },
     "Element" : "Fire",
@@ -1056,27 +1056,27 @@
       "10323" : 3239
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Bennett",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Bennett.png",
     "SkillOrder" : [
       10321,
       10322,
       10323
     ],
     "Skills" : {
-      "10321" : "Skill_A_01",
-      "10322" : "Skill_S_Bennett_01",
-      "10323" : "Skill_E_Bennett_01"
+      "10321" : "/ui/Skill_A_01.png",
+      "10322" : "/ui/Skill_S_Bennett_01.png",
+      "10323" : "/ui/Skill_E_Bennett_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000033" : {
     "Consts" : [
-      "UI_Talent_S_Tartaglia_01",
-      "UI_Talent_S_Tartaglia_02",
-      "UI_Talent_U_Tartaglia_01",
-      "UI_Talent_S_Tartaglia_05",
-      "UI_Talent_U_Tartaglia_02",
-      "UI_Talent_S_Tartaglia_04"
+      "/ui/UI_Talent_S_Tartaglia_01.png",
+      "/ui/UI_Talent_S_Tartaglia_02.png",
+      "/ui/UI_Talent_U_Tartaglia_01.png",
+      "/ui/UI_Talent_S_Tartaglia_05.png",
+      "/ui/UI_Talent_U_Tartaglia_02.png",
+      "/ui/UI_Talent_S_Tartaglia_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3847143266,
@@ -1086,27 +1086,27 @@
       "10333" : 3339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Tartaglia",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Tartaglia.png",
     "SkillOrder" : [
       10331,
       10332,
       10333
     ],
     "Skills" : {
-      "10331" : "Skill_A_02",
-      "10332" : "Skill_S_Tartaglia_01",
-      "10333" : "Skill_E_Tartaglia_01"
+      "10331" : "/ui/Skill_A_02.png",
+      "10332" : "/ui/Skill_S_Tartaglia_01.png",
+      "10333" : "/ui/Skill_E_Tartaglia_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000034" : {
     "Consts" : [
-      "UI_Talent_S_Noel_01",
-      "UI_Talent_S_Noel_02",
-      "UI_Talent_U_Noel_01",
-      "UI_Talent_S_Noel_03",
-      "UI_Talent_U_Noel_02",
-      "UI_Talent_S_Noel_04"
+      "/ui/UI_Talent_S_Noel_01.png",
+      "/ui/UI_Talent_S_Noel_02.png",
+      "/ui/UI_Talent_U_Noel_01.png",
+      "/ui/UI_Talent_S_Noel_03.png",
+      "/ui/UI_Talent_U_Noel_02.png",
+      "/ui/UI_Talent_S_Noel_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 1921418842,
@@ -1116,27 +1116,27 @@
       "10343" : 3439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Noel",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Noel.png",
     "SkillOrder" : [
       10341,
       10342,
       10343
     ],
     "Skills" : {
-      "10341" : "Skill_A_04",
-      "10342" : "Skill_S_Noel_01",
-      "10343" : "Skill_E_Noel_01"
+      "10341" : "/ui/Skill_A_04.png",
+      "10342" : "/ui/Skill_S_Noel_01.png",
+      "10343" : "/ui/Skill_E_Noel_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000035" : {
     "Consts" : [
-      "UI_Talent_S_Qiqi_01",
-      "UI_Talent_S_Qiqi_02",
-      "UI_Talent_U_Qiqi_01",
-      "UI_Talent_S_Qiqi_03",
-      "UI_Talent_U_Qiqi_02",
-      "UI_Talent_S_Qiqi_04"
+      "/ui/UI_Talent_S_Qiqi_01.png",
+      "/ui/UI_Talent_S_Qiqi_02.png",
+      "/ui/UI_Talent_U_Qiqi_01.png",
+      "/ui/UI_Talent_S_Qiqi_03.png",
+      "/ui/UI_Talent_U_Qiqi_02.png",
+      "/ui/UI_Talent_S_Qiqi_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 168956722,
@@ -1146,27 +1146,27 @@
       "10353" : 3539
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Qiqi",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Qiqi.png",
     "SkillOrder" : [
       10351,
       10352,
       10353
     ],
     "Skills" : {
-      "10351" : "Skill_A_01",
-      "10352" : "Skill_S_Qiqi_01",
-      "10353" : "Skill_E_Qiqi_01"
+      "10351" : "/ui/Skill_A_01.png",
+      "10352" : "/ui/Skill_S_Qiqi_01.png",
+      "10353" : "/ui/Skill_E_Qiqi_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000036" : {
     "Consts" : [
-      "UI_Talent_S_Chongyun_01",
-      "UI_Talent_S_Chongyun_02",
-      "UI_Talent_U_Chongyun_01",
-      "UI_Talent_S_Chongyun_03",
-      "UI_Talent_U_Chongyun_02",
-      "UI_Talent_S_Chongyun_04"
+      "/ui/UI_Talent_S_Chongyun_01.png",
+      "/ui/UI_Talent_S_Chongyun_02.png",
+      "/ui/UI_Talent_U_Chongyun_01.png",
+      "/ui/UI_Talent_S_Chongyun_03.png",
+      "/ui/UI_Talent_U_Chongyun_02.png",
+      "/ui/UI_Talent_S_Chongyun_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 2876340530,
@@ -1176,34 +1176,34 @@
       "10403" : 3639
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Chongyun",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Chongyun.png",
     "SkillOrder" : [
       10401,
       10402,
       10403
     ],
     "Skills" : {
-      "10401" : "Skill_A_04",
-      "10402" : "Skill_S_Chongyun_01",
-      "10403" : "Skill_E_Chongyun_01"
+      "10401" : "/ui/Skill_A_04.png",
+      "10402" : "/ui/Skill_S_Chongyun_01.png",
+      "10403" : "/ui/Skill_E_Chongyun_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000037" : {
     "Consts" : [
-      "UI_Talent_S_Ganyu_01",
-      "UI_Talent_S_Ganyu_02",
-      "UI_Talent_U_Ganyu_01",
-      "UI_Talent_S_Ganyu_03",
-      "UI_Talent_U_Ganyu_02",
-      "UI_Talent_S_Ganyu_04"
+      "/ui/UI_Talent_S_Ganyu_01.png",
+      "/ui/UI_Talent_S_Ganyu_02.png",
+      "/ui/UI_Talent_U_Ganyu_01.png",
+      "/ui/UI_Talent_S_Ganyu_03.png",
+      "/ui/UI_Talent_U_Ganyu_02.png",
+      "/ui/UI_Talent_S_Ganyu_04.png"
     ],
     "Costumes" : {
       "203701" : {
-        "art" : "UI_Costume_GanyuCostumeYu",
+        "art" : "/ui/UI_Costume_GanyuCostumeYu.png",
         "avatarId" : 10000037,
-        "icon" : "UI_AvatarIcon_GanyuCostumeYu",
-        "sideIconName" : "UI_AvatarIcon_Side_GanyuCostumeYu"
+        "icon" : "/ui/UI_AvatarIcon_GanyuCostumeYu.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_GanyuCostumeYu.png"
       }
     },
     "Element" : "Ice",
@@ -1214,27 +1214,27 @@
       "10373" : 3739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ganyu",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ganyu.png",
     "SkillOrder" : [
       10371,
       10372,
       10373
     ],
     "Skills" : {
-      "10371" : "Skill_A_02",
-      "10372" : "Skill_S_Ganyu_01",
-      "10373" : "Skill_E_Ganyu_01"
+      "10371" : "/ui/Skill_A_02.png",
+      "10372" : "/ui/Skill_S_Ganyu_01.png",
+      "10373" : "/ui/Skill_E_Ganyu_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000038" : {
     "Consts" : [
-      "UI_Talent_S_Albedo_01",
-      "UI_Talent_S_Albedo_02",
-      "UI_Talent_U_Albedo_01",
-      "UI_Talent_S_Albedo_03",
-      "UI_Talent_U_Albedo_02",
-      "UI_Talent_S_Albedo_04"
+      "/ui/UI_Talent_S_Albedo_01.png",
+      "/ui/UI_Talent_S_Albedo_02.png",
+      "/ui/UI_Talent_U_Albedo_01.png",
+      "/ui/UI_Talent_S_Albedo_03.png",
+      "/ui/UI_Talent_U_Albedo_02.png",
+      "/ui/UI_Talent_S_Albedo_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 4108620722,
@@ -1244,27 +1244,27 @@
       "10388" : 3839
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Albedo",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Albedo.png",
     "SkillOrder" : [
       10386,
       10387,
       10388
     ],
     "Skills" : {
-      "10386" : "Skill_A_01",
-      "10387" : "Skill_S_Albedo_01",
-      "10388" : "Skill_E_Albedo_01"
+      "10386" : "/ui/Skill_A_01.png",
+      "10387" : "/ui/Skill_S_Albedo_01.png",
+      "10388" : "/ui/Skill_E_Albedo_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000039" : {
     "Consts" : [
-      "UI_Talent_S_Diona_01",
-      "UI_Talent_S_Diona_02",
-      "UI_Talent_U_Diona_01",
-      "UI_Talent_S_Diona_03",
-      "UI_Talent_U_Diona_02",
-      "UI_Talent_S_Diona_04"
+      "/ui/UI_Talent_S_Diona_01.png",
+      "/ui/UI_Talent_S_Diona_02.png",
+      "/ui/UI_Talent_U_Diona_01.png",
+      "/ui/UI_Talent_S_Diona_03.png",
+      "/ui/UI_Talent_U_Diona_02.png",
+      "/ui/UI_Talent_S_Diona_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 1468367538,
@@ -1274,34 +1274,34 @@
       "10395" : 3939
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Diona",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Diona.png",
     "SkillOrder" : [
       10391,
       10392,
       10395
     ],
     "Skills" : {
-      "10391" : "Skill_A_02",
-      "10392" : "Skill_S_Diona_01",
-      "10395" : "Skill_E_Diona_01"
+      "10391" : "/ui/Skill_A_02.png",
+      "10392" : "/ui/Skill_S_Diona_01.png",
+      "10395" : "/ui/Skill_E_Diona_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000041" : {
     "Consts" : [
-      "UI_Talent_S_Mona_01",
-      "UI_Talent_S_Mona_02",
-      "UI_Talent_U_Mona_01",
-      "UI_Talent_S_Mona_03",
-      "UI_Talent_U_Mona_02",
-      "UI_Talent_S_Mona_04"
+      "/ui/UI_Talent_S_Mona_01.png",
+      "/ui/UI_Talent_S_Mona_02.png",
+      "/ui/UI_Talent_U_Mona_01.png",
+      "/ui/UI_Talent_S_Mona_03.png",
+      "/ui/UI_Talent_U_Mona_02.png",
+      "/ui/UI_Talent_S_Mona_04.png"
     ],
     "Costumes" : {
       "204101" : {
-        "art" : "UI_Costume_MonaCostumeWic",
+        "art" : "/ui/UI_Costume_MonaCostumeWic.png",
         "avatarId" : 10000041,
-        "icon" : "UI_AvatarIcon_MonaCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_MonaCostumeWic"
+        "icon" : "/ui/UI_AvatarIcon_MonaCostumeWic.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_MonaCostumeWic.png"
       }
     },
     "Element" : "Water",
@@ -1312,34 +1312,34 @@
       "10415" : 4139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Mona",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Mona.png",
     "SkillOrder" : [
       10411,
       10412,
       10415
     ],
     "Skills" : {
-      "10411" : "Skill_A_Catalyst_MD",
-      "10412" : "Skill_S_Mona_01",
-      "10415" : "Skill_E_Mona_01"
+      "10411" : "/ui/Skill_A_Catalyst_MD.png",
+      "10412" : "/ui/Skill_S_Mona_01.png",
+      "10415" : "/ui/Skill_E_Mona_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000042" : {
     "Consts" : [
-      "UI_Talent_S_Keqing_01",
-      "UI_Talent_S_Keqing_02",
-      "UI_Talent_U_Keqing_01",
-      "UI_Talent_S_Keqing_03",
-      "UI_Talent_U_Keqing_02",
-      "UI_Talent_S_Keqing_04"
+      "/ui/UI_Talent_S_Keqing_01.png",
+      "/ui/UI_Talent_S_Keqing_02.png",
+      "/ui/UI_Talent_U_Keqing_01.png",
+      "/ui/UI_Talent_S_Keqing_03.png",
+      "/ui/UI_Talent_U_Keqing_02.png",
+      "/ui/UI_Talent_S_Keqing_04.png"
     ],
     "Costumes" : {
       "204201" : {
-        "art" : "UI_Costume_KeqingCostumeFeather",
+        "art" : "/ui/UI_Costume_KeqingCostumeFeather.png",
         "avatarId" : 10000042,
-        "icon" : "UI_AvatarIcon_KeqingCostumeFeather",
-        "sideIconName" : "UI_AvatarIcon_Side_KeqingCostumeFeather"
+        "icon" : "/ui/UI_AvatarIcon_KeqingCostumeFeather.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_KeqingCostumeFeather.png"
       }
     },
     "Element" : "Electric",
@@ -1350,27 +1350,27 @@
       "10425" : 4239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Keqing",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Keqing.png",
     "SkillOrder" : [
       10421,
       10422,
       10425
     ],
     "Skills" : {
-      "10421" : "Skill_A_01",
-      "10422" : "Skill_S_Keqing_01",
-      "10425" : "Skill_E_Keqing_01"
+      "10421" : "/ui/Skill_A_01.png",
+      "10422" : "/ui/Skill_S_Keqing_01.png",
+      "10425" : "/ui/Skill_E_Keqing_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000043" : {
     "Consts" : [
-      "UI_Talent_S_Sucrose_01",
-      "UI_Talent_S_Sucrose_02",
-      "UI_Talent_U_Sucrose_01",
-      "UI_Talent_S_Sucrose_03",
-      "UI_Talent_U_Sucrose_02",
-      "UI_Talent_S_Sucrose_04"
+      "/ui/UI_Talent_S_Sucrose_01.png",
+      "/ui/UI_Talent_S_Sucrose_02.png",
+      "/ui/UI_Talent_U_Sucrose_01.png",
+      "/ui/UI_Talent_S_Sucrose_03.png",
+      "/ui/UI_Talent_U_Sucrose_02.png",
+      "/ui/UI_Talent_S_Sucrose_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1053433018,
@@ -1380,27 +1380,27 @@
       "10435" : 4339
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Sucrose",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Sucrose.png",
     "SkillOrder" : [
       10431,
       10432,
       10435
     ],
     "Skills" : {
-      "10431" : "Skill_A_Catalyst_MD",
-      "10432" : "Skill_S_Sucrose_01",
-      "10435" : "Skill_E_Sucrose_01"
+      "10431" : "/ui/Skill_A_Catalyst_MD.png",
+      "10432" : "/ui/Skill_S_Sucrose_01.png",
+      "10435" : "/ui/Skill_E_Sucrose_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000044" : {
     "Consts" : [
-      "UI_Talent_S_Xinyan_01",
-      "UI_Talent_S_Xinyan_02",
-      "UI_Talent_U_Xinyan_01",
-      "UI_Talent_S_Xinyan_03",
-      "UI_Talent_U_Xinyan_02",
-      "UI_Talent_S_Xinyan_04"
+      "/ui/UI_Talent_S_Xinyan_01.png",
+      "/ui/UI_Talent_S_Xinyan_02.png",
+      "/ui/UI_Talent_U_Xinyan_01.png",
+      "/ui/UI_Talent_S_Xinyan_03.png",
+      "/ui/UI_Talent_U_Xinyan_02.png",
+      "/ui/UI_Talent_S_Xinyan_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 4273845410,
@@ -1410,34 +1410,34 @@
       "10443" : 4439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Xinyan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Xinyan.png",
     "SkillOrder" : [
       10441,
       10442,
       10443
     ],
     "Skills" : {
-      "10441" : "Skill_A_04",
-      "10442" : "Skill_S_Xinyan_01",
-      "10443" : "Skill_E_Xinyan_01"
+      "10441" : "/ui/Skill_A_04.png",
+      "10442" : "/ui/Skill_S_Xinyan_01.png",
+      "10443" : "/ui/Skill_E_Xinyan_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000045" : {
     "Consts" : [
-      "UI_Talent_S_Rosaria_01",
-      "UI_Talent_S_Rosaria_02",
-      "UI_Talent_U_Rosaria_01",
-      "UI_Talent_S_Rosaria_03",
-      "UI_Talent_U_Rosaria_02",
-      "UI_Talent_S_Rosaria_04"
+      "/ui/UI_Talent_S_Rosaria_01.png",
+      "/ui/UI_Talent_S_Rosaria_02.png",
+      "/ui/UI_Talent_U_Rosaria_01.png",
+      "/ui/UI_Talent_S_Rosaria_03.png",
+      "/ui/UI_Talent_U_Rosaria_02.png",
+      "/ui/UI_Talent_S_Rosaria_04.png"
     ],
     "Costumes" : {
       "204501" : {
-        "art" : "UI_Costume_RosariaCostumeWic",
+        "art" : "/ui/UI_Costume_RosariaCostumeWic.png",
         "avatarId" : 10000045,
-        "icon" : "UI_AvatarIcon_RosariaCostumeWic",
-        "sideIconName" : "UI_AvatarIcon_Side_RosariaCostumeWic"
+        "icon" : "/ui/UI_AvatarIcon_RosariaCostumeWic.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_RosariaCostumeWic.png"
       }
     },
     "Element" : "Ice",
@@ -1448,34 +1448,34 @@
       "10453" : 4539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Rosaria",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Rosaria.png",
     "SkillOrder" : [
       10451,
       10452,
       10453
     ],
     "Skills" : {
-      "10451" : "Skill_A_03",
-      "10452" : "Skill_S_Rosaria_01",
-      "10453" : "Skill_E_Rosaria_01"
+      "10451" : "/ui/Skill_A_03.png",
+      "10452" : "/ui/Skill_S_Rosaria_01.png",
+      "10453" : "/ui/Skill_E_Rosaria_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000046" : {
     "Consts" : [
-      "UI_Talent_S_Hutao_03",
-      "UI_Talent_S_Hutao_01",
-      "UI_Talent_U_Hutao_01",
-      "UI_Talent_S_Hutao_02",
-      "UI_Talent_U_Hutao_02",
-      "UI_Talent_S_Hutao_04"
+      "/ui/UI_Talent_S_Hutao_03.png",
+      "/ui/UI_Talent_S_Hutao_01.png",
+      "/ui/UI_Talent_U_Hutao_01.png",
+      "/ui/UI_Talent_S_Hutao_02.png",
+      "/ui/UI_Talent_U_Hutao_02.png",
+      "/ui/UI_Talent_S_Hutao_04.png"
     ],
     "Costumes" : {
       "204601" : {
-        "art" : "UI_Costume_HutaoCostumeWinter",
+        "art" : "/ui/UI_Costume_HutaoCostumeWinter.png",
         "avatarId" : 10000046,
-        "icon" : "UI_AvatarIcon_HutaoCostumeWinter",
-        "sideIconName" : "UI_AvatarIcon_Side_HutaoCostumeWinter"
+        "icon" : "/ui/UI_AvatarIcon_HutaoCostumeWinter.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_HutaoCostumeWinter.png"
       }
     },
     "Element" : "Fire",
@@ -1486,27 +1486,27 @@
       "10463" : 4639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Hutao",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Hutao.png",
     "SkillOrder" : [
       10461,
       10462,
       10463
     ],
     "Skills" : {
-      "10461" : "Skill_A_03",
-      "10462" : "Skill_S_Hutao_01",
-      "10463" : "Skill_E_Hutao_01"
+      "10461" : "/ui/Skill_A_03.png",
+      "10462" : "/ui/Skill_S_Hutao_01.png",
+      "10463" : "/ui/Skill_E_Hutao_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000047" : {
     "Consts" : [
-      "UI_Talent_S_Kazuha_01",
-      "UI_Talent_S_Kazuha_02",
-      "UI_Talent_U_Kazuha_01",
-      "UI_Talent_S_Kazuha_03",
-      "UI_Talent_U_Kazuha_02",
-      "UI_Talent_S_Kazuha_04"
+      "/ui/UI_Talent_S_Kazuha_01.png",
+      "/ui/UI_Talent_S_Kazuha_02.png",
+      "/ui/UI_Talent_U_Kazuha_01.png",
+      "/ui/UI_Talent_S_Kazuha_03.png",
+      "/ui/UI_Talent_U_Kazuha_02.png",
+      "/ui/UI_Talent_S_Kazuha_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 88505754,
@@ -1516,27 +1516,27 @@
       "10475" : 4739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kazuha",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kazuha.png",
     "SkillOrder" : [
       10471,
       10472,
       10475
     ],
     "Skills" : {
-      "10471" : "Skill_A_01",
-      "10472" : "Skill_S_Kazuha_01",
-      "10475" : "Skill_E_Kazuha_01"
+      "10471" : "/ui/Skill_A_01.png",
+      "10472" : "/ui/Skill_S_Kazuha_01.png",
+      "10475" : "/ui/Skill_E_Kazuha_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000048" : {
     "Consts" : [
-      "UI_Talent_S_Feiyan_01",
-      "UI_Talent_S_Feiyan_02",
-      "UI_Talent_U_Feiyan_01",
-      "UI_Talent_S_Feiyan_03",
-      "UI_Talent_U_Feiyan_02",
-      "UI_Talent_S_Feiyan_04"
+      "/ui/UI_Talent_S_Feiyan_01.png",
+      "/ui/UI_Talent_S_Feiyan_02.png",
+      "/ui/UI_Talent_U_Feiyan_01.png",
+      "/ui/UI_Talent_S_Feiyan_03.png",
+      "/ui/UI_Talent_U_Feiyan_02.png",
+      "/ui/UI_Talent_S_Feiyan_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 697277554,
@@ -1546,27 +1546,27 @@
       "10485" : 4839
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Feiyan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Feiyan.png",
     "SkillOrder" : [
       10481,
       10482,
       10485
     ],
     "Skills" : {
-      "10481" : "Skill_A_Catalyst_MD",
-      "10482" : "Skill_S_Feiyan_01",
-      "10485" : "Skill_E_Feiyan_01"
+      "10481" : "/ui/Skill_A_Catalyst_MD.png",
+      "10482" : "/ui/Skill_S_Feiyan_01.png",
+      "10485" : "/ui/Skill_E_Feiyan_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000049" : {
     "Consts" : [
-      "UI_Talent_S_Yoimiya_01",
-      "UI_Talent_S_Yoimiya_02",
-      "UI_Talent_U_Yoimiya_01",
-      "UI_Talent_S_Yoimiya_03",
-      "UI_Talent_U_Yoimiya_02",
-      "UI_Talent_S_Yoimiya_04"
+      "/ui/UI_Talent_S_Yoimiya_01.png",
+      "/ui/UI_Talent_S_Yoimiya_02.png",
+      "/ui/UI_Talent_U_Yoimiya_01.png",
+      "/ui/UI_Talent_S_Yoimiya_03.png",
+      "/ui/UI_Talent_U_Yoimiya_02.png",
+      "/ui/UI_Talent_S_Yoimiya_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 2504399314,
@@ -1576,27 +1576,27 @@
       "10495" : 4939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Yoimiya",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Yoimiya.png",
     "SkillOrder" : [
       10491,
       10492,
       10495
     ],
     "Skills" : {
-      "10491" : "Skill_A_02",
-      "10492" : "Skill_S_Yoimiya_01",
-      "10495" : "Skill_E_Yoimiya_01"
+      "10491" : "/ui/Skill_A_02.png",
+      "10492" : "/ui/Skill_S_Yoimiya_01.png",
+      "10495" : "/ui/Skill_E_Yoimiya_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000050" : {
     "Consts" : [
-      "UI_Talent_S_Tohma_01",
-      "UI_Talent_S_Tohma_02",
-      "UI_Talent_U_Tohma_01",
-      "UI_Talent_S_Tohma_03",
-      "UI_Talent_U_Tohma_02",
-      "UI_Talent_S_Tohma_04"
+      "/ui/UI_Talent_S_Tohma_01.png",
+      "/ui/UI_Talent_S_Tohma_02.png",
+      "/ui/UI_Talent_U_Tohma_01.png",
+      "/ui/UI_Talent_S_Tohma_03.png",
+      "/ui/UI_Talent_U_Tohma_02.png",
+      "/ui/UI_Talent_S_Tohma_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 3555115602,
@@ -1606,27 +1606,27 @@
       "10505" : 5039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Tohma",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Tohma.png",
     "SkillOrder" : [
       10501,
       10502,
       10505
     ],
     "Skills" : {
-      "10501" : "Skill_A_03",
-      "10502" : "Skill_S_Tohma_01",
-      "10505" : "Skill_E_Tohma_01"
+      "10501" : "/ui/Skill_A_03.png",
+      "10502" : "/ui/Skill_S_Tohma_01.png",
+      "10505" : "/ui/Skill_E_Tohma_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000051" : {
     "Consts" : [
-      "UI_Talent_S_Eula_02",
-      "UI_Talent_S_Eula_01",
-      "UI_Talent_U_Eula_01",
-      "UI_Talent_S_Eula_03",
-      "UI_Talent_U_Eula_02",
-      "UI_Talent_S_Eula_04"
+      "/ui/UI_Talent_S_Eula_02.png",
+      "/ui/UI_Talent_S_Eula_01.png",
+      "/ui/UI_Talent_U_Eula_01.png",
+      "/ui/UI_Talent_S_Eula_03.png",
+      "/ui/UI_Talent_U_Eula_02.png",
+      "/ui/UI_Talent_S_Eula_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 3717667418,
@@ -1636,27 +1636,27 @@
       "10515" : 5139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Eula",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Eula.png",
     "SkillOrder" : [
       10511,
       10512,
       10515
     ],
     "Skills" : {
-      "10511" : "Skill_A_04",
-      "10512" : "Skill_S_Eula_01",
-      "10515" : "Skill_E_Eula_01"
+      "10511" : "/ui/Skill_A_04.png",
+      "10512" : "/ui/Skill_S_Eula_01.png",
+      "10515" : "/ui/Skill_E_Eula_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000052" : {
     "Consts" : [
-      "UI_Talent_S_Shougun_01",
-      "UI_Talent_S_Shougun_03",
-      "UI_Talent_U_Shougun_02",
-      "UI_Talent_S_Shougun_02",
-      "UI_Talent_U_Shougun_01",
-      "UI_Talent_S_Shougun_04"
+      "/ui/UI_Talent_S_Shougun_01.png",
+      "/ui/UI_Talent_S_Shougun_03.png",
+      "/ui/UI_Talent_U_Shougun_02.png",
+      "/ui/UI_Talent_S_Shougun_02.png",
+      "/ui/UI_Talent_U_Shougun_01.png",
+      "/ui/UI_Talent_S_Shougun_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 3024507506,
@@ -1666,27 +1666,27 @@
       "10525" : 5239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Shougun",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Shougun.png",
     "SkillOrder" : [
       10521,
       10522,
       10525
     ],
     "Skills" : {
-      "10521" : "Skill_A_03",
-      "10522" : "Skill_S_Shougun_01",
-      "10525" : "Skill_E_Shougun_01"
+      "10521" : "/ui/Skill_A_03.png",
+      "10522" : "/ui/Skill_S_Shougun_01.png",
+      "10525" : "/ui/Skill_E_Shougun_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000053" : {
     "Consts" : [
-      "UI_Talent_S_Sayu_01",
-      "UI_Talent_S_Sayu_02",
-      "UI_Talent_U_Sayu_02",
-      "UI_Talent_S_Sayu_03",
-      "UI_Talent_U_Sayu_01",
-      "UI_Talent_S_Sayu_04"
+      "/ui/UI_Talent_S_Sayu_01.png",
+      "/ui/UI_Talent_S_Sayu_02.png",
+      "/ui/UI_Talent_U_Sayu_02.png",
+      "/ui/UI_Talent_S_Sayu_03.png",
+      "/ui/UI_Talent_U_Sayu_01.png",
+      "/ui/UI_Talent_S_Sayu_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 2388785242,
@@ -1696,27 +1696,27 @@
       "10535" : 5339
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Sayu",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Sayu.png",
     "SkillOrder" : [
       10531,
       10532,
       10535
     ],
     "Skills" : {
-      "10531" : "Skill_A_04",
-      "10532" : "Skill_S_Sayu_01",
-      "10535" : "Skill_E_Sayu_01"
+      "10531" : "/ui/Skill_A_04.png",
+      "10532" : "/ui/Skill_S_Sayu_01.png",
+      "10535" : "/ui/Skill_E_Sayu_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000054" : {
     "Consts" : [
-      "UI_Talent_S_Kokomi_01",
-      "UI_Talent_S_Kokomi_02",
-      "UI_Talent_U_Kokomi_02",
-      "UI_Talent_S_Kokomi_03",
-      "UI_Talent_U_Kokomi_01",
-      "UI_Talent_S_Kokomi_04"
+      "/ui/UI_Talent_S_Kokomi_01.png",
+      "/ui/UI_Talent_S_Kokomi_02.png",
+      "/ui/UI_Talent_U_Kokomi_02.png",
+      "/ui/UI_Talent_S_Kokomi_03.png",
+      "/ui/UI_Talent_U_Kokomi_01.png",
+      "/ui/UI_Talent_S_Kokomi_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3914045794,
@@ -1726,27 +1726,27 @@
       "10545" : 5439
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kokomi",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kokomi.png",
     "SkillOrder" : [
       10541,
       10542,
       10545
     ],
     "Skills" : {
-      "10541" : "Skill_A_Catalyst_MD",
-      "10542" : "Skill_S_Kokomi_01",
-      "10545" : "Skill_E_Kokomi_01"
+      "10541" : "/ui/Skill_A_Catalyst_MD.png",
+      "10542" : "/ui/Skill_S_Kokomi_01.png",
+      "10545" : "/ui/Skill_E_Kokomi_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000055" : {
     "Consts" : [
-      "UI_Talent_S_Gorou_01",
-      "UI_Talent_S_Gorou_02",
-      "UI_Talent_U_Gorou_01",
-      "UI_Talent_S_Gorou_03",
-      "UI_Talent_U_Gorou_02",
-      "UI_Talent_S_Gorou_04"
+      "/ui/UI_Talent_S_Gorou_01.png",
+      "/ui/UI_Talent_S_Gorou_02.png",
+      "/ui/UI_Talent_U_Gorou_01.png",
+      "/ui/UI_Talent_S_Gorou_03.png",
+      "/ui/UI_Talent_U_Gorou_02.png",
+      "/ui/UI_Talent_S_Gorou_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 3400133546,
@@ -1756,27 +1756,27 @@
       "10555" : 5539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Gorou",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Gorou.png",
     "SkillOrder" : [
       10551,
       10552,
       10555
     ],
     "Skills" : {
-      "10551" : "Skill_A_02",
-      "10552" : "Skill_S_Gorou_01",
-      "10555" : "Skill_E_Gorou_01"
+      "10551" : "/ui/Skill_A_02.png",
+      "10552" : "/ui/Skill_S_Gorou_01.png",
+      "10555" : "/ui/Skill_E_Gorou_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000056" : {
     "Consts" : [
-      "UI_Talent_S_Sara_05",
-      "UI_Talent_S_Sara_02",
-      "UI_Talent_U_Sara_02",
-      "UI_Talent_S_Sara_03",
-      "UI_Talent_U_Sara_01",
-      "UI_Talent_S_Sara_04"
+      "/ui/UI_Talent_S_Sara_05.png",
+      "/ui/UI_Talent_S_Sara_02.png",
+      "/ui/UI_Talent_U_Sara_02.png",
+      "/ui/UI_Talent_S_Sara_03.png",
+      "/ui/UI_Talent_U_Sara_01.png",
+      "/ui/UI_Talent_S_Sara_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1483922610,
@@ -1786,27 +1786,27 @@
       "10565" : 5639
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Sara",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Sara.png",
     "SkillOrder" : [
       10561,
       10562,
       10565
     ],
     "Skills" : {
-      "10561" : "Skill_A_02",
-      "10562" : "Skill_S_Sara_01",
-      "10565" : "Skill_E_Sara_01"
+      "10561" : "/ui/Skill_A_02.png",
+      "10562" : "/ui/Skill_S_Sara_01.png",
+      "10565" : "/ui/Skill_E_Sara_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000057" : {
     "Consts" : [
-      "UI_Talent_S_Itto_01",
-      "UI_Talent_S_Itto_02",
-      "UI_Talent_U_Itto_01",
-      "UI_Talent_S_Itto_03",
-      "UI_Talent_U_Itto_02",
-      "UI_Talent_S_Itto_04"
+      "/ui/UI_Talent_S_Itto_01.png",
+      "/ui/UI_Talent_S_Itto_02.png",
+      "/ui/UI_Talent_U_Itto_01.png",
+      "/ui/UI_Talent_S_Itto_03.png",
+      "/ui/UI_Talent_U_Itto_02.png",
+      "/ui/UI_Talent_S_Itto_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 3068316954,
@@ -1816,27 +1816,27 @@
       "10575" : 5739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Itto",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Itto.png",
     "SkillOrder" : [
       10571,
       10572,
       10575
     ],
     "Skills" : {
-      "10571" : "Skill_A_04",
-      "10572" : "Skill_S_Itto_01",
-      "10575" : "Skill_E_Itto_01"
+      "10571" : "/ui/Skill_A_04.png",
+      "10572" : "/ui/Skill_S_Itto_01.png",
+      "10575" : "/ui/Skill_E_Itto_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000058" : {
     "Consts" : [
-      "UI_Talent_S_Yae_01",
-      "UI_Talent_S_Yae_02",
-      "UI_Talent_U_Yae_01",
-      "UI_Talent_S_Yae_03",
-      "UI_Talent_U_Yae_02",
-      "UI_Talent_S_Yae_04"
+      "/ui/UI_Talent_S_Yae_01.png",
+      "/ui/UI_Talent_S_Yae_02.png",
+      "/ui/UI_Talent_U_Yae_01.png",
+      "/ui/UI_Talent_S_Yae_03.png",
+      "/ui/UI_Talent_U_Yae_02.png",
+      "/ui/UI_Talent_S_Yae_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 2713453234,
@@ -1846,27 +1846,27 @@
       "10585" : 5839
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Yae",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Yae.png",
     "SkillOrder" : [
       10581,
       10582,
       10585
     ],
     "Skills" : {
-      "10581" : "Skill_A_Catalyst_MD",
-      "10582" : "Skill_S_Yae_01",
-      "10585" : "Skill_E_Yae_01"
+      "10581" : "/ui/Skill_A_Catalyst_MD.png",
+      "10582" : "/ui/Skill_S_Yae_01.png",
+      "10585" : "/ui/Skill_E_Yae_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000059" : {
     "Consts" : [
-      "UI_Talent_S_Heizo_01",
-      "UI_Talent_S_Heizo_02",
-      "UI_Talent_U_Heizo_01",
-      "UI_Talent_S_Heizo_03",
-      "UI_Talent_U_Heizo_02",
-      "UI_Talent_S_Heizo_04"
+      "/ui/UI_Talent_S_Heizo_01.png",
+      "/ui/UI_Talent_S_Heizo_02.png",
+      "/ui/UI_Talent_U_Heizo_01.png",
+      "/ui/UI_Talent_S_Heizo_03.png",
+      "/ui/UI_Talent_U_Heizo_02.png",
+      "/ui/UI_Talent_S_Heizo_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 646032090,
@@ -1876,34 +1876,34 @@
       "10595" : 5939
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Heizo",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Heizo.png",
     "SkillOrder" : [
       10591,
       10592,
       10595
     ],
     "Skills" : {
-      "10591" : "Skill_A_Catalyst_MD",
-      "10592" : "Skill_S_Heizo_01",
-      "10595" : "Skill_E_Heizo_01"
+      "10591" : "/ui/Skill_A_Catalyst_MD.png",
+      "10592" : "/ui/Skill_S_Heizo_01.png",
+      "10595" : "/ui/Skill_E_Heizo_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000060" : {
     "Consts" : [
-      "UI_Talent_S_Yelan_01",
-      "UI_Talent_S_Yelan_02",
-      "UI_Talent_U_Yelan_01",
-      "UI_Talent_S_Yelan_03",
-      "UI_Talent_U_Yelan_02",
-      "UI_Talent_S_Yelan_04"
+      "/ui/UI_Talent_S_Yelan_01.png",
+      "/ui/UI_Talent_S_Yelan_02.png",
+      "/ui/UI_Talent_U_Yelan_01.png",
+      "/ui/UI_Talent_S_Yelan_03.png",
+      "/ui/UI_Talent_U_Yelan_02.png",
+      "/ui/UI_Talent_S_Yelan_04.png"
     ],
     "Costumes" : {
       "206001" : {
-        "art" : "UI_Costume_YelanCostumeSummer",
+        "art" : "/ui/UI_Costume_YelanCostumeSummer.png",
         "avatarId" : 10000060,
-        "icon" : "UI_AvatarIcon_YelanCostumeSummer",
-        "sideIconName" : "UI_AvatarIcon_Side_YelanCostumeSummer"
+        "icon" : "/ui/UI_AvatarIcon_YelanCostumeSummer.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_YelanCostumeSummer.png"
       }
     },
     "Element" : "Water",
@@ -1914,34 +1914,34 @@
       "10610" : 6039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Yelan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Yelan.png",
     "SkillOrder" : [
       10606,
       10607,
       10610
     ],
     "Skills" : {
-      "10606" : "Skill_A_02",
-      "10607" : "Skill_S_Yelan_01",
-      "10610" : "Skill_E_Yelan_01"
+      "10606" : "/ui/Skill_A_02.png",
+      "10607" : "/ui/Skill_S_Yelan_01.png",
+      "10610" : "/ui/Skill_E_Yelan_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000061" : {
     "Consts" : [
-      "UI_Talent_S_Momoka_01",
-      "UI_Talent_S_Momoka_02",
-      "UI_Talent_U_Momoka_01",
-      "UI_Talent_S_Momoka_04",
-      "UI_Talent_U_Momoka_02",
-      "UI_Talent_S_Momoka_03"
+      "/ui/UI_Talent_S_Momoka_01.png",
+      "/ui/UI_Talent_S_Momoka_02.png",
+      "/ui/UI_Talent_U_Momoka_01.png",
+      "/ui/UI_Talent_S_Momoka_04.png",
+      "/ui/UI_Talent_U_Momoka_02.png",
+      "/ui/UI_Talent_S_Momoka_03.png"
     ],
     "Costumes" : {
       "206101" : {
-        "art" : "UI_Costume_MomokaCostumeErrantry",
+        "art" : "/ui/UI_Costume_MomokaCostumeErrantry.png",
         "avatarId" : 10000061,
-        "icon" : "UI_AvatarIcon_MomokaCostumeErrantry",
-        "sideIconName" : "UI_AvatarIcon_Side_MomokaCostumeErrantry"
+        "icon" : "/ui/UI_AvatarIcon_MomokaCostumeErrantry.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_MomokaCostumeErrantry.png"
       }
     },
     "Element" : "Grass",
@@ -1952,27 +1952,27 @@
       "10615" : 6139
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Momoka",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Momoka.png",
     "SkillOrder" : [
       10611,
       10612,
       10615
     ],
     "Skills" : {
-      "10611" : "Skill_A_01",
-      "10612" : "Skill_S_Momoka_01",
-      "10615" : "Skill_E_Momoka_01"
+      "10611" : "/ui/Skill_A_01.png",
+      "10612" : "/ui/Skill_S_Momoka_01.png",
+      "10615" : "/ui/Skill_E_Momoka_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000062" : {
     "Consts" : [
-      "UI_Talent_S_Aloy_Lock",
-      "UI_Talent_S_Aloy_Lock",
-      "UI_Talent_S_Aloy_Lock",
-      "UI_Talent_S_Aloy_Lock",
-      "UI_Talent_S_Aloy_Lock",
-      "UI_Talent_S_Aloy_Lock"
+      "/ui/UI_Talent_S_Aloy_Lock.png",
+      "/ui/UI_Talent_S_Aloy_Lock.png",
+      "/ui/UI_Talent_S_Aloy_Lock.png",
+      "/ui/UI_Talent_S_Aloy_Lock.png",
+      "/ui/UI_Talent_S_Aloy_Lock.png",
+      "/ui/UI_Talent_S_Aloy_Lock.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 3689108098,
@@ -1982,34 +1982,34 @@
       "10625" : 6239
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_Aloy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Aloy.png",
     "SkillOrder" : [
       10621,
       10622,
       10625
     ],
     "Skills" : {
-      "10621" : "Skill_A_02",
-      "10622" : "Skill_S_Aloy_01",
-      "10625" : "Skill_E_Aloy_01"
+      "10621" : "/ui/Skill_A_02.png",
+      "10622" : "/ui/Skill_S_Aloy_01.png",
+      "10625" : "/ui/Skill_E_Aloy_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000063" : {
     "Consts" : [
-      "UI_Talent_S_Shenhe_02",
-      "UI_Talent_S_Shenhe_01",
-      "UI_Talent_U_Shenhe_01",
-      "UI_Talent_S_Shenhe_03",
-      "UI_Talent_U_Shenhe_02",
-      "UI_Talent_S_Shenhe_04"
+      "/ui/UI_Talent_S_Shenhe_02.png",
+      "/ui/UI_Talent_S_Shenhe_01.png",
+      "/ui/UI_Talent_U_Shenhe_01.png",
+      "/ui/UI_Talent_S_Shenhe_03.png",
+      "/ui/UI_Talent_U_Shenhe_02.png",
+      "/ui/UI_Talent_S_Shenhe_04.png"
     ],
     "Costumes" : {
       "206301" : {
-        "art" : "UI_Costume_ShenheCostumeDai",
+        "art" : "/ui/UI_Costume_ShenheCostumeDai.png",
         "avatarId" : 10000063,
-        "icon" : "UI_AvatarIcon_ShenheCostumeDai",
-        "sideIconName" : "UI_AvatarIcon_Side_ShenheCostumeDai"
+        "icon" : "/ui/UI_AvatarIcon_ShenheCostumeDai.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_ShenheCostumeDai.png"
       }
     },
     "Element" : "Ice",
@@ -2020,27 +2020,27 @@
       "10635" : 6339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Shenhe",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Shenhe.png",
     "SkillOrder" : [
       10631,
       10632,
       10635
     ],
     "Skills" : {
-      "10631" : "Skill_A_03",
-      "10632" : "Skill_S_Shenhe_01",
-      "10635" : "Skill_E_Shenhe_01"
+      "10631" : "/ui/Skill_A_03.png",
+      "10632" : "/ui/Skill_S_Shenhe_01.png",
+      "10635" : "/ui/Skill_E_Shenhe_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000064" : {
     "Consts" : [
-      "UI_Talent_S_Yunjin_01",
-      "UI_Talent_S_Yunjin_02",
-      "UI_Talent_U_Yunjin_01",
-      "UI_Talent_S_Yunjin_03",
-      "UI_Talent_U_Yunjin_02",
-      "UI_Talent_S_Yunjin_04"
+      "/ui/UI_Talent_S_Yunjin_01.png",
+      "/ui/UI_Talent_S_Yunjin_02.png",
+      "/ui/UI_Talent_U_Yunjin_01.png",
+      "/ui/UI_Talent_S_Yunjin_03.png",
+      "/ui/UI_Talent_U_Yunjin_02.png",
+      "/ui/UI_Talent_S_Yunjin_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 655825874,
@@ -2050,27 +2050,27 @@
       "10643" : 6439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Yunjin",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Yunjin.png",
     "SkillOrder" : [
       10641,
       10642,
       10643
     ],
     "Skills" : {
-      "10641" : "Skill_A_03",
-      "10642" : "Skill_S_Yunjin_01",
-      "10643" : "Skill_E_Yunjin_01"
+      "10641" : "/ui/Skill_A_03.png",
+      "10642" : "/ui/Skill_S_Yunjin_01.png",
+      "10643" : "/ui/Skill_E_Yunjin_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000065" : {
     "Consts" : [
-      "UI_Talent_S_Shinobu_01",
-      "UI_Talent_S_Shinobu_02",
-      "UI_Talent_U_Shinobu_01",
-      "UI_Talent_S_Shinobu_03",
-      "UI_Talent_U_Shinobu_02",
-      "UI_Talent_S_Shinobu_04"
+      "/ui/UI_Talent_S_Shinobu_01.png",
+      "/ui/UI_Talent_S_Shinobu_02.png",
+      "/ui/UI_Talent_U_Shinobu_01.png",
+      "/ui/UI_Talent_S_Shinobu_03.png",
+      "/ui/UI_Talent_U_Shinobu_02.png",
+      "/ui/UI_Talent_S_Shinobu_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1940821986,
@@ -2080,27 +2080,27 @@
       "10655" : 6539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Shinobu",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Shinobu.png",
     "SkillOrder" : [
       10651,
       10652,
       10655
     ],
     "Skills" : {
-      "10651" : "Skill_A_01",
-      "10652" : "Skill_S_Shinobu_01",
-      "10655" : "Skill_E_Shinobu_01"
+      "10651" : "/ui/Skill_A_01.png",
+      "10652" : "/ui/Skill_S_Shinobu_01.png",
+      "10655" : "/ui/Skill_E_Shinobu_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000066" : {
     "Consts" : [
-      "UI_Talent_S_Ayato_01",
-      "UI_Talent_S_Ayato_02",
-      "UI_Talent_U_Ayato_02",
-      "UI_Talent_S_Ayato_03",
-      "UI_Talent_U_Ayato_01",
-      "UI_Talent_S_Ayato_04"
+      "/ui/UI_Talent_S_Ayato_01.png",
+      "/ui/UI_Talent_S_Ayato_02.png",
+      "/ui/UI_Talent_U_Ayato_02.png",
+      "/ui/UI_Talent_S_Ayato_03.png",
+      "/ui/UI_Talent_U_Ayato_01.png",
+      "/ui/UI_Talent_S_Ayato_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 1588620330,
@@ -2110,27 +2110,27 @@
       "10665" : 6639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ayato",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ayato.png",
     "SkillOrder" : [
       10661,
       10662,
       10665
     ],
     "Skills" : {
-      "10661" : "Skill_A_01",
-      "10662" : "Skill_S_Ayato_01",
-      "10665" : "Skill_E_Ayato_01"
+      "10661" : "/ui/Skill_A_01.png",
+      "10662" : "/ui/Skill_S_Ayato_01.png",
+      "10665" : "/ui/Skill_E_Ayato_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000067" : {
     "Consts" : [
-      "UI_Talent_S_Collei_01",
-      "UI_Talent_S_Collei_02",
-      "UI_Talent_U_Collei_02",
-      "UI_Talent_S_Collei_03",
-      "UI_Talent_U_Collei_01",
-      "UI_Talent_S_Collei_04"
+      "/ui/UI_Talent_S_Collei_01.png",
+      "/ui/UI_Talent_S_Collei_02.png",
+      "/ui/UI_Talent_U_Collei_02.png",
+      "/ui/UI_Talent_S_Collei_03.png",
+      "/ui/UI_Talent_U_Collei_01.png",
+      "/ui/UI_Talent_S_Collei_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 2948362178,
@@ -2140,27 +2140,27 @@
       "10675" : 6739
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Collei",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Collei.png",
     "SkillOrder" : [
       10671,
       10672,
       10675
     ],
     "Skills" : {
-      "10671" : "Skill_A_02",
-      "10672" : "Skill_S_Collei_01",
-      "10675" : "Skill_E_Collei_01"
+      "10671" : "/ui/Skill_A_02.png",
+      "10672" : "/ui/Skill_S_Collei_01.png",
+      "10675" : "/ui/Skill_E_Collei_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000068" : {
     "Consts" : [
-      "UI_Talent_S_Dori_01",
-      "UI_Talent_S_Dori_02",
-      "UI_Talent_U_Dori_02",
-      "UI_Talent_S_Dori_03",
-      "UI_Talent_U_Dori_01",
-      "UI_Talent_S_Dori_04"
+      "/ui/UI_Talent_S_Dori_01.png",
+      "/ui/UI_Talent_S_Dori_02.png",
+      "/ui/UI_Talent_U_Dori_02.png",
+      "/ui/UI_Talent_S_Dori_03.png",
+      "/ui/UI_Talent_U_Dori_01.png",
+      "/ui/UI_Talent_S_Dori_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 388272194,
@@ -2170,27 +2170,27 @@
       "10685" : 6839
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Dori",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Dori.png",
     "SkillOrder" : [
       10681,
       10682,
       10685
     ],
     "Skills" : {
-      "10681" : "Skill_A_04",
-      "10682" : "Skill_S_Dori_01",
-      "10685" : "Skill_E_Dori_01"
+      "10681" : "/ui/Skill_A_04.png",
+      "10682" : "/ui/Skill_S_Dori_01.png",
+      "10685" : "/ui/Skill_E_Dori_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000069" : {
     "Consts" : [
-      "UI_Talent_S_Tighnari_01",
-      "UI_Talent_S_Tighnari_02",
-      "UI_Talent_U_Tighnari_01",
-      "UI_Talent_S_Tighnari_03",
-      "UI_Talent_U_Tighnari_02",
-      "UI_Talent_S_Tighnari_04"
+      "/ui/UI_Talent_S_Tighnari_01.png",
+      "/ui/UI_Talent_S_Tighnari_02.png",
+      "/ui/UI_Talent_U_Tighnari_01.png",
+      "/ui/UI_Talent_S_Tighnari_03.png",
+      "/ui/UI_Talent_U_Tighnari_02.png",
+      "/ui/UI_Talent_S_Tighnari_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 2506955778,
@@ -2200,34 +2200,34 @@
       "10695" : 6939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Tighnari",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Tighnari.png",
     "SkillOrder" : [
       10691,
       10692,
       10695
     ],
     "Skills" : {
-      "10691" : "Skill_A_02",
-      "10692" : "Skill_S_Tighnari_01",
-      "10695" : "Skill_E_Tighnari_01"
+      "10691" : "/ui/Skill_A_02.png",
+      "10692" : "/ui/Skill_S_Tighnari_01.png",
+      "10695" : "/ui/Skill_E_Tighnari_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000070" : {
     "Consts" : [
-      "UI_Talent_S_Nilou_01",
-      "UI_Talent_S_Nilou_02",
-      "UI_Talent_U_Nilou_01",
-      "UI_Talent_S_Nilou_03",
-      "UI_Talent_U_Nilou_02",
-      "UI_Talent_S_Nilou_04"
+      "/ui/UI_Talent_S_Nilou_01.png",
+      "/ui/UI_Talent_S_Nilou_02.png",
+      "/ui/UI_Talent_U_Nilou_01.png",
+      "/ui/UI_Talent_S_Nilou_03.png",
+      "/ui/UI_Talent_U_Nilou_02.png",
+      "/ui/UI_Talent_S_Nilou_04.png"
     ],
     "Costumes" : {
       "207001" : {
-        "art" : "UI_Costume_NilouCostumeFairy",
+        "art" : "/ui/UI_Costume_NilouCostumeFairy.png",
         "avatarId" : 10000070,
-        "icon" : "UI_AvatarIcon_NilouCostumeFairy",
-        "sideIconName" : "UI_AvatarIcon_Side_NilouCostumeFairy"
+        "icon" : "/ui/UI_AvatarIcon_NilouCostumeFairy.png",
+        "sideIconName" : "/ui/UI_AvatarIcon_Side_NilouCostumeFairy.png"
       }
     },
     "Element" : "Water",
@@ -2238,27 +2238,27 @@
       "10705" : 7039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Nilou",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Nilou.png",
     "SkillOrder" : [
       10701,
       10702,
       10705
     ],
     "Skills" : {
-      "10701" : "Skill_A_01",
-      "10702" : "Skill_S_Nilou_01",
-      "10705" : "Skill_E_Nilou_01"
+      "10701" : "/ui/Skill_A_01.png",
+      "10702" : "/ui/Skill_S_Nilou_01.png",
+      "10705" : "/ui/Skill_E_Nilou_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000071" : {
     "Consts" : [
-      "UI_Talent_S_Cyno_01",
-      "UI_Talent_S_Cyno_02",
-      "UI_Talent_U_Cyno_01",
-      "UI_Talent_S_Cyno_03",
-      "UI_Talent_U_Cyno_02",
-      "UI_Talent_S_Cyno_04"
+      "/ui/UI_Talent_S_Cyno_01.png",
+      "/ui/UI_Talent_S_Cyno_02.png",
+      "/ui/UI_Talent_U_Cyno_01.png",
+      "/ui/UI_Talent_S_Cyno_03.png",
+      "/ui/UI_Talent_U_Cyno_02.png",
+      "/ui/UI_Talent_S_Cyno_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1049891906,
@@ -2268,27 +2268,27 @@
       "10715" : 7139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Cyno",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Cyno.png",
     "SkillOrder" : [
       10711,
       10712,
       10715
     ],
     "Skills" : {
-      "10711" : "Skill_A_03",
-      "10712" : "Skill_S_Cyno_01",
-      "10715" : "Skill_E_Cyno_01"
+      "10711" : "/ui/Skill_A_03.png",
+      "10712" : "/ui/Skill_S_Cyno_01.png",
+      "10715" : "/ui/Skill_E_Cyno_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000072" : {
     "Consts" : [
-      "UI_Talent_S_Candace_01",
-      "UI_Talent_S_Candace_02",
-      "UI_Talent_U_Candace_01",
-      "UI_Talent_S_Candace_03",
-      "UI_Talent_U_Candace_02",
-      "UI_Talent_S_Candace_04"
+      "/ui/UI_Talent_S_Candace_01.png",
+      "/ui/UI_Talent_S_Candace_02.png",
+      "/ui/UI_Talent_U_Candace_01.png",
+      "/ui/UI_Talent_S_Candace_03.png",
+      "/ui/UI_Talent_U_Candace_02.png",
+      "/ui/UI_Talent_S_Candace_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3092975658,
@@ -2298,27 +2298,27 @@
       "10725" : 7239
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Candace",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Candace.png",
     "SkillOrder" : [
       10721,
       10722,
       10725
     ],
     "Skills" : {
-      "10721" : "Skill_A_03",
-      "10722" : "Skill_S_Candace_01",
-      "10725" : "Skill_E_Candace_01"
+      "10721" : "/ui/Skill_A_03.png",
+      "10722" : "/ui/Skill_S_Candace_01.png",
+      "10725" : "/ui/Skill_E_Candace_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000073" : {
     "Consts" : [
-      "UI_Talent_S_Nahida_01",
-      "UI_Talent_S_Nahida_02",
-      "UI_Talent_U_Nahida_01",
-      "UI_Talent_S_Nahida_03",
-      "UI_Talent_U_Nahida_02",
-      "UI_Talent_S_Nahida_04"
+      "/ui/UI_Talent_S_Nahida_01.png",
+      "/ui/UI_Talent_S_Nahida_02.png",
+      "/ui/UI_Talent_U_Nahida_01.png",
+      "/ui/UI_Talent_S_Nahida_03.png",
+      "/ui/UI_Talent_U_Nahida_02.png",
+      "/ui/UI_Talent_S_Nahida_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 712501082,
@@ -2328,27 +2328,27 @@
       "10735" : 7339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Nahida",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Nahida.png",
     "SkillOrder" : [
       10731,
       10732,
       10735
     ],
     "Skills" : {
-      "10731" : "Skill_A_Catalyst_MD",
-      "10732" : "Skill_S_Nahida_01",
-      "10735" : "Skill_E_Nahida_01"
+      "10731" : "/ui/Skill_A_Catalyst_MD.png",
+      "10732" : "/ui/Skill_S_Nahida_01.png",
+      "10735" : "/ui/Skill_E_Nahida_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000074" : {
     "Consts" : [
-      "UI_Talent_S_Layla_01",
-      "UI_Talent_S_Layla_02",
-      "UI_Talent_U_Layla_01",
-      "UI_Talent_S_Layla_03",
-      "UI_Talent_U_Layla_02",
-      "UI_Talent_S_Layla_04"
+      "/ui/UI_Talent_S_Layla_01.png",
+      "/ui/UI_Talent_S_Layla_02.png",
+      "/ui/UI_Talent_U_Layla_01.png",
+      "/ui/UI_Talent_S_Layla_03.png",
+      "/ui/UI_Talent_U_Layla_02.png",
+      "/ui/UI_Talent_S_Layla_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 2889777514,
@@ -2358,27 +2358,27 @@
       "10745" : 7439
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Layla",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Layla.png",
     "SkillOrder" : [
       10741,
       10742,
       10745
     ],
     "Skills" : {
-      "10741" : "Skill_A_01",
-      "10742" : "Skill_S_Layla_01",
-      "10745" : "Skill_E_Layla_01"
+      "10741" : "/ui/Skill_A_01.png",
+      "10742" : "/ui/Skill_S_Layla_01.png",
+      "10745" : "/ui/Skill_E_Layla_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000075" : {
     "Consts" : [
-      "UI_Talent_S_Wanderer_01",
-      "UI_Talent_S_Wanderer_02",
-      "UI_Talent_U_Wanderer_02",
-      "UI_Talent_S_Wanderer_03",
-      "UI_Talent_U_Wanderer_01",
-      "UI_Talent_S_Wanderer_04"
+      "/ui/UI_Talent_S_Wanderer_01.png",
+      "/ui/UI_Talent_S_Wanderer_02.png",
+      "/ui/UI_Talent_U_Wanderer_02.png",
+      "/ui/UI_Talent_S_Wanderer_03.png",
+      "/ui/UI_Talent_U_Wanderer_01.png",
+      "/ui/UI_Talent_S_Wanderer_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3230559562,
@@ -2388,27 +2388,27 @@
       "10755" : 7539
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Wanderer",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Wanderer.png",
     "SkillOrder" : [
       10751,
       10752,
       10755
     ],
     "Skills" : {
-      "10751" : "Skill_A_Catalyst_MD",
-      "10752" : "Skill_S_Wanderer_01",
-      "10755" : "Skill_E_Wanderer_01"
+      "10751" : "/ui/Skill_A_Catalyst_MD.png",
+      "10752" : "/ui/Skill_S_Wanderer_01.png",
+      "10755" : "/ui/Skill_E_Wanderer_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000076" : {
     "Consts" : [
-      "UI_Talent_S_Faruzan_01",
-      "UI_Talent_S_Faruzan_02",
-      "UI_Talent_U_Faruzan_01",
-      "UI_Talent_S_Faruzan_03",
-      "UI_Talent_U_Faruzan_02",
-      "UI_Talent_S_Faruzan_04"
+      "/ui/UI_Talent_S_Faruzan_01.png",
+      "/ui/UI_Talent_S_Faruzan_02.png",
+      "/ui/UI_Talent_U_Faruzan_01.png",
+      "/ui/UI_Talent_S_Faruzan_03.png",
+      "/ui/UI_Talent_U_Faruzan_02.png",
+      "/ui/UI_Talent_S_Faruzan_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 2387711994,
@@ -2418,27 +2418,27 @@
       "10765" : 7639
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Faruzan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Faruzan.png",
     "SkillOrder" : [
       10761,
       10762,
       10765
     ],
     "Skills" : {
-      "10761" : "Skill_A_02",
-      "10762" : "Skill_S_Faruzan_01",
-      "10765" : "Skill_E_Faruzan_01"
+      "10761" : "/ui/Skill_A_02.png",
+      "10762" : "/ui/Skill_S_Faruzan_01.png",
+      "10765" : "/ui/Skill_E_Faruzan_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000077" : {
     "Consts" : [
-      "UI_Talent_S_Yaoyao_01",
-      "UI_Talent_S_Yaoyao_02",
-      "UI_Talent_U_Yaoyao_01",
-      "UI_Talent_S_Yaoyao_03",
-      "UI_Talent_U_Yaoyao_02",
-      "UI_Talent_S_Yaoyao_04"
+      "/ui/UI_Talent_S_Yaoyao_01.png",
+      "/ui/UI_Talent_S_Yaoyao_02.png",
+      "/ui/UI_Talent_U_Yaoyao_01.png",
+      "/ui/UI_Talent_S_Yaoyao_03.png",
+      "/ui/UI_Talent_U_Yaoyao_02.png",
+      "/ui/UI_Talent_S_Yaoyao_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 1732418482,
@@ -2448,27 +2448,27 @@
       "10775" : 7739
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Yaoyao",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Yaoyao.png",
     "SkillOrder" : [
       10771,
       10772,
       10775
     ],
     "Skills" : {
-      "10771" : "Skill_A_03",
-      "10772" : "Skill_S_Yaoyao_01",
-      "10775" : "Skill_E_Yaoyao_01"
+      "10771" : "/ui/Skill_A_03.png",
+      "10772" : "/ui/Skill_S_Yaoyao_01.png",
+      "10775" : "/ui/Skill_E_Yaoyao_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000078" : {
     "Consts" : [
-      "UI_Talent_S_Alhatham_02",
-      "UI_Talent_S_Alhatham_01",
-      "UI_Talent_U_Alhatham_01",
-      "UI_Talent_S_Alhatham_03",
-      "UI_Talent_U_Alhatham_02",
-      "UI_Talent_S_Alhatham_04"
+      "/ui/UI_Talent_S_Alhatham_02.png",
+      "/ui/UI_Talent_S_Alhatham_01.png",
+      "/ui/UI_Talent_U_Alhatham_01.png",
+      "/ui/UI_Talent_S_Alhatham_03.png",
+      "/ui/UI_Talent_U_Alhatham_02.png",
+      "/ui/UI_Talent_S_Alhatham_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 4002157418,
@@ -2478,27 +2478,27 @@
       "10785" : 7839
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Alhatham",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Alhatham.png",
     "SkillOrder" : [
       10781,
       10782,
       10785
     ],
     "Skills" : {
-      "10781" : "Skill_A_01",
-      "10782" : "Skill_S_Alhatham_01",
-      "10785" : "Skill_E_Alhatham_01"
+      "10781" : "/ui/Skill_A_01.png",
+      "10782" : "/ui/Skill_S_Alhatham_01.png",
+      "10785" : "/ui/Skill_E_Alhatham_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000079" : {
     "Consts" : [
-      "UI_Talent_S_Dehya_01",
-      "UI_Talent_S_Dehya_02",
-      "UI_Talent_U_Dehya_01",
-      "UI_Talent_S_Dehya_03",
-      "UI_Talent_U_Dehya_02",
-      "UI_Talent_S_Dehya_04"
+      "/ui/UI_Talent_S_Dehya_01.png",
+      "/ui/UI_Talent_S_Dehya_02.png",
+      "/ui/UI_Talent_U_Dehya_01.png",
+      "/ui/UI_Talent_S_Dehya_03.png",
+      "/ui/UI_Talent_U_Dehya_02.png",
+      "/ui/UI_Talent_S_Dehya_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 2360533154,
@@ -2508,27 +2508,27 @@
       "10795" : 7939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Dehya",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Dehya.png",
     "SkillOrder" : [
       10791,
       10792,
       10795
     ],
     "Skills" : {
-      "10791" : "Skill_A_04",
-      "10792" : "Skill_S_Dehya_01",
-      "10795" : "Skill_E_Dehya_01"
+      "10791" : "/ui/Skill_A_04.png",
+      "10792" : "/ui/Skill_S_Dehya_01.png",
+      "10795" : "/ui/Skill_E_Dehya_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000080" : {
     "Consts" : [
-      "UI_Talent_S_Mika_01",
-      "UI_Talent_S_Mika_02",
-      "UI_Talent_U_Mika_01",
-      "UI_Talent_S_Mika_03",
-      "UI_Talent_U_Mika_02",
-      "UI_Talent_S_Mika_04"
+      "/ui/UI_Talent_S_Mika_01.png",
+      "/ui/UI_Talent_S_Mika_02.png",
+      "/ui/UI_Talent_U_Mika_01.png",
+      "/ui/UI_Talent_S_Mika_03.png",
+      "/ui/UI_Talent_U_Mika_02.png",
+      "/ui/UI_Talent_S_Mika_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 231911858,
@@ -2538,27 +2538,27 @@
       "10805" : 8039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Mika",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Mika.png",
     "SkillOrder" : [
       10801,
       10802,
       10805
     ],
     "Skills" : {
-      "10801" : "Skill_A_03",
-      "10802" : "Skill_S_Mika_01",
-      "10805" : "Skill_E_Mika_01"
+      "10801" : "/ui/Skill_A_03.png",
+      "10802" : "/ui/Skill_S_Mika_01.png",
+      "10805" : "/ui/Skill_E_Mika_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000081" : {
     "Consts" : [
-      "UI_Talent_S_Kaveh_01",
-      "UI_Talent_S_Kaveh_02",
-      "UI_Talent_U_Kaveh_02",
-      "UI_Talent_S_Kaveh_03",
-      "UI_Talent_U_Kaveh_01",
-      "UI_Talent_S_Kaveh_04"
+      "/ui/UI_Talent_S_Kaveh_01.png",
+      "/ui/UI_Talent_S_Kaveh_02.png",
+      "/ui/UI_Talent_U_Kaveh_02.png",
+      "/ui/UI_Talent_S_Kaveh_03.png",
+      "/ui/UI_Talent_U_Kaveh_01.png",
+      "/ui/UI_Talent_S_Kaveh_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 466355514,
@@ -2568,27 +2568,27 @@
       "10815" : 8139
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kaveh",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kaveh.png",
     "SkillOrder" : [
       10811,
       10812,
       10815
     ],
     "Skills" : {
-      "10811" : "Skill_A_04",
-      "10812" : "Skill_S_Kaveh_01",
-      "10815" : "Skill_E_Kaveh_01"
+      "10811" : "/ui/Skill_A_04.png",
+      "10812" : "/ui/Skill_S_Kaveh_01.png",
+      "10815" : "/ui/Skill_E_Kaveh_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000082" : {
     "Consts" : [
-      "UI_Talent_S_Baizhuer_01",
-      "UI_Talent_S_Baizhuer_02",
-      "UI_Talent_U_Baizhuer_01",
-      "UI_Talent_S_Baizhuer_03",
-      "UI_Talent_U_Baizhuer_02",
-      "UI_Talent_S_Baizhuer_04"
+      "/ui/UI_Talent_S_Baizhuer_01.png",
+      "/ui/UI_Talent_S_Baizhuer_02.png",
+      "/ui/UI_Talent_U_Baizhuer_01.png",
+      "/ui/UI_Talent_S_Baizhuer_03.png",
+      "/ui/UI_Talent_U_Baizhuer_02.png",
+      "/ui/UI_Talent_S_Baizhuer_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 2984815066,
@@ -2598,27 +2598,27 @@
       "10825" : 8239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Baizhuer",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Baizhuer.png",
     "SkillOrder" : [
       10821,
       10822,
       10825
     ],
     "Skills" : {
-      "10821" : "Skill_A_Catalyst_MD",
-      "10822" : "Skill_S_Baizhuer_01",
-      "10825" : "Skill_E_Baizhuer_01"
+      "10821" : "/ui/Skill_A_Catalyst_MD.png",
+      "10822" : "/ui/Skill_S_Baizhuer_01.png",
+      "10825" : "/ui/Skill_E_Baizhuer_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000083" : {
     "Consts" : [
-      "UI_Talent_S_Linette_01",
-      "UI_Talent_S_Linette_02",
-      "UI_Talent_U_Linette_01",
-      "UI_Talent_S_Linette_03",
-      "UI_Talent_U_Linette_02",
-      "UI_Talent_S_Linette_04"
+      "/ui/UI_Talent_S_Linette_01.png",
+      "/ui/UI_Talent_S_Linette_02.png",
+      "/ui/UI_Talent_U_Linette_01.png",
+      "/ui/UI_Talent_S_Linette_03.png",
+      "/ui/UI_Talent_U_Linette_02.png",
+      "/ui/UI_Talent_S_Linette_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1225226258,
@@ -2628,27 +2628,27 @@
       "10835" : 8339
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Linette",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Linette.png",
     "SkillOrder" : [
       10831,
       10832,
       10835
     ],
     "Skills" : {
-      "10831" : "Skill_A_01",
-      "10832" : "Skill_S_Linette_01",
-      "10835" : "Skill_E_Linette_01"
+      "10831" : "/ui/Skill_A_01.png",
+      "10832" : "/ui/Skill_S_Linette_01.png",
+      "10835" : "/ui/Skill_E_Linette_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000084" : {
     "Consts" : [
-      "UI_Talent_S_Liney_01",
-      "UI_Talent_S_Liney_03",
-      "UI_Talent_U_Liney_01",
-      "UI_Talent_S_Liney_02",
-      "UI_Talent_U_Liney_02",
-      "UI_Talent_S_Liney_04"
+      "/ui/UI_Talent_S_Liney_01.png",
+      "/ui/UI_Talent_S_Liney_03.png",
+      "/ui/UI_Talent_U_Liney_01.png",
+      "/ui/UI_Talent_S_Liney_02.png",
+      "/ui/UI_Talent_U_Liney_02.png",
+      "/ui/UI_Talent_S_Liney_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 2472444970,
@@ -2658,27 +2658,27 @@
       "10845" : 8439
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Liney",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Liney.png",
     "SkillOrder" : [
       10841,
       10842,
       10845
     ],
     "Skills" : {
-      "10841" : "Skill_A_02",
-      "10842" : "Skill_S_Liney_01",
-      "10845" : "Skill_E_Liney_01"
+      "10841" : "/ui/Skill_A_02.png",
+      "10842" : "/ui/Skill_S_Liney_01.png",
+      "10845" : "/ui/Skill_E_Liney_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000085" : {
     "Consts" : [
-      "UI_Talent_S_Freminet_01",
-      "UI_Talent_S_Freminet_02",
-      "UI_Talent_U_Freminet_01",
-      "UI_Talent_S_Freminet_03",
-      "UI_Talent_U_Freminet_02",
-      "UI_Talent_S_Freminet_04"
+      "/ui/UI_Talent_S_Freminet_01.png",
+      "/ui/UI_Talent_S_Freminet_02.png",
+      "/ui/UI_Talent_U_Freminet_01.png",
+      "/ui/UI_Talent_S_Freminet_03.png",
+      "/ui/UI_Talent_U_Freminet_02.png",
+      "/ui/UI_Talent_S_Freminet_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 4201964354,
@@ -2688,27 +2688,27 @@
       "10855" : 8539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Freminet",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Freminet.png",
     "SkillOrder" : [
       10851,
       10852,
       10855
     ],
     "Skills" : {
-      "10851" : "Skill_A_04",
-      "10852" : "Skill_S_Freminet_01",
-      "10855" : "Skill_E_Freminet_01"
+      "10851" : "/ui/Skill_A_04.png",
+      "10852" : "/ui/Skill_S_Freminet_01.png",
+      "10855" : "/ui/Skill_E_Freminet_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000086" : {
     "Consts" : [
-      "UI_Talent_S_Wriothesley_01",
-      "UI_Talent_S_Wriothesley_02",
-      "UI_Talent_U_Wriothesley_01",
-      "UI_Talent_S_Wriothesley_03",
-      "UI_Talent_U_Wriothesley_02",
-      "UI_Talent_S_Wriothesley_04"
+      "/ui/UI_Talent_S_Wriothesley_01.png",
+      "/ui/UI_Talent_S_Wriothesley_02.png",
+      "/ui/UI_Talent_U_Wriothesley_01.png",
+      "/ui/UI_Talent_S_Wriothesley_03.png",
+      "/ui/UI_Talent_U_Wriothesley_02.png",
+      "/ui/UI_Talent_S_Wriothesley_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 370151050,
@@ -2718,27 +2718,27 @@
       "10865" : 8639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Wriothesley",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Wriothesley.png",
     "SkillOrder" : [
       10861,
       10862,
       10865
     ],
     "Skills" : {
-      "10861" : "Skill_A_Catalyst_MD",
-      "10862" : "Skill_S_Wriothesley_01",
-      "10865" : "Skill_E_Wriothesley_01"
+      "10861" : "/ui/Skill_A_Catalyst_MD.png",
+      "10862" : "/ui/Skill_S_Wriothesley_01.png",
+      "10865" : "/ui/Skill_E_Wriothesley_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000087" : {
     "Consts" : [
-      "UI_Talent_S_Neuvillette_01",
-      "UI_Talent_S_Neuvillette_02",
-      "UI_Talent_U_Neuvillette_01",
-      "UI_Talent_S_Neuvillette_03",
-      "UI_Talent_U_Neuvillette_02",
-      "UI_Talent_S_Neuvillette_04"
+      "/ui/UI_Talent_S_Neuvillette_01.png",
+      "/ui/UI_Talent_S_Neuvillette_02.png",
+      "/ui/UI_Talent_U_Neuvillette_01.png",
+      "/ui/UI_Talent_S_Neuvillette_03.png",
+      "/ui/UI_Talent_U_Neuvillette_02.png",
+      "/ui/UI_Talent_S_Neuvillette_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 1504902330,
@@ -2748,27 +2748,27 @@
       "10875" : 8739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Neuvillette",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Neuvillette.png",
     "SkillOrder" : [
       10871,
       10872,
       10875
     ],
     "Skills" : {
-      "10871" : "Skill_A_Catalyst_MD",
-      "10872" : "Skill_S_Neuvillette_01",
-      "10875" : "Skill_E_Neuvillette_01"
+      "10871" : "/ui/Skill_A_Catalyst_MD.png",
+      "10872" : "/ui/Skill_S_Neuvillette_01.png",
+      "10875" : "/ui/Skill_E_Neuvillette_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000088" : {
     "Consts" : [
-      "UI_Talent_S_Charlotte_01",
-      "UI_Talent_S_Charlotte_02",
-      "UI_Talent_U_Charlotte_01",
-      "UI_Talent_S_Charlotte_03",
-      "UI_Talent_U_Charlotte_02",
-      "UI_Talent_S_Charlotte_04"
+      "/ui/UI_Talent_S_Charlotte_01.png",
+      "/ui/UI_Talent_S_Charlotte_02.png",
+      "/ui/UI_Talent_U_Charlotte_01.png",
+      "/ui/UI_Talent_S_Charlotte_03.png",
+      "/ui/UI_Talent_U_Charlotte_02.png",
+      "/ui/UI_Talent_S_Charlotte_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 3831162130,
@@ -2778,27 +2778,27 @@
       "10885" : 8839
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Charlotte",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Charlotte.png",
     "SkillOrder" : [
       10881,
       10882,
       10885
     ],
     "Skills" : {
-      "10881" : "Skill_A_Catalyst_MD",
-      "10882" : "Skill_S_Charlotte_01",
-      "10885" : "Skill_E_Charlotte_01"
+      "10881" : "/ui/Skill_A_Catalyst_MD.png",
+      "10882" : "/ui/Skill_S_Charlotte_01.png",
+      "10885" : "/ui/Skill_E_Charlotte_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000089" : {
     "Consts" : [
-      "UI_Talent_S_Furina_01",
-      "UI_Talent_S_Furina_04",
-      "UI_Talent_U_Furina_02",
-      "UI_Talent_S_Furina_03",
-      "UI_Talent_U_Furina_01",
-      "UI_Talent_S_Furina_02"
+      "/ui/UI_Talent_S_Furina_01.png",
+      "/ui/UI_Talent_S_Furina_04.png",
+      "/ui/UI_Talent_U_Furina_02.png",
+      "/ui/UI_Talent_S_Furina_03.png",
+      "/ui/UI_Talent_U_Furina_01.png",
+      "/ui/UI_Talent_S_Furina_02.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 2180900234,
@@ -2808,27 +2808,27 @@
       "10895" : 8939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Furina",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Furina.png",
     "SkillOrder" : [
       10891,
       10892,
       10895
     ],
     "Skills" : {
-      "10891" : "Skill_A_01",
-      "10892" : "Skill_S_Furina_01",
-      "10895" : "Skill_E_Furina_01"
+      "10891" : "/ui/Skill_A_01.png",
+      "10892" : "/ui/Skill_S_Furina_01.png",
+      "10895" : "/ui/Skill_E_Furina_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000090" : {
     "Consts" : [
-      "UI_Talent_S_Chevreuse_01",
-      "UI_Talent_S_Chevreuse_02",
-      "UI_Talent_U_Chevreuse_01",
-      "UI_Talent_S_Chevreuse_03",
-      "UI_Talent_U_Chevreuse_02",
-      "UI_Talent_S_Chevreuse_04"
+      "/ui/UI_Talent_S_Chevreuse_01.png",
+      "/ui/UI_Talent_S_Chevreuse_02.png",
+      "/ui/UI_Talent_U_Chevreuse_01.png",
+      "/ui/UI_Talent_S_Chevreuse_03.png",
+      "/ui/UI_Talent_U_Chevreuse_02.png",
+      "/ui/UI_Talent_S_Chevreuse_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 540313842,
@@ -2838,27 +2838,27 @@
       "10905" : 9039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Chevreuse",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Chevreuse.png",
     "SkillOrder" : [
       10901,
       10902,
       10905
     ],
     "Skills" : {
-      "10901" : "Skill_A_03",
-      "10902" : "Skill_S_Chevreuse_01",
-      "10905" : "Skill_E_Chevreuse_01"
+      "10901" : "/ui/Skill_A_03.png",
+      "10902" : "/ui/Skill_S_Chevreuse_01.png",
+      "10905" : "/ui/Skill_E_Chevreuse_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000091" : {
     "Consts" : [
-      "UI_Talent_S_Navia_01",
-      "UI_Talent_S_Navia_02",
-      "UI_Talent_U_Navia_01",
-      "UI_Talent_S_Navia_03",
-      "UI_Talent_U_Navia_02",
-      "UI_Talent_S_Navia_04"
+      "/ui/UI_Talent_S_Navia_01.png",
+      "/ui/UI_Talent_S_Navia_02.png",
+      "/ui/UI_Talent_U_Navia_01.png",
+      "/ui/UI_Talent_S_Navia_03.png",
+      "/ui/UI_Talent_U_Navia_02.png",
+      "/ui/UI_Talent_S_Navia_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 2877588578,
@@ -2868,27 +2868,27 @@
       "10915" : 9139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Navia",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Navia.png",
     "SkillOrder" : [
       10911,
       10912,
       10915
     ],
     "Skills" : {
-      "10911" : "Skill_A_04",
-      "10912" : "Skill_S_Navia_01",
-      "10915" : "Skill_E_Navia_01"
+      "10911" : "/ui/Skill_A_04.png",
+      "10912" : "/ui/Skill_S_Navia_01.png",
+      "10915" : "/ui/Skill_E_Navia_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000092" : {
     "Consts" : [
-      "UI_Talent_S_Gaming_01",
-      "UI_Talent_S_Gaming_02",
-      "UI_Talent_U_Gaming_01",
-      "UI_Talent_S_Gaming_03",
-      "UI_Talent_U_Gaming_02",
-      "UI_Talent_S_Gaming_04"
+      "/ui/UI_Talent_S_Gaming_01.png",
+      "/ui/UI_Talent_S_Gaming_02.png",
+      "/ui/UI_Talent_U_Gaming_01.png",
+      "/ui/UI_Talent_S_Gaming_03.png",
+      "/ui/UI_Talent_U_Gaming_02.png",
+      "/ui/UI_Talent_S_Gaming_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 2822240322,
@@ -2898,27 +2898,27 @@
       "10925" : 9239
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Gaming",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Gaming.png",
     "SkillOrder" : [
       10921,
       10922,
       10925
     ],
     "Skills" : {
-      "10921" : "Skill_A_04",
-      "10922" : "Skill_S_Gaming_01",
-      "10925" : "Skill_E_Gaming_01"
+      "10921" : "/ui/Skill_A_04.png",
+      "10922" : "/ui/Skill_S_Gaming_01.png",
+      "10925" : "/ui/Skill_E_Gaming_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000093" : {
     "Consts" : [
-      "UI_Talent_S_Liuyun_01",
-      "UI_Talent_S_Liuyun_02",
-      "UI_Talent_U_Liuyun_02",
-      "UI_Talent_S_Liuyun_03",
-      "UI_Talent_U_Liuyun_01",
-      "UI_Talent_S_Liuyun_04"
+      "/ui/UI_Talent_S_Liuyun_01.png",
+      "/ui/UI_Talent_S_Liuyun_02.png",
+      "/ui/UI_Talent_U_Liuyun_02.png",
+      "/ui/UI_Talent_S_Liuyun_03.png",
+      "/ui/UI_Talent_U_Liuyun_01.png",
+      "/ui/UI_Talent_S_Liuyun_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3648220770,
@@ -2928,27 +2928,27 @@
       "10935" : 9339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Liuyun",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Liuyun.png",
     "SkillOrder" : [
       10931,
       10932,
       10935
     ],
     "Skills" : {
-      "10931" : "Skill_A_Catalyst_MD",
-      "10932" : "Skill_S_Liuyun_01",
-      "10935" : "Skill_E_Liuyun_01"
+      "10931" : "/ui/Skill_A_Catalyst_MD.png",
+      "10932" : "/ui/Skill_S_Liuyun_01.png",
+      "10935" : "/ui/Skill_E_Liuyun_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000094" : {
     "Consts" : [
-      "UI_Talent_S_Chiori_01",
-      "UI_Talent_S_Chiori_03",
-      "UI_Talent_U_Chiori_01",
-      "UI_Talent_S_Chiori_02",
-      "UI_Talent_U_Chiori_02",
-      "UI_Talent_S_Chiori_04"
+      "/ui/UI_Talent_S_Chiori_01.png",
+      "/ui/UI_Talent_S_Chiori_03.png",
+      "/ui/UI_Talent_U_Chiori_01.png",
+      "/ui/UI_Talent_S_Chiori_02.png",
+      "/ui/UI_Talent_U_Chiori_02.png",
+      "/ui/UI_Talent_S_Chiori_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 1944606922,
@@ -2958,27 +2958,27 @@
       "10945" : 9439
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Chiori",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Chiori.png",
     "SkillOrder" : [
       10941,
       10942,
       10945
     ],
     "Skills" : {
-      "10941" : "Skill_A_01",
-      "10942" : "Skill_S_Chiori_01",
-      "10945" : "Skill_E_Chiori_01"
+      "10941" : "/ui/Skill_A_01.png",
+      "10942" : "/ui/Skill_S_Chiori_01.png",
+      "10945" : "/ui/Skill_E_Chiori_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000095" : {
     "Consts" : [
-      "UI_Talent_S_Sigewinne_01",
-      "UI_Talent_S_Sigewinne_02",
-      "UI_Talent_U_Sigewinne_01",
-      "UI_Talent_S_Sigewinne_03",
-      "UI_Talent_U_Sigewinne_02",
-      "UI_Talent_S_Sigewinne_04"
+      "/ui/UI_Talent_S_Sigewinne_01.png",
+      "/ui/UI_Talent_S_Sigewinne_02.png",
+      "/ui/UI_Talent_U_Sigewinne_01.png",
+      "/ui/UI_Talent_S_Sigewinne_03.png",
+      "/ui/UI_Talent_U_Sigewinne_02.png",
+      "/ui/UI_Talent_S_Sigewinne_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 781488962,
@@ -2988,27 +2988,27 @@
       "10955" : 9539
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Sigewinne",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Sigewinne.png",
     "SkillOrder" : [
       10951,
       10952,
       10955
     ],
     "Skills" : {
-      "10951" : "Skill_A_02",
-      "10952" : "Skill_S_Sigewinne_01",
-      "10955" : "Skill_E_Sigewinne_01"
+      "10951" : "/ui/Skill_A_02.png",
+      "10952" : "/ui/Skill_S_Sigewinne_01.png",
+      "10955" : "/ui/Skill_E_Sigewinne_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000096" : {
     "Consts" : [
-      "UI_Talent_S_Arlecchino_01",
-      "UI_Talent_S_Arlecchino_02",
-      "UI_Talent_U_Arlecchino_01",
-      "UI_Talent_S_Arlecchino_03",
-      "UI_Talent_U_Arlecchino_02",
-      "UI_Talent_S_Arlecchino_04"
+      "/ui/UI_Talent_S_Arlecchino_01.png",
+      "/ui/UI_Talent_S_Arlecchino_02.png",
+      "/ui/UI_Talent_U_Arlecchino_01.png",
+      "/ui/UI_Talent_S_Arlecchino_03.png",
+      "/ui/UI_Talent_U_Arlecchino_02.png",
+      "/ui/UI_Talent_S_Arlecchino_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 167199474,
@@ -3018,27 +3018,27 @@
       "10965" : 9639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Arlecchino",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Arlecchino.png",
     "SkillOrder" : [
       10961,
       10962,
       10965
     ],
     "Skills" : {
-      "10961" : "Skill_A_03",
-      "10962" : "Skill_S_Arlecchino_01",
-      "10965" : "Skill_E_Arlecchino_01"
+      "10961" : "/ui/Skill_A_03.png",
+      "10962" : "/ui/Skill_S_Arlecchino_01.png",
+      "10965" : "/ui/Skill_E_Arlecchino_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000097" : {
     "Consts" : [
-      "UI_Talent_S_Sethos_01",
-      "UI_Talent_S_Sethos_02",
-      "UI_Talent_U_Sethos_01",
-      "UI_Talent_S_Sethos_03",
-      "UI_Talent_U_Sethos_02",
-      "UI_Talent_S_Sethos_04"
+      "/ui/UI_Talent_S_Sethos_01.png",
+      "/ui/UI_Talent_S_Sethos_02.png",
+      "/ui/UI_Talent_U_Sethos_01.png",
+      "/ui/UI_Talent_S_Sethos_03.png",
+      "/ui/UI_Talent_U_Sethos_02.png",
+      "/ui/UI_Talent_S_Sethos_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1431322346,
@@ -3048,27 +3048,27 @@
       "10975" : 9739
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Sethos",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Sethos.png",
     "SkillOrder" : [
       10971,
       10972,
       10975
     ],
     "Skills" : {
-      "10971" : "Skill_A_02",
-      "10972" : "Skill_S_Sethos_01",
-      "10975" : "Skill_E_Sethos_01"
+      "10971" : "/ui/Skill_A_02.png",
+      "10972" : "/ui/Skill_S_Sethos_01.png",
+      "10975" : "/ui/Skill_E_Sethos_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000098" : {
     "Consts" : [
-      "UI_Talent_S_Clorinde_01",
-      "UI_Talent_S_Clorinde_02",
-      "UI_Talent_U_Clorinde_02",
-      "UI_Talent_S_Clorinde_03",
-      "UI_Talent_U_Clorinde_01",
-      "UI_Talent_S_Clorinde_04"
+      "/ui/UI_Talent_S_Clorinde_01.png",
+      "/ui/UI_Talent_S_Clorinde_02.png",
+      "/ui/UI_Talent_U_Clorinde_02.png",
+      "/ui/UI_Talent_S_Clorinde_03.png",
+      "/ui/UI_Talent_U_Clorinde_01.png",
+      "/ui/UI_Talent_S_Clorinde_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 2745369298,
@@ -3078,27 +3078,27 @@
       "10985" : 9839
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Clorinde",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Clorinde.png",
     "SkillOrder" : [
       10981,
       10982,
       10985
     ],
     "Skills" : {
-      "10981" : "Skill_A_01",
-      "10982" : "Skill_S_Clorinde_01",
-      "10985" : "Skill_E_Clorinde_01"
+      "10981" : "/ui/Skill_A_01.png",
+      "10982" : "/ui/Skill_S_Clorinde_01.png",
+      "10985" : "/ui/Skill_E_Clorinde_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000099" : {
     "Consts" : [
-      "UI_Talent_S_Emilie_01",
-      "UI_Talent_S_Emilie_02",
-      "UI_Talent_U_Emilie_01",
-      "UI_Talent_S_Emilie_03",
-      "UI_Talent_U_Emilie_02",
-      "UI_Talent_S_Emilie_04"
+      "/ui/UI_Talent_S_Emilie_01.png",
+      "/ui/UI_Talent_S_Emilie_02.png",
+      "/ui/UI_Talent_U_Emilie_01.png",
+      "/ui/UI_Talent_S_Emilie_03.png",
+      "/ui/UI_Talent_U_Emilie_02.png",
+      "/ui/UI_Talent_S_Emilie_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 1705786122,
@@ -3108,27 +3108,27 @@
       "10995" : 9939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Emilie",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Emilie.png",
     "SkillOrder" : [
       10991,
       10992,
       10995
     ],
     "Skills" : {
-      "10991" : "Skill_A_03",
-      "10992" : "Skill_S_Emilie_01",
-      "10995" : "Skill_E_Emilie_01"
+      "10991" : "/ui/Skill_A_03.png",
+      "10992" : "/ui/Skill_S_Emilie_01.png",
+      "10995" : "/ui/Skill_E_Emilie_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000100" : {
     "Consts" : [
-      "UI_Talent_S_Kachina_01",
-      "UI_Talent_S_Kachina_02",
-      "UI_Talent_U_Kachina_01",
-      "UI_Talent_S_Kachina_03",
-      "UI_Talent_U_Kachina_02",
-      "UI_Talent_S_Kachina_04"
+      "/ui/UI_Talent_S_Kachina_01.png",
+      "/ui/UI_Talent_S_Kachina_02.png",
+      "/ui/UI_Talent_U_Kachina_01.png",
+      "/ui/UI_Talent_S_Kachina_03.png",
+      "/ui/UI_Talent_U_Kachina_02.png",
+      "/ui/UI_Talent_S_Kachina_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 2531816890,
@@ -3138,27 +3138,27 @@
       "11005" : 10039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kachina",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kachina.png",
     "SkillOrder" : [
       11001,
       11002,
       11005
     ],
     "Skills" : {
-      "11001" : "Skill_A_03",
-      "11002" : "Skill_S_Kachina_01",
-      "11005" : "Skill_E_Kachina_01"
+      "11001" : "/ui/Skill_A_03.png",
+      "11002" : "/ui/Skill_S_Kachina_01.png",
+      "11005" : "/ui/Skill_E_Kachina_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000101" : {
     "Consts" : [
-      "UI_Talent_S_Kinich_01",
-      "UI_Talent_S_Kinich_02",
-      "UI_Talent_U_Kinich_01",
-      "UI_Talent_S_Kinich_03",
-      "UI_Talent_U_Kinich_02",
-      "UI_Talent_S_Kinich_04"
+      "/ui/UI_Talent_S_Kinich_01.png",
+      "/ui/UI_Talent_S_Kinich_02.png",
+      "/ui/UI_Talent_U_Kinich_01.png",
+      "/ui/UI_Talent_S_Kinich_03.png",
+      "/ui/UI_Talent_U_Kinich_02.png",
+      "/ui/UI_Talent_S_Kinich_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 4172712634,
@@ -3168,27 +3168,27 @@
       "11015" : 10139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Kinich",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Kinich.png",
     "SkillOrder" : [
       11011,
       11012,
       11015
     ],
     "Skills" : {
-      "11011" : "Skill_A_04",
-      "11012" : "Skill_S_Kinich_01",
-      "11015" : "Skill_E_Kinich_01"
+      "11011" : "/ui/Skill_A_04.png",
+      "11012" : "/ui/Skill_S_Kinich_01.png",
+      "11015" : "/ui/Skill_E_Kinich_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000102" : {
     "Consts" : [
-      "UI_Talent_S_Mualani_01",
-      "UI_Talent_S_Mualani_02",
-      "UI_Talent_U_Mualani_01",
-      "UI_Talent_S_Mualani_03",
-      "UI_Talent_U_Mualani_02",
-      "UI_Talent_S_Mualani_04"
+      "/ui/UI_Talent_S_Mualani_01.png",
+      "/ui/UI_Talent_S_Mualani_02.png",
+      "/ui/UI_Talent_U_Mualani_01.png",
+      "/ui/UI_Talent_S_Mualani_03.png",
+      "/ui/UI_Talent_U_Mualani_02.png",
+      "/ui/UI_Talent_S_Mualani_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3949670506,
@@ -3198,27 +3198,27 @@
       "30007" : 10239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Mualani",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Mualani.png",
     "SkillOrder" : [
       30000,
       30002,
       30007
     ],
     "Skills" : {
-      "30000" : "Skill_A_Catalyst_MD",
-      "30002" : "Skill_S_Mualani_01",
-      "30007" : "Skill_E_Mualani_01"
+      "30000" : "/ui/Skill_A_Catalyst_MD.png",
+      "30002" : "/ui/Skill_S_Mualani_01.png",
+      "30007" : "/ui/Skill_E_Mualani_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000103" : {
     "Consts" : [
-      "UI_Talent_S_Xilonen_01",
-      "UI_Talent_S_Xilonen_02",
-      "UI_Talent_U_Xilonen_01",
-      "UI_Talent_S_Xilonen_03",
-      "UI_Talent_U_Xilonen_02",
-      "UI_Talent_S_Xilonen_04"
+      "/ui/UI_Talent_S_Xilonen_01.png",
+      "/ui/UI_Talent_S_Xilonen_02.png",
+      "/ui/UI_Talent_U_Xilonen_01.png",
+      "/ui/UI_Talent_S_Xilonen_03.png",
+      "/ui/UI_Talent_U_Xilonen_02.png",
+      "/ui/UI_Talent_S_Xilonen_04.png"
     ],
     "Element" : "Rock",
     "NameTextMapHash" : 2515292882,
@@ -3228,27 +3228,27 @@
       "11035" : 10339
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Xilonen",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Xilonen.png",
     "SkillOrder" : [
       11031,
       11032,
       11035
     ],
     "Skills" : {
-      "11031" : "Skill_A_01",
-      "11032" : "Skill_S_Xilonen_01",
-      "11035" : "Skill_E_Xilonen_01"
+      "11031" : "/ui/Skill_A_01.png",
+      "11032" : "/ui/Skill_S_Xilonen_01.png",
+      "11035" : "/ui/Skill_E_Xilonen_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000104" : {
     "Consts" : [
-      "UI_Talent_S_Chasca_01",
-      "UI_Talent_S_Chasca_02",
-      "UI_Talent_U_Chasca_01",
-      "UI_Talent_S_Chasca_03",
-      "UI_Talent_U_Chasca_02",
-      "UI_Talent_S_Chasca_04"
+      "/ui/UI_Talent_S_Chasca_01.png",
+      "/ui/UI_Talent_S_Chasca_02.png",
+      "/ui/UI_Talent_U_Chasca_01.png",
+      "/ui/UI_Talent_S_Chasca_03.png",
+      "/ui/UI_Talent_U_Chasca_02.png",
+      "/ui/UI_Talent_S_Chasca_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3746229466,
@@ -3258,27 +3258,27 @@
       "11045" : 10439
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Chasca",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Chasca.png",
     "SkillOrder" : [
       11041,
       11042,
       11045
     ],
     "Skills" : {
-      "11041" : "Skill_A_02",
-      "11042" : "Skill_S_Chasca_01",
-      "11045" : "Skill_E_Chasca_01"
+      "11041" : "/ui/Skill_A_02.png",
+      "11042" : "/ui/Skill_S_Chasca_01.png",
+      "11045" : "/ui/Skill_E_Chasca_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000105" : {
     "Consts" : [
-      "UI_Talent_S_Olorun_01",
-      "UI_Talent_S_Olorun_02",
-      "UI_Talent_U_Olorun_01",
-      "UI_Talent_S_Olorun_03",
-      "UI_Talent_U_Olorun_02",
-      "UI_Talent_S_Olorun_04"
+      "/ui/UI_Talent_S_Olorun_01.png",
+      "/ui/UI_Talent_S_Olorun_02.png",
+      "/ui/UI_Talent_U_Olorun_01.png",
+      "/ui/UI_Talent_S_Olorun_03.png",
+      "/ui/UI_Talent_U_Olorun_02.png",
+      "/ui/UI_Talent_S_Olorun_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1198350762,
@@ -3288,27 +3288,27 @@
       "30505" : 10539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Olorun",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Olorun.png",
     "SkillOrder" : [
       30501,
       30502,
       30505
     ],
     "Skills" : {
-      "30501" : "Skill_A_02",
-      "30502" : "Skill_S_Olorun_01",
-      "30505" : "Skill_E_Olorun_01"
+      "30501" : "/ui/Skill_A_02.png",
+      "30502" : "/ui/Skill_S_Olorun_01.png",
+      "30505" : "/ui/Skill_E_Olorun_01.png"
     },
     "WeaponType" : "WEAPON_BOW"
   },
   "10000106" : {
     "Consts" : [
-      "UI_Talent_S_Mavuika_01",
-      "UI_Talent_S_Mavuika_02",
-      "UI_Talent_U_Mavuika_01",
-      "UI_Talent_S_Mavuika_03",
-      "UI_Talent_U_Mavuika_02",
-      "UI_Talent_S_Mavuika_04"
+      "/ui/UI_Talent_S_Mavuika_01.png",
+      "/ui/UI_Talent_S_Mavuika_02.png",
+      "/ui/UI_Talent_U_Mavuika_01.png",
+      "/ui/UI_Talent_S_Mavuika_03.png",
+      "/ui/UI_Talent_U_Mavuika_02.png",
+      "/ui/UI_Talent_S_Mavuika_04.png"
     ],
     "Element" : "Fire",
     "NameTextMapHash" : 113398050,
@@ -3318,27 +3318,27 @@
       "11065" : 10639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Mavuika",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Mavuika.png",
     "SkillOrder" : [
       11061,
       11062,
       11065
     ],
     "Skills" : {
-      "11061" : "Skill_A_04",
-      "11062" : "Skill_S_Mavuika_01",
-      "11065" : "Skill_E_Mavuika_01"
+      "11061" : "/ui/Skill_A_04.png",
+      "11062" : "/ui/Skill_S_Mavuika_01.png",
+      "11065" : "/ui/Skill_E_Mavuika_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000107" : {
     "Consts" : [
-      "UI_Talent_S_Citlali_01",
-      "UI_Talent_S_Citlali_02",
-      "UI_Talent_U_Citlali_01",
-      "UI_Talent_S_Citlali_03",
-      "UI_Talent_U_Citlali_02",
-      "UI_Talent_S_Citlali_04"
+      "/ui/UI_Talent_S_Citlali_01.png",
+      "/ui/UI_Talent_S_Citlali_02.png",
+      "/ui/UI_Talent_U_Citlali_01.png",
+      "/ui/UI_Talent_S_Citlali_03.png",
+      "/ui/UI_Talent_U_Citlali_02.png",
+      "/ui/UI_Talent_S_Citlali_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 1197975042,
@@ -3348,27 +3348,27 @@
       "11075" : 10739
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Citlali",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Citlali.png",
     "SkillOrder" : [
       11071,
       11072,
       11075
     ],
     "Skills" : {
-      "11071" : "Skill_A_Catalyst_MD",
-      "11072" : "Skill_S_Citlali_01",
-      "11075" : "Skill_E_Citlali_01"
+      "11071" : "/ui/Skill_A_Catalyst_MD.png",
+      "11072" : "/ui/Skill_S_Citlali_01.png",
+      "11075" : "/ui/Skill_E_Citlali_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000108" : {
     "Consts" : [
-      "UI_Talent_S_Lanyan_01",
-      "UI_Talent_S_Lanyan_02",
-      "UI_Talent_U_Lanyan_01",
-      "UI_Talent_S_Lanyan_03",
-      "UI_Talent_U_Lanyan_02",
-      "UI_Talent_S_Lanyan_04"
+      "/ui/UI_Talent_S_Lanyan_01.png",
+      "/ui/UI_Talent_S_Lanyan_02.png",
+      "/ui/UI_Talent_U_Lanyan_01.png",
+      "/ui/UI_Talent_S_Lanyan_03.png",
+      "/ui/UI_Talent_U_Lanyan_02.png",
+      "/ui/UI_Talent_S_Lanyan_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 1888132250,
@@ -3378,27 +3378,27 @@
       "11085" : 10839
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Lanyan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Lanyan.png",
     "SkillOrder" : [
       11081,
       11082,
       11085
     ],
     "Skills" : {
-      "11081" : "Skill_A_Catalyst_MD",
-      "11082" : "Skill_S_Lanyan_01",
-      "11085" : "Skill_E_Lanyan_01"
+      "11081" : "/ui/Skill_A_Catalyst_MD.png",
+      "11082" : "/ui/Skill_S_Lanyan_01.png",
+      "11085" : "/ui/Skill_E_Lanyan_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000109" : {
     "Consts" : [
-      "UI_Talent_S_Mizuki_01",
-      "UI_Talent_S_Mizuki_02",
-      "UI_Talent_U_Mizuki_01",
-      "UI_Talent_S_Mizuki_03",
-      "UI_Talent_U_Mizuki_02",
-      "UI_Talent_S_Mizuki_04"
+      "/ui/UI_Talent_S_Mizuki_01.png",
+      "/ui/UI_Talent_S_Mizuki_02.png",
+      "/ui/UI_Talent_U_Mizuki_01.png",
+      "/ui/UI_Talent_S_Mizuki_03.png",
+      "/ui/UI_Talent_U_Mizuki_02.png",
+      "/ui/UI_Talent_S_Mizuki_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3784387538,
@@ -3408,27 +3408,27 @@
       "11095" : 10939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Mizuki",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Mizuki.png",
     "SkillOrder" : [
       11091,
       11092,
       11095
     ],
     "Skills" : {
-      "11091" : "Skill_A_Catalyst_MD",
-      "11092" : "Skill_S_Mizuki_01",
-      "11095" : "Skill_E_Mizuki_01"
+      "11091" : "/ui/Skill_A_Catalyst_MD.png",
+      "11092" : "/ui/Skill_S_Mizuki_01.png",
+      "11095" : "/ui/Skill_E_Mizuki_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000110" : {
     "Consts" : [
-      "UI_Talent_S_Iansan_01",
-      "UI_Talent_S_Iansan_02",
-      "UI_Talent_U_Iansan_01",
-      "UI_Talent_S_Iansan_03",
-      "UI_Talent_U_Iansan_02",
-      "UI_Talent_S_Iansan_04"
+      "/ui/UI_Talent_S_Iansan_01.png",
+      "/ui/UI_Talent_S_Iansan_02.png",
+      "/ui/UI_Talent_U_Iansan_01.png",
+      "/ui/UI_Talent_S_Iansan_03.png",
+      "/ui/UI_Talent_U_Iansan_02.png",
+      "/ui/UI_Talent_S_Iansan_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 3120492514,
@@ -3438,27 +3438,27 @@
       "11105" : 11039
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Iansan",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Iansan.png",
     "SkillOrder" : [
       11101,
       11102,
       11105
     ],
     "Skills" : {
-      "11101" : "Skill_A_03",
-      "11102" : "Skill_S_Iansan_01",
-      "11105" : "Skill_E_Iansan_01"
+      "11101" : "/ui/Skill_A_03.png",
+      "11102" : "/ui/Skill_S_Iansan_01.png",
+      "11105" : "/ui/Skill_E_Iansan_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000111" : {
     "Consts" : [
-      "UI_Talent_S_Varesa_01",
-      "UI_Talent_S_Varesa_02",
-      "UI_Talent_U_Varesa_01",
-      "UI_Talent_S_Varesa_03",
-      "UI_Talent_U_Varesa_02",
-      "UI_Talent_S_Varesa_04"
+      "/ui/UI_Talent_S_Varesa_01.png",
+      "/ui/UI_Talent_S_Varesa_02.png",
+      "/ui/UI_Talent_U_Varesa_01.png",
+      "/ui/UI_Talent_S_Varesa_03.png",
+      "/ui/UI_Talent_U_Varesa_02.png",
+      "/ui/UI_Talent_S_Varesa_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 283438874,
@@ -3468,27 +3468,27 @@
       "11115" : 11139
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Varesa",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Varesa.png",
     "SkillOrder" : [
       11111,
       11112,
       11115
     ],
     "Skills" : {
-      "11111" : "Skill_A_Catalyst_MD",
-      "11112" : "Skill_S_Varesa_01",
-      "11115" : "Skill_E_Varesa_01"
+      "11111" : "/ui/Skill_A_Catalyst_MD.png",
+      "11112" : "/ui/Skill_S_Varesa_01.png",
+      "11115" : "/ui/Skill_E_Varesa_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000112" : {
     "Consts" : [
-      "UI_Talent_S_Escoffier_01",
-      "UI_Talent_S_Escoffier_02",
-      "UI_Talent_U_Escoffier_01",
-      "UI_Talent_S_Escoffier_03",
-      "UI_Talent_U_Escoffier_02",
-      "UI_Talent_S_Escoffier_04"
+      "/ui/UI_Talent_S_Escoffier_01.png",
+      "/ui/UI_Talent_S_Escoffier_02.png",
+      "/ui/UI_Talent_U_Escoffier_01.png",
+      "/ui/UI_Talent_S_Escoffier_03.png",
+      "/ui/UI_Talent_U_Escoffier_02.png",
+      "/ui/UI_Talent_S_Escoffier_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 4035850498,
@@ -3498,27 +3498,27 @@
       "11125" : 11239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Escoffier",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Escoffier.png",
     "SkillOrder" : [
       11121,
       11122,
       11125
     ],
     "Skills" : {
-      "11121" : "Skill_A_03",
-      "11122" : "Skill_S_Escoffier_01",
-      "11125" : "Skill_E_Escoffier_01"
+      "11121" : "/ui/Skill_A_03.png",
+      "11122" : "/ui/Skill_S_Escoffier_01.png",
+      "11125" : "/ui/Skill_E_Escoffier_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000113" : {
     "Consts" : [
-      "UI_Talent_S_Ifa_01",
-      "UI_Talent_S_Ifa_02",
-      "UI_Talent_U_Ifa_01",
-      "UI_Talent_S_Ifa_03",
-      "UI_Talent_U_Ifa_02",
-      "UI_Talent_S_Ifa_04"
+      "/ui/UI_Talent_S_Ifa_01.png",
+      "/ui/UI_Talent_S_Ifa_02.png",
+      "/ui/UI_Talent_U_Ifa_01.png",
+      "/ui/UI_Talent_S_Ifa_03.png",
+      "/ui/UI_Talent_U_Ifa_02.png",
+      "/ui/UI_Talent_S_Ifa_04.png"
     ],
     "Element" : "Wind",
     "NameTextMapHash" : 3398665018,
@@ -3528,27 +3528,27 @@
       "11135" : 11339
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ifa",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ifa.png",
     "SkillOrder" : [
       11131,
       11132,
       11135
     ],
     "Skills" : {
-      "11131" : "Skill_A_Catalyst_MD",
-      "11132" : "Skill_S_Ifa_01",
-      "11135" : "Skill_E_Ifa_01"
+      "11131" : "/ui/Skill_A_Catalyst_MD.png",
+      "11132" : "/ui/Skill_S_Ifa_01.png",
+      "11135" : "/ui/Skill_E_Ifa_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000114" : {
     "Consts" : [
-      "UI_Talent_S_SkirkNew_01",
-      "UI_Talent_S_SkirkNew_02",
-      "UI_Talent_U_SkirkNew_01",
-      "UI_Talent_S_SkirkNew_03",
-      "UI_Talent_U_SkirkNew_02",
-      "UI_Talent_S_SkirkNew_04"
+      "/ui/UI_Talent_S_SkirkNew_01.png",
+      "/ui/UI_Talent_S_SkirkNew_02.png",
+      "/ui/UI_Talent_U_SkirkNew_01.png",
+      "/ui/UI_Talent_S_SkirkNew_03.png",
+      "/ui/UI_Talent_U_SkirkNew_02.png",
+      "/ui/UI_Talent_S_SkirkNew_04.png"
     ],
     "Element" : "Ice",
     "NameTextMapHash" : 123650890,
@@ -3558,27 +3558,27 @@
       "11145" : 11439
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_SkirkNew",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_SkirkNew.png",
     "SkillOrder" : [
       11141,
       11142,
       11145
     ],
     "Skills" : {
-      "11141" : "Skill_A_01",
-      "11142" : "Skill_S_SkirkNew_01",
-      "11145" : "Skill_E_SkirkNew_01"
+      "11141" : "/ui/Skill_A_01.png",
+      "11142" : "/ui/Skill_S_SkirkNew_01.png",
+      "11145" : "/ui/Skill_E_SkirkNew_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000115" : {
     "Consts" : [
-      "UI_Talent_S_Dahlia_01",
-      "UI_Talent_S_Dahlia_02",
-      "UI_Talent_U_Dahlia_01",
-      "UI_Talent_S_Dahlia_03",
-      "UI_Talent_U_Dahlia_02",
-      "UI_Talent_S_Dahlia_04"
+      "/ui/UI_Talent_S_Dahlia_01.png",
+      "/ui/UI_Talent_S_Dahlia_02.png",
+      "/ui/UI_Talent_U_Dahlia_01.png",
+      "/ui/UI_Talent_S_Dahlia_03.png",
+      "/ui/UI_Talent_U_Dahlia_02.png",
+      "/ui/UI_Talent_S_Dahlia_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 2332664426,
@@ -3588,27 +3588,27 @@
       "11155" : 11539
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Dahlia",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Dahlia.png",
     "SkillOrder" : [
       11151,
       11152,
       11155
     ],
     "Skills" : {
-      "11151" : "Skill_A_01",
-      "11152" : "Skill_S_Dahlia_01",
-      "11155" : "Skill_E_Dahlia_01"
+      "11151" : "/ui/Skill_A_01.png",
+      "11152" : "/ui/Skill_S_Dahlia_01.png",
+      "11155" : "/ui/Skill_E_Dahlia_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000116" : {
     "Consts" : [
-      "UI_Talent_S_Ineffa_01",
-      "UI_Talent_S_Ineffa_02",
-      "UI_Talent_U_Ineffa_01",
-      "UI_Talent_S_Ineffa_03",
-      "UI_Talent_U_Ineffa_02",
-      "UI_Talent_S_Ineffa_04"
+      "/ui/UI_Talent_S_Ineffa_01.png",
+      "/ui/UI_Talent_S_Ineffa_02.png",
+      "/ui/UI_Talent_U_Ineffa_01.png",
+      "/ui/UI_Talent_S_Ineffa_03.png",
+      "/ui/UI_Talent_U_Ineffa_02.png",
+      "/ui/UI_Talent_S_Ineffa_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 2759230658,
@@ -3618,16 +3618,16 @@
       "11165" : 11639
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Ineffa",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Ineffa.png",
     "SkillOrder" : [
       11161,
       11162,
       11165
     ],
     "Skills" : {
-      "11161" : "Skill_A_03",
-      "11162" : "Skill_S_Ineffa_01",
-      "11165" : "Skill_E_Ineffa_01"
+      "11161" : "/ui/Skill_A_03.png",
+      "11162" : "/ui/Skill_S_Ineffa_01.png",
+      "11165" : "/ui/Skill_E_Ineffa_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
@@ -3643,16 +3643,16 @@
       "111751" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111751
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111751" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111751" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3668,16 +3668,16 @@
       "111752" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111752
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111752" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111752" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3693,16 +3693,16 @@
       "111753" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111753
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111753" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111753" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3718,16 +3718,16 @@
       "111754" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111754
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111754" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111754" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3743,16 +3743,16 @@
       "111755" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111755
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111755" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111755" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3768,16 +3768,16 @@
       "111756" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111756
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111756" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111756" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3793,16 +3793,16 @@
       "111757" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinBoy",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinBoy.png",
     "SkillOrder" : [
       11171,
       11172,
       111757
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111757" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111757" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3818,16 +3818,16 @@
       "111751" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111751
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111751" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111751" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3843,16 +3843,16 @@
       "111752" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111752
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111752" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111752" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3868,16 +3868,16 @@
       "111753" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111753
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111753" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111753" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3893,16 +3893,16 @@
       "111754" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111754
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111754" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111754" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3918,16 +3918,16 @@
       "111755" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111755
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111755" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111755" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3943,16 +3943,16 @@
       "111756" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111756
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111756" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111756" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -3968,27 +3968,27 @@
       "111757" : 11739
     },
     "QualityType" : "QUALITY_ORANGE_SP",
-    "SideIconName" : "UI_AvatarIcon_Side_MannequinGirl",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_MannequinGirl.png",
     "SkillOrder" : [
       11171,
       11172,
       111757
     ],
     "Skills" : {
-      "11171" : "Skill_A_01",
-      "11172" : "Skill_S_LittleIdol_01",
-      "111757" : "Skill_E_LittleIdol_01"
+      "11171" : "/ui/Skill_A_01.png",
+      "11172" : "/ui/Skill_S_LittleIdol_01.png",
+      "111757" : "/ui/Skill_E_LittleIdol_01.png"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
   "10000119" : {
     "Consts" : [
-      "UI_Talent_S_Lauma_01",
-      "UI_Talent_S_Lauma_02",
-      "UI_Talent_U_Lauma_01",
-      "UI_Talent_S_Lauma_03",
-      "UI_Talent_U_Lauma_02",
-      "UI_Talent_S_Lauma_04"
+      "/ui/UI_Talent_S_Lauma_01.png",
+      "/ui/UI_Talent_S_Lauma_02.png",
+      "/ui/UI_Talent_U_Lauma_01.png",
+      "/ui/UI_Talent_S_Lauma_03.png",
+      "/ui/UI_Talent_U_Lauma_02.png",
+      "/ui/UI_Talent_S_Lauma_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 1776874018,
@@ -3998,27 +3998,27 @@
       "11195" : 11939
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Lauma",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Lauma.png",
     "SkillOrder" : [
       11191,
       11192,
       11195
     ],
     "Skills" : {
-      "11191" : "Skill_A_Catalyst_MD",
-      "11192" : "Skill_S_Lauma_01",
-      "11195" : "Skill_E_Lauma_01"
+      "11191" : "/ui/Skill_A_Catalyst_MD.png",
+      "11192" : "/ui/Skill_S_Lauma_01.png",
+      "11195" : "/ui/Skill_E_Lauma_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   },
   "10000120" : {
     "Consts" : [
-      "UI_Talent_S_Flins_01",
-      "UI_Talent_S_Flins_02",
-      "UI_Talent_U_Flins_02",
-      "UI_Talent_S_Flins_03",
-      "UI_Talent_U_Flins_01",
-      "UI_Talent_S_Flins_04"
+      "/ui/UI_Talent_S_Flins_01.png",
+      "/ui/UI_Talent_S_Flins_02.png",
+      "/ui/UI_Talent_U_Flins_02.png",
+      "/ui/UI_Talent_S_Flins_03.png",
+      "/ui/UI_Talent_U_Flins_01.png",
+      "/ui/UI_Talent_S_Flins_04.png"
     ],
     "Element" : "Electric",
     "NameTextMapHash" : 1804674810,
@@ -4028,27 +4028,27 @@
       "11205" : 12039
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Flins",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Flins.png",
     "SkillOrder" : [
       11201,
       11202,
       11205
     ],
     "Skills" : {
-      "11201" : "Skill_A_03",
-      "11202" : "Skill_S_Flins_01",
-      "11205" : "Skill_E_Flins_01"
+      "11201" : "/ui/Skill_A_03.png",
+      "11202" : "/ui/Skill_S_Flins_01.png",
+      "11205" : "/ui/Skill_E_Flins_01.png"
     },
     "WeaponType" : "WEAPON_POLE"
   },
   "10000121" : {
     "Consts" : [
-      "UI_Talent_S_Aino_03",
-      "UI_Talent_S_Aino_02",
-      "UI_Talent_U_Aino_01",
-      "UI_Talent_S_Aino_01",
-      "UI_Talent_U_Aino_02",
-      "UI_Talent_S_Aino_04"
+      "/ui/UI_Talent_S_Aino_03.png",
+      "/ui/UI_Talent_S_Aino_02.png",
+      "/ui/UI_Talent_U_Aino_01.png",
+      "/ui/UI_Talent_S_Aino_01.png",
+      "/ui/UI_Talent_U_Aino_02.png",
+      "/ui/UI_Talent_S_Aino_04.png"
     ],
     "Element" : "Water",
     "NameTextMapHash" : 3887688410,
@@ -4058,27 +4058,27 @@
       "11215" : 12139
     },
     "QualityType" : "QUALITY_PURPLE",
-    "SideIconName" : "UI_AvatarIcon_Side_Aino",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Aino.png",
     "SkillOrder" : [
       11211,
       11212,
       11215
     ],
     "Skills" : {
-      "11211" : "Skill_A_04",
-      "11212" : "Skill_S_Aino_01",
-      "11215" : "Skill_E_Aino_01"
+      "11211" : "/ui/Skill_A_04.png",
+      "11212" : "/ui/Skill_S_Aino_01.png",
+      "11215" : "/ui/Skill_E_Aino_01.png"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
   "10000122" : {
     "Consts" : [
-      "UI_Talent_S_Nefer_01",
-      "UI_Talent_S_Nefer_02",
-      "UI_Talent_U_Nefer_01",
-      "UI_Talent_S_Nefer_03",
-      "UI_Talent_U_Nefer_02",
-      "UI_Talent_S_Nefer_04"
+      "/ui/UI_Talent_S_Nefer_01.png",
+      "/ui/UI_Talent_S_Nefer_02.png",
+      "/ui/UI_Talent_U_Nefer_01.png",
+      "/ui/UI_Talent_S_Nefer_03.png",
+      "/ui/UI_Talent_U_Nefer_02.png",
+      "/ui/UI_Talent_S_Nefer_04.png"
     ],
     "Element" : "Grass",
     "NameTextMapHash" : 2745786202,
@@ -4088,16 +4088,16 @@
       "11225" : 12239
     },
     "QualityType" : "QUALITY_ORANGE",
-    "SideIconName" : "UI_AvatarIcon_Side_Nefer",
+    "SideIconName" : "/ui/UI_AvatarIcon_Side_Nefer.png",
     "SkillOrder" : [
       11221,
       11222,
       11225
     ],
     "Skills" : {
-      "11221" : "Skill_A_Catalyst_MD",
-      "11222" : "Skill_S_Nefer_01",
-      "11225" : "Skill_E_Nefer_01"
+      "11221" : "/ui/Skill_A_Catalyst_MD.png",
+      "11222" : "/ui/Skill_S_Nefer_01.png",
+      "11225" : "/ui/Skill_E_Nefer_01.png"
     },
     "WeaponType" : "WEAPON_CATALYST"
   }

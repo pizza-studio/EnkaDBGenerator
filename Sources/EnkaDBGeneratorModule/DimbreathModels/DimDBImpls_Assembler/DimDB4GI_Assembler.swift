@@ -18,6 +18,11 @@ extension DimModels4GI.DimDB4GI {
 }
 
 extension DimModels4GI.DimDB4GI {
+    /// Helper function to format icon paths with /ui/ prefix and .png extension
+    private func formatIconPath(_ iconName: String) -> String {
+        "/ui/\(iconName).png"
+    }
+    
     func assembleEnkaCharacters() throws -> EnkaDBModelsGI.CharacterDict {
         var result = EnkaDBModelsGI.CharacterDict()
         try avatarDB.forEach { avatar in
@@ -42,7 +47,8 @@ extension DimModels4GI.DimDB4GI {
                 }
                 // Constellations. Vary among different Elements of the protagonist.
                 let finalConsts: [String] = (skillDepotTable.talents ?? []).compactMap { talentID in
-                    self.constellationDB.first(where: { $0.talentId == talentID })?.icon
+                    guard let icon = self.constellationDB.first(where: { $0.talentId == talentID })?.icon else { return nil }
+                    return formatIconPath(icon)
                 }
                 // Costumes.
                 var finalCostumes: [String: EnkaDBModelsGI.Costume]?
@@ -55,10 +61,10 @@ extension DimModels4GI.DimDB4GI {
                         guard let art = skin.art, let frontIconName = skin.frontIconName else { return }
                         guard let sideIconName = skin.sideIconName else { return }
                         finalCostumes?[skin.skinId.description] = EnkaDBModelsGI.Costume(
-                            art: art,
+                            art: formatIconPath(art),
                             avatarId: skin.characterId,
-                            icon: frontIconName,
-                            sideIconName: sideIconName
+                            icon: formatIconPath(frontIconName),
+                            sideIconName: formatIconPath(sideIconName)
                         )
                     }
                     if finalCostumes?.isEmpty ?? false {
@@ -95,13 +101,13 @@ extension DimModels4GI.DimDB4GI {
                         skillIDsToPurge.insert(currentSkillID)
                         return
                     }
-                    finalSkills[currentSkillID.description] = matchedSkill.skillIcon
+                    finalSkills[currentSkillID.description] = formatIconPath(matchedSkill.skillIcon)
                     finalProudMap[currentSkillID.description] = matchedSkill.proudSkillGroupId
                 }
                 finalSkillOrder.removeAll { skillIDsToPurge.contains($0) }
                 let finalNameTextMapHash = avatar.nameTextMapHash
                 let finalQualityType = avatar.qualityType
-                let finalSideIconName = avatar.sideIconName
+                let finalSideIconName = formatIconPath(avatar.sideIconName)
                 let finalWeaponType = avatar.weaponType
                 // Assembling the results.
                 let assembled = EnkaDBModelsGI.Character(
@@ -131,7 +137,7 @@ extension DimModels4GI.DimDB4GI {
     func assembleEnkaProfilePictures() -> EnkaDBModelsGI.ProfilePictureDict {
         var result = EnkaDBModelsGI.ProfilePictureDict()
         profilePictureDB.forEach { currentPFP in
-            result[currentPFP.id.description] = .init(iconPath: currentPFP.iconPath)
+            result[currentPFP.id.description] = .init(iconPath: formatIconPath(currentPFP.iconPath))
         }
         return result
     }
@@ -147,7 +153,7 @@ extension DimModels4GI.DimDB4GI {
             }
             guard let iconName else { return }
             result[currentNameCard.id.description] = EnkaDBModelsGI.NameCard(
-                icon: iconName
+                icon: formatIconPath(iconName)
             )
         }
         return result

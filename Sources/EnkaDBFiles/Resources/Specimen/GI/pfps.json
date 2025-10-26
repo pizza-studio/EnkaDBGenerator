@@ -1,482 +1,482 @@
 {
   "1" : {
-    "iconPath" : "UI_AvatarIcon_PlayerBoy_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_PlayerBoy_Circle.png"
   },
   "100" : {
-    "iconPath" : "UI_AvatarIcon_Ambor_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ambor_Circle.png"
   },
   "1000" : {
-    "iconPath" : "UI_AvatarIcon_Fischl_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Fischl_Circle.png"
   },
   "10000" : {
-    "iconPath" : "UI_AvatarIcon_SkirkNew_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_SkirkNew_Circle.png"
   },
   "100010" : {
-    "iconPath" : "UI_AvatarIcon_72105_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_72105_Circle.png"
   },
   "100020" : {
-    "iconPath" : "UI_AvatarIcon_72158_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_72158_Circle.png"
   },
   "100030" : {
-    "iconPath" : "UI_AvatarIcon_72173_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_72173_Circle.png"
   },
   "100040" : {
-    "iconPath" : "UI_AvatarIcon_72177_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_72177_Circle.png"
   },
   "100050" : {
-    "iconPath" : "UI_AvatarIcon_71045_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_71045_Circle.png"
   },
   "100060" : {
-    "iconPath" : "UI_AvatarIcon_73038_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_73038_Circle.png"
   },
   "100070" : {
-    "iconPath" : "UI_AvatarIcon_73055_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_73055_Circle.png"
   },
   "100080" : {
-    "iconPath" : "UI_AvatarIcon_73220_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_73220_Circle.png"
   },
   "100090" : {
-    "iconPath" : "UI_AvatarIcon_73232_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_73232_Circle.png"
   },
   "1001" : {
-    "iconPath" : "UI_AvatarIcon_FischlCostumeHighness_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_FischlCostumeHighness_Circle.png"
   },
   "100100" : {
-    "iconPath" : "UI_AvatarIcon_74007_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74007_Circle.png"
   },
   "100110" : {
-    "iconPath" : "UI_AvatarIcon_74004_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74004_Circle.png"
   },
   "100120" : {
-    "iconPath" : "UI_AvatarIcon_74028_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74028_Circle.png"
   },
   "100130" : {
-    "iconPath" : "UI_AvatarIcon_74053_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74053_Circle.png"
   },
   "100140" : {
-    "iconPath" : "UI_AvatarIcon_74078_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74078_Circle.png"
   },
   "100150" : {
-    "iconPath" : "UI_AvatarIcon_74085_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74085_Circle.png"
   },
   "100160" : {
-    "iconPath" : "UI_AvatarIcon_71100_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_71100_Circle.png"
   },
   "100170" : {
-    "iconPath" : "UI_AvatarIcon_74196_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_74196_Circle.png"
   },
   "100180" : {
-    "iconPath" : "UI_AvatarIcon_75002_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_75002_Circle.png"
   },
   "100190" : {
-    "iconPath" : "UI_AvatarIcon_75048_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_75048_Circle.png"
   },
   "100200" : {
-    "iconPath" : "UI_AvatarIcon_75151_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_75151_Circle.png"
   },
   "100210" : {
-    "iconPath" : "UI_AvatarIcon_75177_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_75177_Circle.png"
   },
   "100220" : {
-    "iconPath" : "UI_AvatarIcon_75230_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_75230_Circle.png"
   },
   "100230" : {
-    "iconPath" : "UI_AvatarIcon_76011_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_76011_Circle.png"
   },
   "100240" : {
-    "iconPath" : "UI_AvatarIcon_76003_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_76003_Circle.png"
   },
   "101" : {
-    "iconPath" : "UI_AvatarIcon_AmborCostumeWic_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_AmborCostumeWic_Circle.png"
   },
   "10100" : {
-    "iconPath" : "UI_AvatarIcon_Ineffa_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ineffa_Circle.png"
   },
   "10200" : {
-    "iconPath" : "UI_AvatarIcon_Aino_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Aino_Circle.png"
   },
   "10300" : {
-    "iconPath" : "UI_AvatarIcon_Lauma_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Lauma_Circle.png"
   },
   "10400" : {
-    "iconPath" : "UI_AvatarIcon_Flins_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Flins_Circle.png"
   },
   "10500" : {
-    "iconPath" : "UI_AvatarIcon_Nefer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Nefer_Circle.png"
   },
   "1100" : {
-    "iconPath" : "UI_AvatarIcon_Bennett_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Bennett_Circle.png"
   },
   "1101" : {
-    "iconPath" : "UI_AvatarIcon_BennettCostumeSummer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_BennettCostumeSummer_Circle.png"
   },
   "1200" : {
-    "iconPath" : "UI_AvatarIcon_Noel_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Noel_Circle.png"
   },
   "1300" : {
-    "iconPath" : "UI_AvatarIcon_Chongyun_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Chongyun_Circle.png"
   },
   "1400" : {
-    "iconPath" : "UI_AvatarIcon_Sucrose_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Sucrose_Circle.png"
   },
   "1500" : {
-    "iconPath" : "UI_AvatarIcon_Qin_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Qin_Circle.png"
   },
   "1501" : {
-    "iconPath" : "UI_AvatarIcon_QinCostumeWic_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_QinCostumeWic_Circle.png"
   },
   "1502" : {
-    "iconPath" : "UI_AvatarIcon_QinCostumeSea_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_QinCostumeSea_Circle.png"
   },
   "1600" : {
-    "iconPath" : "UI_AvatarIcon_Diluc_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Diluc_Circle.png"
   },
   "1601" : {
-    "iconPath" : "UI_AvatarIcon_DilucCostumeFlamme_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_DilucCostumeFlamme_Circle.png"
   },
   "1700" : {
-    "iconPath" : "UI_AvatarIcon_Qiqi_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Qiqi_Circle.png"
   },
   "1800" : {
-    "iconPath" : "UI_AvatarIcon_Mona_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mona_Circle.png"
   },
   "1801" : {
-    "iconPath" : "UI_AvatarIcon_MonaCostumeWic_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_MonaCostumeWic_Circle.png"
   },
   "1900" : {
-    "iconPath" : "UI_AvatarIcon_Keqing_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Keqing_Circle.png"
   },
   "1901" : {
-    "iconPath" : "UI_AvatarIcon_KeqingCostumeFeather_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_KeqingCostumeFeather_Circle.png"
   },
   "2" : {
-    "iconPath" : "UI_AvatarIcon_PlayerGirl_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_PlayerGirl_Circle.png"
   },
   "200" : {
-    "iconPath" : "UI_AvatarIcon_Kaeya_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kaeya_Circle.png"
   },
   "2000" : {
-    "iconPath" : "UI_AvatarIcon_Venti_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Venti_Circle.png"
   },
   "200010" : {
-    "iconPath" : "UI_AvatarIcon_Activity_01_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Activity_01_Circle.png"
   },
   "201" : {
-    "iconPath" : "UI_AvatarIcon_KaeyaCostumeDancer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_KaeyaCostumeDancer_Circle.png"
   },
   "2100" : {
-    "iconPath" : "UI_AvatarIcon_Klee_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Klee_Circle.png"
   },
   "2101" : {
-    "iconPath" : "UI_AvatarIcon_KleeCostumeWitch_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_KleeCostumeWitch_Circle.png"
   },
   "2200" : {
-    "iconPath" : "UI_AvatarIcon_Diona_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Diona_Circle.png"
   },
   "2300" : {
-    "iconPath" : "UI_AvatarIcon_Tartaglia_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Tartaglia_Circle.png"
   },
   "2400" : {
-    "iconPath" : "UI_AvatarIcon_Xinyan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Xinyan_Circle.png"
   },
   "2500" : {
-    "iconPath" : "UI_AvatarIcon_Zhongli_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Zhongli_Circle.png"
   },
   "2600" : {
-    "iconPath" : "UI_AvatarIcon_Albedo_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Albedo_Circle.png"
   },
   "2700" : {
-    "iconPath" : "UI_AvatarIcon_Ganyu_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ganyu_Circle.png"
   },
   "2701" : {
-    "iconPath" : "UI_AvatarIcon_GanyuCostumeYu_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_GanyuCostumeYu_Circle.png"
   },
   "2800" : {
-    "iconPath" : "UI_AvatarIcon_Xiao_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Xiao_Circle.png"
   },
   "2900" : {
-    "iconPath" : "UI_AvatarIcon_Hutao_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Hutao_Circle.png"
   },
   "2901" : {
-    "iconPath" : "UI_AvatarIcon_HutaoCostumeWinter_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_HutaoCostumeWinter_Circle.png"
   },
   "300" : {
-    "iconPath" : "UI_AvatarIcon_Lisa_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Lisa_Circle.png"
   },
   "3000" : {
-    "iconPath" : "UI_AvatarIcon_Rosaria_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Rosaria_Circle.png"
   },
   "3001" : {
-    "iconPath" : "UI_AvatarIcon_RosariaCostumeWic_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_RosariaCostumeWic_Circle.png"
   },
   "301" : {
-    "iconPath" : "UI_AvatarIcon_LisaCostumeStudentin_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_LisaCostumeStudentin_Circle.png"
   },
   "3100" : {
-    "iconPath" : "UI_AvatarIcon_Feiyan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Feiyan_Circle.png"
   },
   "3200" : {
-    "iconPath" : "UI_AvatarIcon_Eula_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Eula_Circle.png"
   },
   "3300" : {
-    "iconPath" : "UI_AvatarIcon_Kazuha_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kazuha_Circle.png"
   },
   "3400" : {
-    "iconPath" : "UI_AvatarIcon_Ayaka_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ayaka_Circle.png"
   },
   "3401" : {
-    "iconPath" : "UI_AvatarIcon_AyakaCostumeFruhling_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_AyakaCostumeFruhling_Circle.png"
   },
   "3500" : {
-    "iconPath" : "UI_AvatarIcon_Sayu_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Sayu_Circle.png"
   },
   "3600" : {
-    "iconPath" : "UI_AvatarIcon_Yoimiya_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Yoimiya_Circle.png"
   },
   "3700" : {
-    "iconPath" : "UI_AvatarIcon_Aloy_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Aloy_Circle.png"
   },
   "3800" : {
-    "iconPath" : "UI_AvatarIcon_Sara_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Sara_Circle.png"
   },
   "3900" : {
-    "iconPath" : "UI_AvatarIcon_Shougun_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Shougun_Circle.png"
   },
   "400" : {
-    "iconPath" : "UI_AvatarIcon_Barbara_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Barbara_Circle.png"
   },
   "4000" : {
-    "iconPath" : "UI_AvatarIcon_Kokomi_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kokomi_Circle.png"
   },
   "401" : {
-    "iconPath" : "UI_AvatarIcon_BarbaraCostumeSummertime_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_BarbaraCostumeSummertime_Circle.png"
   },
   "4100" : {
-    "iconPath" : "UI_AvatarIcon_Tohma_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Tohma_Circle.png"
   },
   "4200" : {
-    "iconPath" : "UI_AvatarIcon_Gorou_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Gorou_Circle.png"
   },
   "4300" : {
-    "iconPath" : "UI_AvatarIcon_Itto_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Itto_Circle.png"
   },
   "4400" : {
-    "iconPath" : "UI_AvatarIcon_Yunjin_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Yunjin_Circle.png"
   },
   "4500" : {
-    "iconPath" : "UI_AvatarIcon_Shenhe_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Shenhe_Circle.png"
   },
   "4501" : {
-    "iconPath" : "UI_AvatarIcon_ShenheCostumeDai_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_ShenheCostumeDai_Circle.png"
   },
   "4600" : {
-    "iconPath" : "UI_AvatarIcon_Yae_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Yae_Circle.png"
   },
   "4700" : {
-    "iconPath" : "UI_AvatarIcon_Ayato_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ayato_Circle.png"
   },
   "4800" : {
-    "iconPath" : "UI_AvatarIcon_Yelan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Yelan_Circle.png"
   },
   "4801" : {
-    "iconPath" : "UI_AvatarIcon_YelanCostumeSummer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_YelanCostumeSummer_Circle.png"
   },
   "4900" : {
-    "iconPath" : "UI_AvatarIcon_Shinobu_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Shinobu_Circle.png"
   },
   "500" : {
-    "iconPath" : "UI_AvatarIcon_Razor_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Razor_Circle.png"
   },
   "5000" : {
-    "iconPath" : "UI_AvatarIcon_Heizo_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Heizo_Circle.png"
   },
   "5100" : {
-    "iconPath" : "UI_AvatarIcon_Collei_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Collei_Circle.png"
   },
   "5200" : {
-    "iconPath" : "UI_AvatarIcon_Tighnari_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Tighnari_Circle.png"
   },
   "5300" : {
-    "iconPath" : "UI_AvatarIcon_Dori_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Dori_Circle.png"
   },
   "5400" : {
-    "iconPath" : "UI_AvatarIcon_Candace_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Candace_Circle.png"
   },
   "5500" : {
-    "iconPath" : "UI_AvatarIcon_Cyno_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Cyno_Circle.png"
   },
   "5600" : {
-    "iconPath" : "UI_AvatarIcon_Nilou_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Nilou_Circle.png"
   },
   "5601" : {
-    "iconPath" : "UI_AvatarIcon_NilouCostumeFairy_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_NilouCostumeFairy_Circle.png"
   },
   "5700" : {
-    "iconPath" : "UI_AvatarIcon_Nahida_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Nahida_Circle.png"
   },
   "5800" : {
-    "iconPath" : "UI_AvatarIcon_Layla_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Layla_Circle.png"
   },
   "5900" : {
-    "iconPath" : "UI_AvatarIcon_Faruzan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Faruzan_Circle.png"
   },
   "600" : {
-    "iconPath" : "UI_AvatarIcon_Xiangling_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Xiangling_Circle.png"
   },
   "6000" : {
-    "iconPath" : "UI_AvatarIcon_Wanderer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Wanderer_Circle.png"
   },
   "601" : {
-    "iconPath" : "UI_AvatarIcon_XianglingCostumeWinter_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_XianglingCostumeWinter_Circle.png"
   },
   "6100" : {
-    "iconPath" : "UI_AvatarIcon_Yaoyao_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Yaoyao_Circle.png"
   },
   "6200" : {
-    "iconPath" : "UI_AvatarIcon_Alhatham_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Alhatham_Circle.png"
   },
   "6300" : {
-    "iconPath" : "UI_AvatarIcon_Dehya_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Dehya_Circle.png"
   },
   "6400" : {
-    "iconPath" : "UI_AvatarIcon_Mika_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mika_Circle.png"
   },
   "6500" : {
-    "iconPath" : "UI_AvatarIcon_Kaveh_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kaveh_Circle.png"
   },
   "6600" : {
-    "iconPath" : "UI_AvatarIcon_Baizhuer_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Baizhuer_Circle.png"
   },
   "6700" : {
-    "iconPath" : "UI_AvatarIcon_Momoka_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Momoka_Circle.png"
   },
   "6701" : {
-    "iconPath" : "UI_AvatarIcon_MomokaCostumeErrantry_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_MomokaCostumeErrantry_Circle.png"
   },
   "6800" : {
-    "iconPath" : "UI_AvatarIcon_Linette_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Linette_Circle.png"
   },
   "6900" : {
-    "iconPath" : "UI_AvatarIcon_Liney_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Liney_Circle.png"
   },
   "700" : {
-    "iconPath" : "UI_AvatarIcon_Beidou_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Beidou_Circle.png"
   },
   "7000" : {
-    "iconPath" : "UI_AvatarIcon_Freminet_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Freminet_Circle.png"
   },
   "7100" : {
-    "iconPath" : "UI_AvatarIcon_Neuvillette_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Neuvillette_Circle.png"
   },
   "7200" : {
-    "iconPath" : "UI_AvatarIcon_Wriothesley_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Wriothesley_Circle.png"
   },
   "7300" : {
-    "iconPath" : "UI_AvatarIcon_Charlotte_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Charlotte_Circle.png"
   },
   "7400" : {
-    "iconPath" : "UI_AvatarIcon_Furina_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Furina_Circle.png"
   },
   "7500" : {
-    "iconPath" : "UI_AvatarIcon_Navia_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Navia_Circle.png"
   },
   "7600" : {
-    "iconPath" : "UI_AvatarIcon_Chevreuse_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Chevreuse_Circle.png"
   },
   "7700" : {
-    "iconPath" : "UI_AvatarIcon_Gaming_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Gaming_Circle.png"
   },
   "7800" : {
-    "iconPath" : "UI_AvatarIcon_Liuyun_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Liuyun_Circle.png"
   },
   "7900" : {
-    "iconPath" : "UI_AvatarIcon_Chiori_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Chiori_Circle.png"
   },
   "800" : {
-    "iconPath" : "UI_AvatarIcon_Xingqiu_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Xingqiu_Circle.png"
   },
   "8000" : {
-    "iconPath" : "UI_AvatarIcon_Arlecchino_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Arlecchino_Circle.png"
   },
   "801" : {
-    "iconPath" : "UI_AvatarIcon_XingqiuCostumeBamboo_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_XingqiuCostumeBamboo_Circle.png"
   },
   "8100" : {
-    "iconPath" : "UI_AvatarIcon_Clorinde_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Clorinde_Circle.png"
   },
   "8200" : {
-    "iconPath" : "UI_AvatarIcon_Sethos_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Sethos_Circle.png"
   },
   "8300" : {
-    "iconPath" : "UI_AvatarIcon_Sigewinne_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Sigewinne_Circle.png"
   },
   "8400" : {
-    "iconPath" : "UI_AvatarIcon_Emilie_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Emilie_Circle.png"
   },
   "8500" : {
-    "iconPath" : "UI_AvatarIcon_Kachina_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kachina_Circle.png"
   },
   "8600" : {
-    "iconPath" : "UI_AvatarIcon_Mualani_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mualani_Circle.png"
   },
   "8700" : {
-    "iconPath" : "UI_AvatarIcon_Kinich_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Kinich_Circle.png"
   },
   "8800" : {
-    "iconPath" : "UI_AvatarIcon_Xilonen_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Xilonen_Circle.png"
   },
   "8900" : {
-    "iconPath" : "UI_AvatarIcon_Olorun_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Olorun_Circle.png"
   },
   "900" : {
-    "iconPath" : "UI_AvatarIcon_Ningguang_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ningguang_Circle.png"
   },
   "9000" : {
-    "iconPath" : "UI_AvatarIcon_Chasca_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Chasca_Circle.png"
   },
   "900001" : {
-    "iconPath" : "UI_AvatarIcon_MannequinBoy_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_MannequinBoy_Circle.png"
   },
   "900002" : {
-    "iconPath" : "UI_AvatarIcon_MannequinGirl_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_MannequinGirl_Circle.png"
   },
   "900003" : {
-    "iconPath" : "UI_AvatarIcon_Mannequin_Custom_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mannequin_Custom_Circle.png"
   },
   "900004" : {
-    "iconPath" : ""
+    "iconPath" : "/ui/.png"
   },
   "901" : {
-    "iconPath" : "UI_AvatarIcon_NingguangCostumeFloral_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_NingguangCostumeFloral_Circle.png"
   },
   "9100" : {
-    "iconPath" : "UI_AvatarIcon_Citlali_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Citlali_Circle.png"
   },
   "9200" : {
-    "iconPath" : "UI_AvatarIcon_Mavuika_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mavuika_Circle.png"
   },
   "9300" : {
-    "iconPath" : "UI_AvatarIcon_Lanyan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Lanyan_Circle.png"
   },
   "9400" : {
-    "iconPath" : "UI_AvatarIcon_Mizuki_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Mizuki_Circle.png"
   },
   "9500" : {
-    "iconPath" : "UI_AvatarIcon_Iansan_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Iansan_Circle.png"
   },
   "9600" : {
-    "iconPath" : "UI_AvatarIcon_Varesa_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Varesa_Circle.png"
   },
   "9700" : {
-    "iconPath" : "UI_AvatarIcon_Ifa_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ifa_Circle.png"
   },
   "9800" : {
-    "iconPath" : "UI_AvatarIcon_Escoffier_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Escoffier_Circle.png"
   },
   "9900" : {
-    "iconPath" : "UI_AvatarIcon_Dahlia_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Dahlia_Circle.png"
   },
   "99999" : {
-    "iconPath" : "UI_AvatarIcon_Ambor_Circle"
+    "iconPath" : "/ui/UI_AvatarIcon_Ambor_Circle.png"
   }
 }
