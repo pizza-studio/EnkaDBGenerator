@@ -61,23 +61,45 @@ private let lumineReferenceEnkaDBCharJSON = """
 {
   "Element": "Water",
   "Consts": [
-    "UI_Talent_S_PlayerWater_01",
-    "UI_Talent_S_PlayerWater_02",
-    "UI_Talent_U_PlayerWater_01",
-    "UI_Talent_S_PlayerWater_03",
-    "UI_Talent_U_PlayerWater_02",
-    "UI_Talent_S_PlayerWater_04"
+    "/ui/UI_Talent_S_PlayerWater_01.png",
+    "/ui/UI_Talent_S_PlayerWater_02.png",
+    "/ui/UI_Talent_U_PlayerWater_01.png",
+    "/ui/UI_Talent_S_PlayerWater_03.png",
+    "/ui/UI_Talent_U_PlayerWater_02.png",
+    "/ui/UI_Talent_S_PlayerWater_04.png"
   ],
   "SkillOrder": [100552, 10087, 10088],
   "Skills": {
-    "10087": "Skill_S_PlayerWater_01",
-    "10088": "Skill_E_PlayerWater_01",
-    "100552": "Skill_A_01"
+    "10087": "/ui/Skill_S_PlayerWater_01.png",
+    "10088": "/ui/Skill_E_PlayerWater_01.png",
+    "100552": "/ui/Skill_A_01.png"
   },
   "NameTextMapHash": 3816664530,
   "ProudMap": { "10087": 632, "10088": 639, "100552": 631 },
-  "SideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+  "SideIconName": "/ui/UI_AvatarIcon_Side_PlayerGirl.png",
   "QualityType": "QUALITY_ORANGE",
-  "WeaponType": "WEAPON_SWORD_ONE_HAND"
+  "WeaponType": "WEAPON_SWORD_ONE_HAND",
+  "BaseProps": {
+    "1": 911.791,
+    "4": 17.808,
+    "7": 57.225,
+    "20": 0.05,
+    "22": 0.5,
+    "28": 0
+  },
+  "PropGrowCurves": {
+    "1": 104,
+    "4": 204,
+    "7": 104
+  },
+  "PromoteProps": [
+    {"1": 0, "4": 0, "7": 0},
+    {"1": 681.15454, "4": 13.3038, "7": 42.75},
+    {"1": 1165.1328, "4": 22.7565, "7": 73.125},
+    {"1": 1810.4371, "4": 35.3601, "7": 113.625},
+    {"1": 2294.4153, "4": 44.8128, "7": 144.0},
+    {"1": 2778.3936, "4": 54.2655, "7": 174.375},
+    {"1": 3262.3718, "4": 63.7182, "7": 204.75}
+  ]
 }
 """

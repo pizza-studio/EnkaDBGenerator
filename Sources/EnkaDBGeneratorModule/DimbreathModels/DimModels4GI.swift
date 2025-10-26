@@ -20,6 +20,8 @@ enum DimModels4GI: String, CaseIterable, Sendable {
     case skillDepot = "AvatarSkillDepotExcelConfigData"
     case costume = "AvatarCostumeExcelConfigData"
     case profilePicture = "ProfilePictureExcelConfigData"
+    case avatarPromote = "AvatarPromoteExcelConfigData"
+    case avatarCurve = "AvatarCurveExcelConfigData"
 }
 
 // MARK: DimModelsEnumProtocol
@@ -35,6 +37,11 @@ extension DimModels4GI: DimModelsEnumProtocol {
 
 extension DimModels4GI {
     struct AvatarExcelConfigData: Hashable, Codable, IntegerIdentifiable, NameHashable {
+        struct PropGrowCurve: Hashable, Codable {
+            let type: String
+            let growCurve: String
+        }
+        
         let id: Int
         let nameTextMapHash: UInt
         let iconName: String
@@ -42,6 +49,13 @@ extension DimModels4GI {
         let qualityType: String
         let skillDepotId: Int
         let weaponType: String
+        let avatarPromoteId: Int?
+        let hpBase: Double?
+        let attackBase: Double?
+        let defenseBase: Double?
+        let critical: Double?
+        let criticalHurt: Double?
+        let propGrowCurves: [PropGrowCurve]?
 
         var isValid: Bool {
             guard skillDepotId != 101 else { return false }
@@ -289,5 +303,34 @@ extension DimModels4GI {
     struct ProfilePictureExcelConfigData: Hashable, Codable, Identifiable {
         let id: Int
         let iconPath: String
+    }
+}
+
+// MARK: DimModels4GI.AvatarPromoteExcelConfigData
+
+extension DimModels4GI {
+    struct AvatarPromoteExcelConfigData: Hashable, Codable {
+        struct AddProp: Hashable, Codable {
+            let propType: String?
+            let value: Double?
+        }
+        
+        let avatarPromoteId: Int
+        let promoteLevel: Int?
+        let addProps: [AddProp]?
+    }
+}
+
+// MARK: DimModels4GI.AvatarCurveExcelConfigData
+
+extension DimModels4GI {
+    struct AvatarCurveExcelConfigData: Hashable, Codable {
+        struct CurveInfo: Hashable, Codable {
+            let type: String
+            let value: Double
+        }
+        
+        let level: Int
+        let curveInfos: [CurveInfo]
     }
 }

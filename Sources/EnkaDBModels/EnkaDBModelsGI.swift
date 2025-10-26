@@ -24,7 +24,10 @@ extension EnkaDBModelsGI {
             sideIconName: String,
             skillOrder: [Int],
             skills: [String: String],
-            weaponType: String
+            weaponType: String,
+            baseProps: [String: Double]? = nil,
+            propGrowCurves: [String: Int]? = nil,
+            promoteProps: [[String: Double]]? = nil
         ) {
             self.consts = consts
             self.costumes = costumes
@@ -36,6 +39,9 @@ extension EnkaDBModelsGI {
             self.skillOrder = skillOrder
             self.skills = skills
             self.weaponType = weaponType
+            self.baseProps = baseProps
+            self.propGrowCurves = propGrowCurves
+            self.promoteProps = promoteProps
         }
 
         // MARK: Public
@@ -51,6 +57,9 @@ extension EnkaDBModelsGI {
             case qualityType = "QualityType"
             case weaponType = "WeaponType"
             case costumes = "Costumes"
+            case baseProps = "BaseProps"
+            case propGrowCurves = "PropGrowCurves"
+            case promoteProps = "PromoteProps"
         }
 
         public var consts: [String]
@@ -63,6 +72,9 @@ extension EnkaDBModelsGI {
         public var skillOrder: [Int]
         public var skills: [String: String]
         public var weaponType: String
+        public var baseProps: [String: Double]?
+        public var propGrowCurves: [String: Int]?
+        public var promoteProps: [[String: Double]]?
     }
 }
 
