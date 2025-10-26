@@ -65,6 +65,14 @@ extension DimModels4GI {
                 [ProfilePictureExcelConfigData].self,
                 from: dataStack[.profilePicture]!
             )
+            self.avatarPromoteDB = try decoder.decode(
+                [AvatarPromoteExcelConfigData].self,
+                from: dataStack[.avatarPromote]!
+            )
+            self.avatarCurveDB = try decoder.decode(
+                [AvatarCurveExcelConfigData].self,
+                from: dataStack[.avatarCurve]!
+            )
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne)
                 bleach()
@@ -86,6 +94,8 @@ extension DimModels4GI {
         var skillDepotDB: [AvatarSkillDepotExcelConfigData]
         var costumeDB: [AvatarCostumeExcelConfigData]
         var profilePictureDB: [ProfilePictureExcelConfigData]
+        var avatarPromoteDB: [AvatarPromoteExcelConfigData]
+        var avatarCurveDB: [AvatarCurveExcelConfigData]
         var langTable: [String: [String: String]] = [:]
     }
 }
