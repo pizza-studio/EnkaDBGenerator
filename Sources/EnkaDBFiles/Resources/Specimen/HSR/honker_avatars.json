@@ -140,6 +140,12 @@
   "200146" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200146.png"
   },
+  "200147" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200147.png"
+  },
+  "200148" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200148.png"
+  },
   "201001" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1001.png"
   },
@@ -362,6 +368,9 @@
   "201414" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1414.png"
   },
+  "201415" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1415.png"
+  },
   "202001" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202001.png"
   },
@@ -422,6 +431,9 @@
   "202020" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202020.png"
   },
+  "202021" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202021.png"
+  },
   "202022" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202022.png"
   },
@@ -439,6 +451,9 @@
   },
   "202029" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/AvatarSkin/1100101.png"
+  },
+  "202030" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202030.png"
   },
   "202031" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202031.png"
@@ -466,6 +481,9 @@
   },
   "202040" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202040.png"
+  },
+  "202041" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202041.png"
   },
   "208001" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/8001.png"

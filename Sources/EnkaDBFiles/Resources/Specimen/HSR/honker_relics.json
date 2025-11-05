@@ -1247,6 +1247,38 @@
     "SubAffixGroup" : 2,
     "Type" : "OBJECT"
   },
+  "33235" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_5.png",
+    "MainAffixGroup" : 25,
+    "Rarity" : 2,
+    "SetID" : 323,
+    "SubAffixGroup" : 2,
+    "Type" : "NECK"
+  },
+  "33236" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_6.png",
+    "MainAffixGroup" : 26,
+    "Rarity" : 2,
+    "SetID" : 323,
+    "SubAffixGroup" : 2,
+    "Type" : "OBJECT"
+  },
+  "33245" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_5.png",
+    "MainAffixGroup" : 25,
+    "Rarity" : 2,
+    "SetID" : 324,
+    "SubAffixGroup" : 2,
+    "Type" : "NECK"
+  },
+  "33246" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_6.png",
+    "MainAffixGroup" : 26,
+    "Rarity" : 2,
+    "SetID" : 324,
+    "SubAffixGroup" : 2,
+    "Type" : "OBJECT"
+  },
   "41011" : {
     "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_101_1.png",
     "MainAffixGroup" : 31,
@@ -2495,6 +2527,38 @@
     "SubAffixGroup" : 3,
     "Type" : "OBJECT"
   },
+  "43235" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_5.png",
+    "MainAffixGroup" : 35,
+    "Rarity" : 3,
+    "SetID" : 323,
+    "SubAffixGroup" : 3,
+    "Type" : "NECK"
+  },
+  "43236" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_6.png",
+    "MainAffixGroup" : 36,
+    "Rarity" : 3,
+    "SetID" : 323,
+    "SubAffixGroup" : 3,
+    "Type" : "OBJECT"
+  },
+  "43245" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_5.png",
+    "MainAffixGroup" : 35,
+    "Rarity" : 3,
+    "SetID" : 324,
+    "SubAffixGroup" : 3,
+    "Type" : "NECK"
+  },
+  "43246" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_6.png",
+    "MainAffixGroup" : 36,
+    "Rarity" : 3,
+    "SetID" : 324,
+    "SubAffixGroup" : 3,
+    "Type" : "OBJECT"
+  },
   "51011" : {
     "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_101_1.png",
     "MainAffixGroup" : 41,
@@ -3740,6 +3804,38 @@
     "MainAffixGroup" : 46,
     "Rarity" : 4,
     "SetID" : 322,
+    "SubAffixGroup" : 4,
+    "Type" : "OBJECT"
+  },
+  "53235" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_5.png",
+    "MainAffixGroup" : 45,
+    "Rarity" : 4,
+    "SetID" : 323,
+    "SubAffixGroup" : 4,
+    "Type" : "NECK"
+  },
+  "53236" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_6.png",
+    "MainAffixGroup" : 46,
+    "Rarity" : 4,
+    "SetID" : 323,
+    "SubAffixGroup" : 4,
+    "Type" : "OBJECT"
+  },
+  "53245" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_5.png",
+    "MainAffixGroup" : 45,
+    "Rarity" : 4,
+    "SetID" : 324,
+    "SubAffixGroup" : 4,
+    "Type" : "NECK"
+  },
+  "53246" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_6.png",
+    "MainAffixGroup" : 46,
+    "Rarity" : 4,
+    "SetID" : 324,
     "SubAffixGroup" : 4,
     "Type" : "OBJECT"
   },
@@ -5036,6 +5132,38 @@
     "MainAffixGroup" : 56,
     "Rarity" : 5,
     "SetID" : 322,
+    "SubAffixGroup" : 5,
+    "Type" : "OBJECT"
+  },
+  "63235" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_5.png",
+    "MainAffixGroup" : 55,
+    "Rarity" : 5,
+    "SetID" : 323,
+    "SubAffixGroup" : 5,
+    "Type" : "NECK"
+  },
+  "63236" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_323_6.png",
+    "MainAffixGroup" : 56,
+    "Rarity" : 5,
+    "SetID" : 323,
+    "SubAffixGroup" : 5,
+    "Type" : "OBJECT"
+  },
+  "63245" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_5.png",
+    "MainAffixGroup" : 55,
+    "Rarity" : 5,
+    "SetID" : 324,
+    "SubAffixGroup" : 5,
+    "Type" : "NECK"
+  },
+  "63246" : {
+    "Icon" : "SpriteOutput/ItemIcon/RelicIcons/IconRelic_324_6.png",
+    "MainAffixGroup" : 56,
+    "Rarity" : 5,
+    "SetID" : 324,
     "SubAffixGroup" : 5,
     "Type" : "OBJECT"
   }
