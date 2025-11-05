@@ -719,6 +719,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/22005.png",
     "Rarity" : 4
   },
+  "22006" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "15207548416483397866"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/22006.png",
+    "Rarity" : 4
+  },
   "23000" : {
     "AvatarBaseType" : "Mage",
     "EquipmentName" : {
@@ -1125,6 +1133,14 @@
       "Hash" : "12008774210001466871"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/23051.png",
+    "Rarity" : 5
+  },
+  "23052" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "10407794298159211059"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23052.png",
     "Rarity" : 5
   },
   "24000" : {

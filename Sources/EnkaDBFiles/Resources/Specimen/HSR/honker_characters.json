@@ -2259,6 +2259,39 @@
       141407
     ]
   },
+  "1415" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1415B.png",
+    "AvatarBaseType" : "Memory",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1415.png",
+    "AvatarFullName" : {
+      "Hash" : "6913947020277665560"
+    },
+    "AvatarName" : {
+      "Hash" : "7809981386909966580"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1415.png",
+    "Element" : "Ice",
+    "RankIDList" : [
+      141501,
+      141502,
+      141503,
+      141504,
+      141505,
+      141506
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      141501,
+      141502,
+      141503,
+      141504,
+      141506,
+      141507,
+      141508,
+      141514,
+      141519
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
@@ -2473,6 +2506,7 @@
       800704,
       800706,
       800707,
+      800708,
       800709
     ]
   },
@@ -2504,6 +2538,7 @@
       800804,
       800806,
       800807,
+      800808,
       800809
     ]
   }
