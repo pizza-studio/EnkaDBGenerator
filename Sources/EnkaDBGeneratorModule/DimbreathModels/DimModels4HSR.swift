@@ -421,6 +421,7 @@ extension DimModels4HSR {
             case b3 = "PointB3"
             case servant1 = "PointServant1"
             case servant2 = "PointServant2"
+            case special1 = "PointSpecial1"
         }
 
         struct StatusAdd: Hashable, Decodable {
