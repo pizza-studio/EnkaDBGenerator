@@ -1858,6 +1858,36 @@
       131718
     ]
   },
+  "1321" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1321B.png",
+    "AvatarBaseType" : "Warlock",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1321.png",
+    "AvatarFullName" : {
+      "Hash" : "8110034527426232864"
+    },
+    "AvatarName" : {
+      "Hash" : "16283352174817039417"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1321.png",
+    "Element" : "Fire",
+    "RankIDList" : [
+      132101,
+      132102,
+      132103,
+      132104,
+      132105,
+      132106
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      132101,
+      132102,
+      132103,
+      132104,
+      132106,
+      132107
+    ]
+  },
   "1401" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1401B.png",
     "AvatarBaseType" : "Mage",
