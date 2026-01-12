@@ -784,5 +784,23 @@
   },
   "210266" : {
     "icon" : "UI_NameCardPic_Green_P"
+  },
+  "210267" : {
+    "icon" : "UI_NameCardPic_Columbina_P"
+  },
+  "210268" : {
+    "icon" : "UI_NameCardPic_Zibai_P"
+  },
+  "210269" : {
+    "icon" : "UI_NameCardPic_Illuga_P"
+  },
+  "210270" : {
+    "icon" : "UI_NameCardPic_Csxy6_P"
+  },
+  "210271" : {
+    "icon" : "UI_NameCardPic_NodKrai2_P"
+  },
+  "210272" : {
+    "icon" : "UI_NameCardPic_Bp47_P"
   }
 }

@@ -86,6 +86,9 @@
   "100240" : {
     "iconPath" : "UI_AvatarIcon_76003_Circle"
   },
+  "100250" : {
+    "iconPath" : "UI_AvatarIcon_76101_Circle"
+  },
   "101" : {
     "iconPath" : "UI_AvatarIcon_AmborCostumeWic_Circle"
   },
@@ -113,8 +116,20 @@
   "10700" : {
     "iconPath" : "UI_AvatarIcon_Jahoda_Circle"
   },
+  "10800" : {
+    "iconPath" : "UI_AvatarIcon_Columbina_Circle"
+  },
+  "10900" : {
+    "iconPath" : "UI_AvatarIcon_Illuga_Circle"
+  },
+  "11" : {
+    "iconPath" : "UI_AvatarIcon_PlayerBoyCostumeCWXR_Circle"
+  },
   "1100" : {
     "iconPath" : "UI_AvatarIcon_Bennett_Circle"
+  },
+  "11000" : {
+    "iconPath" : "UI_AvatarIcon_Zibai_Circle"
   },
   "1101" : {
     "iconPath" : "UI_AvatarIcon_BennettCostumeSummer_Circle"
@@ -175,6 +190,9 @@
   },
   "201" : {
     "iconPath" : "UI_AvatarIcon_KaeyaCostumeDancer_Circle"
+  },
+  "21" : {
+    "iconPath" : "UI_AvatarIcon_PlayerGirlCostumeCWXR_Circle"
   },
   "2100" : {
     "iconPath" : "UI_AvatarIcon_Klee_Circle"
@@ -344,6 +362,9 @@
   "6100" : {
     "iconPath" : "UI_AvatarIcon_Yaoyao_Circle"
   },
+  "6101" : {
+    "iconPath" : "UI_AvatarIcon_YaoyaoCostumeWinter_Circle"
+  },
   "6200" : {
     "iconPath" : "UI_AvatarIcon_Alhatham_Circle"
   },
@@ -379,6 +400,9 @@
   },
   "7100" : {
     "iconPath" : "UI_AvatarIcon_Neuvillette_Circle"
+  },
+  "7101" : {
+    "iconPath" : "UI_AvatarIcon_NeuvilletteCostumeWinter_Circle"
   },
   "7200" : {
     "iconPath" : "UI_AvatarIcon_Wriothesley_Circle"
