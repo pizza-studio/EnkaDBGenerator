@@ -54,6 +54,10 @@ extension EnkaDBGenerator {
             rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending(".json")
         }
 
+        var textMapFileStem: String {
+            rawValue.replacingOccurrences(of: "lang", with: "TextMap")
+        }
+
         var enkaLangID: String {
             switch self {
             case .langCHS, .langCHT: return langTag
@@ -69,14 +73,7 @@ extension EnkaDBGenerator {
         }
 
         func filenamesForChunks(for game: EnkaDBGenerator.SupportedGame) -> [String] {
-            guard game == .genshinImpact else { return [filename] }
-            return switch self {
-            case .langTH: [
-                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_0.json"),
-                    rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_1.json"),
-                ]
-            default: [filename]
-            }
+            [filename]
         }
 
         // MARK: Private

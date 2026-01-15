@@ -13,58 +13,28 @@ extension DimModels4GI {
         init(withLang: Bool = true, oneByOne: Bool = false) async throws {
             let dataStack: [DimModels4GI: Data] = try await getDataStack(oneByOne: oneByOne)
             let decoder = JSONDecoder()
-            self.avatarDB = try decoder.decode(
-                [AvatarExcelConfigData].self,
-                from: dataStack[.avatar]!
-            ).filter(\.isValid)
-            self.skillDB = try decoder.decode(
-                [AvatarSkillExcelConfigData].self,
-                from: dataStack[.skill]!
-            ).filter(\.isValid)
-            self.constellationDB = try decoder.decode(
-                [AvatarTalentExcelConfigData].self,
-                from: dataStack[.constellation]!
-            )
-            self.artifactDB = try decoder.decode(
-                [ReliquaryExcelConfigData].self,
-                from: dataStack[.artifact]!
-            )
-            self.artifactSetDB = try decoder.decode(
-                [EquipAffixExcelConfigData].self,
-                from: dataStack[.artifactSet]!
-            ).filter(\.isValid)
-            self.artifactMainPropDB = try decoder.decode(
-                [ReliquaryMainPropExcelConfigData].self,
-                from: dataStack[.artifactMainProp]!
-            )
-            self.artifactSubPropDB = try decoder.decode(
-                [ReliquaryAffixExcelConfigData].self,
-                from: dataStack[.artifactSubProp]!
-            )
-            self.weaponDB = try decoder.decode(
-                [WeaponExcelConfigData].self,
-                from: dataStack[.weapon]!
-            )
-            self.namecardDB = try decoder.decode(
-                [MaterialExcelConfigData].self,
-                from: dataStack[.namecard]!
-            ).filter(\.isValid)
-            self.fightPropDB = try decoder.decode(
-                [ManualTextMapConfigData].self,
-                from: dataStack[.fightProp]!
-            ).filter(\.isValid)
-            self.skillDepotDB = try decoder.decode(
-                [AvatarSkillDepotExcelConfigData].self,
-                from: dataStack[.skillDepot]!
-            )
-            self.costumeDB = try decoder.decode(
-                [AvatarCostumeExcelConfigData].self,
-                from: dataStack[.costume]!
-            ).filter(\.isValid)
-            self.profilePictureDB = try decoder.decode(
-                [ProfilePictureExcelConfigData].self,
-                from: dataStack[.profilePicture]!
-            )
+            func decode<T: Decodable>(_ type: T.Type, for tag: DimModels4GI) throws -> T {
+                do {
+                    return try decoder.decode(type, from: dataStack[tag]!)
+                } catch let decodingError as DecodingError {
+                    print("// Decoding failed for: \(tag.jsonURL.absoluteString)")
+                    throw decodingError
+                }
+            }
+
+            self.avatarDB = try decode([AvatarExcelConfigData].self, for: .avatar).filter(\.isValid)
+            self.skillDB = try decode([AvatarSkillExcelConfigData].self, for: .skill).filter(\.isValid)
+            self.constellationDB = try decode([AvatarTalentExcelConfigData].self, for: .constellation)
+            self.artifactDB = try decode([ReliquaryExcelConfigData].self, for: .artifact)
+            self.artifactSetDB = try decode([EquipAffixExcelConfigData].self, for: .artifactSet).filter(\.isValid)
+            self.artifactMainPropDB = try decode([ReliquaryMainPropExcelConfigData].self, for: .artifactMainProp)
+            self.artifactSubPropDB = try decode([ReliquaryAffixExcelConfigData].self, for: .artifactSubProp)
+            self.weaponDB = try decode([WeaponExcelConfigData].self, for: .weapon)
+            self.namecardDB = try decode([MaterialExcelConfigData].self, for: .namecard).filter(\.isValid)
+            self.fightPropDB = try decode([ManualTextMapConfigData].self, for: .fightProp).filter(\.isValid)
+            self.skillDepotDB = try decode([AvatarSkillDepotExcelConfigData].self, for: .skillDepot)
+            self.costumeDB = try decode([AvatarCostumeExcelConfigData].self, for: .costume).filter(\.isValid)
+            self.profilePictureDB = try decode([ProfilePictureExcelConfigData].self, for: .profilePicture)
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne)
                 bleach()

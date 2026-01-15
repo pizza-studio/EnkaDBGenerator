@@ -85,6 +85,43 @@ extension EnkaDBGenerator.SupportedGame {
         guard !oneByOne else {
             return try await fetchRawLangData1By1(lang: lang, neededHashIDs: neededHashIDs)
         }
+        func decodeLangDict(_ data: Data, url: URL) throws -> [String: String] {
+            do {
+                return try JSONDecoder().decode([String: String].self, from: data)
+            } catch let decodingError as DecodingError {
+                print("// Decoding failed for: \(url.absoluteString)")
+                throw decodingError
+            }
+        }
+        func fetchIfAvailable(from url: URL) async throws -> Data? {
+            do {
+                let (data, response) = try await URLSession.shared.asyncData(from: url)
+                if let http = response as? HTTPURLResponse, (200 ..< 300).contains(http.statusCode) {
+                    return data
+                }
+                return nil
+            } catch let urlError as URLError {
+                if urlError.code == .badServerResponse || urlError.code == .fileDoesNotExist {
+                    return nil
+                }
+                throw urlError
+            }
+        }
+
+        func fetchTextMapChunks(for locale: EnkaDBGenerator.GameLanguage) async throws -> [[String: String]] {
+            let stem = locale.textMapFileStem
+            let baseURL = URL(string: repoHeader + repoName + "TextMap/\(stem).json")!
+            if let data = try await fetchIfAvailable(from: baseURL) {
+                return [try decodeLangDict(data, url: baseURL)]
+            }
+            var collected = [[String: String]]()
+            for idx in 0 ..< 10 {
+                let chunkURL = URL(string: repoHeader + repoName + "TextMap/\(stem)_\(idx).json")!
+                guard let data = try await fetchIfAvailable(from: chunkURL) else { break }
+                collected.append(try decodeLangDict(data, url: chunkURL))
+            }
+            return collected
+        }
         return try await withThrowingTaskGroup(
             of: (subDict: [String: String], lang: EnkaDBGenerator.GameLanguage).self,
             returning: [String: [String: String]].self
@@ -104,12 +141,10 @@ extension EnkaDBGenerator.SupportedGame {
             #endif
             langs.forEach { locale in
                 taskGroup.addTask {
-                    let urls = getLangDataURLs(for: locale)
+                    let dictStacks = try await fetchTextMapChunks(for: locale)
                     var finalDict = [String: String]()
-                    for url in urls {
-                        print("// Fetching: \(url.absoluteString)")
-                        let (data, _) = try await URLSession.shared.asyncData(from: url)
-                        var dict = try JSONDecoder().decode([String: String].self, from: data)
+                    for urlBasedDict in dictStacks {
+                        var dict = urlBasedDict
                         let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                         keysToRemove.forEach { dict.removeValue(forKey: $0) }
                         if locale == .langJP {
@@ -148,6 +183,43 @@ extension EnkaDBGenerator.SupportedGame {
     ) async throws
         -> [String: [String: String]] {
         var resultBuffer = [String: [String: String]]()
+        func decodeLangDict(_ data: Data, url: URL) throws -> [String: String] {
+            do {
+                return try JSONDecoder().decode([String: String].self, from: data)
+            } catch let decodingError as DecodingError {
+                print("// Decoding failed for: \(url.absoluteString)")
+                throw decodingError
+            }
+        }
+        func fetchIfAvailable(from url: URL) async throws -> Data? {
+            do {
+                let (data, response) = try await URLSession.shared.asyncData(from: url)
+                if let http = response as? HTTPURLResponse, (200 ..< 300).contains(http.statusCode) {
+                    return data
+                }
+                return nil
+            } catch let urlError as URLError {
+                if urlError.code == .badServerResponse || urlError.code == .fileDoesNotExist {
+                    return nil
+                }
+                throw urlError
+            }
+        }
+
+        func fetchTextMapChunks(for locale: EnkaDBGenerator.GameLanguage) async throws -> [[String: String]] {
+            let stem = locale.textMapFileStem
+            let baseURL = URL(string: repoHeader + repoName + "TextMap/\(stem).json")!
+            if let data = try await fetchIfAvailable(from: baseURL) {
+                return [try decodeLangDict(data, url: baseURL)]
+            }
+            var collected = [[String: String]]()
+            for idx in 0 ..< 10 {
+                let chunkURL = URL(string: repoHeader + repoName + "TextMap/\(stem)_\(idx).json")!
+                guard let data = try await fetchIfAvailable(from: chunkURL) else { break }
+                collected.append(try decodeLangDict(data, url: chunkURL))
+            }
+            return collected
+        }
         #if DEBUG
         print("// ------------------------")
         print("// This program is compiled as a debug build, therefore ..")
@@ -162,12 +234,10 @@ extension EnkaDBGenerator.SupportedGame {
         let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
         #endif
         for locale in langs {
-            let urls = getLangDataURLs(for: locale)
+            let dictStacks = try await fetchTextMapChunks(for: locale)
             var finalDict = [String: String]()
-            for url in urls {
-                print("// Fetching: \(url.absoluteString)")
-                let (data, _) = try await URLSession.shared.asyncData(from: url)
-                var dict = try JSONDecoder().decode([String: String].self, from: data)
+            for urlBasedDict in dictStacks {
+                var dict = urlBasedDict
                 let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                 keysToRemove.forEach { dict.removeValue(forKey: $0) }
                 if locale == .langJP {

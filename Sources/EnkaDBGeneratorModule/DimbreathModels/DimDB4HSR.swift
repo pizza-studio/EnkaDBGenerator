@@ -19,88 +19,109 @@ extension DimModels4HSR {
             )
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromPascalCase // Vital Important。
-            self.avatarDB = try decoder.decode(
+            func decode<T: Decodable>(
+                _ type: T.Type,
+                for tag: DimModels4HSR,
+                isCollab: Bool = false
+            ) throws
+                -> T {
+                let stack = isCollab ? dataStack4Collab : dataStack
+                let url = isCollab ? (tag.jsonURL4Collab ?? tag.jsonURL) : tag.jsonURL
+                do {
+                    return try decoder.decode(type, from: stack[tag]!)
+                } catch let decodingError as DecodingError {
+                    print("// Decoding failed for: \(url.absoluteString)")
+                    throw decodingError
+                }
+            }
+
+            self.avatarDB = try decode(
                 [AvatarConfig].self,
-                from: dataStack[.avatar]!
-            ).filter(\.isValid) + decoder.decode(
+                for: .avatar
+            ).filter(\.isValid) + decode(
                 [AvatarConfig].self,
-                from: dataStack4Collab[.avatar]!
+                for: .avatar,
+                isCollab: true
             ).filter(\.isValid)
             avatarDB.sort { $0.avatarID < $1.avatarID }
-            self.metaAvatarPromotionDB = try decoder.decode(
+            self.metaAvatarPromotionDB = try decode(
                 [AvatarPromotionConfig].self,
-                from: dataStack[.metaAvatarPromotion]!
-            ).filter(\.isValid) + decoder.decode(
+                for: .metaAvatarPromotion
+            ).filter(\.isValid) + decode(
                 [AvatarPromotionConfig].self,
-                from: dataStack4Collab[.metaAvatarPromotion]!
+                for: .metaAvatarPromotion,
+                isCollab: true
             ).filter(\.isValid)
             metaAvatarPromotionDB.sort { $0.avatarID < $1.avatarID }
-            self.equipmentDB = try decoder.decode(
+            self.equipmentDB = try decode(
                 [EquipmentConfig].self,
-                from: dataStack[.equipment]!
+                for: .equipment
             ).filter(\.isValid)
             let allEquipIDs = equipmentDB.map(\.equipmentID)
-            self.metaEquipPromotionDB = try decoder.decode(
+            self.metaEquipPromotionDB = try decode(
                 [EquipmentPromotionConfig].self,
-                from: dataStack[.metaEquipPromotion]!
+                for: .metaEquipPromotion
             ).filter { allEquipIDs.contains($0.equipmentID) }
-            self.metaEqupSkillDB = try decoder.decode(
+            self.metaEqupSkillDB = try decode(
                 [EquipmentSkillConfig].self,
-                from: dataStack[.metaEqupSkill]!
+                for: .metaEqupSkill
             ).filter(\.isValid)
-            self.metaRelicMainAffixDB = try decoder.decode(
+            self.metaRelicMainAffixDB = try decode(
                 [RelicMainAffixConfig].self,
-                from: dataStack[.metaRelicMainAffix]!
+                for: .metaRelicMainAffix
             )
-            self.metaRelicSubAffixDB = try decoder.decode(
+            self.metaRelicSubAffixDB = try decode(
                 [RelicSubAffixConfig].self,
-                from: dataStack[.metaRelicSubAffix]!
+                for: .metaRelicSubAffix
             )
-            self.metaRelicSetSkillDB = try decoder.decode(
+            self.metaRelicSetSkillDB = try decode(
                 [RelicSetSkillConfig].self,
-                from: dataStack[.metaRelicSetSkill]!
+                for: .metaRelicSetSkill
             )
-            self.avatarRankDB = try decoder.decode(
+            self.avatarRankDB = try decode(
                 [AvatarRankConfig].self,
-                from: dataStack[.avatarRank]!
-            ).filter(\.isValid) + decoder.decode(
+                for: .avatarRank
+            ).filter(\.isValid) + decode(
                 [AvatarRankConfig].self,
-                from: dataStack4Collab[.avatarRank]!
+                for: .avatarRank,
+                isCollab: true
             ).filter(\.isValid)
             avatarRankDB.sort { $0.rankID < $1.rankID }
-            self.relicDB = try decoder.decode(
+            self.relicDB = try decode(
                 [RelicConfig].self,
-                from: dataStack[.relic]!
+                for: .relic
             )
-            self.relicDataInfoDB = try decoder.decode(
+            self.relicDataInfoDB = try decode(
                 [RelicDataInfo].self,
-                from: dataStack[.relicDataInfo]!
+                for: .relicDataInfo
             )
-            self.relicSetDB = try decoder.decode(
+            self.relicSetDB = try decode(
                 [RelicSetConfig].self,
-                from: dataStack[.relicSet]!
+                for: .relicSet
             ).filter(\.isValid)
-            self.skillTreeDB = try decoder.decode(
+            self.skillTreeDB = try decode(
                 [AvatarSkillTreeConfig].self,
-                from: dataStack[.skillTree]!
-            ).filter(\.isValid) + decoder.decode(
+                for: .skillTree
+            ).filter(\.isValid) + decode(
                 [AvatarSkillTreeConfig].self,
-                from: dataStack4Collab[.skillTree]!
+                for: .skillTree,
+                isCollab: true
             ).filter(\.isValid)
             skillTreeDB.sort { $0.pointID < $1.pointID }
             skillTreeDB.hookVertices() // Important!!!!
             // Profile Pictures.
-            let pfpDB1 = try decoder.decode(
+            let pfpDB1 = try decode(
                 [PlayerIcon].self,
-                from: dataStack[.profilePicture1]!
+                for: .profilePicture1
             )
-            let pfpDB2 = try decoder.decode(
+            let pfpDB2 = try decode(
                 [PlayerIcon].self,
-                from: dataStack[.profilePicture2]!
+                for: .profilePicture2
             )
-            let pfpDBCollab = try decoder.decode(
+            let pfpDBCollab = try decode(
                 [PlayerIcon].self,
-                from: dataStack4Collab[.profilePicture1]!
+                for: .profilePicture1,
+                isCollab: true
             )
             self.profilePictureDB = pfpDB1 + pfpDB2 + pfpDBCollab
             // Language Table.
