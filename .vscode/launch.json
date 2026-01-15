@@ -1,0 +1,28 @@
+{
+	"configurations": [
+		{
+			"type": "swift",
+			"request": "launch",
+			"sourceLanguages": [
+				"swift"
+			],
+			"args": [],
+			"cwd": "${workspaceFolder:EnkaDBGenerator}",
+			"name": "Debug EnkaDBGenerator",
+			"program": "${workspaceFolder:EnkaDBGenerator}/.build/debug/EnkaDBGenerator",
+			"preLaunchTask": "swift: Build Debug EnkaDBGenerator"
+		},
+		{
+			"type": "swift",
+			"request": "launch",
+			"sourceLanguages": [
+				"swift"
+			],
+			"args": [],
+			"cwd": "${workspaceFolder:EnkaDBGenerator}",
+			"name": "Release EnkaDBGenerator",
+			"program": "${workspaceFolder:EnkaDBGenerator}/.build/release/EnkaDBGenerator",
+			"preLaunchTask": "swift: Build Release EnkaDBGenerator"
+		}
+	]
+}
