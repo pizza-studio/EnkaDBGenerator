@@ -71,7 +71,7 @@ extension EnkaDBGenerator {
         func filenamesForChunks(for game: EnkaDBGenerator.SupportedGame) -> [String] {
             guard game == .genshinImpact else { return [filename] }
             return switch self {
-            case .langTH: [
+            case .langTH, .langRU: [
                     rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_0.json"),
                     rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_1.json"),
                 ]
