@@ -59,8 +59,7 @@ final class EnkaDBGeneratorTestsGI: XCTestCase {
 
 private let lumineReferenceEnkaDBCharJSON = """
 {
-  "Element": "Water",
-  "Consts": [
+  "Consts" : [
     "UI_Talent_S_PlayerWater_01",
     "UI_Talent_S_PlayerWater_02",
     "UI_Talent_U_PlayerWater_01",
@@ -68,16 +67,33 @@ private let lumineReferenceEnkaDBCharJSON = """
     "UI_Talent_U_PlayerWater_02",
     "UI_Talent_S_PlayerWater_04"
   ],
-  "SkillOrder": [100552, 10087, 10088],
-  "Skills": {
-    "10087": "Skill_S_PlayerWater_01",
-    "10088": "Skill_E_PlayerWater_01",
-    "100552": "Skill_A_01"
+  "Costumes" : {
+    "200701" : {
+      "art" : "UI_Costume_PlayerGirlCostumeCWXR",
+      "avatarId" : 10000007,
+      "icon" : "UI_AvatarIcon_PlayerGirlCostumeCWXR",
+      "sideIconName" : "UI_AvatarIcon_Side_PlayerGirlCostumeCWXR"
+    }
   },
-  "NameTextMapHash": 3816664530,
-  "ProudMap": { "10087": 632, "10088": 639, "100552": 631 },
-  "SideIconName": "UI_AvatarIcon_Side_PlayerGirl",
-  "QualityType": "QUALITY_ORANGE",
-  "WeaponType": "WEAPON_SWORD_ONE_HAND"
+  "Element" : "Water",
+  "NameTextMapHash" : 3816664530,
+  "ProudMap" : {
+    "100552" : 631,
+    "10087" : 632,
+    "10088" : 639
+  },
+  "QualityType" : "QUALITY_ORANGE",
+  "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+  "SkillOrder" : [
+    100552,
+    10087,
+    10088
+  ],
+  "Skills" : {
+    "100552" : "Skill_A_01",
+    "10087" : "Skill_S_PlayerWater_01",
+    "10088" : "Skill_E_PlayerWater_01"
+  },
+  "WeaponType" : "WEAPON_SWORD_ONE_HAND"
 }
 """
