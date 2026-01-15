@@ -85,6 +85,14 @@ extension EnkaDBGenerator.SupportedGame {
         guard !oneByOne else {
             return try await fetchRawLangData1By1(lang: lang, neededHashIDs: neededHashIDs)
         }
+        func decodeLangDict(_ data: Data, url: URL) throws -> [String: String] {
+            do {
+                return try JSONDecoder().decode([String: String].self, from: data)
+            } catch let decodingError as DecodingError {
+                print("// Decoding failed for: \(url.absoluteString)")
+                throw decodingError
+            }
+        }
         return try await withThrowingTaskGroup(
             of: (subDict: [String: String], lang: EnkaDBGenerator.GameLanguage).self,
             returning: [String: [String: String]].self
@@ -109,7 +117,7 @@ extension EnkaDBGenerator.SupportedGame {
                     for url in urls {
                         print("// Fetching: \(url.absoluteString)")
                         let (data, _) = try await URLSession.shared.asyncData(from: url)
-                        var dict = try JSONDecoder().decode([String: String].self, from: data)
+                        var dict = try decodeLangDict(data, url: url)
                         let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                         keysToRemove.forEach { dict.removeValue(forKey: $0) }
                         if locale == .langJP {
@@ -148,6 +156,14 @@ extension EnkaDBGenerator.SupportedGame {
     ) async throws
         -> [String: [String: String]] {
         var resultBuffer = [String: [String: String]]()
+        func decodeLangDict(_ data: Data, url: URL) throws -> [String: String] {
+            do {
+                return try JSONDecoder().decode([String: String].self, from: data)
+            } catch let decodingError as DecodingError {
+                print("// Decoding failed for: \(url.absoluteString)")
+                throw decodingError
+            }
+        }
         #if DEBUG
         print("// ------------------------")
         print("// This program is compiled as a debug build, therefore ..")
@@ -167,7 +183,7 @@ extension EnkaDBGenerator.SupportedGame {
             for url in urls {
                 print("// Fetching: \(url.absoluteString)")
                 let (data, _) = try await URLSession.shared.asyncData(from: url)
-                var dict = try JSONDecoder().decode([String: String].self, from: data)
+                var dict = try decodeLangDict(data, url: url)
                 let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                 keysToRemove.forEach { dict.removeValue(forKey: $0) }
                 if locale == .langJP {
