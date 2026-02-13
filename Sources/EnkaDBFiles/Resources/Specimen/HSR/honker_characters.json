@@ -2322,6 +2322,71 @@
       141519
     ]
   },
+  "1501" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1501B.png",
+    "AvatarBaseType" : "Elation",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1501.png",
+    "AvatarFullName" : {
+      "Hash" : "15354342536879577356"
+    },
+    "AvatarName" : {
+      "Hash" : "17862078353219696025"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1501.png",
+    "Element" : "Fire",
+    "RankIDList" : [
+      150101,
+      150102,
+      150103,
+      150104,
+      150105,
+      150106
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150101,
+      150102,
+      150103,
+      150104,
+      150106,
+      150107,
+      150108,
+      150109,
+      150110,
+      150120
+    ]
+  },
+  "1502" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1502B.png",
+    "AvatarBaseType" : "Elation",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1502.png",
+    "AvatarFullName" : {
+      "Hash" : "11478089599346980340"
+    },
+    "AvatarName" : {
+      "Hash" : "5676363387127417629"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1502.png",
+    "Element" : "Physical",
+    "RankIDList" : [
+      150201,
+      150202,
+      150203,
+      150204,
+      150205,
+      150206
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150201,
+      150202,
+      150203,
+      150204,
+      150206,
+      150207,
+      150220
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
