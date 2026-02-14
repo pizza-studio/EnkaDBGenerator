@@ -10,7 +10,7 @@ import FoundationNetworking
 // MARK: - EnkaDBGenerator.SupportedGame
 
 extension EnkaDBGenerator {
-    public enum SupportedGame: CaseIterable {
+    public enum SupportedGame: CaseIterable, Sendable {
         case genshinImpact
         case starRail
 

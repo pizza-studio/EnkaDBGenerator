@@ -5,24 +5,26 @@
 @testable import EnkaDBGeneratorModule
 import EnkaDBModels
 import Foundation
-import XCTest
+import Testing
 
 // MARK: - EnkaDBGeneratorTestsGI
 
-final class EnkaDBGeneratorTestsGI: XCTestCase {
+@Suite(.serialized)
+struct EnkaDBGeneratorTestsGI {
+    @Test
     func testInitializingDimDB4GI() async throws {
         let jsonGI = try await DimModels4GI.DimDB4GI(withLang: true)
         if let lumine = jsonGI.avatarDB.first(where: { $0.id == 10000007 }) {
             let text = jsonGI.langTable["ja-jp"]?[lumine.nameTextMapHash.description]
-            XCTAssertNotNil(text)
-            XCTAssertEqual(text, "蛍")
+            #expect(text == "蛍")
         } else {
-            assertionFailure("Lumine is missing.")
+            Issue.record("Lumine is missing.")
         }
         let compiledMap = jsonGI.assembleEnkaLangMap()
-        XCTAssertNotNil(compiledMap["uk"]?["level"])
+        #expect(nil != compiledMap["uk"]?["level"])
     }
 
+    @Test
     func testAssemblingEnkaDB4GI() async throws {
         let jsonGI = try await DimModels4GI.DimDB4GI(withLang: false)
         let nonProtagonistCharacterCountRAW: Int = jsonGI.avatarDB.filter {
@@ -47,13 +49,13 @@ final class EnkaDBGeneratorTestsGI: XCTestCase {
         let nonProtagonistCharacterCountFromResult = summarizedCharacterMap.filter {
             !$0.key.contains("-")
         }.count
-        XCTAssertEqual(referenceAnswer, hydroLumine)
-        XCTAssertEqual(nonProtagonistCharacterCountFromResult - 2, nonProtagonistCharacterCountRAW)
+        #expect(referenceAnswer == hydroLumine)
+        #expect(nonProtagonistCharacterCountFromResult - 2 == nonProtagonistCharacterCountRAW)
         // Profile Pictures.
         let pfpTable = jsonGI.assembleEnkaProfilePictures()
         let cardTable = jsonGI.assembleEnkaNameCards()
-        XCTAssertFalse(pfpTable.isEmpty)
-        XCTAssertFalse(cardTable.isEmpty)
+        #expect(!pfpTable.isEmpty)
+        #expect(!cardTable.isEmpty)
     }
 }
 

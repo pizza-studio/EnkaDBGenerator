@@ -7,14 +7,14 @@ on:
 
 jobs:
     update:
-        runs-on: macOS-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
 
             - name: Set up Swift
-              uses: swift-actions/setup-swift@v2
+              uses: SwiftyLab/setup-swift@latest
 
             - name: Update Specimen Data
               id: compare_shas

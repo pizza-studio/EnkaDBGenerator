@@ -5,16 +5,21 @@
 @testable import EnkaDBFiles
 import EnkaDBModels
 import Foundation
-import XCTest
+import Testing
 
-final class EnkaDBFilesTests: XCTestCase {
+@Suite(.serialized)
+struct EnkaDBFilesTests {
+    @Test
     func testBundledFileAccess() async throws {
         let obj = EnkaDBFileProvider.getBundledJSONFileObject(
             fileNameStem: "namecards", type: EnkaDBModelsGI.NameCardDict.self
         ) { decoder in
             decoder.keyDecodingStrategy = .useDefaultKeys
         }
-        XCTAssertNotNil(obj)
-        if let obj { print(obj) }
+        guard let obj else {
+            Issue.record("Bundled JSON File Decoding Task Failed.")
+            return
+        }
+        print(obj)
     }
 }

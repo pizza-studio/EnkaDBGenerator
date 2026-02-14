@@ -4,6 +4,6 @@
 
 extension EnkaDBGenerator {
     public enum Config {
-        public static var generateCondensedJSONFiles = false
+        @MainActor public static var generateCondensedJSONFiles = false
     }
 }

@@ -5,26 +5,28 @@
 @testable import EnkaDBGeneratorModule
 import EnkaDBModels
 import Foundation
-import XCTest
+import Testing
 
 // MARK: - EnkaDBGeneratorTestsHSR
 
-final class EnkaDBGeneratorTestsHSR: XCTestCase {
+@Suite(.serialized)
+struct EnkaDBGeneratorTestsHSR {
+    @Test
     func testInitializingDimDB4HSR() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: true)
         if let physicalStelle = jsonGI.avatarDB.first(where: { $0.id == 8002 }) {
             let text = jsonGI.langTable["ja-jp"]?[physicalStelle.nameTextMapHash.description]
-            XCTAssertNotNil(text)
-            XCTAssertEqual(text, "星")
+            #expect(text == "星")
         } else {
-            assertionFailure("Stelle is missing.")
+            Issue.record("Stelle is missing.")
         }
         let compiledMap = jsonGI.assembleEnkaLangMap()
-        XCTAssertNotNil(compiledMap["zh-tw"]?["su"])
+        #expect(nil != compiledMap["zh-tw"]?["su"])
     }
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Characters() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaCharacters()
@@ -48,7 +50,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.Character.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -61,6 +63,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Weapons() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaWeapons()
@@ -82,7 +85,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.Weapon.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(lightCone20K, expected)
+        #expect(lightCone20K == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(lightCone20K)
@@ -95,6 +98,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Relics() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaArtifactRelics()
@@ -116,7 +120,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.Artifact.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -129,6 +133,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Skills() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaSkills()
@@ -146,7 +151,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.Skill.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -159,6 +164,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Ranks() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaRanks()
@@ -176,7 +182,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.SkillRank.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -189,6 +195,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_SkillTree() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = try jsonGI.assembleEnkaSkillTree()
@@ -218,7 +225,7 @@ extension EnkaDBGeneratorTestsHSR {
             EnkaDBModelsHSR.SkillTree.self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -231,6 +238,7 @@ extension EnkaDBGeneratorTestsHSR {
 }
 
 extension EnkaDBGeneratorTestsHSR {
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_AvatarPromotion() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRawAvatarMetaDict()
@@ -260,7 +268,7 @@ extension EnkaDBGeneratorTestsHSR {
             [String: EnkaDBModelsHSR.Meta.AvatarMeta].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -271,6 +279,7 @@ extension EnkaDBGeneratorTestsHSR {
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_EquipPromotion() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRawEquipmentMetaDict()
@@ -293,7 +302,7 @@ extension EnkaDBGeneratorTestsHSR {
             [String: EnkaDBModelsHSR.Meta.EquipmentMeta].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -304,6 +313,7 @@ extension EnkaDBGeneratorTestsHSR {
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_EquipSkill() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRawEquipSkillMetaDict()
@@ -324,7 +334,7 @@ extension EnkaDBGeneratorTestsHSR {
             [String: [String: [String: Double]]].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -335,6 +345,7 @@ extension EnkaDBGeneratorTestsHSR {
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_RelicMainAffix() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRelicMainAffixTable()
@@ -357,7 +368,7 @@ extension EnkaDBGeneratorTestsHSR {
             [String: EnkaDBModelsHSR.Meta.RawRelicDB.MainAffix].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -368,6 +379,7 @@ extension EnkaDBGeneratorTestsHSR {
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_RelicSubAffix() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRelicSubAffixTable()
@@ -396,7 +408,7 @@ extension EnkaDBGeneratorTestsHSR {
             [String: EnkaDBModelsHSR.Meta.RawRelicDB.SubAffix].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
@@ -407,6 +419,7 @@ extension EnkaDBGeneratorTestsHSR {
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_RelicSetSkill() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeRelicSetSkillTable()
@@ -419,17 +432,18 @@ extension EnkaDBGeneratorTestsHSR {
             [String: [String: [String: Double]]].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
         guard let str = String(data: data, encoding: .utf8) else {
-            assertionFailure("Encoding Error.")
-            exit(1)
+            Issue.record("Encoding Error.")
+            return
         }
         print(str)
     }
 
+    @Test
     func testAssemblingEnkaDB4HSR_Meta_SkillTreeMeta() async throws {
         let jsonGI = try await DimModels4HSR.DimDB4HSR(withLang: false)
         let assembled = jsonGI.makeSkillTreeMetaDict()
@@ -442,13 +456,13 @@ extension EnkaDBGeneratorTestsHSR {
             [String: [String: [String: Double]]].self,
             from: expectedJSON.data(using: .utf8) ?? .init([])
         )
-        XCTAssertEqual(matched, expected)
+        #expect(matched == expected)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
         let data = try encoder.encode(matched)
         guard let str = String(data: data, encoding: .utf8) else {
-            assertionFailure("Encoding Error.")
-            exit(1)
+            Issue.record("Encoding Error.")
+            return
         }
         print(str)
     }
