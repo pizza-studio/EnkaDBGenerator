@@ -57,7 +57,7 @@
 		"ImaginaryResistanceDelta": "Imaginary RES Boost",
 		"SpeedDelta": "SPD",
 		"ElationDamageAddedRatio": "Elation",
-        "ElationDamageAddedRatioBase": "Elation",
+        "ElationDamageAddedRatioBase": "Elation"
 	},
 	"ru": {
 		"su": "Виртуальная вселенная",
@@ -117,7 +117,7 @@
 		"ImaginaryResistanceDelta": "Бонус мним. сопр.",
 		"SpeedDelta": "Скорость",
 		"ElationDamageAddedRatio": "Радость",
-        "ElationDamageAddedRatioBase": "Радость",
+        "ElationDamageAddedRatioBase": "Радость"
 	},
 	"vi": {
 		"su": "Vũ Trụ Mô Phỏng",
