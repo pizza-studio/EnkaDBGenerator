@@ -55,7 +55,9 @@
 		"WindResistanceDelta": "Wind RES Boost",
 		"QuantumResistanceDelta": "Quantum RES Boost",
 		"ImaginaryResistanceDelta": "Imaginary RES Boost",
-		"SpeedDelta": "SPD"
+		"SpeedDelta": "SPD",
+		"ElationDamageAddedRatio": "Elation",
+        "ElationDamageAddedRatioBase": "Elation"
 	},
 	"ru": {
 		"su": "Виртуальная вселенная",
@@ -113,7 +115,9 @@
 		"WindResistanceDelta": "Бонус ветр. сопр.",
 		"QuantumResistanceDelta": "Бонус квант. сопр.",
 		"ImaginaryResistanceDelta": "Бонус мним. сопр.",
-		"SpeedDelta": "Скорость"
+		"SpeedDelta": "Скорость",
+		"ElationDamageAddedRatio": "Радость",
+        "ElationDamageAddedRatioBase": "Радость"
 	},
 	"vi": {
 		"su": "Vũ Trụ Mô Phỏng",
@@ -171,7 +175,9 @@
 		"WindResistanceDelta": "Tăng Kháng Phong",
 		"QuantumResistanceDelta": "Tăng Kháng Lượng Tử",
 		"ImaginaryResistanceDelta": "Tăng Kháng Số Ảo",
-		"SpeedDelta": "Tốc Độ"
+		"SpeedDelta": "Tốc Độ",
+		"ElationDamageAddedRatio": "Độ Vui Vẻ",
+        "ElationDamageAddedRatioBase": "Độ Vui Vẻ"
 	},
 	"th": {
 		"su": "Simulated Universe",
@@ -229,7 +235,9 @@
 		"WindResistanceDelta": "เพิ่มความต้านทานลม",
 		"QuantumResistanceDelta": "เพิ่มความต้านทานควอนตัม",
 		"ImaginaryResistanceDelta": "เพิ่มความต้านทานจินตภาพ",
-		"SpeedDelta": "ความเร็ว"
+		"SpeedDelta": "ความเร็ว",
+		"ElationDamageAddedRatio": "ระดับปิติสุข",
+        "ElationDamageAddedRatioBase": "ระดับปิติสุข"
 	},
 	"pt": {
 		"su": "Universo Simulado",
@@ -287,7 +295,9 @@
 		"WindResistanceDelta": "Bônus de RES a Vento",
 		"QuantumResistanceDelta": "Bônus de RES a Quântico",
 		"ImaginaryResistanceDelta": "Bônus de RES a Imaginário",
-		"SpeedDelta": "VEL"
+		"SpeedDelta": "VEL",
+		"ElationDamageAddedRatio": "Euforia",
+        "ElationDamageAddedRatioBase": "Euforia"
 	},
 	"ko": {
 		"su": "시뮬레이션 우주",
@@ -345,7 +355,9 @@
 		"WindResistanceDelta": "바람 속성 저항 증가",
 		"QuantumResistanceDelta": "양자 속성 저항 증가",
 		"ImaginaryResistanceDelta": "허수 속성 저항 증가",
-		"SpeedDelta": "속도"
+		"SpeedDelta": "속도",
+		"ElationDamageAddedRatio": "환락도",
+        "ElationDamageAddedRatioBase": "환락도"
 	},
 	"ja": {
 		"su": "模擬宇宙",
@@ -403,7 +415,9 @@
 		"WindResistanceDelta": "風属性耐性",
 		"QuantumResistanceDelta": "量子属性耐性",
 		"ImaginaryResistanceDelta": "虚数属性耐性",
-		"SpeedDelta": "速度"
+		"SpeedDelta": "速度",
+		"ElationDamageAddedRatio": "愉悦度",
+        "ElationDamageAddedRatioBase": "愉悦度"
 	},
 	"id": {
 		"su": "Simulated Universe",
@@ -461,7 +475,9 @@
 		"WindResistanceDelta": "Wind RES Meningkat",
 		"QuantumResistanceDelta": "Quantum RES Meningkat",
 		"ImaginaryResistanceDelta": "Imaginary RES Meningkat",
-		"SpeedDelta": "SPD"
+		"SpeedDelta": "SPD",
+		"ElationDamageAddedRatio": "Tingkat Elation",
+        "ElationDamageAddedRatioBase": "Tingkat Elation"
 	},
 	"fr": {
 		"su": "Univers simulé",
@@ -519,7 +535,9 @@
 		"WindResistanceDelta": "Augm. de la RÉS au vent",
 		"QuantumResistanceDelta": "Augm. de la RÉS quantique",
 		"ImaginaryResistanceDelta": "Augm. de la RÉS imaginaire",
-		"SpeedDelta": "VIT"
+		"SpeedDelta": "VIT",
+		"ElationDamageAddedRatio": "Allégresse",
+        "ElationDamageAddedRatioBase": "Allégresse"
 	},
 	"es": {
 		"su": "Universo Simulado",
@@ -577,7 +595,9 @@
 		"WindResistanceDelta": "Aumento de RES a Viento",
 		"QuantumResistanceDelta": "Aumento de RES a Cuántico",
 		"ImaginaryResistanceDelta": "Aumento de RES a Imaginario",
-		"SpeedDelta": "VEL"
+		"SpeedDelta": "VEL",
+		"ElationDamageAddedRatio": "Exultación",
+        "ElationDamageAddedRatioBase": "Exultación"
 	},
 	"de": {
 		"su": "Universum-Simulation",
@@ -635,7 +655,9 @@
 		"WindResistanceDelta": "Wind-WDS-Erhöhung",
 		"QuantumResistanceDelta": "Quanten-WDS-Erhöhung",
 		"ImaginaryResistanceDelta": "Erhöhung des imaginären WDS",
-		"SpeedDelta": "GES"
+		"SpeedDelta": "GES",
+		"ElationDamageAddedRatio": "Hochgefühl",
+        "ElationDamageAddedRatioBase": "Hochgefühl"
 	},
 	"zh-tw": {
 		"su": "模擬宇宙",
@@ -693,7 +715,9 @@
 		"WindResistanceDelta": "風屬性抗性提高",
 		"QuantumResistanceDelta": "量子屬性抗性提高",
 		"ImaginaryResistanceDelta": "虛數屬性抗性提高",
-		"SpeedDelta": "速度"
+		"SpeedDelta": "速度",
+		"ElationDamageAddedRatio": "歡愉度",
+        "ElationDamageAddedRatioBase": "歡愉度"
 	},
 	"zh-cn": {
 		"su": "模拟宇宙",
@@ -752,6 +776,8 @@
 		"WindResistanceDelta": "风属性抗性提高",
 		"QuantumResistanceDelta": "量子属性抗性提高",
 		"ImaginaryResistanceDelta": "虚数属性抗性提高",
-		"SpeedDelta": "速度"
+		"SpeedDelta": "速度",
+		"ElationDamageAddedRatio": "欢愉度",
+        "ElationDamageAddedRatioBase": "欢愉度"
 	}
 }
