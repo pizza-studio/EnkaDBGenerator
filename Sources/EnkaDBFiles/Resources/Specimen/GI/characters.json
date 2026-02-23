@@ -4386,5 +4386,35 @@
       "11275" : "Skill_E_Illuga_01"
     },
     "WeaponType" : "WEAPON_POLE"
+  },
+  "10000128" : {
+    "Consts" : [
+      "UI_Talent_S_Varka_01",
+      "UI_Talent_S_Varka_02",
+      "UI_Talent_U_Varka_01",
+      "UI_Talent_S_Varka_03",
+      "UI_Talent_U_Varka_02",
+      "UI_Talent_S_Varka_04"
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 963351866,
+    "ProudMap" : {
+      "11281" : 12831,
+      "11282" : 12832,
+      "11285" : 12839
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Varka",
+    "SkillOrder" : [
+      11281,
+      11282,
+      11285
+    ],
+    "Skills" : {
+      "11281" : "Skill_A_04",
+      "11282" : "Skill_S_Varka_01",
+      "11285" : "Skill_E_Varka_01"
+    },
+    "WeaponType" : "WEAPON_CLAYMORE"
   }
 }
