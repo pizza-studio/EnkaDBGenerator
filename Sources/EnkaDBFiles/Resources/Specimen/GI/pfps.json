@@ -134,6 +134,9 @@
   "1101" : {
     "iconPath" : "UI_AvatarIcon_BennettCostumeSummer_Circle"
   },
+  "11100" : {
+    "iconPath" : "UI_AvatarIcon_Varka_Circle"
+  },
   "1200" : {
     "iconPath" : "UI_AvatarIcon_Noel_Circle"
   },
