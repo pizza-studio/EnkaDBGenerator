@@ -6095,6 +6095,78 @@
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1502_Elation.png",
     "PointType" : 4
   },
+  "1504001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_Normal.png",
+    "PointType" : 2
+  },
+  "1504002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_BP.png",
+    "PointType" : 2
+  },
+  "1504003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_Ultra.png",
+    "PointType" : 2
+  },
+  "1504004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_Passive.png",
+    "PointType" : 2
+  },
+  "1504007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_Maze.png",
+    "PointType" : 2
+  },
+  "1504101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1504102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1504103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1504_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1504201" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1504202" : {
+    "IconPath" : "SpriteOutput/UI/IconThunderAddedRatio.png",
+    "PointType" : 1
+  },
+  "1504203" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1504204" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1504205" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1504206" : {
+    "IconPath" : "SpriteOutput/UI/IconThunderAddedRatio.png",
+    "PointType" : 1
+  },
+  "1504207" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1504208" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1504209" : {
+    "IconPath" : "SpriteOutput/UI/IconThunderAddedRatio.png",
+    "PointType" : 1
+  },
+  "1504210" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
   "8001001" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_8001_Normal.png",
     "PointType" : 2

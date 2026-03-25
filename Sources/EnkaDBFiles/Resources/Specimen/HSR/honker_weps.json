@@ -1199,6 +1199,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/23054.png",
     "Rarity" : 5
   },
+  "23056" : {
+    "AvatarBaseType" : "Rogue",
+    "EquipmentName" : {
+      "Hash" : "580008868750168993"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23056.png",
+    "Rarity" : 5
+  },
   "24000" : {
     "AvatarBaseType" : "Warrior",
     "EquipmentName" : {
@@ -1245,6 +1253,14 @@
       "Hash" : "10592306546445443705"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/24005.png",
+    "Rarity" : 5
+  },
+  "24006" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "13065036285849747195"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/24006.png",
     "Rarity" : 5
   }
 }
