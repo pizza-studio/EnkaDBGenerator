@@ -2387,6 +2387,36 @@
       150220
     ]
   },
+  "1504" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1504B.png",
+    "AvatarBaseType" : "Rogue",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1504.png",
+    "AvatarFullName" : {
+      "Hash" : "2736458134374330701"
+    },
+    "AvatarName" : {
+      "Hash" : "16507315893888115872"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1504.png",
+    "Element" : "Thunder",
+    "RankIDList" : [
+      150401,
+      150402,
+      150403,
+      150404,
+      150405,
+      150406
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150401,
+      150402,
+      150403,
+      150404,
+      150406,
+      150407
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
