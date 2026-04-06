@@ -92,7 +92,7 @@ extension EnkaDBGenerator.SupportedGame {
             do {
                 return try JSONDecoder().decode([String: String].self, from: data)
             } catch let decodingError as DecodingError {
-                print("// Decoding failed for: \(url.absoluteString)")
+                fputs("// Decoding failed for: \(url.absoluteString)\n", stderr)
                 throw decodingError
             }
         }
@@ -101,16 +101,16 @@ extension EnkaDBGenerator.SupportedGame {
             returning: [String: [String: String]].self
         ) { taskGroup in
             #if DEBUG
-            print("// ------------------------")
-            print("// This program is compiled as a debug build, therefore ..")
-            print("// .. the localization data are gonna fetched for the following languages only:")
-            print("// [ja-JP] [zh-Hans] [en-US].")
-            print("// ------------------------")
+            fputs("// ------------------------\n", stderr)
+            fputs("// This program is compiled as a debug build, therefore ..\n", stderr)
+            fputs("// .. the localization data are gonna fetched for the following languages only:\n", stderr)
+            fputs("// [ja-JP] [zh-Hans] [en-US].\n", stderr)
+            fputs("// ------------------------\n", stderr)
             let langs = lang ?? [.langJP, .langEN, .langCHS]
             #else
-            print("// ------------------------")
-            print("// Fetching the localization data for all supported languages.")
-            print("// ------------------------")
+            fputs("// ------------------------\n", stderr)
+            fputs("// Fetching the localization data for all supported languages.\n", stderr)
+            fputs("// ------------------------\n", stderr)
             let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
             #endif
             langs.forEach { locale in
@@ -120,10 +120,10 @@ extension EnkaDBGenerator.SupportedGame {
                     for url in urls {
                         let data: Data
                         if url.isFileURL {
-                            print("// Reading local: \(url.path)")
+                            fputs("// Reading local: \(url.path)\n", stderr)
                             data = try Data(contentsOf: url)
                         } else {
-                            print("// Fetching: \(url.absoluteString)")
+                            fputs("// Fetching: \(url.absoluteString)\n", stderr)
                             let (d, _) = try await URLSession.shared.asyncData(from: url)
                             data = d
                         }
@@ -171,21 +171,21 @@ extension EnkaDBGenerator.SupportedGame {
             do {
                 return try JSONDecoder().decode([String: String].self, from: data)
             } catch let decodingError as DecodingError {
-                print("// Decoding failed for: \(url.absoluteString)")
+                fputs("// Decoding failed for: \(url.absoluteString)\n", stderr)
                 throw decodingError
             }
         }
         #if DEBUG
-        print("// ------------------------")
-        print("// This program is compiled as a debug build, therefore ..")
-        print("// .. the localization data are gonna fetched for the following languages only:")
-        print("// [ja-JP] [zh-Hans] [en-US].")
-        print("// ------------------------")
+        fputs("// ------------------------\n", stderr)
+        fputs("// This program is compiled as a debug build, therefore ..\n", stderr)
+        fputs("// .. the localization data are gonna fetched for the following languages only:\n", stderr)
+        fputs("// [ja-JP] [zh-Hans] [en-US].\n", stderr)
+        fputs("// ------------------------\n", stderr)
         let langs = lang ?? [.langJP, .langEN, .langCHS]
         #else
-        print("// ------------------------")
-        print("// Fetching the localization data for all supported languages.")
-        print("// ------------------------")
+        fputs("// ------------------------\n", stderr)
+        fputs("// Fetching the localization data for all supported languages.\n", stderr)
+        fputs("// ------------------------\n", stderr)
         let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
         #endif
         for locale in langs {
@@ -194,10 +194,10 @@ extension EnkaDBGenerator.SupportedGame {
             for url in urls {
                 let data: Data
                 if url.isFileURL {
-                    print("// Reading local: \(url.path)")
+                    fputs("// Reading local: \(url.path)\n", stderr)
                     data = try Data(contentsOf: url)
                 } else {
-                    print("// Fetching: \(url.absoluteString)")
+                    fputs("// Fetching: \(url.absoluteString)\n", stderr)
                     let (d, _) = try await URLSession.shared.asyncData(from: url)
                     data = d
                 }

@@ -30,25 +30,25 @@ case 2, 3:
     }
     let url = URL(fileURLWithPath: argLast)
     if useOneByOne {
-        print("// =========================")
-        print("// Windows platform detected, will handle tasks one-by-one in lieu of Swift taskGroups.")
-        print("// -------------------------")
-        print(argumentTextTutorial)
+        fputs("// =========================\n", stderr)
+        fputs("// Windows platform detected, will handle tasks one-by-one in lieu of Swift taskGroups.\n", stderr)
+        fputs("// -------------------------\n", stderr)
+        fputs(argumentTextTutorial + "\n", stderr)
     }
 
     if cmdArgs.count == 3,
        let arg3rd = cmdArgs.dropFirst().first,
        arg3rd.lowercased() == "-tiny" {
         EnkaDBGenerator.Config.generateCondensedJSONFiles = true
-        print("// =========================")
-        print("// `-tiny` argument retrieved, will generate minified JSON files instead.")
-        print("// -------------------------")
+        fputs("// =========================\n", stderr)
+        fputs("// `-tiny` argument retrieved, will generate minified JSON files instead.\n", stderr)
+        fputs("// -------------------------\n", stderr)
     }
 
     if let localPath {
-        print("// =========================")
-        print("// Using local data path: \(localPath)")
-        print("// -------------------------")
+        fputs("// =========================\n", stderr)
+        fputs("// Using local data path: \(localPath)\n", stderr)
+        fputs("// -------------------------\n", stderr)
     }
 
     do {

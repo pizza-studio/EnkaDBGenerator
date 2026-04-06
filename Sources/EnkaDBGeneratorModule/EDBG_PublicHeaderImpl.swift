@@ -14,11 +14,11 @@ extension EnkaDBGenerator {
         oneByOne: Bool = false,
         localPath: String? = nil
     ) async throws {
-        print("// =========================")
-        print("// Start writing EnkaDB json files for \(game.englishBrandName).")
-        print("// -------------------------")
-        print("// Proposed writing destination: \(outputURL.absoluteString)")
-        print("// -------------------------")
+        fputs("// =========================\n", stderr)
+        fputs("// Start writing EnkaDB json files for \(game.englishBrandName).\n", stderr)
+        fputs("// -------------------------\n", stderr)
+        fputs("// Proposed writing destination: \(outputURL.absoluteString)\n", stderr)
+        fputs("// -------------------------\n", stderr)
         let fileMgr = FileManager.default
         var isDirectory: ObjCBool = .init(booleanLiteral: false)
         let exists = fileMgr.fileExists(
@@ -28,33 +28,33 @@ extension EnkaDBGenerator {
             throw EDBGError.fileWritingAccessError(msg: "Destination is not a directory.")
         }
         if !exists {
-            print("// Target folder not exist. Attempting to create it.")
+            fputs("// Target folder not exist. Attempting to create it.\n", stderr)
             try fileMgr.createDirectory(at: outputURL, withIntermediateDirectories: true)
-            print("// Target folder created successfully.")
-            print("// -------------------------")
+            fputs("// Target folder created successfully.\n", stderr)
+            fputs("// -------------------------\n", stderr)
         }
         // Folders prepared / confirmed. Proceeding.
-        print("// Start fetching files from Dimbreath's repository...")
+        fputs("// Start fetching files from Dimbreath's repository...\n", stderr)
         let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne, localPath: localPath)
-        print("// Succeeded in fetching files from Dimbreath's repository.")
-        print("// -------------------------")
-        print("// Start assembling EnkaDB JSON files.")
+        fputs("// Succeeded in fetching files from Dimbreath's repository.\n", stderr)
+        fputs("// -------------------------\n", stderr)
+        fputs("// Start assembling EnkaDB JSON files.\n", stderr)
         let filesToRender = try theDB.packObjects()
-        print("// Succeeded in assembling EnkaDB JSON files. Exporting...")
+        fputs("// Succeeded in assembling EnkaDB JSON files. Exporting...\n", stderr)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
         if await !Config.generateCondensedJSONFiles {
             encoder.outputFormatting.insert(.prettyPrinted)
-            print("// Assembling EnkaDB JSON files in minified format.")
+            fputs("// Assembling EnkaDB JSON files in minified format.\n", stderr)
         }
         try filesToRender.forEach { fileName, obj in
             let newURL = outputURL.appendingPathComponent(fileName).standardizedFileURL
-            print("// Writing to: \(newURL.absoluteString)")
+            fputs("// Writing to: \(newURL.absoluteString)\n", stderr)
             try encoder.encode(obj).write(to: newURL)
         }
-        print("// -------------------------")
-        print("// All tasks completed for writing EnkaDB json files for \(game.englishBrandName).")
-        print("// =========================")
+        fputs("// -------------------------\n", stderr)
+        fputs("// All tasks completed for writing EnkaDB json files for \(game.englishBrandName).\n", stderr)
+        fputs("// =========================\n", stderr)
     }
 
     public static func getEnkaDBEncodedJSONData(
@@ -63,13 +63,13 @@ extension EnkaDBGenerator {
         localPath: String? = nil
     ) async throws
         -> [String: Data] {
-        print("// Start fetching files from Dimbreath's repository...")
+        fputs("// Start fetching files from Dimbreath's repository...\n", stderr)
         let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne, localPath: localPath)
-        print("// Succeeded in fetching files from Dimbreath's repository.")
-        print("// -------------------------")
-        print("// Start assembling EnkaDB JSON files.")
+        fputs("// Succeeded in fetching files from Dimbreath's repository.\n", stderr)
+        fputs("// -------------------------\n", stderr)
+        fputs("// Start assembling EnkaDB JSON files.\n", stderr)
         let filesToRender = try theDB.packObjects()
-        print("// Succeeded in assembling EnkaDB JSON files. Exporting...")
+        fputs("// Succeeded in assembling EnkaDB JSON files. Exporting...\n", stderr)
         let encoder = JSONEncoder()
         var container = [String: Data]()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
