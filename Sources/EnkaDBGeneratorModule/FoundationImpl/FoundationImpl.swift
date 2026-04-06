@@ -7,6 +7,10 @@ import Foundation
 import FoundationNetworking
 #endif
 
+package func printStderr(_ msg: String) {
+    FileHandle.standardError.write(Data((msg + "\n").utf8))
+}
+
 #if canImport(WinSDK) || (!canImport(AppKit) && !canImport(UIKit) && !canImport(Glibc))
 let isWindows = true
 #else

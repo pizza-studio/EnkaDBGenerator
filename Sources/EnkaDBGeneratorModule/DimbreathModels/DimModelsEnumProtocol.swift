@@ -35,20 +35,20 @@ extension DimModelsEnumProtocol {
             if isCollab {
                 guard hasCollabFilesToCollect else { return .init([]) }
                 let fullPath = "\(localPath)/\(Self.folderName)\(fileNameStem)LD.json"
-                fputs("// Reading local: \(fullPath)\n", stderr)
+                printStderr("// Reading local: \(fullPath)")
                 return try Data(contentsOf: URL(fileURLWithPath: fullPath))
             }
             let fullPath = "\(localPath)/\(Self.folderName)\(fileNameStem).json"
-            fputs("// Reading local: \(fullPath)\n", stderr)
+            printStderr("// Reading local: \(fullPath)")
             return try Data(contentsOf: URL(fileURLWithPath: fullPath))
         }
         if isCollab {
             guard let jsonURL4Collab else { return .init([]) }
-            fputs("// Fetching: \(jsonURL4Collab.absoluteString)\n", stderr)
+            printStderr("// Fetching: \(jsonURL4Collab.absoluteString)")
             let (data, _) = try await URLSession.shared.asyncData(from: jsonURL4Collab)
             return data
         }
-        fputs("// Fetching: \(jsonURL.absoluteString)\n", stderr)
+        printStderr("// Fetching: \(jsonURL.absoluteString)")
         let (data, _) = try await URLSession.shared.asyncData(from: jsonURL)
         return data
     }
