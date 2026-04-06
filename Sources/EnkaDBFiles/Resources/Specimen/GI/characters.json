@@ -61,7 +61,7 @@
       }
     },
     "Element" : "Wind",
-    "NameTextMapHash" : 3221566250,
+    "NameTextMapHash" : 3221565738,
     "ProudMap" : {
       "10031" : 331,
       "10033" : 332,
@@ -99,7 +99,7 @@
       }
     },
     "Element" : "Wind",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100543" : 730,
       "10067" : 732,
@@ -137,7 +137,7 @@
       }
     },
     "Element" : "Fire",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100541" : 530,
       "10097" : 532,
@@ -175,7 +175,7 @@
       }
     },
     "Element" : "Water",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100542" : 630,
       "10087" : 632,
@@ -213,7 +213,7 @@
       }
     },
     "Element" : "Wind",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100543" : 730,
       "10067" : 732,
@@ -251,7 +251,7 @@
       }
     },
     "Element" : "Rock",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100545" : 730,
       "10077" : 932,
@@ -289,7 +289,7 @@
       }
     },
     "Element" : "Electric",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100546" : 1030,
       "10602" : 1032,
@@ -327,7 +327,7 @@
       }
     },
     "Element" : "Grass",
-    "NameTextMapHash" : 1533656818,
+    "NameTextMapHash" : 1533656306,
     "ProudMap" : {
       "100547" : 1130,
       "10117" : 1132,
@@ -669,7 +669,7 @@
       }
     },
     "Element" : "Water",
-    "NameTextMapHash" : 3775299170,
+    "NameTextMapHash" : 3775298658,
     "ProudMap" : {
       "10070" : 1431,
       "10071" : 1432,
@@ -707,7 +707,7 @@
       }
     },
     "Element" : "Ice",
-    "NameTextMapHash" : 4119663210,
+    "NameTextMapHash" : 4119662698,
     "ProudMap" : {
       "10073" : 1531,
       "10074" : 1532,
@@ -745,7 +745,7 @@
       }
     },
     "Element" : "Fire",
-    "NameTextMapHash" : 3608180322,
+    "NameTextMapHash" : 3608179810,
     "ProudMap" : {
       "10160" : 1631,
       "10161" : 1632,
@@ -775,7 +775,7 @@
       "UI_Talent_S_Razor_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 4160147242,
+    "NameTextMapHash" : 4160146730,
     "ProudMap" : {
       "10201" : 2031,
       "10202" : 2032,
@@ -881,7 +881,7 @@
       }
     },
     "Element" : "Fire",
-    "NameTextMapHash" : 1130996346,
+    "NameTextMapHash" : 1130995834,
     "ProudMap" : {
       "10231" : 2331,
       "10232" : 2332,
@@ -949,7 +949,7 @@
       }
     },
     "Element" : "Water",
-    "NameTextMapHash" : 4197635682,
+    "NameTextMapHash" : 4197635170,
     "ProudMap" : {
       "10381" : 2531,
       "10382" : 2532,
@@ -979,7 +979,7 @@
       "UI_Talent_S_Xiao_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 1021947690,
+    "NameTextMapHash" : 1021947178,
     "ProudMap" : {
       "10261" : 2631,
       "10262" : 2632,
@@ -1017,7 +1017,7 @@
       }
     },
     "Element" : "Rock",
-    "NameTextMapHash" : 4127888970,
+    "NameTextMapHash" : 4127888458,
     "ProudMap" : {
       "10271" : 2731,
       "10272" : 2732,
@@ -1161,7 +1161,7 @@
       }
     },
     "Element" : "Fire",
-    "NameTextMapHash" : 968893378,
+    "NameTextMapHash" : 968892866,
     "ProudMap" : {
       "10321" : 3231,
       "10322" : 3232,
@@ -1191,7 +1191,7 @@
       "UI_Talent_S_Tartaglia_04"
     ],
     "Element" : "Water",
-    "NameTextMapHash" : 3847143266,
+    "NameTextMapHash" : 3847142754,
     "ProudMap" : {
       "10331" : 3331,
       "10332" : 3332,
@@ -1221,7 +1221,7 @@
       "UI_Talent_S_Noel_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 1921418842,
+    "NameTextMapHash" : 1921418330,
     "ProudMap" : {
       "10341" : 3431,
       "10342" : 3432,
@@ -1251,7 +1251,7 @@
       "UI_Talent_S_Qiqi_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 168956722,
+    "NameTextMapHash" : 168956210,
     "ProudMap" : {
       "10351" : 3531,
       "10352" : 3532,
@@ -1319,7 +1319,7 @@
       }
     },
     "Element" : "Ice",
-    "NameTextMapHash" : 2679781122,
+    "NameTextMapHash" : 2679780610,
     "ProudMap" : {
       "10371" : 3731,
       "10372" : 3732,
@@ -1349,7 +1349,7 @@
       "UI_Talent_S_Albedo_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 4108620722,
+    "NameTextMapHash" : 4108620210,
     "ProudMap" : {
       "10386" : 3831,
       "10387" : 3832,
@@ -1379,7 +1379,7 @@
       "UI_Talent_S_Diona_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 1468367538,
+    "NameTextMapHash" : 1468367026,
     "ProudMap" : {
       "10391" : 3931,
       "10392" : 3932,
@@ -1591,7 +1591,7 @@
       }
     },
     "Element" : "Fire",
-    "NameTextMapHash" : 1940919994,
+    "NameTextMapHash" : 1940919482,
     "ProudMap" : {
       "10461" : 4631,
       "10462" : 4632,
@@ -1711,7 +1711,7 @@
       "UI_Talent_S_Tohma_04"
     ],
     "Element" : "Fire",
-    "NameTextMapHash" : 3555115602,
+    "NameTextMapHash" : 3555115090,
     "ProudMap" : {
       "10501" : 5031,
       "10502" : 5032,
@@ -1741,7 +1741,7 @@
       "UI_Talent_S_Eula_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 3717667418,
+    "NameTextMapHash" : 3717666906,
     "ProudMap" : {
       "10511" : 5131,
       "10512" : 5132,
@@ -1771,7 +1771,7 @@
       "UI_Talent_S_Shougun_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 3024507506,
+    "NameTextMapHash" : 3024506994,
     "ProudMap" : {
       "10521" : 5231,
       "10522" : 5232,
@@ -1861,7 +1861,7 @@
       "UI_Talent_S_Gorou_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 3400133546,
+    "NameTextMapHash" : 3400133034,
     "ProudMap" : {
       "10551" : 5531,
       "10552" : 5532,
@@ -1951,7 +1951,7 @@
       "UI_Talent_S_Yae_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 2713453234,
+    "NameTextMapHash" : 2713452722,
     "ProudMap" : {
       "10581" : 5831,
       "10582" : 5832,
@@ -1981,7 +1981,7 @@
       "UI_Talent_S_Heizo_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 646032090,
+    "NameTextMapHash" : 646031578,
     "ProudMap" : {
       "10591" : 5931,
       "10592" : 5932,
@@ -2019,7 +2019,7 @@
       }
     },
     "Element" : "Water",
-    "NameTextMapHash" : 2848374378,
+    "NameTextMapHash" : 2848373866,
     "ProudMap" : {
       "10606" : 6031,
       "10607" : 6032,
@@ -2057,7 +2057,7 @@
       }
     },
     "Element" : "Grass",
-    "NameTextMapHash" : 1456643042,
+    "NameTextMapHash" : 1456642530,
     "ProudMap" : {
       "10611" : 6131,
       "10612" : 6132,
@@ -2087,7 +2087,7 @@
       "UI_Talent_S_Aloy_Lock"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 3689108098,
+    "NameTextMapHash" : 3689107586,
     "ProudMap" : {
       "10621" : 6231,
       "10622" : 6232,
@@ -2125,7 +2125,7 @@
       }
     },
     "Element" : "Ice",
-    "NameTextMapHash" : 334242634,
+    "NameTextMapHash" : 334242122,
     "ProudMap" : {
       "10631" : 6331,
       "10632" : 6332,
@@ -2155,7 +2155,7 @@
       "UI_Talent_S_Yunjin_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 655825874,
+    "NameTextMapHash" : 655825362,
     "ProudMap" : {
       "10641" : 6431,
       "10642" : 6432,
@@ -2185,7 +2185,7 @@
       "UI_Talent_S_Shinobu_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 1940821986,
+    "NameTextMapHash" : 1940821474,
     "ProudMap" : {
       "10651" : 6531,
       "10652" : 6532,
@@ -2245,7 +2245,7 @@
       "UI_Talent_S_Collei_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 2948362178,
+    "NameTextMapHash" : 2948361666,
     "ProudMap" : {
       "10671" : 6731,
       "10672" : 6732,
@@ -2433,7 +2433,7 @@
       "UI_Talent_S_Nahida_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 712501082,
+    "NameTextMapHash" : 712500570,
     "ProudMap" : {
       "10731" : 7331,
       "10732" : 7332,
@@ -2523,7 +2523,7 @@
       "UI_Talent_S_Faruzan_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 2387711994,
+    "NameTextMapHash" : 2387711482,
     "ProudMap" : {
       "10761" : 7631,
       "10762" : 7632,
@@ -2561,7 +2561,7 @@
       }
     },
     "Element" : "Grass",
-    "NameTextMapHash" : 1732418482,
+    "NameTextMapHash" : 1732417970,
     "ProudMap" : {
       "10771" : 7731,
       "10772" : 7732,
@@ -2591,7 +2591,7 @@
       "UI_Talent_S_Alhatham_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 4002157418,
+    "NameTextMapHash" : 4002156906,
     "ProudMap" : {
       "10781" : 7831,
       "10782" : 7832,
@@ -2801,7 +2801,7 @@
       "UI_Talent_S_Freminet_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 4201964354,
+    "NameTextMapHash" : 4201963842,
     "ProudMap" : {
       "10851" : 8531,
       "10852" : 8532,
@@ -2831,7 +2831,7 @@
       "UI_Talent_S_Wriothesley_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 370151050,
+    "NameTextMapHash" : 370150538,
     "ProudMap" : {
       "10861" : 8631,
       "10862" : 8632,
@@ -3049,7 +3049,7 @@
       "UI_Talent_S_Liuyun_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 3648220770,
+    "NameTextMapHash" : 3648220258,
     "ProudMap" : {
       "10931" : 9331,
       "10932" : 9332,
@@ -3109,7 +3109,7 @@
       "UI_Talent_S_Sigewinne_04"
     ],
     "Element" : "Water",
-    "NameTextMapHash" : 781488962,
+    "NameTextMapHash" : 781488450,
     "ProudMap" : {
       "10951" : 9531,
       "10952" : 9532,
@@ -3139,7 +3139,7 @@
       "UI_Talent_S_Arlecchino_04"
     ],
     "Element" : "Fire",
-    "NameTextMapHash" : 167199474,
+    "NameTextMapHash" : 167198962,
     "ProudMap" : {
       "10961" : 9631,
       "10962" : 9632,
@@ -3169,7 +3169,7 @@
       "UI_Talent_S_Sethos_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 1431322346,
+    "NameTextMapHash" : 1431321834,
     "ProudMap" : {
       "10971" : 9731,
       "10972" : 9732,
@@ -3199,7 +3199,7 @@
       "UI_Talent_S_Clorinde_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 2745369298,
+    "NameTextMapHash" : 2745368786,
     "ProudMap" : {
       "10981" : 9831,
       "10982" : 9832,
@@ -3229,7 +3229,7 @@
       "UI_Talent_S_Emilie_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 1705786122,
+    "NameTextMapHash" : 1705785610,
     "ProudMap" : {
       "10991" : 9931,
       "10992" : 9932,
@@ -3289,7 +3289,7 @@
       "UI_Talent_S_Kinich_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 4172712634,
+    "NameTextMapHash" : 4172712122,
     "ProudMap" : {
       "11011" : 10131,
       "11012" : 10132,
@@ -3349,7 +3349,7 @@
       "UI_Talent_S_Xilonen_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 2515292882,
+    "NameTextMapHash" : 2515292370,
     "ProudMap" : {
       "11031" : 10331,
       "11032" : 10332,
@@ -3469,7 +3469,7 @@
       "UI_Talent_S_Citlali_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 1197975042,
+    "NameTextMapHash" : 1197974530,
     "ProudMap" : {
       "11071" : 10731,
       "11072" : 10732,
@@ -3529,7 +3529,7 @@
       "UI_Talent_S_Mizuki_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 3784387538,
+    "NameTextMapHash" : 3784387026,
     "ProudMap" : {
       "11091" : 10931,
       "11092" : 10932,
@@ -3559,7 +3559,7 @@
       "UI_Talent_S_Iansan_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 3120492514,
+    "NameTextMapHash" : 3120492002,
     "ProudMap" : {
       "11101" : 11031,
       "11102" : 11032,
@@ -3589,7 +3589,7 @@
       "UI_Talent_S_Varesa_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 283438874,
+    "NameTextMapHash" : 283438362,
     "ProudMap" : {
       "11111" : 11131,
       "11112" : 11132,
@@ -3649,7 +3649,7 @@
       "UI_Talent_S_Ifa_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 3398665018,
+    "NameTextMapHash" : 3398664506,
     "ProudMap" : {
       "11131" : 11331,
       "11132" : 11332,
@@ -3679,7 +3679,7 @@
       "UI_Talent_S_SkirkNew_04"
     ],
     "Element" : "Ice",
-    "NameTextMapHash" : 123650890,
+    "NameTextMapHash" : 123650378,
     "ProudMap" : {
       "11141" : 11431,
       "11142" : 11432,
@@ -3709,7 +3709,7 @@
       "UI_Talent_S_Dahlia_04"
     ],
     "Element" : "Water",
-    "NameTextMapHash" : 2332664426,
+    "NameTextMapHash" : 2332663914,
     "ProudMap" : {
       "11151" : 11531,
       "11152" : 11532,
@@ -4119,7 +4119,7 @@
       "UI_Talent_S_Lauma_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 1776874018,
+    "NameTextMapHash" : 1776873506,
     "ProudMap" : {
       "11191" : 11931,
       "11192" : 11932,
@@ -4149,7 +4149,7 @@
       "UI_Talent_S_Flins_04"
     ],
     "Element" : "Electric",
-    "NameTextMapHash" : 1804674810,
+    "NameTextMapHash" : 1804674298,
     "ProudMap" : {
       "11201" : 12031,
       "11202" : 12032,
@@ -4179,7 +4179,7 @@
       "UI_Talent_S_Aino_04"
     ],
     "Element" : "Water",
-    "NameTextMapHash" : 3887688410,
+    "NameTextMapHash" : 3887687898,
     "ProudMap" : {
       "11211" : 12131,
       "11212" : 12132,
@@ -4209,7 +4209,7 @@
       "UI_Talent_S_Nefer_04"
     ],
     "Element" : "Grass",
-    "NameTextMapHash" : 2745786202,
+    "NameTextMapHash" : 2745785690,
     "ProudMap" : {
       "11221" : 12231,
       "11222" : 12232,
@@ -4277,7 +4277,7 @@
       "UI_Talent_S_Jahoda_04"
     ],
     "Element" : "Wind",
-    "NameTextMapHash" : 1438964522,
+    "NameTextMapHash" : 1438964010,
     "ProudMap" : {
       "11241" : 12431,
       "11242" : 12432,
@@ -4307,7 +4307,7 @@
       "UI_Talent_S_Columbina_04"
     ],
     "Element" : "Water",
-    "NameTextMapHash" : 1888371618,
+    "NameTextMapHash" : 1888371106,
     "ProudMap" : {
       "11251" : 12531,
       "11252" : 12532,
@@ -4337,7 +4337,7 @@
       "UI_Talent_S_Zibai_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 937533090,
+    "NameTextMapHash" : 937532578,
     "ProudMap" : {
       "11261" : 12631,
       "11262" : 12632,
@@ -4367,7 +4367,7 @@
       "UI_Talent_S_Illuga_04"
     ],
     "Element" : "Rock",
-    "NameTextMapHash" : 102656986,
+    "NameTextMapHash" : 102656474,
     "ProudMap" : {
       "11271" : 12731,
       "11272" : 12732,
@@ -4416,5 +4416,35 @@
       "11285" : "Skill_E_Varka_01"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
+  },
+  "10000130" : {
+    "Consts" : [
+      "UI_Talent_S_Linnea_01",
+      "UI_Talent_S_Linnea_02",
+      "UI_Talent_U_Linnea_01",
+      "UI_Talent_S_Linnea_03",
+      "UI_Talent_U_Linnea_02",
+      "UI_Talent_S_Linnea_04"
+    ],
+    "Element" : "Rock",
+    "NameTextMapHash" : 1961019898,
+    "ProudMap" : {
+      "11301" : 13031,
+      "11302" : 13032,
+      "11305" : 13039
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Linnea",
+    "SkillOrder" : [
+      11301,
+      11302,
+      11305
+    ],
+    "Skills" : {
+      "11301" : "Skill_A_02",
+      "11302" : "Skill_S_Linnea_01",
+      "11305" : "Skill_E_Linnea_01"
+    },
+    "WeaponType" : "WEAPON_BOW"
   }
 }
