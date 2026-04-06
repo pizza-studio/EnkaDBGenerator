@@ -10,8 +10,8 @@ extension DimModels4GI {
     struct DimDB4GI {
         // MARK: Lifecycle
 
-        init(withLang: Bool = true, oneByOne: Bool = false) async throws {
-            let dataStack: [DimModels4GI: Data] = try await getDataStack(oneByOne: oneByOne)
+        init(withLang: Bool = true, oneByOne: Bool = false, localPath: String? = nil) async throws {
+            let dataStack: [DimModels4GI: Data] = try await getDataStack(oneByOne: oneByOne, localPath: localPath)
             let decoder = JSONDecoder()
             self.avatarDB = try decoder.decode(
                 [AvatarExcelConfigData].self,
@@ -66,7 +66,7 @@ extension DimModels4GI {
                 from: dataStack[.profilePicture]!
             )
             if withLang {
-                try await updateLanguageMap(oneByOne: oneByOne)
+                try await updateLanguageMap(oneByOne: oneByOne, localPath: localPath)
                 bleach()
             }
         }

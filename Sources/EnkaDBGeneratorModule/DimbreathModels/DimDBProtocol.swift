@@ -12,15 +12,15 @@ protocol DimDBProtocol {
     static var targetGame: EnkaDBGenerator.SupportedGame { get }
     var langTable: [String: [String: String]] { get set }
     var avatarDBIdentifiable: [any NameHashable & IntegerIdentifiable] { get }
-    init(withLang: Bool, oneByOne: Bool) async throws
+    init(withLang: Bool, oneByOne: Bool, localPath: String?) async throws
     func packObjects() throws -> [String: any Encodable]
     mutating func bleach()
 }
 
 extension DimDBProtocol {
-    mutating func updateLanguageMap(oneByOne: Bool = false) async throws {
+    mutating func updateLanguageMap(oneByOne: Bool = false, localPath: String? = nil) async throws {
         langTable = try await Self.targetGame.fetchRawLangData(
-            neededHashIDs: allNameTextMapHashes, oneByOne: oneByOne
+            neededHashIDs: allNameTextMapHashes, oneByOne: oneByOne, localPath: localPath
         )
         let protagonistTable = getProtagonistTranslations()
         protagonistTable.forEach { protagonist in

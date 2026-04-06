@@ -11,7 +11,8 @@ extension EnkaDBGenerator {
     public static func compileEnkaDB(
         for game: SupportedGame,
         targeting outputURL: URL,
-        oneByOne: Bool = false
+        oneByOne: Bool = false,
+        localPath: String? = nil
     ) async throws {
         print("// =========================")
         print("// Start writing EnkaDB json files for \(game.englishBrandName).")
@@ -34,7 +35,7 @@ extension EnkaDBGenerator {
         }
         // Folders prepared / confirmed. Proceeding.
         print("// Start fetching files from Dimbreath's repository...")
-        let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne)
+        let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne, localPath: localPath)
         print("// Succeeded in fetching files from Dimbreath's repository.")
         print("// -------------------------")
         print("// Start assembling EnkaDB JSON files.")
@@ -58,11 +59,12 @@ extension EnkaDBGenerator {
 
     public static func getEnkaDBEncodedJSONData(
         for game: SupportedGame,
-        oneByOne: Bool = false
+        oneByOne: Bool = false,
+        localPath: String? = nil
     ) async throws
         -> [String: Data] {
         print("// Start fetching files from Dimbreath's repository...")
-        let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne)
+        let theDB: DimDBProtocol = try await game.initDimDB(withLang: true, oneByOne: oneByOne, localPath: localPath)
         print("// Succeeded in fetching files from Dimbreath's repository.")
         print("// -------------------------")
         print("// Start assembling EnkaDB JSON files.")

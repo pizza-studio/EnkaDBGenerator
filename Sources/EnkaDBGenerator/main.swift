@@ -10,12 +10,19 @@ let useOneByOne = true
 let useOneByOne = false
 #endif
 
-let cmdParameters = CommandLine.arguments.dropFirst(1)
+var cmdArgs = Array(CommandLine.arguments.dropFirst(1))
 
-switch cmdParameters.count {
+// Parse optional named arguments.
+var localPath: String?
+if let idx = cmdArgs.firstIndex(of: "-localPath"), idx + 1 < cmdArgs.count {
+    localPath = cmdArgs[idx + 1]
+    cmdArgs.removeSubrange(idx ... idx + 1)
+}
+
+switch cmdArgs.count {
 case 2, 3:
-    guard let arg1st = cmdParameters.first,
-          let argLast = cmdParameters.last,
+    guard let arg1st = cmdArgs.first,
+          let argLast = cmdArgs.last,
           let game = EnkaDBGenerator.SupportedGame(arg: arg1st)
     else {
         print(argumentTextTutorial)
@@ -29,8 +36,8 @@ case 2, 3:
         print(argumentTextTutorial)
     }
 
-    if cmdParameters.count == 3,
-       let arg3rd = cmdParameters.dropFirst().first,
+    if cmdArgs.count == 3,
+       let arg3rd = cmdArgs.dropFirst().first,
        arg3rd.lowercased() == "-tiny" {
         EnkaDBGenerator.Config.generateCondensedJSONFiles = true
         print("// =========================")
@@ -38,8 +45,16 @@ case 2, 3:
         print("// -------------------------")
     }
 
+    if let localPath {
+        print("// =========================")
+        print("// Using local data path: \(localPath)")
+        print("// -------------------------")
+    }
+
     do {
-        try await EnkaDBGenerator.compileEnkaDB(for: game, targeting: url, oneByOne: useOneByOne)
+        try await EnkaDBGenerator.compileEnkaDB(
+            for: game, targeting: url, oneByOne: useOneByOne, localPath: localPath
+        )
     } catch {
         print(error.localizedDescription)
         throw (error)
@@ -54,6 +69,7 @@ private let argumentTextTutorial = """
 || Wrong arguments. Please provide the arguments as follows:
 || 1. The 1st argument allowed: `-GI` for Genshin Impact; `-HSR` or `-SR` for Star Rail.
 || 2. The 2nd argument is optional: `-tiny`, this is to minify the generated JSON files.
-|| 3. The final argument is the target directory path.
+|| 3. Optional: `-localPath /path/to/AnimeGameData` to use local data instead of fetching online.
+|| 4. The final argument is the target directory path.
 // ========================="
 """

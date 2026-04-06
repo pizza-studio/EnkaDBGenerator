@@ -39,12 +39,12 @@ extension EnkaDBGenerator {
 // MARK: - DimDB Initializer.
 
 extension EnkaDBGenerator.SupportedGame {
-    func initDimDB(withLang: Bool = true, oneByOne: Bool) async throws -> DimDBProtocol {
+    func initDimDB(withLang: Bool = true, oneByOne: Bool, localPath: String? = nil) async throws -> DimDBProtocol {
         switch self {
         case .genshinImpact:
-            return try await DimModels4GI.DimDB4GI(withLang: withLang, oneByOne: oneByOne)
+            return try await DimModels4GI.DimDB4GI(withLang: withLang, oneByOne: oneByOne, localPath: localPath)
         case .starRail:
-            return try await DimModels4HSR.DimDB4HSR(withLang: withLang, oneByOne: oneByOne)
+            return try await DimModels4HSR.DimDB4HSR(withLang: withLang, oneByOne: oneByOne, localPath: localPath)
         }
     }
 }
@@ -79,11 +79,14 @@ extension EnkaDBGenerator.SupportedGame {
     func fetchRawLangData(
         lang: [EnkaDBGenerator.GameLanguage]? = nil,
         neededHashIDs: Set<String>,
-        oneByOne: Bool = false
+        oneByOne: Bool = false,
+        localPath: String? = nil
     ) async throws
         -> [String: [String: String]] {
         guard !oneByOne else {
-            return try await fetchRawLangData1By1(lang: lang, neededHashIDs: neededHashIDs)
+            return try await fetchRawLangData1By1(
+                lang: lang, neededHashIDs: neededHashIDs, localPath: localPath
+            )
         }
         func decodeLangDict(_ data: Data, url: URL) throws -> [String: String] {
             do {
@@ -112,11 +115,18 @@ extension EnkaDBGenerator.SupportedGame {
             #endif
             langs.forEach { locale in
                 taskGroup.addTask {
-                    let urls = getLangDataURLs(for: locale)
+                    let urls = self.getLangDataURLs(for: locale, localPath: localPath)
                     var finalDict = [String: String]()
                     for url in urls {
-                        print("// Fetching: \(url.absoluteString)")
-                        let (data, _) = try await URLSession.shared.asyncData(from: url)
+                        let data: Data
+                        if url.isFileURL {
+                            print("// Reading local: \(url.path)")
+                            data = try Data(contentsOf: url)
+                        } else {
+                            print("// Fetching: \(url.absoluteString)")
+                            let (d, _) = try await URLSession.shared.asyncData(from: url)
+                            data = d
+                        }
                         var dict = try decodeLangDict(data, url: url)
                         let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                         keysToRemove.forEach { dict.removeValue(forKey: $0) }
@@ -152,7 +162,8 @@ extension EnkaDBGenerator.SupportedGame {
     /// This API does the tasks one-by-one.
     func fetchRawLangData1By1(
         lang: [EnkaDBGenerator.GameLanguage]? = nil,
-        neededHashIDs: Set<String>
+        neededHashIDs: Set<String>,
+        localPath: String? = nil
     ) async throws
         -> [String: [String: String]] {
         var resultBuffer = [String: [String: String]]()
@@ -178,11 +189,18 @@ extension EnkaDBGenerator.SupportedGame {
         let langs = lang ?? EnkaDBGenerator.GameLanguage.allCases(for: self)
         #endif
         for locale in langs {
-            let urls = getLangDataURLs(for: locale)
+            let urls = getLangDataURLs(for: locale, localPath: localPath)
             var finalDict = [String: String]()
             for url in urls {
-                print("// Fetching: \(url.absoluteString)")
-                let (data, _) = try await URLSession.shared.asyncData(from: url)
+                let data: Data
+                if url.isFileURL {
+                    print("// Reading local: \(url.path)")
+                    data = try Data(contentsOf: url)
+                } else {
+                    print("// Fetching: \(url.absoluteString)")
+                    let (d, _) = try await URLSession.shared.asyncData(from: url)
+                    data = d
+                }
                 var dict = try decodeLangDict(data, url: url)
                 let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                 keysToRemove.forEach { dict.removeValue(forKey: $0) }
@@ -209,9 +227,14 @@ extension EnkaDBGenerator.SupportedGame {
     }
 
     /// Only used for dealing with Dimbreath's repos.
-    func getLangDataURLs(for lang: EnkaDBGenerator.GameLanguage) -> [URL] {
+    func getLangDataURLs(for lang: EnkaDBGenerator.GameLanguage, localPath: String? = nil) -> [URL] {
         lang.filenamesForChunks(for: self).map { filename in
-            URL(string: repoHeader + repoName + "TextMap/\(filename)")!
+            if let localPath {
+                return URL(fileURLWithPath: localPath)
+                    .appendingPathComponent("TextMap")
+                    .appendingPathComponent(filename)
+            }
+            return URL(string: repoHeader + repoName + "TextMap/\(filename)")!
         }
     }
 

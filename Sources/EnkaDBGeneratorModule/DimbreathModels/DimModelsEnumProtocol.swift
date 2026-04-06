@@ -27,9 +27,21 @@ extension DimModelsEnumProtocol {
     }
 
     func rawDataToParse(
-        isCollab: Bool = false
+        isCollab: Bool = false,
+        localPath: String? = nil
     ) async throws
         -> Data {
+        if let localPath {
+            if isCollab {
+                guard hasCollabFilesToCollect else { return .init([]) }
+                let fullPath = "\(localPath)/\(Self.folderName)\(fileNameStem)LD.json"
+                print("// Reading local: \(fullPath)")
+                return try Data(contentsOf: URL(fileURLWithPath: fullPath))
+            }
+            let fullPath = "\(localPath)/\(Self.folderName)\(fileNameStem).json"
+            print("// Reading local: \(fullPath)")
+            return try Data(contentsOf: URL(fileURLWithPath: fullPath))
+        }
         if isCollab {
             guard let jsonURL4Collab else { return .init([]) }
             print("// Fetching: \(jsonURL4Collab.absoluteString)")
@@ -43,13 +55,14 @@ extension DimModelsEnumProtocol {
 
     /// This API does the tasks one-by-one.
     static func getDataStack1By1<T: DimModelsEnumProtocol>(
-        isCollab: Bool = false
+        isCollab: Bool = false,
+        localPath: String? = nil
     ) async throws
         -> [T: Data] {
         var resultBuffer = [T: Data]()
         let theCases = !isCollab ? Array(T.allCases) : T.allCases.filter(\.hasCollabFilesToCollect)
         for currentCase in theCases {
-            let fetched = try await currentCase.rawDataToParse(isCollab: isCollab)
+            let fetched = try await currentCase.rawDataToParse(isCollab: isCollab, localPath: localPath)
             if !fetched.isEmpty {
                 resultBuffer[currentCase] = fetched
             }
@@ -59,10 +72,11 @@ extension DimModelsEnumProtocol {
 
     static func getDataStack<T: DimModelsEnumProtocol>(
         oneByOne: Bool = false,
-        isCollab: Bool = false
+        isCollab: Bool = false,
+        localPath: String? = nil
     ) async throws
         -> [T: Data] {
-        guard !oneByOne else { return try await getDataStack1By1(isCollab: isCollab) }
+        guard !oneByOne else { return try await getDataStack1By1(isCollab: isCollab, localPath: localPath) }
         return try await withThrowingTaskGroup(
             of: (tag: T, data: Data).self,
             returning: [T: Data].self
@@ -70,7 +84,7 @@ extension DimModelsEnumProtocol {
             let theCases = !isCollab ? Array(T.allCases) : T.allCases.filter(\.hasCollabFilesToCollect)
             theCases.forEach { currentCase in
                 taskGroup.addTask {
-                    let data = try await currentCase.rawDataToParse(isCollab: isCollab)
+                    let data = try await currentCase.rawDataToParse(isCollab: isCollab, localPath: localPath)
                     return (tag: currentCase, data: data)
                 }
             }

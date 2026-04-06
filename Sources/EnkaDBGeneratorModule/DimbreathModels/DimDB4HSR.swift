@@ -10,12 +10,12 @@ extension DimModels4HSR {
     struct DimDB4HSR {
         // MARK: Lifecycle
 
-        init(withLang: Bool = true, oneByOne: Bool = false) async throws {
+        init(withLang: Bool = true, oneByOne: Bool = false, localPath: String? = nil) async throws {
             let dataStack: [DimModels4HSR: Data] = try await getDataStack(
-                oneByOne: oneByOne, isCollab: false
+                oneByOne: oneByOne, isCollab: false, localPath: localPath
             )
             let dataStack4Collab: [DimModels4HSR: Data] = try await getDataStack(
-                oneByOne: oneByOne, isCollab: true
+                oneByOne: oneByOne, isCollab: true, localPath: localPath
             )
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromPascalCase // Vital Important。
@@ -105,7 +105,7 @@ extension DimModels4HSR {
             self.profilePictureDB = pfpDB1 + pfpDB2 + pfpDBCollab
             // Language Table.
             if withLang {
-                try await updateLanguageMap(oneByOne: oneByOne)
+                try await updateLanguageMap(oneByOne: oneByOne, localPath: localPath)
                 bleach()
             }
         }
