@@ -54,6 +54,10 @@ extension EnkaDBGenerator {
             rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending(".json")
         }
 
+        var mediumFilename: String {
+            rawValue.replacingOccurrences(of: "lang", with: "TextMap_Medium").appending(".json")
+        }
+
         var enkaLangID: String {
             switch self {
             case .langCHS, .langCHT: return langTag
@@ -75,8 +79,10 @@ extension EnkaDBGenerator {
                 case .langRU, .langTH: [
                         rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_0.json"),
                         rawValue.replacingOccurrences(of: "lang", with: "TextMap").appending("_1.json"),
+                        rawValue.replacingOccurrences(of: "lang", with: "TextMap_Medium").appending("_0.json"),
+                        rawValue.replacingOccurrences(of: "lang", with: "TextMap_Medium").appending("_1.json"),
                     ]
-                default: [filename]
+                default: [filename, mediumFilename]
                 }
             case .starRail:
                 switch self {
