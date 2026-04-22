@@ -23,6 +23,19 @@ struct EnkaDBGeneratorTestsHSR {
         let compiledMap = jsonGI.assembleEnkaLangMap()
         #expect(nil != compiledMap["zh-tw"]?["su"])
     }
+
+    @Test
+    func testNormalizingHSRTextMapMarkup() {
+        let cleanedJP = EnkaDBGenerator.SupportedGame.starRail.sanitizeTextMapValue(
+            "回復量+<unbreak>#1[f1]%</unbreak>{RUBY_B#注音}",
+            lang: .langJP
+        )
+        #expect(cleanedJP == "回復量+#1[f1]%")
+        #expect(
+            EnkaDBGenerator.SupportedGame.starRail.extraLocMap["en"]?["HealTakenRatio"]
+                == "Incoming Healing increases by #1[f1]%"
+        )
+    }
 }
 
 extension EnkaDBGeneratorTestsHSR {

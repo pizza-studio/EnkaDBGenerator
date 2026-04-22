@@ -64,11 +64,46 @@ extension EnkaDBGenerator.SupportedGame {
         do {
             let data = try Data(contentsOf: url)
             let decoded = try JSONDecoder().decode([String: [String: String]].self, from: data)
-            return decoded
+            return decoded.reduce(into: [String: [String: String]]()) { partialResult, entry in
+                partialResult[entry.key] = entry.value.mapValues {
+                    sanitizeTextMapValue($0, enkaLangID: entry.key)
+                }
+            }
         } catch {
             print(error.localizedDescription)
             return [:]
         }
+    }
+
+    func sanitizeTextMapValue(_ value: String, lang: EnkaDBGenerator.GameLanguage) -> String {
+        sanitizeTextMapValue(
+            value,
+            stripsRubyMarkup: lang == .langJP
+        )
+    }
+
+    func sanitizeTextMapValue(_ value: String, enkaLangID: String) -> String {
+        sanitizeTextMapValue(
+            value,
+            stripsRubyMarkup: enkaLangID == EnkaDBGenerator.GameLanguage.langJP.enkaLangID
+        )
+    }
+
+    private func sanitizeTextMapValue(_ value: String, stripsRubyMarkup: Bool) -> String {
+        guard self == .starRail else { return value }
+        var sanitized = value
+        if stripsRubyMarkup, sanitized.contains("{RUBY"), sanitized.contains("{") {
+            sanitized = sanitized.replacingOccurrences(
+                of: #"\{RUBY.*?\}"#,
+                with: "",
+                options: .regularExpression
+            )
+        }
+        if sanitized.contains("<unbreak>") || sanitized.contains("</unbreak>") {
+            sanitized = sanitized.replacingOccurrences(of: "<unbreak>", with: "")
+            sanitized = sanitized.replacingOccurrences(of: "</unbreak>", with: "")
+        }
+        return sanitized
     }
 }
 
@@ -130,18 +165,7 @@ extension EnkaDBGenerator.SupportedGame {
                         var dict = try decodeLangDict(data, url: url)
                         let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                         keysToRemove.forEach { dict.removeValue(forKey: $0) }
-                        if locale == .langJP {
-                            dict.keys.forEach { theKey in
-                                guard dict[theKey]?.contains("{RUBY") ?? false else { return }
-                                if let rawStrToHandle = dict[theKey], rawStrToHandle.contains("{") {
-                                    dict[theKey] = rawStrToHandle.replacingOccurrences(
-                                        of: #"\{RUBY.*?\}"#,
-                                        with: "",
-                                        options: .regularExpression
-                                    )
-                                }
-                            }
-                        }
+                        dict = dict.mapValues { sanitizeTextMapValue($0, lang: locale) }
                         dict.forEach { key, value in
                             finalDict[key] = value
                         }
@@ -204,18 +228,7 @@ extension EnkaDBGenerator.SupportedGame {
                 var dict = try decodeLangDict(data, url: url)
                 let keysToRemove = Set<String>(dict.keys).subtracting(neededHashIDs)
                 keysToRemove.forEach { dict.removeValue(forKey: $0) }
-                if locale == .langJP {
-                    dict.keys.forEach { theKey in
-                        guard dict[theKey]?.contains("{RUBY") ?? false else { return }
-                        if let rawStrToHandle = dict[theKey], rawStrToHandle.contains("{") {
-                            dict[theKey] = rawStrToHandle.replacingOccurrences(
-                                of: #"\{RUBY.*?\}"#,
-                                with: "",
-                                options: .regularExpression
-                            )
-                        }
-                    }
-                }
+                dict = dict.mapValues { sanitizeTextMapValue($0, lang: locale) }
                 dict.forEach { key, value in
                     finalDict[key] = value
                 }
