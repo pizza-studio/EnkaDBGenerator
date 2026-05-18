@@ -143,6 +143,15 @@
   "11200" : {
     "iconPath" : "UI_AvatarIcon_Linnea_Circle"
   },
+  "11300" : {
+    "iconPath" : "UI_AvatarIcon_Prune_Circle"
+  },
+  "11400" : {
+    "iconPath" : "UI_AvatarIcon_Nicole_Circle"
+  },
+  "11500" : {
+    "iconPath" : "UI_AvatarIcon_Lohen_Circle"
+  },
   "1200" : {
     "iconPath" : "UI_AvatarIcon_Noel_Circle"
   },

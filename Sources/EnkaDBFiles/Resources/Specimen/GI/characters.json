@@ -4417,6 +4417,36 @@
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
+  "10000129" : {
+    "Consts" : [
+      "UI_Talent_S_Lohen_01",
+      "UI_Talent_S_Lohen_02",
+      "UI_Talent_U_Lohen_01",
+      "UI_Talent_S_Lohen_03",
+      "UI_Talent_U_Lohen_02",
+      "UI_Talent_S_Lohen_04"
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 2872823194,
+    "ProudMap" : {
+      "11291" : 12931,
+      "11292" : 12932,
+      "11295" : 12939
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Lohen",
+    "SkillOrder" : [
+      11291,
+      11292,
+      11295
+    ],
+    "Skills" : {
+      "11291" : "Skill_A_03",
+      "11292" : "Skill_S_Lohen_01",
+      "11295" : "Skill_E_Lohen_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
+  },
   "10000130" : {
     "Consts" : [
       "UI_Talent_S_Linnea_01",
@@ -4446,5 +4476,65 @@
       "11305" : "Skill_E_Linnea_01"
     },
     "WeaponType" : "WEAPON_BOW"
+  },
+  "10000131" : {
+    "Consts" : [
+      "UI_Talent_S_Nicole_01",
+      "UI_Talent_S_Nicole_02",
+      "UI_Talent_U_Nicole_01",
+      "UI_Talent_S_Nicole_03",
+      "UI_Talent_U_Nicole_02",
+      "UI_Talent_S_Nicole_04"
+    ],
+    "Element" : "Fire",
+    "NameTextMapHash" : 1711582634,
+    "ProudMap" : {
+      "11311" : 13131,
+      "11312" : 13132,
+      "11315" : 13139
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Nicole",
+    "SkillOrder" : [
+      11311,
+      11312,
+      11315
+    ],
+    "Skills" : {
+      "11311" : "Skill_A_Catalyst_MD",
+      "11312" : "Skill_S_Nicole_01",
+      "11315" : "Skill_E_Nicole_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000132" : {
+    "Consts" : [
+      "UI_Talent_S_Prune_01",
+      "UI_Talent_S_Prune_02",
+      "UI_Talent_U_Prune_01",
+      "UI_Talent_S_Prune_03",
+      "UI_Talent_U_Prune_02",
+      "UI_Talent_S_Prune_04"
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 2787504450,
+    "ProudMap" : {
+      "11321" : 13231,
+      "11322" : 13232,
+      "11325" : 13239
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Prune",
+    "SkillOrder" : [
+      11321,
+      11322,
+      11325
+    ],
+    "Skills" : {
+      "11321" : "Skill_A_Catalyst_MD",
+      "11322" : "Skill_S_Prune_01",
+      "11325" : "Skill_E_Prune_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
   }
 }
