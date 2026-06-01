@@ -170,6 +170,12 @@
   "200156" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200156.png"
   },
+  "200157" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200157.png"
+  },
+  "200158" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Series/200158.png"
+  },
   "201001" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1001.png"
   },
@@ -412,6 +418,9 @@
   },
   "201506" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1506.png"
+  },
+  "201507" : {
+    "Icon" : "SpriteOutput/AvatarRoundIcon/Avatar/1507.png"
   },
   "202001" : {
     "Icon" : "SpriteOutput/AvatarRoundIcon/Series/202001.png"
