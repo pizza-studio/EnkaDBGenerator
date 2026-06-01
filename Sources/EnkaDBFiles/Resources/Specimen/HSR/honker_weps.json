@@ -1231,6 +1231,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/23058.png",
     "Rarity" : 5
   },
+  "23059" : {
+    "AvatarBaseType" : "Warlock",
+    "EquipmentName" : {
+      "Hash" : "5178844806898592560"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23059.png",
+    "Rarity" : 5
+  },
   "24000" : {
     "AvatarBaseType" : "Warrior",
     "EquipmentName" : {

@@ -2484,6 +2484,39 @@
       150621
     ]
   },
+  "1507" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1507B.png",
+    "AvatarBaseType" : "Warlock",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1507.png",
+    "AvatarFullName" : {
+      "Hash" : "1155191509844646525"
+    },
+    "AvatarName" : {
+      "Hash" : "13319237045724646398"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1507.png",
+    "Element" : "Fire",
+    "RankIDList" : [
+      150701,
+      150702,
+      150703,
+      150704,
+      150705,
+      150706
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150701,
+      150702,
+      150703,
+      150704,
+      150706,
+      150707,
+      150708,
+      150709,
+      150714
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
