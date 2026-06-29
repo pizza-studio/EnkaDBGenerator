@@ -256,16 +256,16 @@ extension EnkaDBGenerator.SupportedGame {
     /// Only used for dealing with Dimbreath's repos.
     private var repoHeader: String {
         switch self {
-        case .genshinImpact: return "https://raw.githubusercontent.com/"
-        case .starRail: return "https://raw.githubusercontent.com/"
+        case .genshinImpact: return "https://gitlab.com/"
+        case .starRail: return "https://gitlab.com/"
         }
     }
 
     /// Only used for dealing with Dimbreath's repos.
     private var repoName: String {
         switch self {
-        case .genshinImpact: return "DimbreathBot/AnimeGameData/refs/heads/master/"
-        case .starRail: return "DimbreathBot/TurnBasedGameData/refs/heads/main/"
+        case .genshinImpact: return "Dimbreath/AnimeGameData2/-/raw/main/"
+        case .starRail: return "Dimbreath/TurnBasedGameData/-/raw/main/"
         }
     }
 }
