@@ -832,5 +832,14 @@
   },
   "210283" : {
     "icon" : "UI_NameCardPic_Bp50_P"
+  },
+  "210284" : {
+    "icon" : "UI_NameCardPic_MarionetteNew_P"
+  },
+  "210285" : {
+    "icon" : "UI_NameCardPic_Moon_P"
+  },
+  "210286" : {
+    "icon" : "UI_NameCardPic_Bp51_P"
   }
 }

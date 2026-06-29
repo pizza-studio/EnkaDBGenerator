@@ -2898,6 +2898,14 @@
       "UI_Talent_U_Charlotte_02",
       "UI_Talent_S_Charlotte_04"
     ],
+    "Costumes" : {
+      "208801" : {
+        "art" : "UI_Costume_CharlotteCostumeDong",
+        "avatarId" : 10000088,
+        "icon" : "UI_AvatarIcon_CharlotteCostumeDong",
+        "sideIconName" : "UI_AvatarIcon_Side_CharlotteCostumeDong"
+      }
+    },
     "Element" : "Ice",
     "NameTextMapHash" : 3831162130,
     "ProudMap" : {
@@ -3468,6 +3476,14 @@
       "UI_Talent_U_Citlali_02",
       "UI_Talent_S_Citlali_04"
     ],
+    "Costumes" : {
+      "210701" : {
+        "art" : "UI_Costume_CitlaliCostumeXia",
+        "avatarId" : 10000107,
+        "icon" : "UI_AvatarIcon_CitlaliCostumeXia",
+        "sideIconName" : "UI_AvatarIcon_Side_CitlaliCostumeXia"
+      }
+    },
     "Element" : "Ice",
     "NameTextMapHash" : 1197974530,
     "ProudMap" : {
@@ -4536,5 +4552,35 @@
       "11325" : "Skill_E_Prune_01"
     },
     "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000133" : {
+    "Consts" : [
+      "UI_Talent_S_MarionetteNew_01",
+      "UI_Talent_S_MarionetteNew_02",
+      "UI_Talent_U_MarionetteNew_01",
+      "UI_Talent_S_MarionetteNew_03",
+      "UI_Talent_U_MarionetteNew_02",
+      "UI_Talent_S_MarionetteNew_04"
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 108893506,
+    "ProudMap" : {
+      "11331" : 13331,
+      "11332" : 13332,
+      "11335" : 13339
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_MarionetteNew",
+    "SkillOrder" : [
+      11331,
+      11332,
+      11335
+    ],
+    "Skills" : {
+      "11331" : "Skill_A_04",
+      "11332" : "Skill_S_MarionetteNew_01",
+      "11335" : "Skill_E_MarionetteNew_01"
+    },
+    "WeaponType" : "WEAPON_CLAYMORE"
   }
 }
