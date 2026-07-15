@@ -2517,6 +2517,106 @@
       150714
     ]
   },
+  "1508" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1508B.png",
+    "AvatarBaseType" : "Mage",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1508.png",
+    "AvatarFullName" : {
+      "Hash" : "1207783522542709721"
+    },
+    "AvatarName" : {
+      "Hash" : "15249535273064221797"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1508.png",
+    "Element" : "Quantum",
+    "RankIDList" : [
+      150801,
+      150802,
+      150803,
+      150804,
+      150805,
+      150806
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150801,
+      150802,
+      150803,
+      150804,
+      150805,
+      150806,
+      150807,
+      150809
+    ]
+  },
+  "1509" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1509B.png",
+    "AvatarBaseType" : "Warrior",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1509.png",
+    "AvatarFullName" : {
+      "Hash" : "18099531978529387072"
+    },
+    "AvatarName" : {
+      "Hash" : "195746835239934719"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1509.png",
+    "Element" : "Thunder",
+    "RankIDList" : [
+      150901,
+      150902,
+      150903,
+      150904,
+      150905,
+      150906
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150901,
+      150902,
+      150903,
+      150904,
+      150905,
+      150906,
+      150907,
+      150909
+    ]
+  },
+  "1510" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1510B.png",
+    "AvatarBaseType" : "Mage",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1510.png",
+    "AvatarFullName" : {
+      "Hash" : "7884683580397389352"
+    },
+    "AvatarName" : {
+      "Hash" : "12653203655511224443"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1510.png",
+    "Element" : "Fire",
+    "RankIDList" : [
+      151001,
+      151002,
+      151003,
+      151004,
+      151005,
+      151006
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      151001,
+      151002,
+      151003,
+      151004,
+      151006,
+      151007,
+      151008,
+      151009,
+      151014,
+      151022,
+      151025,
+      151026
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",

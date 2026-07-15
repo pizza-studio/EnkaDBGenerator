@@ -6679,6 +6679,222 @@
     "IconPath" : "SpriteOutput/UI/IconFireAddedRatio.png",
     "PointType" : 1
   },
+  "1508001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_Normal.png",
+    "PointType" : 2
+  },
+  "1508002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_BP.png",
+    "PointType" : 2
+  },
+  "1508003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_Ultra.png",
+    "PointType" : 2
+  },
+  "1508004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_Passive.png",
+    "PointType" : 2
+  },
+  "1508007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_Maze.png",
+    "PointType" : 2
+  },
+  "1508101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1508102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1508103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1508_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1508201" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1508202" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1508203" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1508204" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1508205" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1508206" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1508207" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1508208" : {
+    "IconPath" : "SpriteOutput/UI/IconQuantumAddedRatio.png",
+    "PointType" : 1
+  },
+  "1508209" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1508210" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalDamage.png",
+    "PointType" : 1
+  },
+  "1509001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_Normal.png",
+    "PointType" : 2
+  },
+  "1509002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_BP.png",
+    "PointType" : 2
+  },
+  "1509003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_Ultra.png",
+    "PointType" : 2
+  },
+  "1509004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_Passive.png",
+    "PointType" : 2
+  },
+  "1509007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_Maze.png",
+    "PointType" : 2
+  },
+  "1509101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1509102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1509103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1509_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1509201" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1509202" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1509203" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1509204" : {
+    "IconPath" : "SpriteOutput/UI/IconThunderAddedRatio.png",
+    "PointType" : 1
+  },
+  "1509205" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1509206" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1509207" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1509208" : {
+    "IconPath" : "SpriteOutput/UI/IconThunderAddedRatio.png",
+    "PointType" : 1
+  },
+  "1509209" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1509210" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1510001" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_Normal.png",
+    "PointType" : 2
+  },
+  "1510002" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_BP.png",
+    "PointType" : 2
+  },
+  "1510003" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_Ultra.png",
+    "PointType" : 2
+  },
+  "1510004" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_Passive.png",
+    "PointType" : 2
+  },
+  "1510007" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_Maze.png",
+    "PointType" : 2
+  },
+  "1510101" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_SkillTree1.png",
+    "PointType" : 3
+  },
+  "1510102" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_SkillTree2.png",
+    "PointType" : 3
+  },
+  "1510103" : {
+    "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_1510_SkillTree3.png",
+    "PointType" : 3
+  },
+  "1510201" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1510202" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1510203" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1510204" : {
+    "IconPath" : "SpriteOutput/UI/IconFireAddedRatio.png",
+    "PointType" : 1
+  },
+  "1510205" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1510206" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1510207" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
+  "1510208" : {
+    "IconPath" : "SpriteOutput/UI/IconFireAddedRatio.png",
+    "PointType" : 1
+  },
+  "1510209" : {
+    "IconPath" : "SpriteOutput/UI/IconCriticalChance.png",
+    "PointType" : 1
+  },
+  "1510210" : {
+    "IconPath" : "SpriteOutput/UI/IconAttack.png",
+    "PointType" : 1
+  },
   "8001001" : {
     "IconPath" : "SpriteOutput/SkillIcons/SkillIcon_8001_Normal.png",
     "PointType" : 2

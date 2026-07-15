@@ -1239,6 +1239,30 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/23059.png",
     "Rarity" : 5
   },
+  "23060" : {
+    "AvatarBaseType" : "Mage",
+    "EquipmentName" : {
+      "Hash" : "7768214880470327395"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23060.png",
+    "Rarity" : 5
+  },
+  "23061" : {
+    "AvatarBaseType" : "Mage",
+    "EquipmentName" : {
+      "Hash" : "12878612287235138706"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23061.png",
+    "Rarity" : 5
+  },
+  "23062" : {
+    "AvatarBaseType" : "Warrior",
+    "EquipmentName" : {
+      "Hash" : "13693150873761509240"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23062.png",
+    "Rarity" : 5
+  },
   "24000" : {
     "AvatarBaseType" : "Warrior",
     "EquipmentName" : {
