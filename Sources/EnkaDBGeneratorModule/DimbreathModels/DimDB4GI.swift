@@ -44,7 +44,7 @@ extension DimModels4GI {
             self.weaponDB = try decoder.decode(
                 [WeaponExcelConfigData].self,
                 from: dataStack[.weapon]!
-            )
+            ).filter(\.isValid)
             self.namecardDB = try decoder.decode(
                 [MaterialExcelConfigData].self,
                 from: dataStack[.namecard]!

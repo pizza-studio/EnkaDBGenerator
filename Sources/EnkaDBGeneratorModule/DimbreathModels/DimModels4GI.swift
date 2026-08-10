@@ -199,6 +199,11 @@ extension DimModels4GI {
         let icon: String
         let nameTextMapHash: UInt
         let rankLevel: Int
+
+        var isValid: Bool {
+            // Weapons are 5-digit IDs; anything below 11100 is not a gacha item.
+            id >= 11100
+        }
     }
 }
 
