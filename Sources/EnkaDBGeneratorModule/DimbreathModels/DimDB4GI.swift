@@ -63,7 +63,7 @@ extension DimModels4GI {
             ).filter(\.isValid)
             self.profilePictureDB = try decoder.decode(
                 [ProfilePictureExcelConfigData].self,
-                from: dataStack[.profilePicture]!
+                from: try DimModels4GI.normalizedProfilePictureData(from: dataStack[.profilePicture]!)
             )
             if withLang {
                 try await updateLanguageMap(oneByOne: oneByOne, localPath: localPath)

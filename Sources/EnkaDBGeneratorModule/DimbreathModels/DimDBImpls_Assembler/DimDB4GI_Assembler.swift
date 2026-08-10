@@ -129,7 +129,8 @@ extension DimModels4GI.DimDB4GI {
     func assembleEnkaProfilePictures() -> EnkaDBModelsGI.ProfilePictureDict {
         var result = EnkaDBModelsGI.ProfilePictureDict()
         profilePictureDB.forEach { currentPFP in
-            result[currentPFP.id.description] = .init(iconPath: currentPFP.iconPath)
+            guard let iconPath = currentPFP.iconPath else { return }
+            result[currentPFP.id.description] = .init(iconPath: iconPath)
         }
         return result
     }

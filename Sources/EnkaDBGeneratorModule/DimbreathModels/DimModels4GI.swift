@@ -302,6 +302,37 @@ extension DimModels4GI {
 extension DimModels4GI {
     struct ProfilePictureExcelConfigData: Hashable, Codable, Identifiable {
         let id: Int
-        let iconPath: String
+        let iconPath: String?
+    }
+}
+
+// MARK: - Key Normalization against Obfuscated Field Names
+
+extension DimModels4GI {
+    /// Some game versions obfuscate Excel field names into random uppercase strings.
+    /// Before decoding, normalize the keys with JSONSerialization: when `iconPath` is missing,
+    /// use Swift Mirror to reflect the known property names of the struct, then recover the
+    /// obfuscated icon path field among the remaining keys by its value shape (a `UI_` prefixed
+    /// icon path string).
+    static func normalizedProfilePictureData(from raw: Data) throws -> Data {
+        guard let array = try JSONSerialization.jsonObject(with: raw) as? [[String: Any]] else {
+            return raw
+        }
+        let knownPropertyNames = Set(
+            Mirror(reflecting: ProfilePictureExcelConfigData(id: 0, iconPath: nil))
+                .children.compactMap(\.label)
+        )
+        let normalized = array.map { entry -> [String: Any] in
+            var entry = entry
+            guard entry["iconPath"] == nil else { return entry }
+            for (key, value) in entry where !knownPropertyNames.contains(key) {
+                if let str = value as? String, str.hasPrefix("UI_") {
+                    entry["iconPath"] = str
+                    break
+                }
+            }
+            return entry
+        }
+        return try JSONSerialization.data(withJSONObject: normalized)
     }
 }
