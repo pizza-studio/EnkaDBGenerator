@@ -233,6 +233,44 @@
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
+  "10000005-505" : {
+    "Consts" : [
+      "UI_Talent_S_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_02",
+      "UI_Talent_U_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_03",
+      "UI_Talent_U_PlayerIce_02",
+      "UI_Talent_S_PlayerIce_04"
+    ],
+    "Costumes" : {
+      "200501" : {
+        "art" : "UI_Costume_PlayerBoyCostumeCWXR",
+        "avatarId" : 10000005,
+        "icon" : "UI_AvatarIcon_PlayerBoyCostumeCWXR",
+        "sideIconName" : "UI_AvatarIcon_Side_PlayerBoyCostumeCWXR"
+      }
+    },
+    "Element" : "Ice",
+    "NameTextMapHash" : 1533656306,
+    "ProudMap" : {
+      "100544" : 830,
+      "10127" : 832,
+      "10128" : 839
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_PlayerBoy",
+    "SkillOrder" : [
+      100544,
+      10127,
+      10128
+    ],
+    "Skills" : {
+      "100544" : "Skill_A_01",
+      "10127" : "Skill_E_PlayerIce_01",
+      "10128" : "Skill_S_PlayerIce_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
   "10000005-506" : {
     "Consts" : [
       "UI_Talent_S_PlayerRock_01",
@@ -534,6 +572,44 @@
       "100553" : "Skill_A_01",
       "10067" : "Skill_S_PlayerWind_01",
       "10068" : "Skill_E_PlayerWind_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
+  "10000007-705" : {
+    "Consts" : [
+      "UI_Talent_S_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_02",
+      "UI_Talent_U_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_03",
+      "UI_Talent_U_PlayerIce_02",
+      "UI_Talent_S_PlayerIce_04"
+    ],
+    "Costumes" : {
+      "200701" : {
+        "art" : "UI_Costume_PlayerGirlCostumeCWXR",
+        "avatarId" : 10000007,
+        "icon" : "UI_AvatarIcon_PlayerGirlCostumeCWXR",
+        "sideIconName" : "UI_AvatarIcon_Side_PlayerGirlCostumeCWXR"
+      }
+    },
+    "Element" : "Ice",
+    "NameTextMapHash" : 3816664530,
+    "ProudMap" : {
+      "100554" : 831,
+      "10127" : 832,
+      "10128" : 839
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_PlayerGirl",
+    "SkillOrder" : [
+      100554,
+      10127,
+      10128
+    ],
+    "Skills" : {
+      "100554" : "Skill_A_01",
+      "10127" : "Skill_E_PlayerIce_01",
+      "10128" : "Skill_S_PlayerIce_01"
     },
     "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   },
@@ -4582,5 +4658,65 @@
       "11335" : "Skill_E_MarionetteNew_01"
     },
     "WeaponType" : "WEAPON_CLAYMORE"
+  },
+  "10000148" : {
+    "Consts" : [
+      "UI_Talent_S_Alyosha_01",
+      "UI_Talent_S_Alyosha_02",
+      "UI_Talent_U_Alyosha_01",
+      "UI_Talent_S_Alyosha_03",
+      "UI_Talent_U_Alyosha_02",
+      "UI_Talent_S_Alyosha_04"
+    ],
+    "Element" : "Electric",
+    "NameTextMapHash" : 2727450010,
+    "ProudMap" : {
+      "11481" : 14831,
+      "11482" : 14832,
+      "11485" : 14839
+    },
+    "QualityType" : "QUALITY_PURPLE",
+    "SideIconName" : "UI_AvatarIcon_Side_Alyosha",
+    "SkillOrder" : [
+      11481,
+      11482,
+      11485
+    ],
+    "Skills" : {
+      "11481" : "Skill_A_03",
+      "11482" : "Skill_S_Alyosha_01",
+      "11485" : "Skill_E_Alyosha_01"
+    },
+    "WeaponType" : "WEAPON_POLE"
+  },
+  "10000150" : {
+    "Consts" : [
+      "UI_Talent_S_Odette_01",
+      "UI_Talent_S_Odette_02",
+      "UI_Talent_U_Odette_01",
+      "UI_Talent_S_Odette_03",
+      "UI_Talent_U_Odette_02",
+      "UI_Talent_S_Odette_04"
+    ],
+    "Element" : "Ice",
+    "NameTextMapHash" : 2417850,
+    "ProudMap" : {
+      "11501" : 15031,
+      "11502" : 15032,
+      "11505" : 15039
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Odette",
+    "SkillOrder" : [
+      11501,
+      11502,
+      11505
+    ],
+    "Skills" : {
+      "11501" : "Skill_A_01",
+      "11502" : "Skill_S_Odette_01",
+      "11505" : "Skill_E_Odette_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
   }
 }
