@@ -95,6 +95,12 @@
   "100270" : {
     "iconPath" : "UI_AvatarIcon_76143_Circle"
   },
+  "100280" : {
+    "iconPath" : "UI_AvatarIcon_77104_Circle"
+  },
+  "100290" : {
+    "iconPath" : "UI_AvatarIcon_77160_Circle"
+  },
   "101" : {
     "iconPath" : "UI_AvatarIcon_AmborCostumeWic_Circle"
   },
@@ -157,6 +163,12 @@
   },
   "11600" : {
     "iconPath" : "UI_AvatarIcon_MarionetteNew_Circle"
+  },
+  "11700" : {
+    "iconPath" : "UI_AvatarIcon_Alyosha_Circle"
+  },
+  "11800" : {
+    "iconPath" : "UI_AvatarIcon_Odette_Circle"
   },
   "1200" : {
     "iconPath" : "UI_AvatarIcon_Noel_Circle"
@@ -505,9 +517,6 @@
   },
   "900003" : {
     "iconPath" : "UI_AvatarIcon_Mannequin_Custom_Circle"
-  },
-  "900004" : {
-    "iconPath" : ""
   },
   "901" : {
     "iconPath" : "UI_AvatarIcon_NingguangCostumeFloral_Circle"
