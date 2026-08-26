@@ -703,6 +703,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/21065.png",
     "Rarity" : 4
   },
+  "21066" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "3394179651702416076"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/21066.png",
+    "Rarity" : 4
+  },
   "22000" : {
     "AvatarBaseType" : "Warlock",
     "EquipmentName" : {
@@ -765,6 +773,14 @@
       "Hash" : "1470137069313109545"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/22007.png",
+    "Rarity" : 4
+  },
+  "22008" : {
+    "AvatarBaseType" : "Rogue",
+    "EquipmentName" : {
+      "Hash" : "14250856990396693091"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/22008.png",
     "Rarity" : 4
   },
   "23000" : {
@@ -1261,6 +1277,22 @@
       "Hash" : "13693150873761509240"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/23062.png",
+    "Rarity" : 5
+  },
+  "23063" : {
+    "AvatarBaseType" : "Memory",
+    "EquipmentName" : {
+      "Hash" : "1179447360796025287"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23063.png",
+    "Rarity" : 5
+  },
+  "23064" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "14974151069627830085"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23064.png",
     "Rarity" : 5
   },
   "24000" : {
