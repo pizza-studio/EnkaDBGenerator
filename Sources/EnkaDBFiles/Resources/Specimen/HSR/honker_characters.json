@@ -2617,6 +2617,68 @@
       151026
     ]
   },
+  "1512" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1512B.png",
+    "AvatarBaseType" : "Memory",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1512.png",
+    "AvatarFullName" : {
+      "Hash" : "149262887234429510"
+    },
+    "AvatarName" : {
+      "Hash" : "9781128254395420869"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1512.png",
+    "Element" : "Wind",
+    "RankIDList" : [
+      151201,
+      151202,
+      151203,
+      151204,
+      151205,
+      151206
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      151201,
+      151202,
+      151203,
+      151204,
+      151206,
+      151207
+    ]
+  },
+  "1513" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1513B.png",
+    "AvatarBaseType" : "Elation",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1513.png",
+    "AvatarFullName" : {
+      "Hash" : "17001957859210573914"
+    },
+    "AvatarName" : {
+      "Hash" : "5591079138023962224"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1513.png",
+    "Element" : "Quantum",
+    "RankIDList" : [
+      151301,
+      151302,
+      151303,
+      151304,
+      151305,
+      151306
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      151301,
+      151302,
+      151303,
+      151304,
+      151306,
+      151307,
+      151320,
+      151321
+    ]
+  },
   "8001" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/8001B.png",
     "AvatarBaseType" : "Warrior",
