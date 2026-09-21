@@ -4659,6 +4659,66 @@
     },
     "WeaponType" : "WEAPON_CLAYMORE"
   },
+  "10000140" : {
+    "Consts" : [
+      "UI_Talent_S_Vodyanitsa_01",
+      "UI_Talent_S_Vodyanitsa_02",
+      "UI_Talent_U_Vodyanitsa_01",
+      "UI_Talent_S_Vodyanitsa_03",
+      "UI_Talent_U_Vodyanitsa_02",
+      "UI_Talent_S_Vodyanitsa_04"
+    ],
+    "Element" : "Water",
+    "NameTextMapHash" : 1692132714,
+    "ProudMap" : {
+      "11401" : 14031,
+      "11402" : 14032,
+      "11405" : 14039
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Vodyanitsa",
+    "SkillOrder" : [
+      11401,
+      11402,
+      11405
+    ],
+    "Skills" : {
+      "11401" : "Skill_A_Catalyst_MD",
+      "11402" : "Skill_S_Vodyanitsa_01",
+      "11405" : "Skill_E_Vodyanitsa_01"
+    },
+    "WeaponType" : "WEAPON_CATALYST"
+  },
+  "10000143" : {
+    "Consts" : [
+      "UI_Talent_S_Vesna_01",
+      "UI_Talent_S_Vesna_02",
+      "UI_Talent_U_Vesna_01",
+      "UI_Talent_S_Vesna_03",
+      "UI_Talent_U_Vesna_02",
+      "UI_Talent_S_Vesna_04"
+    ],
+    "Element" : "Wind",
+    "NameTextMapHash" : 3992521194,
+    "ProudMap" : {
+      "11431" : 14331,
+      "11432" : 14332,
+      "11435" : 14339
+    },
+    "QualityType" : "QUALITY_ORANGE",
+    "SideIconName" : "UI_AvatarIcon_Side_Vesna",
+    "SkillOrder" : [
+      11431,
+      11432,
+      11435
+    ],
+    "Skills" : {
+      "11431" : "Skill_A_01",
+      "11432" : "Skill_S_Vesna_01",
+      "11435" : "Skill_E_Vesna_01"
+    },
+    "WeaponType" : "WEAPON_SWORD_ONE_HAND"
+  },
   "10000148" : {
     "Consts" : [
       "UI_Talent_S_Alyosha_01",

@@ -865,5 +865,17 @@
   },
   "210294" : {
     "icon" : "UI_NameCardPic_Bp52_P"
+  },
+  "210295" : {
+    "icon" : "UI_NameCardPic_Vesna_P"
+  },
+  "210296" : {
+    "icon" : "UI_NameCardPic_Vodyanitsa_P"
+  },
+  "210297" : {
+    "icon" : "UI_NameCardPic_Queen1_P"
+  },
+  "210298" : {
+    "icon" : "UI_NameCardPic_Bp53_P"
   }
 }
