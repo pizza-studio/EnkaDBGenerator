@@ -170,8 +170,14 @@
   "11800" : {
     "iconPath" : "UI_AvatarIcon_Odette_Circle"
   },
+  "11900" : {
+    "iconPath" : "UI_AvatarIcon_Vesna_Circle"
+  },
   "1200" : {
     "iconPath" : "UI_AvatarIcon_Noel_Circle"
+  },
+  "12000" : {
+    "iconPath" : "UI_AvatarIcon_Vodyanitsa_Circle"
   },
   "1300" : {
     "iconPath" : "UI_AvatarIcon_Chongyun_Circle"
