@@ -1223,6 +1223,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/23054.png",
     "Rarity" : 5
   },
+  "23055" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "5383274067590643422"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23055.png",
+    "Rarity" : 5
+  },
   "23056" : {
     "AvatarBaseType" : "Rogue",
     "EquipmentName" : {
