@@ -2387,6 +2387,39 @@
       150220
     ]
   },
+  "1503" : {
+    "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1503B.png",
+    "AvatarBaseType" : "Elation",
+    "AvatarCutinFrontImgPath" : "SpriteOutput/AvatarDrawCard/1503.png",
+    "AvatarFullName" : {
+      "Hash" : "99350025551155566"
+    },
+    "AvatarName" : {
+      "Hash" : "17971979440145228372"
+    },
+    "AvatarSideIconPath" : "SpriteOutput/AvatarRoundIcon/1503.png",
+    "Element" : "Ice",
+    "RankIDList" : [
+      150301,
+      150302,
+      150303,
+      150304,
+      150305,
+      150306
+    ],
+    "Rarity" : 5,
+    "SkillList" : [
+      150301,
+      150302,
+      150303,
+      150304,
+      150306,
+      150307,
+      150308,
+      150310,
+      150320
+    ]
+  },
   "1504" : {
     "ActionAvatarHeadIconPath" : "SpriteOutput/AvatarIconTeam/1504B.png",
     "AvatarBaseType" : "Rogue",
