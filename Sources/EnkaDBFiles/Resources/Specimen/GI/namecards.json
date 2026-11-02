@@ -877,5 +877,20 @@
   },
   "210298" : {
     "icon" : "UI_NameCardPic_Bp53_P"
+  },
+  "210299" : {
+    "icon" : "UI_NameCardPic_Mitya_P"
+  },
+  "210300" : {
+    "icon" : "UI_NameCardPic_Valeriy_P"
+  },
+  "210301" : {
+    "icon" : "UI_NameCardPic_Snezhnaya2_P"
+  },
+  "210302" : {
+    "icon" : "UI_NameCardPic_Tps2_P"
+  },
+  "210303" : {
+    "icon" : "UI_NameCardPic_Bp54_P"
   }
 }
