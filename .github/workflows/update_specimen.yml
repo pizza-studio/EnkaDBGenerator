@@ -16,9 +16,20 @@ jobs:
             - name: Set up Swift
               uses: SwiftyLab/setup-swift@latest
 
-            - name: Update Specimen Data
+            - name: Update Specimen Data (Attempt 1/2)
               id: compare_shas
+              continue-on-error: true
               run: |
+                swift build -c release
+                rm -rf ./Sources/EnkaDBFiles/Resources/Specimen/ || true
+                .build/release/EnkaDBGenerator -HSR ./Sources/EnkaDBFiles/Resources/Specimen/HSR/
+                .build/release/EnkaDBGenerator -GI ./Sources/EnkaDBFiles/Resources/Specimen/GI/
+
+            - name: Reset and retry (Attempt 2/2)
+              if: steps.compare_shas.outcome == 'failure'
+              run: |
+                echo "::warning::Attempt 1 failed (script crash or network error). Resetting the worktree and retrying."
+                git checkout -- .
                 swift build -c release
                 rm -rf ./Sources/EnkaDBFiles/Resources/Specimen/ || true
                 .build/release/EnkaDBGenerator -HSR ./Sources/EnkaDBFiles/Resources/Specimen/HSR/
