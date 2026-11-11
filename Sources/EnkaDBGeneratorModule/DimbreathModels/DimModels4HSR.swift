@@ -423,6 +423,28 @@ extension DimModels4HSR {
             case servant2 = "PointServant2"
             case special1 = "PointSpecial1"
             case elation = "PointElation"
+            case aeonPower = "PointAeonPower"
+
+            /// 未收录的新取值。此值不允许静默通过：
+            /// 一旦把未知节点落成 `.unknown`，产出的 EnkaDB 就会与 Algoinde 的原典对不上，
+            /// 而且这种偏差会被悄悄咽掉、没人会发现。所以解到未知值必须硬失败，
+            /// 逼人回来把新 case 补进这个枚举之后重新产生资料。
+            case unknown
+
+            init(from decoder: any Decoder) throws {
+                let raw = try decoder.singleValueContainer().decode(String.self)
+                guard let known = Self(rawValue: raw), known != .unknown else {
+                    // 这里用 fatalError 而非 preconditionFailure：
+                    // `-O` 下 precondition 的讯息不会落到 stderr、只剩无声的 SIGTRAP；
+                    // `-Ounchecked` 下整个检查会被编译掉，程序直接放行。
+                    // fatalError 在任何优化等级都会打印讯息并中止。
+                    fatalError(
+                        "PointTriggerKey \"\(raw)\" is not handled yet. "
+                            + "Add it to PointTriggerKey (DimModels4HSR.swift) before regenerating EnkaDB."
+                    )
+                }
+                self = known
+            }
         }
 
         struct StatusAdd: Hashable, Decodable {
