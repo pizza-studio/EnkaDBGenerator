@@ -26,7 +26,7 @@ case 2, 3:
           let game = EnkaDBGenerator.SupportedGame(arg: arg1st)
     else {
         print(argumentTextTutorial)
-        preconditionFailure(argumentTextTutorial)
+        fatalError(argumentTextTutorial)
     }
     let url = URL(fileURLWithPath: argLast)
     if useOneByOne {
@@ -61,7 +61,7 @@ case 2, 3:
     }
 default:
     print(argumentTextTutorial)
-    preconditionFailure(argumentTextTutorial)
+    fatalError(argumentTextTutorial)
 }
 
 private let argumentTextTutorial = """
