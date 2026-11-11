@@ -783,6 +783,14 @@
     "ImagePath" : "SpriteOutput/LightConeFigures/22008.png",
     "Rarity" : 4
   },
+  "22009" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "3323979517703201137"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/22009.png",
+    "Rarity" : 4
+  },
   "23000" : {
     "AvatarBaseType" : "Mage",
     "EquipmentName" : {
@@ -1301,6 +1309,14 @@
       "Hash" : "14974151069627830085"
     },
     "ImagePath" : "SpriteOutput/LightConeFigures/23064.png",
+    "Rarity" : 5
+  },
+  "23065" : {
+    "AvatarBaseType" : "Elation",
+    "EquipmentName" : {
+      "Hash" : "13185461907927069549"
+    },
+    "ImagePath" : "SpriteOutput/LightConeFigures/23065.png",
     "Rarity" : 5
   },
   "24000" : {
